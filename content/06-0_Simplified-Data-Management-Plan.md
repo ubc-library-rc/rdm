@@ -3,6 +3,8 @@ layout: default
 title: Create a Simplified Data Management Plan
 parent: Data Management Plans
 nav_order: 1
+has_children: true
+
 ---
 
 
