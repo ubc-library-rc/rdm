@@ -6,8 +6,21 @@ has_children: true
 
 ---
 
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+ - TOC
+{:toc}
+</details>
 
-## UBC Simplified Template (Pre-Funding Phase)
+Looking for a cheat sheet? It is coming very soon!
+{: .note }
+
+
+
+# UBC Simplified Template (Pre-Funding Phase)
 
 This guide is designed to help you with the "UBC Simplified Data Management Plan Template (Pre-Funding Phase)" provided by the University of British Columbia.
 
@@ -17,15 +30,15 @@ This simplified pre-award data management plan (DMP) template supports researche
 
 Before creating your DMP, consider:
 
-**Policies and requirements:** 
+**Policies and requirements**:
 Familiarize yourself with UBC's relevant policies and requirements, including funder and university policies, ethical guidelines (e.g., TCPS2), community or organization-specific requirements (e.g., Indigenous ethics boards), and publisher or journal policies. Your data management must comply with these.
 
-**Guiding principles:** 
+**Guiding principles**:
 Ensure your data management supports open science principles, especially the [FAIR principles](https://www.go-fair.org/fair-principles/), which emphasize that data should be findable, accessible, interoperable, and reusable.
 
 Let's get started:
 
-#### Ethical, Legal, or Commercial Considerations
+# Ethical, Legal, or Commercial Considerations
 
 Consider how you will manage data across your project, from collection to long-term stewardship. Plan how you will safeguard sensitive information, comply with funder and ethics requirements, and address any legal or commercial obligations. Discuss how will the research data be effectively protected throughout the lifecycle of your research project. Different safeguards may be required depending on the relevant [Research Information Classification](https://arc.ubc.ca/security-privacy/research-information-classification).
 
@@ -43,7 +56,7 @@ Research involving human participants often requires informed consent and ethics
 
 
 
-#### Describing Your Research Data
+## Describing Your Research Data
 
 Research data refers to any information collected, observed, generated, or acquired to validate your research findings. This can include data files, questionnaires, transcripts, samples, physical collections, software, models, algorithms, lab notebooks, codebooks, methodologies, workflows, and other materials created during the project.
 
@@ -59,7 +72,7 @@ When describing your data, consider including the following:
 
 
 
-#### Documenting Your Data for Reuse and Validation
+# Documenting Your Data for Reuse and Validation
 
 Describe how your data will be documented to ensure it is clear, accurate, and understandable throughout the research process and for future reuse or validation. Good documentation supports transparency, reproducibility, and long-term utility.
 
@@ -73,7 +86,7 @@ For support with documentation strategies and identifying appropriate metadata s
 
 
 
-#### Data Storage and Access During Active Research Phase
+# Data Storage and Access During Active Research Phase
 
 Describe where and how your research data will be stored, accessed, and managed during the active phases of your project. This includes all data versions (e.g., raw, master, analytical), all activities (e.g., collection, processing, analysis), and all tools or platforms used for storage.
 
@@ -91,7 +104,7 @@ UBC offers several storage options tailored to research needs. Use the [ARC Rese
 
 
 
-#### Protecting Your Research Data
+# Protecting Your Research Data
 
 Describe the security and access controls that safeguard your data from unauthorized access, modification, or deletion.
 
@@ -112,7 +125,7 @@ This information may also be used for any relevant Risk Assessment Forms require
 
  
 
-#### Making Data Discoverable and Accessible For Long-Term (FAIR Data)
+# Making Data Discoverable and Accessible For Long-Term (FAIR Data)
 
 Describe your plans for managing data after active research ends, including data deposit and sharing. Explain how you will ensure your data remains discoverable and accessible beyond the research phase, addressing:
 
@@ -139,7 +152,7 @@ UBC Library can also assist with planning your project’s long-term data manage
 
 
 
-#### Indigenous Data Governance
+# Indigenous Data Governance
 
 If your research involves Indigenous communities, follow all ethical and policy obligations, including best practices outlined by [Tri-Agency frameworks](https://ethics.gc.ca/eng/tcps2-eptc2_2022_chapter9-chapitre9.html) and any relevant university or partner policies. Your data management plan should be led by the Indigenous communities, collectives, and/or organizations (ICCOs) involved.
 
