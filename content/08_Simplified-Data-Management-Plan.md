@@ -26,7 +26,7 @@ This guide is designed to help you with the "UBC Simplified Data Management Plan
 
 Designed for research teams **applying for** grant funding, this short template helps plan the research data lifecycle. The DMP template was developed by the Digital Research Alliance of Canada Data Management Planning Expert Group (DMPEG) and updated for UBC researchers by campus-wide DMP Working Group in May 2025 as part of [UBC’s Research Data Management Strategy](https://rdm.ubc.ca/about/ubc-rdm-strategy) Implementation.
 
-This simplified pre-award data management plan (DMP) template supports researchers in meeting DMP requirements during funding applications. It focuses on key questions and guidance relevant to this stage. More detailed DMPs may be needed after funding is awarded and throughout the research lifecycle.
+This simplified pre-award data management plan (DMP) template supports researchers in meeting DMP requirements during funding applications. It focuses on key questions and guidance relevant to this stage. [More detailed DMPs](https://ubc-library-rc.github.io/rdm/content/06_Data_Management_Plan.html) may be needed after funding is awarded and throughout the research lifecycle.
 
 Before creating your DMP, consider:
 
