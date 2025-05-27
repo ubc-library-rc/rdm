@@ -39,7 +39,6 @@ Ensure your data management supports open science principles, especially the [FA
 Let's get started:
 
 # Tools to Create DMPs - DMP Assistant in Canada
-{: .no_toc}
 
 To create your DMP, please use <span class="fs-3" align="bottom"> <a href="https://dmp-pgd.ca/" target="_blank"><u>DMP Assistant</u></a>{: .btn .btn-blue }</span>. 
 
