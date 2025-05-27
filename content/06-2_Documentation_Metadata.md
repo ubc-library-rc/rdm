@@ -2,7 +2,7 @@
 layout: default
 title: Documentation and Metadata 
 parent: Data Management Plans
-nav_order: 2
+nav_order: 3
 ---
 
 <details open markdown="block">
