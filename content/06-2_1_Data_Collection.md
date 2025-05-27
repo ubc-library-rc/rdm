@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Data Collection
-parent: Data Management Plans
+parent: Comprehensive Template (Post-Funding Phase)
 nav_order: 1
 ---
 
