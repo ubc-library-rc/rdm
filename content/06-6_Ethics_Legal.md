@@ -2,7 +2,7 @@
 layout: default
 title: Ethics and Legal Compliance
 parent: Data Management Plans
-nav_order: 6
+nav_order: 7
 ---
 
 
