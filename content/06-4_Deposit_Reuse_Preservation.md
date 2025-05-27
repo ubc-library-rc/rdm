@@ -2,7 +2,7 @@
 layout: default
 title: Deposit, Reuse, and Preservation
 parent: Data Management Plans
-nav_order: 4
+nav_order: 5
 ---
 
 # Deposit, Reuse, Preservation
