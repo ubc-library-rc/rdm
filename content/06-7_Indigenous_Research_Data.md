@@ -2,7 +2,7 @@
 layout: default
 title: Indigenous Research Data
 parent: Data Management Plans
-nav_order: 7
+nav_order: 8
 nav_exclude: true
 ---
 
