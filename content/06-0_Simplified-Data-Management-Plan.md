@@ -5,6 +5,7 @@ parent: Data Management Plans
 nav_order: 1
 ---
 
+
 ## UBC Simplified Template (Pre-Funding Phase)
 
 This guide is designed to help you with the "UBC Simplified Data Management Plan Template (Pre-Funding Phase)" provided by the University of British Columbia.
