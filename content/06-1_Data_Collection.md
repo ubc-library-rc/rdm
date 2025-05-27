@@ -2,7 +2,7 @@
 layout: default
 title: Data Collection
 parent: Data Management Plans
-nav_order: 1
+nav_order: 2
 ---
 
 # Record the Process of Data Collection
