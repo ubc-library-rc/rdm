@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Create a Simplified Data Management Plan
-nav_order: 12
+title: Create a Simplified DMP
+parent: Data Management Plans
+nav_order: 1
 ---
 
 ## UBC Simplified Template (Pre-Funding Phase)
