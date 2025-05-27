@@ -38,6 +38,28 @@ Ensure your data management supports open science principles, especially the [FA
 
 Let's get started:
 
+# Tools to Create DMPs
+
+## DMP Assistant in Canada
+{: .no_toc}
+
+To create your DMP, please use <span class="fs-3" align="bottom"> <a href="https://assistant.portagenetwork.ca" target="_blank"><u>DMP Assistant</u></a>{: .btn .btn-blue }</span>. 
+
+This is a free, open-source Canadian tool created by the Portage network (now supported and funded by the Digital Research Alliance of Canada) for preparing DMPs. It is available in *both English and French* and allows you to create and export your DMP. 
+
+Choose the UBC *Simplified template* for UBC researchers. This tool follows best practices in data stewardship and walks researchers step-by-step through key questions about data management. 
+
+<p style="margin-top:25px;margin-left:30px;margin-bottom:25px">
+<img src="figures/simplified-DMP.jpg" width="700"/>
+</p>
+
+DMP Assistant is designed to meet the requirements of these Canadian funders:
+- Canada Foundation for Innovation (CFI)
+- Canadian Institutes of Health Research (CIHR)
+- Natural Sciences and Engineering Research Council (NSERC)
+- Social Sciences and Humanities Research Council (SSHRC)
+
+
 # Ethical, Legal, or Commercial Considerations
 
 Consider how you will manage data across your project, from collection to long-term stewardship. Plan how you will safeguard sensitive information, comply with funder and ethics requirements, and address any legal or commercial obligations. Discuss how will the research data be effectively protected throughout the lifecycle of your research project. Different safeguards may be required depending on the relevant [Research Information Classification](https://arc.ubc.ca/security-privacy/research-information-classification).
