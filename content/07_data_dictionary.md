@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Create a Data Dictionary
-nav_order: 11
+nav_order: 12
 ---
 
 # Data dictionary
