@@ -39,7 +39,7 @@ Ensure your data management supports open science principles, especially the [FA
 
 # Tools to Create DMPs in Canada - DMP Assistant 
 
-To create your DMP, please use <span class="fs-3" align="center"> <a href="https://dmp-pgd.ca/" target="_blank"><u>DMP Assistant</u></a>{: .btn .btn-blue }</span>. 
+To create your DMP, please use <span class="fs-3" align="bottom"> <a href="https://dmp-pgd.ca/" target="_blank"><u>DMP Assistant</u></a>{: .btn .btn-blue }</span>. 
 
 This is a free, open-source Canadian tool created by the Portage network (now supported and funded by the Digital Research Alliance of Canada) for preparing DMPs. It is available in *both English and French* and allows you to create and export your DMP. 
 
