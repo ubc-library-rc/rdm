@@ -88,10 +88,7 @@ When describing your data, consider including the following:
 - **Data size**: Estimate the total size of your data, accounting for raw, master, and processed versions.
 - **Tools**: List any tools, software, or solutions you will use for data collection and analysis.
 
-
-<p>
-<img src="figures/metadata-love-note.jpg" width="300" style="margin-left:30px"/>
-  
+ 
 # Documenting Your Data for Reuse and Validation
 
 Describe how your data will be documented to ensure it is clear, accurate, and understandable throughout the research process and for future reuse or validation. Good documentation supports transparency, reproducibility, and long-term utility.
@@ -103,7 +100,6 @@ Metadata standards provide a consistent set of descriptive fields (like a contro
 Consider how documentation will be created and maintained: Will it be automated, scripted, or user-generated? Who will be responsible for it? Clarifying these roles can help inform staffing and budgeting considerations for your project and grant applications.
 
 For support with documentation strategies and identifying appropriate metadata standards, connect with the [UBC Library](https://researchdata.library.ubc.ca/), which offers guidance and resources tailored to your research needs.
-
 
 
 # Data Storage and Access During Active Research Phase
@@ -123,8 +119,6 @@ If your research involves human participants, follow the relevant ethics guideli
 UBC offers several storage options tailored to research needs. Use the [ARC Research Storage Finder Tool](https://arc.ubc.ca/compute-storage/ubc-research-storage-finder) or consult your local IT support to determine the most appropriate solution.
 
 
-<p>
-<img src="figures/backup-data.jpg" width="250" style="margin-left:30px"/>
   
 # Protecting Your Research Data
 
@@ -146,8 +140,6 @@ UBC Campus Security offers a [site security assessment](https://security.ubc.ca/
 This information may also be used for any relevant Risk Assessment Forms required by research security guidelines.
 
  
-<p>
-<img src="figures/open-data.jpg" width="250" style="margin-left:30px"/>
 
 # Making Data Discoverable and Accessible For Long-Term (FAIR Data)
 
