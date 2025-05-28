@@ -89,10 +89,10 @@ When describing your data, consider including the following:
 - **Tools**: List any tools, software, or solutions you will use for data collection and analysis.
 
 
-
-# Documenting Your Data for Reuse and Validation
 <p>
 <img src="figures/metadata-love-note.jpg" width="300" style="margin-left:30px"/>
+  
+# Documenting Your Data for Reuse and Validation
 
 Describe how your data will be documented to ensure it is clear, accurate, and understandable throughout the research process and for future reuse or validation. Good documentation supports transparency, reproducibility, and long-term utility.
 
@@ -123,10 +123,10 @@ If your research involves human participants, follow the relevant ethics guideli
 UBC offers several storage options tailored to research needs. Use the [ARC Research Storage Finder Tool](https://arc.ubc.ca/compute-storage/ubc-research-storage-finder) or consult your local IT support to determine the most appropriate solution.
 
 
-
-# Protecting Your Research Data
 <p>
 <img src="figures/backup-data.jpg" width="250" style="margin-left:30px"/>
+  
+# Protecting Your Research Data
 
 Describe the security and access controls that safeguard your data from unauthorized access, modification, or deletion.
 
@@ -146,11 +146,10 @@ UBC Campus Security offers a [site security assessment](https://security.ubc.ca/
 This information may also be used for any relevant Risk Assessment Forms required by research security guidelines.
 
  
-
-# Making Data Discoverable and Accessible For Long-Term (FAIR Data)
-
 <p>
 <img src="figures/open-data.jpg" width="250" style="margin-left:30px"/>
+
+# Making Data Discoverable and Accessible For Long-Term (FAIR Data)
 
 Describe your plans for managing data after active research ends, including data deposit and sharing. Explain how you will ensure your data remains discoverable and accessible beyond the research phase, addressing:
 
