@@ -43,7 +43,8 @@ To create your DMP, please use <span class="fs-3" align="center"> <a href="https
 
 This is a free, open-source Canadian tool created by the Portage network (now supported and funded by the Digital Research Alliance of Canada) for preparing DMPs. It is available in *both English and French* and allows you to create and export your DMP. 
 
-Choose the UBC *Simplified template* for UBC researchers. This tool follows best practices in data stewardship and walks researchers step-by-step through key questions about data management. 
+Choose the **UBC Simplified Template** from the list of available templates. 
+This tool follows best practices in data stewardship in Canada and walks researchers step-by-step through key questions about data management. 
 
 <p style="margin-top:25px;margin-left:30px;margin-bottom:25px">
 <img src="figures/simplified-DMP.jpg" width="700"/>
@@ -73,7 +74,6 @@ Research involving human participants often requires informed consent and ethics
 - [UBC Knowledge Exchange](https://kx.ubc.ca/)
 
 
-
 # Describing Your Research Data
 
 Research data refers to any information collected, observed, generated, or acquired to validate your research findings. This can include data files, questionnaires, transcripts, samples, physical collections, software, models, algorithms, lab notebooks, codebooks, methodologies, workflows, and other materials created during the project.
@@ -91,6 +91,8 @@ When describing your data, consider including the following:
 
 
 # Documenting Your Data for Reuse and Validation
+<p>
+<img src="figures/metadata-love-note.jpg" width="300" style="margin-left:30px"/>
 
 Describe how your data will be documented to ensure it is clear, accurate, and understandable throughout the research process and for future reuse or validation. Good documentation supports transparency, reproducibility, and long-term utility.
 
@@ -123,6 +125,8 @@ UBC offers several storage options tailored to research needs. Use the [ARC Rese
 
 
 # Protecting Your Research Data
+<p>
+<img src="figures/backup-data.jpg" width="250" style="margin-left:30px"/>
 
 Describe the security and access controls that safeguard your data from unauthorized access, modification, or deletion.
 
@@ -144,6 +148,9 @@ This information may also be used for any relevant Risk Assessment Forms require
  
 
 # Making Data Discoverable and Accessible For Long-Term (FAIR Data)
+
+<p>
+<img src="figures/open-data.jpg" width="250" style="margin-left:30px"/>
 
 Describe your plans for managing data after active research ends, including data deposit and sharing. Explain how you will ensure your data remains discoverable and accessible beyond the research phase, addressing:
 
