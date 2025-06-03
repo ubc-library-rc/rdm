@@ -175,6 +175,7 @@ What did you change and why?
 <br> 
 
 ### Goals: 
+{: .no_toc }
 - Consistency
 - Intelligible to humans
 - Concise yet descriptive
@@ -274,6 +275,7 @@ helper02_functions.R
 
 
 ### Versioning and Version Types
+{: .no_toc }
 Adding a version to the file name should be the last element
    - Use at least 2 digits with a leading zero for the version number, or just indicate the version type
    - Version number examples: V01, V03, etc.
