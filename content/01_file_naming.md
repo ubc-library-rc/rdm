@@ -137,7 +137,8 @@ We will see very shortly why effective naming conventions are a necessity!
 - The style you choose should be based on conventions adopted in a given project, organization, language, etc.
    - Example: R and Python use snake case, so file names and folder names should follow this convention
 
-
+<br> 
+<br>
 
 ### Exercise 1
 {: .no_toc }
@@ -222,7 +223,7 @@ clean_data.py
 
 <p style="margin-top:20px;margin-bottom:20px">
 <img src="figures/comic.gif" width="200" style="margin-left:30px"/></p>
-<br> 
+<p style="margin-top:20px;margin-bottom:20px">
 
 ### Goals:
 {: .no_toc }
@@ -234,8 +235,7 @@ clean_data.py
 
 ### Chronological order
 {: .no_toc }
-- Use <a href="http://www.w3.org/TR/NOTE-datetime" target="_blank">ISO 8601 standard</a>: <b>YYYYMMDD</b> or <b>YYYY-MM-DD</b>
-   - The ISO 8601 standard ensures that dates are consistently formatted and correctly interpreted
+- Use <a href="http://www.w3.org/TR/NOTE-datetime" target="_blank">ISO 8601 standard</a>: <b>YYYYMMDD</b> or <b>YYYY-MM-DD</b> for consistent formatting and correct interpretation of dates
 
 Sorting your files chronologically (having the date as the first name element) may look like this:
 ```
@@ -280,7 +280,7 @@ Adding a version to the file name should be the last element
 
 <p style="margin-bottom: 20px"></p>
 
-Your lab has a spectrometer that is measuring thermal emissions once a day for a year for your experiment. There are three people who take that measurement in the lab.
+Your lab has a spectrometer that measures thermal emissions once a day for a year for your experiment. There are three people who take that measurement in the lab.
 
 Have a try at creating a file naming convention for these files to reflect what you learned about today's session. 
 
