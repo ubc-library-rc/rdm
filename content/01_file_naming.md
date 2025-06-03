@@ -44,9 +44,9 @@ Are these names better?
 - fig01_scatterplot-talk-length-vs-interest.png
 - 20220709_interview-script_v01.docx
 
-<p style="margin-bottom:40px">
+<p style="margin-bottom:40px"></p>
  
-This is what happens when you do not have effective naming conventions:
+<pThis is what happens when you do not have effective naming conventions:
 </p>
 <img src="figures/file_names.png" width="300" style="margin-left:30px"/>
 
@@ -79,7 +79,7 @@ We will see very shortly why effective naming conventions are a necessity!
 *2*{: .circle .circle-red} &nbsp;Human-Readable 
 
 
-*3*{: .circle .circle-yellow} &nbsp;Plays Well With Default Ordering 
+*3*{: .circle .circle-yellow} &nbsp;Supports Default Ordering 
 
 
 
@@ -112,7 +112,7 @@ We will see very shortly why effective naming conventions are a necessity!
 
 - Alphanumeric characters (Latin alphabetic characters and Arabic numerals) 
 
-- Snake case: use <b>_(underscores)</b> or <b>-(hyphens)</b>to separate words and numbers
+- Snake case: use <b>_ (underscores)</b> or <b>- (hyphens)</b>to separate words and numbers
    -  `this_is_snake_case`
 
 - Camel case: use <b>capitalization</b> to separate words/numbers 
@@ -124,7 +124,7 @@ We will see very shortly why effective naming conventions are a necessity!
 
 - Be mindful of case sensitivity
    - Some operating systems may search for file names of a certain case
-   - Example: searching for "PROJECT" may only return files containing the same name and not "project"
+   - Example: searching for "PROJECT" may only return files containing the same name and case and not "project"
 
 
 
@@ -144,7 +144,9 @@ We will see very shortly why effective naming conventions are a necessity!
 <p style="margin-bottom: 20px"></p>
 
 
-Let's improve these file names! Pick a file and rename it to make it more machine-readable. What did you change and why?
+Let's improve these file names using what we've learned so far! Pick a file and rename it to make it more machine-readable. 
+
+What did you change and why?
 
 
 <p style="margin-top:20px">
@@ -167,42 +169,46 @@ Let's improve these file names! Pick a file and rename it to make it more machin
 
 
 <p style="margin-top:20px">
-<img src="figures/human-reading.jpg" width="300" style="margin-left:30px"/>
+<img src="figures/human-reading.jpg" width="200" style="margin-left:30px"/>
 </p>
 
+### Goals: 
+- Consistency
+- Intelligible to humans
+- Concise yet descriptive
 
-- File names provide concise information
-   -Names are easily understandable to anyone who accesses them in future (including future you)
-- File names should be consistent
-- File names should be concise but detailed
- - Names should be detailed but not *too* long
- - How much (or little) detail is a subjective decision
+### For files to be human-readable, consider the following:
+{: .no_toc }
 
+<p style="margin-bottom: 20px"></p>
 
+- Have file names that follow a consistent naming method, and note this file naming method in your README file
+    - Especially if acronyms are used, you should define what the acronyms mean in your README file
+- The file names should be concise but detailed enough so that they're still understandable to you and anyone else who has access
+    - Names shouldn't be *too* long
+    - This is especially important for the future!
+- Avoid including application (software) details in your file names
+    - Example: you don't need to add "doc" to your file name of a text document
+- The amount of detail is up to you, but we recommend having between 3 to 5 elements per file name
+
+<p style="margin-bottom:60px"></p>
+
+Examples:
 ```
 # not good
 a.txt
 
+# too much information
+clean_data_py_script.py
 
 # okay but can be a more detailed
 application.txt
 
+# not amazing, a bit too much detail
+ubc_application_letter_for_institution_position_firstname_lastname_final_date.txt
 
 # good, just enough detail
 ubc_application_letter.txt
-
-
-# not amazing, a bit too much detail
-ubc_application_letter_for_institution_position_firstname_lastname_final_date.txt
-```
-- Avoid application (software) details in names
- - File names do not need details (e.g., type of file). This makes the name too long. As well it is also unnecessary.
-
-
-```
-# too much information
-clean_data_py_script.py
-
 
 # good
 clean_data.py
@@ -212,34 +218,30 @@ clean_data.py
 <br>
 
 
-## *3*{: .circle .circle-yellow} &nbsp; Plays Well With Default Ordering
+## *3*{: .circle .circle-yellow} &nbsp; Supports Default Ordering 
 
 
 <p style="margin-top:20px;margin-bottom:20px">
-<img src="figures/comic.gif" width="300" style="margin-left:30px"/>
+<img src="figures/comic.gif" width="200" style="margin-left:30px"/>
 </p>
 
 
-### Goal
+### Goals:
 {: .no_toc }
-
- - **Decide at the beginning how you want to sort and search for your files:**
-     - **Chronological order**
-     - **Logical order**
+- Decide at the beginning how you want to sort and search for your files for a good hierarchical directory structure:
+     - Chronological order
+     - Logical order
+- Versioning and version types should be added as the last element
 
 
 ### Chronological order
 {: .no_toc }
+Use <a href="http://www.w3.org/TR/NOTE-datetime" target="_blank">ISO 8601 standard</a> for dates: <b>YYYYMMDD</b> or <b>YYYY-MM-DD</b>
+   - The ISO 8601 standard ensures that dates are consistently formatted and correctly interpreted
+   - Example: 10-12-2024 will be interpreted as DD-MM-YYYY in Europe but MM-DD-YYYY in North America
 
-- Use <a href="http://www.w3.org/TR/NOTE-datetime" target="_blank">ISO 8601 standard</a> for dates: <b>YYYYMMDD</b> or <b>YYYY-MM-DD</b>
-
-  * Using the ISO 8601 standard ensures that dates are consistently formatted and correctly interpreted. For example, 10-12-2024 will be interpreted as DD-MM-YYYY in Europe but MM-DD-YYYY in North America.
-
-
+Sorting your files chronologically (having the date as the first name element) may look like this:
 ```
-# automatically generated monthly reports for different subjects
-
-
 2024-01-01_subject_1_results.xlsx
 2024-01-01_subject_2_results.xlsx
 2024-01-01_subject_3_results.xlsx
@@ -252,10 +254,11 @@ clean_data.py
 ### Logical order
 {: .no_toc }
 
-- When using a sequential numbering system, use <b>leading zeros</b> to make sure files sort in sequential order. e.g. 001, 002, 010, 011....100,101 ...
-- Order elements from general to specific to make searching easier
+When using a sequential numbering system, use <b>leading zeros</b> to make sure files sort in sequential order
+   - Examples: 001, 002, 010, 011... 100,101 ...
+Order elements from general to specific to make searching easier
 
-
+Sorting your files logically (using leading zeros) may look like this:
 ```
 00_innit.R
 01_read_data.R
@@ -266,6 +269,13 @@ helper01_load_variables.R
 helper02_functions.R
 ```
 
+
+### Versioning and Version Types
+Adding a version to the file name should be the last element
+   - Use at least 2 digits with a leading zero for the version number, or just indicate the version type
+   - Version number examples: V01, V03, etc.
+   - Version type examples: _raw, _processed, _composite, etc.
+ 
 
 <br>
 <br>
@@ -278,14 +288,14 @@ helper02_functions.R
 <p style="margin-bottom: 20px"></p>
 
 
-<img src="figures/thermometer.jpg" width="150" style="margin-left:30px"/>
+<img src="figures/thermometer.jpg" width="200" style="margin-left:30px"/>
 
 
-Your lab has a spectrometer that is measuring thermal emissions once a day for a year for your experiment.
-There are three people who take that measurement in the lab.
+Your lab has a spectrometer that is measuring thermal emissions once a day for a year for your experiment. There are three people who take that measurement in the lab.
 
+Have a try at creating a file naming convention for these files to reflect what you learned about today's session. 
 
-Please create a file naming convention for these files to reflect what you have learned about file naming in today's session.
+How did you structure your file names and why? 
 
 
 [//]: # (activity link: https://bit.ly/rdmactivity)
@@ -299,11 +309,16 @@ Please create a file naming convention for these files to reflect what you have 
 
 
 <p style="margin-top:25px">
-<img src="figures/congrats.jpg" width="300" style="margin-left:30px"/>
+<img src="figures/congrats.jpg" width="200" style="margin-left:30px"/>
 </p>
 
+<b>Here is a breakdown of what we covered:</b>
+- File names should be machine-readable: use alphanumerical characters with snake or camel case -- no spaces or special characters
+- File names should be human-readable: clear, concise, and follow a consistent naming method
+- A good file naming convention helps with sorting and searching your files
 
-Now you know how to organize files with your own file naming conventions! As long as your names are clear and consistent, you are good to move forward!
+
+Hooray! Now you know how to organize files with your own file naming conventions. 
 
 
 <br>
