@@ -87,7 +87,8 @@ We will see very shortly why effective naming conventions are a necessity!
 <br>
 
 
-## *1*{: .circle .circle-blue} &nbsp; Machine-Readable <img src="figures/machine-reading.png" width="200" style="margin-left:30px"/>
+## *1*{: .circle .circle-blue} &nbsp; Machine-Readable 
+<img src="figures/machine-reading.png" width="200" style="margin-left:30px"/>
 
 <p style="margin-top:20px;margin-bottom:20px">
 
