@@ -220,10 +220,9 @@ clean_data.py
 
 
 ## *3*{: .circle .circle-yellow} &nbsp; Supports Default Ordering 
- 
-<img src="figures/comic.gif" width="200" style="margin-left:30px"/></p>
-
-<p style="margin-top:20px;margin-bottom:20px">
+<p style="margin-top:20px">
+<img src="figures/comic.gif" width="200" style="margin-left:30px"/>
+</p>
 
 ### Goals:
 {: .no_toc }
@@ -286,7 +285,7 @@ Have a try at creating a file naming convention for these files to reflect what 
 
 How did you structure your file names and why? 
 
-<img src="figures/thermometer.jpg" width="200" style="margin-left:30px"/>
+<img src="figures/thermometer.jpg" width="200" style="margin-left:30px"/></p>
 
 [//]: # (activity link: https://bit.ly/rdmactivity)
 
