@@ -28,27 +28,15 @@ Looking for a cheat sheet? Check out our <a href="https://osf.io/pfweq" target="
 
 ---
 
+<b>Warm up!</b>  
 
-Question - What do you think about the following file names?
+What do you think about the following file names?
 - 10_data 2.txt 
 - figure 1.png 
 - final revision.docx
 - Lily's schedule&plan 2022Jul9.xlsx
 
-
-<p style="margin-bottom: 25px"></p>
-
-
-<p style="margin-bottom:20px">
-This is what happens when you do not have effective naming conventions:
-</p>
-
-
-<img src="figures/file_names.png" width="300" style="margin-left:30px"/>
-
-
-<p style="margin-bottom: 20px"></p>
-
+<p style="margin-bottom: 40px"></p>
 
 Are these names better? 
 - better-filenames.txt
@@ -56,16 +44,29 @@ Are these names better?
 - fig01_scatterplot-talk-length-vs-interest.png
 - 20220709_interview-script_v01.docx
 
+<p style="margin-bottom:40px">
+ 
+This is what happens when you do not have effective naming conventions:
+</p>
+<img src="figures/file_names.png" width="300" style="margin-left:30px"/>
+
+We will see very shortly why effective naming conventions are a necessity!
+
+<p style="margin-bottom:60px"></p>
+
+
+
+
 
 
 
 ---
 
 
-<p style="margin-bottom: 20px"></p>
+<p style="margin-bottom: 60px"></p>
 
 
-# Follow three principles!  &nbsp; <img src="figures/thumbs-up.png" align="center" width="50"/>
+# Follow these three principles!  &nbsp; <img src="figures/thumbs-up.png" align="center" width="50"/>
 {: .no_toc }
 
 
@@ -78,7 +79,7 @@ Are these names better?
 *2*{: .circle .circle-red} &nbsp;Human-Readable 
 
 
-*3*{: .circle .circle-yellow} &nbsp;Plays Well With Default Ordering
+*3*{: .circle .circle-yellow} &nbsp;Plays Well With Default Ordering 
 
 
 
@@ -86,15 +87,13 @@ Are these names better?
 <br>
 
 
-## *1*{: .circle .circle-blue} &nbsp; Machine-Readable
-
+## *1*{: .circle .circle-blue} &nbsp; Machine-Readable <img src="figures/machine-reading.png" width="200" style="margin-left:30px"/>
 
 <p style="margin-top:20px;margin-bottom:20px">
-<img src="figures/machine-reading.png" width="300" style="margin-left:30px"/>
+
 </p>
 
-
-### Goal
+### Goals:
 {: .no_toc }
 - **Characters in file names are handled correctly by all computer systems**
 - **Be consistent with the chosen naming convention**
@@ -103,38 +102,39 @@ Are these names better?
 <p style="margin-bottom: 25px"></p>
 
 
-### Only use the following:
+### For files to be machine-readable, use the following:
 {: .no_toc }
 
 
 <p style="margin-bottom: 20px"></p>
 
 
-- Alphanumeric characters (alphabetic characters and Arabic numerals) 
+- Alphanumeric characters (Latin alphabetic characters and Arabic numerals) 
 
+- Snake case: use <b>_(underscores)</b> or <b>-(hyphens)</b>to separate words and numbers
+   -  `this_is_snake_case`
 
-- Use <b>_(underscore)</b> or <b>-(hyphen)</b>to separate words/numbers (snake case).
- - `this_is_snake_case`
-
-
-- Use <b>capitalization</b> to separate words/numbers (camel case).
- - `thisIsCamelCase`
-
+- Camel case: use <b>capitalization</b> to separate words/numbers 
+   - `thisIsCamelCase`
 
 - Avoid spaces and other special characters, such as: ~ ! @ # $ % ^ & * ( ) ` ; : < > ? . , [ ] { } ' " \|
- - Certain special characters are used by OS to perform tasks.
- - Can be a pain to read in files with special characters in the file name.
+   - Certain special characters are used by operating systems to perform tasks
+   - Can be difficult to read file names with special characters
+
+- Be mindful of case sensitivity
+   - Some operating systems may search for file names of a certain case
+   - Example: searching for "PROJECT" may only return files containing the same name and not "project"
 
 
 
 
-### Be Consistent:
+### Be consistent:
 {: .no_toc }
 
 
 - The way you name your file should be consistent
 - The style you choose should be based on conventions adopted in a given project, organization, language, etc.
- - For example, R and Python use snake case, so file names and folder names should follow this convention.
+   - Example: R and Python use snake case, so file names and folder names should follow this convention
  
 ### Exercise 1
 {: .no_toc }
@@ -143,7 +143,7 @@ Are these names better?
 <p style="margin-bottom: 20px"></p>
 
 
-Let's try to improve the file names! Pick your favourite file name and make it more machine-readable!
+Let's improve these file names! Pick a file and rename it to make it more machine-readable. What did you change and why?
 
 
 <p style="margin-top:20px">
