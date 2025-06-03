@@ -220,9 +220,9 @@ clean_data.py
 
 
 ## *3*{: .circle .circle-yellow} &nbsp; Supports Default Ordering 
-
-<p style="margin-top:20px;margin-bottom:20px">
+ 
 <img src="figures/comic.gif" width="200" style="margin-left:30px"/></p>
+
 <p style="margin-top:20px;margin-bottom:20px">
 
 ### Goals:
@@ -297,8 +297,7 @@ How did you structure your file names and why?
 # Congrats!
 {: .no_toc }
 <p style="margin-top:25px">
-<img src="figures/congrats.jpg" width="200" style="margin-left:30px"/>
-</p>
+<img src="figures/congrats.jpg" width="200" style="margin-left:30px"/></p>
 
 <b>Here is a breakdown of what we covered:</b>
 - File names should be machine-readable: use alphanumerical characters with snake or camel case, and don't have spaces or special characters
