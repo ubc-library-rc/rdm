@@ -46,9 +46,9 @@ Are these names better?
 
 <p style="margin-bottom:40px"></p>
  
-<pThis is what happens when you do not have effective naming conventions:
+<p>This is what happens when you do not have effective naming conventions:
 </p>
-<img src="figures/file_names.png" width="300" style="margin-left:30px"/>
+<img src="figures/file_names.png" width="200" style="margin-left:30px"/>
 
 We will see very shortly why effective naming conventions are a necessity!
 
@@ -120,7 +120,7 @@ We will see very shortly why effective naming conventions are a necessity!
 
 - Avoid spaces and other special characters, such as: ~ ! @ # $ % ^ & * ( ) ` ; : < > ? . , [ ] { } ' " \|
    - Certain special characters are used by operating systems to perform tasks
-   - Can be difficult to read file names with special characters
+   - It can be difficult to read file names with special characters
 
 - Be mindful of case sensitivity
    - Some operating systems may search for file names of a certain case
@@ -171,6 +171,8 @@ What did you change and why?
 <p style="margin-top:20px">
 <img src="figures/human-reading.jpg" width="200" style="margin-left:30px"/>
 </p>
+
+<br> 
 
 ### Goals: 
 - Consistency
@@ -225,6 +227,7 @@ clean_data.py
 <img src="figures/comic.gif" width="200" style="margin-left:30px"/>
 </p>
 
+<br> 
 
 ### Goals:
 {: .no_toc }
@@ -313,7 +316,7 @@ How did you structure your file names and why?
 </p>
 
 <b>Here is a breakdown of what we covered:</b>
-- File names should be machine-readable: use alphanumerical characters with snake or camel case -- no spaces or special characters
+- File names should be machine-readable: use alphanumerical characters with snake or camel case, and don't have spaces or special characters
 - File names should be human-readable: clear, concise, and follow a consistent naming method
 - A good file naming convention helps with sorting and searching your files
 
