@@ -126,8 +126,6 @@ We will see very shortly why effective naming conventions are a necessity!
 
 - Be mindful of case sensitivity
    - Some operating systems may search for file names of a certain case
-   - Example: searching for "PROJECT" may only return files containing the same name and case, and not "project"
-
 
 
 
@@ -137,8 +135,6 @@ We will see very shortly why effective naming conventions are a necessity!
 - The style you choose should be based on conventions adopted in a given project, organization, language, etc.
    - Example: R and Python use snake case, so file names and folder names should follow this convention
 
-<br> 
-<br>
 
 ### Exercise 1
 {: .no_toc }
@@ -156,12 +152,6 @@ What did you change and why?
 
 
 [//]: # (activity link: https://bit.ly/rdmactivity)
-
-
-<br>
-
-
-<br>
 
 
 
@@ -200,13 +190,13 @@ Examples:
 a.txt
 
 # too much information
-clean_data_py_script.py
+ubc_application_letter_for_institution_position_firstname_lastname_final_date.txt
 
 # okay but can be a more detailed
 application.txt
 
 # not amazing, a bit too much detail
-ubc_application_letter_for_institution_position_firstname_lastname_final_date.txt
+clean_data_py_script.py
 
 # good, just enough detail
 ubc_application_letter.txt
@@ -215,8 +205,7 @@ ubc_application_letter.txt
 clean_data.py
 ```
 
-<br>
-<br>
+
 
 
 ## *3*{: .circle .circle-yellow} &nbsp; Supports Default Ordering 
@@ -272,8 +261,7 @@ Use at least 2 digits with a leading zero for the version number, and/or indicat
    - Version number examples: V01, V03, etc.
    - Version type examples: _raw, _processed, _composite, etc.
  
-<br>
-<br>
+
 
 ### Exercise 2
 {: .no_toc }
