@@ -293,15 +293,8 @@ How did you structure your file names and why?
 [//]: # (activity link: https://bit.ly/rdmactivity)
 
 
-<br>
-<br>
-
-
-
 # Congrats!
 {: .no_toc }
-<p style="margin-top:25px">
-<img src="figures/congrats.jpg" width="200" style="margin-left:30px"/></p>
 
 <b>Here is a breakdown of what we covered:</b>
 - File names should be machine-readable: use alphanumerical characters with snake or camel case, and don't have spaces or special characters
