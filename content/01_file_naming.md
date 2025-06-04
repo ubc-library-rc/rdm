@@ -115,7 +115,7 @@ We will see very shortly why effective naming conventions are a necessity!
 - Snake case: use _ <b>underscores</b> to separate words and numbers
    -  `this_is_snake_case`
   
-- Camel case: use <b>capitalization</b> to separate wordsnumbers 
+- Camel case: use <b>capitalization</b> to separate words and numbers 
    - `thisIsCamelCase`
 
 - Hyphens: use – <b>hyphens</b> to separate words and numbers
@@ -266,8 +266,9 @@ helper02_functions.R
 
 ### Versioning and Version Types
 {: .no_toc }
-Adding a version to the file name should be the last element
-   - Use at least 2 digits with a leading zero for the version number, or just indicate the version type
+Adding a version to the file name should be the last element.
+
+Use at least 2 digits with a leading zero for the version number, and/or indicate the version type.
    - Version number examples: V01, V03, etc.
    - Version type examples: _raw, _processed, _composite, etc.
  
