@@ -27,7 +27,6 @@ Looking for a cheat sheet? Check out our <a href="https://osf.io/ena5p" target="
 </details>
 
 ---
-
 ### Warm-up - Exercise 1
 {: .no_toc}
 {: .label .label-green }
@@ -36,13 +35,16 @@ Looking for a cheat sheet? Check out our <a href="https://osf.io/ena5p" target="
 
 A dancing club in Saskatoon has kept its documents since the early 2000s. Recently, a club member wanted to refer back to an agenda from July 5, 2003, but was unable to open it. Please see the WordPerfect file below.  
     
-Could you <a href="exercise_files/Agenda July 5th.wpd" target="_blank"> download that document </a>  and try to recover it on your machine? What do you notice? 
+Could you <a href="exercise_files/Agenda July 5th.wpd" target="_blank"> download that document </a>  and try to recover it on your machine? 
+
+What do you notice? 
     
 [//]: # (activity link: https://bit.ly/rdmactivity)
 
 <p style="margin-bottom: 25px"></p>
 
-What are some file formats you use often?
+---
+<b>What are some file formats you use often?</b> 
 - .xls (Microsoft Excel) 
 - .mp3 (for digital audio)
 - .docx (Microsoft Word) 
@@ -51,19 +53,16 @@ What are some file formats you use often?
 <p style="margin-bottom: 25px"></p>
 
 These are all commonly used file formats. However, these are not recommended for data curation because they are proprietary! In other words, these common formats are unsustainable. <img src="figures/say-no.png" width="20">
-</p>
 
 <p style="margin-bottom: 30px"></p>
 
 <img src="figures/shock.png" width="150" style="margin-left:30px"/>
 
-<p style="margin-bottom: 50px"></p>
-
 ---
 
 ## What are proprietary formats?
 
-A file format is considered proprietary when it's limited by software patents, lack of format specification details, or built-in encryption to prevent open usage by the public. 
+A file format is considered *proprietary* when it's limited by software patents, lack of format specification details, or built-in encryption to prevent open usage by the public. 
 
 This results in requiring specific software from a vendor to use the proprietary format. In some cases, an industry may treat specific file formats as the de facto standard even if the formats are proprietary and rely on expensive software.
 
@@ -75,7 +74,7 @@ You have noticed that the file in the warm-up exercise was an older proprietary 
 
 ## What are non-proprietary (open) formats?
 
-A file format is considered non-proprietary when its specifications are released, so open-source developers can write software to utilize the file format in case a particular vendor no longer supports the format. 
+A file format is considered *non-proprietary* when its specifications are released, so open-source developers can write software to utilize the file format in case a particular vendor no longer supports the format. 
 
 Qualities of open-format files:
 - Freely available to use by everyone: unencrypted and uncompressed
@@ -87,7 +86,7 @@ Qualities of open-format files:
 
 <p style="margin-bottom: 50px"></p>
 
-## Other Considerations 
+## Other considerations 
 
 File quality and file size:
 - File quality refers to the representation of an item's characteristics
@@ -132,10 +131,9 @@ How did you convert the Excel file into a CSV file? What did you notice?
 # Congrats!
 {: .no_toc }
 
-<b>Here is a breakdown of what we covered:</b> 
 - Proprietary file formats have limitations, like requiring specific software, that may make accessing the file content difficult in the future
 - Open file formats are highly recommended because they're sustainable and preserve well for the future
-{: .note}
+{: .<b>Here is a breakdown of what we covered:</b>}
 
 *Hooray!* Now you know which file formats are appropriate for data curation, so your research data can be preserved for the long term.
 
