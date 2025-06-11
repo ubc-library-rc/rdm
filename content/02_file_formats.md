@@ -125,8 +125,9 @@ How did you convert the Excel file into a CSV file? What did you notice?
 <p style="margin-bottom: 20px"></p>
 
 [//]: # (activity link: https://bit.ly/rdmactivity)
----
+
 <br>
+
 # Congrats!
 {: .no_toc }
 
