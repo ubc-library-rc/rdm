@@ -9,10 +9,7 @@ nav_order: 5
 
 <p style="margin-bottom: 20px"></p>
 
-A file format encodes information within a computer file so that it can be recognized by an application and accessed. It is indicated by the file name extension. Each file type (such as text, images, or sound) has many file formats available.
-
-<p style="margin-bottom: 25px"></p>
-<img src="figures/formats.png" width="300" style="margin-left:30px"/>
+A file format encodes information within a computer file so that it can be recognized by an application and accessed. It is indicated by the file name extension. Each file type (such as text, images, or sound) has many file formats available. We strongly recommend using non-proprietary (open) file formats because it's important for preserving readability and long-term access for you and anyone else.
 
 <p style="margin-bottom: 25px"></p>
 
@@ -31,7 +28,21 @@ Looking for a cheat sheet? Check out our <a href="https://osf.io/ena5p" target="
 
 ---
 
-Which formats do you use the most?
+### Warm-up - Exercise 1
+{: .no_toc}
+{: .label .label-green }
+
+<p style="margin-bottom: 10px"></p>
+
+A dancing club in Saskatoon has kept its documents since the early 2000s. Recently, a club member wanted to refer back to an agenda from July 5, 2003, but was unable to open it. Please see the WordPerfect file below.  
+    
+Could you <a href="exercise_files/Agenda July 5th.wpd" target="_blank"> download that document </a>  and try to recover it on your machine? What do you notice? 
+    
+[//]: # (activity link: https://bit.ly/rdmactivity)
+
+<p style="margin-bottom: 25px"></p>
+
+What are some file formats you use often?
 - .xls (Microsoft Excel) 
 - .mp3 (for digital audio)
 - .docx (Microsoft Word) 
@@ -39,8 +50,7 @@ Which formats do you use the most?
 
 <p style="margin-bottom: 25px"></p>
 
-<p style="margin-bottom:20px"> 
-These are all commonly used file formats, but what if we tell you that these formats are not recommended to be used for data curation? These formats are unsustainable because they are proprietary. <img src="figures/say-no.png" width="20">
+These are all commonly used file formats. However, these are not recommended for data curation because they are proprietary! In other words, these common formats are unsustainable. <img src="figures/say-no.png" width="20">
 </p>
 
 <p style="margin-bottom: 30px"></p>
@@ -49,73 +59,39 @@ These are all commonly used file formats, but what if we tell you that these for
 
 <p style="margin-bottom: 50px"></p>
 
-### Warm-up - Exercise 1
-{: .no_toc}
-{: .label .label-green }
-
-<p style="margin-bottom: 10px"></p>
-
-A dancing club in Saskatoon has kept its documents since the early 2000s. Recently, a club member wanted to refer back to an agenda from July 5, 2003 (please see the WordPerfect file below) but was unable to open it.   
-    
-Could you <a href="exercise_files/Agenda July 5th.wpd" target="_blank"> download that document </a>  and try to recover it on your machine?
-    
-Please share your experience in Padlet.
-
-[//]: # (activity link: https://bit.ly/rdmactivity)
-
-<p style="margin-bottom: 25px"></p>
-
-<img src="figures/trouble.jpg" width="300" style="margin-left:30px"/>
-
-<p style="margin-bottom: 30px"></p>
-
 ---
-
-<p style="margin-bottom: 20px"></p>
 
 ## What are proprietary formats?
 
-- The file you were trying to open in the warm-up exercise was an older proprietary file that can no longer be opened. This inaccessibility can happen to other proprietary formats like Microsoft Word or Google Docs. 
-- They are limited by software patents, lack of format specification details, or built-in encryption to prevent open usage by the public.
-<p style="margin-bottom: 20px"></p>
-<img src="figures/encryption.jpg" width="300" style="margin-left:30px"/>
-<p style="margin-bottom: 20px"></p>
+A file format is considered proprietary when it's limited by software patents, lack of format specification details, or built-in encryption to prevent open usage by the public. 
 
-- This results in requiring specific software provided by one vendor to use the proprietary format.
-- In some cases, an industry may treat specific file formats as a de facto standard even if the formats are proprietary and rely on expensive software.
+This results in requiring specific software from a vendor to use the proprietary format. In some cases, an industry may treat specific file formats as the de facto standard even if the formats are proprietary and rely on expensive software.
 
-<p style="margin-bottom: 50px"></p>
+You have noticed that the file in the warm-up exercise was an older proprietary file that can no longer be opened. This inaccessibility can happen to other proprietary formats like Microsoft Word or Google Docs.
 
-We recommend open formats because they are more sustainable and easier to preserve in the long term. <img src="figures/thumbs-up.png" width="25"/> 
-{: .note}
+<img src="figures/encryption.jpg" width="100" style="margin-left:30px"/>
 
 <p style="margin-bottom: 50px"></p>
 
-## What are open formats?
+## What are non-proprietary (open) formats?
 
-- They are non-proprietary.
-- They are freely available for everyone to use.
-- Because the specifications are released, open-source developers can write software to utilize the file format in case a particular vendor no longer supports the format.
-- They may decrease the risk of technical obsolescence by removing the dependency on the underlying technology.
+A file format is considered non-proprietary when its specifications are released, so open-source developers can write software to utilize the file format in case a particular vendor no longer supports the format. 
 
-<p style="margin-bottom: 25px"></p>
+Qualities of open-format files:
+- Freely available to use by everyone: unencrypted and uncompressed
+- Has a decreased risk of technical obsolescence because it's not reliant on specific software
+- Standard representation (such as ASCII or Unicode) and standard documentation
+- Commonly used by the research community
 
-<img src="figures/open-source.jpg" width="300" style="margin-left:30px"/>
-
+<img src="figures/open-source.jpg" width="100" style="margin-left:30px"/>
 
 <p style="margin-bottom: 50px"></p>
-
 
 ## Other Considerations 
 
-* Open, Standard documentation 
-* Common usage by research community
-* Standard representation (ASCII, Unicode)
-* Unencrypted
-* Uncompressed 
-* File quality
-  * Encoding that handles high resolution will have larger sizes than lower quality file formats
-  * However, the trade-off comes at the cost of storage space and convenience in disseminating the file to others
+File quality and file size:
+- File quality refers to the representation of an item's characteristics
+- The file quality affects the kind of file format to use. The encoding that handles high resolution will have larger file sizes than lower-quality file formats. The trade-off is the cost of storage space and the convenience of sharing the file with others
 
 ## We recommend these common file formats
 
@@ -139,21 +115,15 @@ We recommend open formats because they are more sustainable and easier to preser
 
 <p style="margin-bottom: 10px"></p>
 
-Please help us to preserve datasets for the long term.
+Help us to preserve datasets for the long term! Download an Excel file ( .xls) from the dataset below and convert it to CSV.
   
-Access a dataset:  
->Yarmand,Shahram, 2019, "Replication data for: Stochastic and Deterministic Modeling of the Future Price of Crude oil and Bottled Water", <a href="https://doi.org/10.5683/SP2/VPF8J8" target="_blank"> https://doi.org/10.5683/SP2/VPF8J8</a>, Borealis, V1
+Access this dataset:  
+>Yarmand, Shahram, 2019, "Replication data for: Stochastic and Deterministic Modeling of the Future Price of Crude oil and Bottled Water", <a href="https://doi.org/10.5683/SP2/VPF8J8" target="_blank"> https://doi.org/10.5683/SP2/VPF8J8</a>, Borealis, V1
 
+How did you convert the Excel file into a CSV file? What did you notice?
 
-<p style="margin-bottom: 20px"></p>
-<img src="figures/crude-oil.png" width="200" style="margin-left:40px"/> 
 <img src="figures/bottles.jpg" width="200"/>
 <p style="margin-bottom: 20px"></p>
-
-Download one Excel ( .xls) file and convert it to CSV.
-
-Please share your experience in Padlet.
-
 
 [//]: # (activity link: https://bit.ly/rdmactivity)
 
@@ -162,11 +132,12 @@ Please share your experience in Padlet.
 # Congrats!
 {: .no_toc }
 
-<p style="margin-top:25px">
-<img src="figures/robot_graduate.png" width="300"/>
-</p>
+<b>Here is a breakdown of what we covered:</b> 
+- Proprietary file formats have limitations, like requiring specific software, that may make accessing the file content difficult in the future
+- Open file formats are highly recommended because they're sustainable and preserve well for the future
+{: .note}
 
-Now you know which file formats are proper for data curation so your research data can be preserved for a longer term!
+*Hooray!* Now you know which file formats are appropriate for data curation, so your research data can be preserved for the long term.
 
 <br>
 
