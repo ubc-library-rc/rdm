@@ -68,7 +68,7 @@ This results in requiring specific software from a vendor to use the proprietary
 
 You have noticed that the file in the warm-up exercise was an older proprietary file that can no longer be opened. This inaccessibility can happen to other proprietary formats like Microsoft Word or Google Docs.
 
-<img src="figures/encryption.jpg" width="100" style="margin-left:30px"/>
+<img src="figures/encryption.jpg" width="200" style="margin-left:30px"/>
 
 <p style="margin-bottom: 50px"></p>
 
@@ -82,7 +82,7 @@ Qualities of open-format files:
 - Standard representation (such as ASCII or Unicode) and standard documentation
 - Commonly used by the research community
 
-<img src="figures/open-source.jpg" width="100" style="margin-left:30px"/>
+<img src="figures/open-source.jpg" width="200" style="margin-left:30px"/>
 
 <p style="margin-bottom: 50px"></p>
 
@@ -90,7 +90,7 @@ Qualities of open-format files:
 
 File quality and file size:
 - File quality refers to the representation of an item's characteristics
-- The file quality affects the kind of file format to use. The encoding that handles high resolution will have larger file sizes than lower-quality file formats. The trade-off is the cost of storage space and the convenience of sharing the file with others
+- The file quality affects the file format used. The encoding that handles high resolution will have larger file sizes than lower-quality file formats. The trade-off is the cost of storage space and the convenience of sharing the file with others
 
 ## We recommend these common file formats
 
@@ -99,10 +99,10 @@ File quality and file size:
 
 | File Type | Recommended Formats                      | Avoided Formats                |
 |-----------|------------------------------------------|--------------------------------|
-| Text      | XML, ASCII, TXT, PDF, LaTeX, .docx       | .doc, .wpd                     |
-| Images    | TIFF, JPEG2000, PNG, JPEG/JFIF           | RAW, Adobe Photoshop, PDF      |
+| Text      | XML, ASCII, txt, PDF, LaTeX, .docx       | .doc, .wpd                     |
+| Images    | TIFF, JPEG2000, PNG, JPEG/JFIF, PDF      | RAW, Adobe Photoshop           |
 | Video     | MOV, MPEG-2                              | .wmv                           |
-| Audio     | PCM, WAVE, DSD                           | CD, DVD, .m4p, .mp3, xmi, .mod |
+| Audio     | PCM, WAVE, DSD, .mp3                     | CD, DVD, .m4p, xmi, .mod       |
 | Dataset   | CSV, TSV, .db, .sqlite, Shapefile, .xlsx | .xls                           |
 | Web Data  | JSON, XML, HTML                          |                                |
 
@@ -129,8 +129,8 @@ How did you convert the Excel file into a CSV file? What did you notice?
 <br>
 
 <b>Here is a breakdown of what we covered:</b>
-Proprietary file formats have limitations, like requiring specific software, that may make accessing the file content difficult in the future
-Open file formats are highly recommended because they're sustainable and preserve well for the future
+Proprietary file formats have limitations, like requiring specific software, that may make accessing the file content difficult in the future.
+Open file formats are highly recommended because they're sustainable and preserve well for the future.
 {: .note}
 
 # Congrats!
