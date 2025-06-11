@@ -128,13 +128,13 @@ How did you convert the Excel file into a CSV file? What did you notice?
 
 <br>
 
-# Congrats!
-{: .no_toc }
-
 <b>Here is a breakdown of what we covered:</b>
 Proprietary file formats have limitations, like requiring specific software, that may make accessing the file content difficult in the future
 Open file formats are highly recommended because they're sustainable and preserve well for the future
-{: .important}
+{: .note}
+
+# Congrats!
+{: .no_toc }
 
 *Hooray!* Now you know which file formats are appropriate for data curation, so your research data can be preserved for the long term.
 
