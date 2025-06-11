@@ -15,7 +15,7 @@ has_children: true
 {:toc}
 </details>
 
-Looking for a cheat sheet? It is coming very soon!
+Looking for a quick guide to creating Simplified DMPs? Check out our <a href="https://osf.io/tv9sa" target="_blank">one-pager</a>!
 {: .note }
 
 
