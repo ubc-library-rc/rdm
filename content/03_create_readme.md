@@ -50,11 +50,11 @@ Take a look at the project and try to answer the following:
 
 ## The Process of Creating a README
 
-Consider creating a README file at the start of your project, or at least preparing a README before your project goes public, and continually updating it. One README file can be made for a dataset or a set of files that are of the same or similar formatting, are duplicates, or have an organizational schema. If multiple READMEs are necessary, format them the same to maintain consistency. 
+Consider creating a README file at the start of your project, or at least preparing a README before your project goes public, and continually updating it. One README file can be made for a dataset or a set of files that are of the same or similar formatting. If multiple READMEs are necessary, format them the same to maintain consistency. 
 
 Place the README at the root directory of the project (check out our workshop on [directory structures](https://ubc-library-rc.github.io/rdm/content/04_directory_structures.html)) so it can be one of the first files people will look at. 
 
-You can use any text editor to create a README. [Markdown](https://en.wikipedia.org/wiki/Markdown) is commonly used because you can add lightweight formatting, and it is non-proprietary. Using a plain text format helps preserve your information because it relies on durable, open standards rather than proprietary formats.  
+You can use any text editor to create a README. [Markdown](https://ubc-library-rc.github.io/Introduction-to-Markdown/) or TXT formats are commonly used because you can add lightweight formatting, and it is non-proprietary. Using a plain text format helps preserve your information because it relies on durable, open standards rather than proprietary formats.  
 
 Some other common formats you might see are R Markdown (common in R projects) and reStructuredText (common in Python projects).
 
@@ -79,11 +79,11 @@ Every project is different, so consider which of the following applies to your p
 
 <p style="margin-bottom: 20px"></p>
 
-## Sample Template
+## Sample README 
 
 <a href="https://ubc-library-rc.github.io/rdm/content/exercise_files/README_template.txt" target="_blank"> Download this sample README </a>. 
 
-We created an example of a README for the project we looked at earlier in the warm-up exercise. This sample file was designed to capture academic research projects. There are other templates available for other types of projects (software, data science, etc.). 
+We created an example of a README for the project we looked at earlier in the warm-up exercise. This sample file was designed to capture academic research projects. There are other samples available for other types of projects (software, data science, etc.). 
 
 **NOTE: The contents in the example template are <u>made up</u> for educational purposes, and do not reflect what the real study had in mind.**
 
@@ -100,7 +100,7 @@ From the sample template, what are some things that you noticed that may be spec
 <br>
 
 <b>Here is a breakdown of what we covered:</b> 
-READMEs are important documents containing information about your project's data. They help ensure your data is correctly interpreted and navigated for you and others in the future when revisited. READMEs should be created at the start of your project and maintained throughout, and include content that is appropriate to your project. Lastly, it's best to write your README in a non-proprietary format, like Markdown. 
+READMEs are important documents containing information about your project's data. They help ensure your data is correctly interpreted and navigated for you and others in the future when revisited. READMEs should be created at the start of your project and maintained throughout, and include content that is appropriate to your project. Lastly, it's best to write your README in a non-proprietary format, like TXT or Markdown. 
 {: .note}
 
 # Congrats!
