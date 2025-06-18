@@ -3,10 +3,10 @@ layout: default
 title: Create a README File
 nav_order: 6
 ---
-# What is README?
+# What is a README?
 {: .no_toc}
 
-A README file provides information about a project and is intended to help ensure that the data can be correctly interpreted by you and by others when sharing or publishing data. It contains information commonly required to understand the dataset, its contents, provenance, licensing and how to interact with it. A README file is generally named ```README```and is typically a text or markdown file.
+A README file provides information about a project and helps ensure that data can be correctly interpreted by you and others when sharing or publishing data. It contains information commonly required to understand the dataset, its contents, provenance, licensing and how to interact with it. A README file is generally named ```README``` and is typically a text or markdown file.
 
 In short, a README is a portable, durable way to inform other researchers about how to navigate, collaborate, or extend your project. Having them alongside your project(s) is good practice, especially when depositing data in a repository. 
 
@@ -26,9 +26,8 @@ In short, a README is a portable, durable way to inform other researchers about 
  - TOC
 {:toc}
 </details>
-
 ---
-<p style="margin-bottom: 50px"></p>
+<p style="margin-bottom: 20px"></p>
 
 ## Warm-Up: Exercise 1
 {: .no_toc}
@@ -39,15 +38,13 @@ Let's access this dataset:
 
 Take a look at the project and try to answer the following:
 
-1. You got new data for ammonia absorption into soil from corktown, how would you go about generating the new model and plot? 
+1. You got new data for ammonia absorption into soil from Corktown, how would you go about generating the new model and plot? 
 2. You want to recreate the whole project, what package(s) do you need to have installed to rerun everything?
 3. You have a question about this project, who and how can we reach the corresponding author?
 
-<p style="margin-bottom: 30px"></p>
+<p style="margin-bottom: 20px"></p>
 
 <img src="figures/confused.jpg" width="200" style="margin-left:30px"/>
-
-<p style="margin-bottom: 50px"></p>
 
 [//]: # (activity link: https://bit.ly/rdmactivity)
 
@@ -55,7 +52,7 @@ Take a look at the project and try to answer the following:
 
 ## The Process of Creating a README
 
-Consider creating a README file at the start of your project and continually updating it, or at least preparing a README before your project goes public. One README file can be made for a dataset or a set of files that are of the same or similar formatting, are duplicates, or have an organizational schema. If multiple READMEs are necessary, format them the same to maintain consistency. 
+Consider creating a README file at the start of your project, or at least preparing a README before your project goes public, and continually updating it. One README file can be made for a dataset or a set of files that are of the same or similar formatting, are duplicates, or have an organizational schema. If multiple READMEs are necessary, format them the same to maintain consistency. 
 
 Place the README at the root directory of the project (check out our workshop on [directory structures](https://ubc-library-rc.github.io/rdm/content/04_directory_structures.html)) so it can be one of the first files people will look at. 
 
@@ -75,7 +72,7 @@ Every project is different, so consider which of the following applies to your p
 * **Language**
 * **Title of dataset or project**
 * **Methodology** - Describe data collection, processing, and analysis, software and tools used, sample collection, etc.
-* **Installation** - The project may work on your project but not everyone has all the installations and dependencies installed. Let people know what they need to install to make sure they can run the data smoothly.
+* **Installation** - The project may work on your project, but not everyone has all the installations and dependencies installed. Let people know what they need to install to make sure they can run the data smoothly.
 * **Data-specific information** - define any variables, codes, or acronyms
 * **Usage** - Showing people an example of how your project/tool works can be very beneficial for users. 
 * **Contributing** -  Let other users/collaborators know how they can contribute to the project. 
@@ -85,11 +82,12 @@ Every project is different, so consider which of the following applies to your p
 <p style="margin-bottom: 20px"></p>
 
 ## Sample Template
+
 <a href="https://ubc-library-rc.github.io/rdm/content/exercise_files/README_template.txt" target="_blank"> Download this sample README </a>. 
 
 We created an example of a README for the project we looked at earlier in the warm-up exercise. This sample file was designed to capture academic research projects. There are other templates available for other types of projects (software, data science, etc.). 
 
-**NOTE: The contents in the example template <u>made up</u> for educational purposes, do not reflect what the real study had in mind.**
+**NOTE: The contents in the example template are <u>made up</u> for educational purposes, and do not reflect what the real study had in mind.**
 
 ## Exercise 2
 {: .no_toc}
@@ -99,7 +97,7 @@ Now, let's practice what we just learned.
 
 From the sample template, what are some things that you noticed that may be specific to academic research? What are some things you would include if this were a software project? 
 
-<img src="figures/readme.png" width="200" style="margin-left:30px"/>
+<img src="figures/readme.png" width="300" style="margin-left:30px"/>
 
 <br>
 
