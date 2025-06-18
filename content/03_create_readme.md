@@ -16,8 +16,6 @@ In short, a README is a portable, durable way to inform other researchers about 
 - Looking for a template to reuse? Check out our <a href="https://ubc-library-rc.github.io/rdm/content/assets/templates/UBC_README.txt" target="_blank">README template</a> 
 {: .note}
 
-<br>
-
 <details open markdown="block">
   <summary>
     Table of contents
