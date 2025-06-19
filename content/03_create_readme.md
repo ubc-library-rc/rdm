@@ -6,7 +6,7 @@ nav_order: 6
 # What is a README?
 {: .no_toc}
 
-A README file provides information about a project and helps ensure that data can be correctly interpreted by you and others when sharing or publishing data. It contains information commonly required to understand the dataset, its contents, provenance, licensing and how to interact with it. A README file is generally named ```README``` and is typically a text or markdown file.
+A README file provides information about a project and helps ensure that data can be correctly interpreted by you and others when sharing or publishing data. It contains information commonly required to understand the dataset, its contents, provenance, licensing and how to interact with it. This helps maximize your dataset's usability and long-term preservation potential. A README file is generally named ```README``` and is typically a text or markdown file.
 
 In short, a README is a portable, durable way to inform other researchers about how to navigate, collaborate, or extend your project. Having them alongside your project(s) is good practice, especially when depositing data in a repository. 
 
@@ -42,15 +42,13 @@ Take a look at the project and try to answer the following:
 
 <p style="margin-bottom: 20px"></p>
 
-<img src="figures/confused.jpg" width="200" style="margin-left:30px"/>
-
 [//]: # (activity link: https://bit.ly/rdmactivity)
 
 ---
 
 ## The Process of Creating a README
 
-Consider creating a README file at the start of your project, or at least preparing a README before your project goes public, and continually updating it. One README file can be made for a dataset or a set of files that are of the same or similar formatting. If multiple READMEs are necessary, format them the same to maintain consistency. 
+Consider creating a README file at the start of your project, or at least preparing a README before your project goes public, and continually updating it so you don't lose any details. One README file can be made for a dataset or a set of files that are of the same or similar formatting. If multiple READMEs are necessary, format them the same to maintain consistency. 
 
 Place the README at the root directory of the project (check out our workshop on [directory structures](https://ubc-library-rc.github.io/rdm/content/04_directory_structures.html)) so it can be one of the first files people will look at. 
 
@@ -60,22 +58,28 @@ Some other common formats you might see are R Markdown (common in R projects) an
 
 <p style="margin-bottom: 20px"></p>
 
+## Stylistic Considerations of a README
+
+How you write your README is as important as the information you include. You should be as clear as possible. 
+
+Here are some best practices for data documentation you may consider:
+* Be as clear and specific as possible, including descriptive titles
+* Don't use jargon
+* Define terms, acronyms, and/or abbreviations
+* Address any limitations
+* Address any quantities, multiples, versions, and/or updates
+
 ## Recommended Content
   
-Every project is different, so consider which of the following applies to your project. For example, a software project will have different sections than an academic research project.
+Every project is different, so consider which of the following applies to your project. <b>For example</b>, a software project will have different sections than an academic research project.
 
-* **Information** - Name and contact information, ORCIDs, how can people get in contact with you?
-* **Description** - Let users know what your project does. Provide context - this can be similar to an abstract for a research paper, and information on what the data contains.
-* **Dates** - Use a standardized format, like ISO 8601 (YYYY-MM-DD or YYYYMMDD)
-* **Language**
-* **Title of dataset or project**
-* **Methodology** - Describe data collection, processing, and analysis, software and tools used, sample collection, etc.
-* **Installation** - The project may work on your project, but not everyone has all the installations and dependencies installed. Let people know what they need to install to make sure they can run the data smoothly.
-* **Data-specific information** - define any variables, codes, or acronyms
-* **Usage** - Showing people an example of how your project/tool works can be very beneficial for users. 
-* **Contributing** -  Let other users/collaborators know how they can contribute to the project. 
-* **Acknowledgement** - Use this area to acknowledge people/resources that contributed to the project.
-* **License** - If your project is open-source, mention the appropriate license, add any citation recommendations, and add any restrictions. 
+* **Information**: Include at least two contacts. This could be the principal investigator and a co-investigator or another author. Include names, associated institutions, institution email, and ORCID if available.
+* **Description**: Provide detailed context as much as possible – indicate what your project does and what your dataset contains. Give your README a descriptive title and include any dates that may be helpful, such as creation (both README and dataset), updates, data collection, etc. Using a standard date format, like ISO 8601 (YYYY-MM-DD or YYYYMMDD), is a good practice. 
+* **Methodology**: Provide information about your research protocols such as data collection, data processing and analysis, sampling, instruments, tools, and software (include version and any special requirements for installation and operation), other sources used, geographic information of data collection, any standards followed, etc. 
+* **Data and File Overview**: Describe the file structure of the dataset, such as the files or folders applicable for dataset organization and the relationship between the files. You should also indicate any other file relationships, such as if there are multiples, different versions, or modifications, and explain why if necessary. 
+* **Data-Specific Information**: Define and describe any labels, codes, variables, abbreviations, and/or acronyms. Also, mention if any special formats are applicable. This can be repeated and modified for each dataset when appropriate. 
+* **Sharing and Access Information**: Indicate the appropriate licences for your project. Also mention any restrictions, permissions, and/or data confidentiality conditions. You may also wish to include relevant links to other supporting datasets, locations where to access the dataset, or publications that cite or use the dataset. 
+* **Acknowledgements**: Acknowledge your research team members, assistants, staff, and students who also had a contributive role in your project. Also include information on the funding support for your project, such as the name of the organization, grant name and number, fellowship name, awards, etc.  
 
 <p style="margin-bottom: 20px"></p>
 
