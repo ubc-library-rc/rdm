@@ -27,7 +27,7 @@ Looking for a cheat sheet? Check out our <a href="https://osf.io/ena5p" target="
 </details>
 
 ---
-### Warm-up - Exercise 1
+### Warm-up: Exercise 1
 {: .no_toc}
 {: .label .label-green }
 
@@ -127,6 +127,7 @@ How did you convert the Excel file into a CSV file? What did you notice?
 [//]: # (activity link: https://bit.ly/rdmactivity)
 
 <br>
+---
 
 <b>Here is a breakdown of what we covered:</b>
 Proprietary file formats have limitations, like requiring specific software, that may make accessing the file content difficult in the future.
