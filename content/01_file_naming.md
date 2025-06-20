@@ -29,6 +29,7 @@ Looking for a cheat sheet? Check out our <a href="https://osf.io/pfweq" target="
 ---
 
 <b>Warm up!</b>  
+{: .label .label-green }
 
 What do you think about the following file names?
 - 10_data 2.txt 
