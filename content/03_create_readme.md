@@ -77,7 +77,7 @@ Every project is different, so consider which of the following applies to your p
 
 | **Element** | **Details** |
 |-------------|-------------|
-| **Information** | Include at least two contacts. This could be the principal investigator and a co-investigator or another author. Include names, associated institutions, institution email, and ORCID if available. |
+| **Information** | Include at least two contacts. This could be the principal investigator and a co-investigator or another author. Include names, associated institutions, institution emails, and ORCIDs if available. |
 | **Description** | Provide detailed context as much as possible – indicate what your project does and what your dataset contains. Give your README a descriptive title and include any dates that may be helpful, such as creation (both README and dataset), updates, data collection, etc. Using a standard date format, like [ISO 8601](http://www.w3.org/TR/NOTE-datetime) (YYYY-MM-DD or YYYYMMDD), is a good practice. |
 | **Methodology** | Provide information about your research protocols such as data collection, data processing and analysis, sampling, instruments, tools, and software (include version and any special requirements for installation and operation), other sources used, geographic information of data collection, any standards followed, etc. |
 | **Data and File Overview** | Describe the file structure of the dataset, such as the files or folders applicable for dataset organization and the relationship between the files. You should also indicate any other file relationships, such as if there are multiples, different versions, or modifications, and explain why if necessary. |
