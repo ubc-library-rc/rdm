@@ -127,7 +127,6 @@ How did you convert the Excel file into a CSV file? What did you notice?
 [//]: # (activity link: https://bit.ly/rdmactivity)
 
 <br>
----
 
 <b>Here is a breakdown of what we covered:</b>
 Proprietary file formats have limitations, like requiring specific software, that may make accessing the file content difficult in the future.
