@@ -259,7 +259,7 @@ How did you structure your file names and why?
 [//]: # (activity link: https://bit.ly/rdmactivity)
 
 <br>
----
+
 <b>Here is a breakdown of what we covered:</b>
 File names should be machine-readable: use alphanumerical characters with snake or camel case, and don't have spaces or special characters. File names should also be human-readable: clear, concise, and follow a consistent naming method. Lastly, a good file naming convention helps with sorting and searching your files.
 {: .note}
