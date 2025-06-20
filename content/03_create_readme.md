@@ -42,6 +42,8 @@ Take a look at the project and try to answer the following:
 
 <p style="margin-bottom: 20px"></p>
 
+<img src="figures/person_thinking.png" width="200" style="margin-left:30px"/>
+
 [//]: # (activity link: https://bit.ly/rdmactivity)
 
 ---
@@ -73,13 +75,16 @@ Here are some best practices for data documentation you may consider:
   
 Every project is different, so consider which of the following applies to your project. <b>For example</b>, a software project will have different sections than an academic research project.
 
-* **Information**: Include at least two contacts. This could be the principal investigator and a co-investigator or another author. Include names, associated institutions, institution email, and ORCID if available.
-* **Description**: Provide detailed context as much as possible – indicate what your project does and what your dataset contains. Give your README a descriptive title and include any dates that may be helpful, such as creation (both README and dataset), updates, data collection, etc. Using a standard date format, like ISO 8601 (YYYY-MM-DD or YYYYMMDD), is a good practice. 
-* **Methodology**: Provide information about your research protocols such as data collection, data processing and analysis, sampling, instruments, tools, and software (include version and any special requirements for installation and operation), other sources used, geographic information of data collection, any standards followed, etc. 
-* **Data and File Overview**: Describe the file structure of the dataset, such as the files or folders applicable for dataset organization and the relationship between the files. You should also indicate any other file relationships, such as if there are multiples, different versions, or modifications, and explain why if necessary. 
-* **Data-Specific Information**: Define and describe any labels, codes, variables, abbreviations, and/or acronyms. Also, mention if any special formats are applicable. This can be repeated and modified for each dataset when appropriate. 
-* **Sharing and Access Information**: Indicate the appropriate licences for your project. Also mention any restrictions, permissions, and/or data confidentiality conditions. You may also wish to include relevant links to other supporting datasets, locations where to access the dataset, or publications that cite or use the dataset. 
-* **Acknowledgements**: Acknowledge your research team members, assistants, staff, and students who also had a contributive role in your project. Also include information on the funding support for your project, such as the name of the organization, grant name and number, fellowship name, awards, etc.  
+| **Element** | **Details** |
+|-------------|-------------|
+| **Information** | Include at least two contacts. This could be the principal investigator and a co-investigator or another author. Include names, associated institutions, institution email, and ORCID if available. |
+| **Description** | Provide detailed context as much as possible – indicate what your project does and what your dataset contains. Give your README a descriptive title and include any dates that may be helpful, such as creation (both README and dataset), updates, data collection, etc. Using a standard date format, like ISO 8601 (YYYY-MM-DD or YYYYMMDD), is a good practice. |
+| **Methodology** | Provide information about your research protocols such as data collection, data processing and analysis, sampling, instruments, tools, and software (include version and any special requirements for installation and operation), other sources used, geographic information of data collection, any standards followed, etc. |
+| **Data and File Overview** | Describe the file structure of the dataset, such as the files or folders applicable for dataset organization and the relationship between the files. You should also indicate any other file relationships, such as if there are multiples, different versions, or modifications, and explain why if necessary. |
+| **Data-Specific Information** | Define and describe any labels, codes, variables, abbreviations, and/or acronyms. Also, mention if any special formats are applicable. This can be repeated and modified for each dataset when appropriate. |
+| **Sharing and Access Information** | Indicate the appropriate licences for your project. Also mention any restrictions, permissions, and/or data confidentiality conditions. You may also wish to include relevant links to other supporting datasets, locations where to access the dataset, or publications that cite or use the dataset. |
+| **Acknowledgements** | Acknowledge your research team members, assistants, staff, and students who also had a contributive role in your project. Also include information on the funding support for your project, such as the name of the organization, grant name and number, fellowship name, awards, etc. |
+
 
 <p style="margin-bottom: 20px"></p>
 
