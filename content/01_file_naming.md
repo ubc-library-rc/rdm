@@ -53,33 +53,22 @@ Are these names better?
 
 We will see very shortly why effective naming conventions are a necessity!
 
-<p style="margin-bottom:60px"></p>
-
-
+<p style="margin-bottom: 20px"></p>
 ---
-
-
-<p style="margin-bottom: 60px"></p>
-
+<p style="margin-bottom: 30px"></p>
 
 # Follow these three principles!  &nbsp; <img src="figures/thumbs-up.png" align="center" width="45"/>
 {: .no_toc }
 
-
 <p style="margin-bottom: 25px"></p>
-
 
 *1*{: .circle .circle-blue} &nbsp;Machine-Readable
 
-
 *2*{: .circle .circle-red} &nbsp;Human-Readable 
-
 
 *3*{: .circle .circle-yellow} &nbsp;Supports Default Ordering 
 
-
 <br>
-
 
 ## *1*{: .circle .circle-blue} &nbsp; Machine-Readable 
 <img src="figures/machine-reading.png" width="200" style="margin-left:30px"/>
@@ -94,7 +83,6 @@ We will see very shortly why effective naming conventions are a necessity!
 - Be consistent with the chosen naming convention
 
 <p style="margin-bottom: 25px"></p>
-
 
 ### For files to be machine-readable, use the following:
 {: .no_toc }
@@ -119,13 +107,11 @@ We will see very shortly why effective naming conventions are a necessity!
 - The style you choose should be based on conventions adopted in a given project, organization, language, etc.
    - Example: R and Python use snake case, so file names and folder names should follow this convention
 
-
 ### Exercise 1
 {: .no_toc }
 {: .label .label-green }
 
 <p style="margin-bottom: 20px"></p>
-
 
 Let's improve these file names using what we've learned so far! Pick a file and rename it to make it more machine-readable. 
 
@@ -133,7 +119,6 @@ What did you change and why?
 
 <p style="margin-top:20px">
 <img src="figures/cakes-example.jpeg" width="600" style="margin-left:30px"/></p>
-
 
 [//]: # (activity link: https://bit.ly/rdmactivity)
 
@@ -187,7 +172,6 @@ ubc_application_letter.txt
 clean_data.py
 ```
 
-
 ## *3*{: .circle .circle-yellow} &nbsp; Supports Default Ordering 
 <p style="margin-top:20px">
 <img src="figures/comic.gif" width="200" style="margin-left:30px"/>
@@ -212,7 +196,6 @@ Sorting your files chronologically (having the date as the first name element) m
 2024-02-01_subject_1_results.xlsx
 2024-02-01_subject_2_results.xlsx
 ```
-
 
 ### Logical order
 {: .no_toc }
@@ -239,7 +222,6 @@ Adding a version to the file name should be the last element.
 Use at least 2 digits with a leading zero for the version number, and/or indicate the version type.
    - Version number examples: V01, V03, etc.
    - Version type examples: _raw, _processed, _composite, etc.
- 
 
 ### Exercise 2
 {: .no_toc }
@@ -270,10 +252,7 @@ File names should be machine-readable: use alphanumerical characters with snake 
 
 <br>
 
-
 ---
-
-
 
 
 ### Sources
