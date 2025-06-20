@@ -55,11 +55,6 @@ We will see very shortly why effective naming conventions are a necessity!
 <p style="margin-bottom:60px"></p>
 
 
-
-
-
-
-
 ---
 
 
@@ -82,8 +77,6 @@ We will see very shortly why effective naming conventions are a necessity!
 *3*{: .circle .circle-yellow} &nbsp;Supports Default Ordering 
 
 
-
-
 <br>
 
 
@@ -99,35 +92,25 @@ We will see very shortly why effective naming conventions are a necessity!
 - Characters in file names are handled correctly by all computer systems
 - Be consistent with the chosen naming convention
 
-
 <p style="margin-bottom: 25px"></p>
 
 
 ### For files to be machine-readable, use the following:
 {: .no_toc }
 
-
 <p style="margin-bottom: 20px"></p>
 
-
 - Alphanumeric characters: Latin alphabetic characters and Arabic numerals 
-
 - Snake case: use _ <b>underscores</b> to separate words and numbers
    -  `this_is_snake_case`
-  
 - Camel case: use <b>capitalization</b> to separate words and numbers 
    - `thisIsCamelCase`
-
 - Hyphens: use – <b>hyphens</b> to separate words and numbers
    - `this-is-using-hyphens`
-
 - Avoid spaces and other special characters, such as: ~ ! @ # $ % ^ & * ( ) ` ; : < > ? . , [ ] { } ' " \|
    - Certain special characters are used by operating systems to perform tasks. This makes it difficult for the machine to read the file names
-
 - Be mindful of case sensitivity
    - Some operating systems may search for file names of a certain case
-
-
 
 ### Be consistent:
 {: .no_toc }
@@ -138,7 +121,7 @@ We will see very shortly why effective naming conventions are a necessity!
 
 ### Exercise 1
 {: .no_toc }
-
+{: .label .label-green }
 
 <p style="margin-bottom: 20px"></p>
 
@@ -152,8 +135,6 @@ What did you change and why?
 
 
 [//]: # (activity link: https://bit.ly/rdmactivity)
-
-
 
 
 ## *2*{: .circle .circle-red} &nbsp; Human-Readable
@@ -206,8 +187,6 @@ clean_data.py
 ```
 
 
-
-
 ## *3*{: .circle .circle-yellow} &nbsp; Supports Default Ordering 
 <p style="margin-top:20px">
 <img src="figures/comic.gif" width="200" style="margin-left:30px"/>
@@ -252,7 +231,6 @@ helper01_load_variables.R
 helper02_functions.R
 ```
 
-
 ### Versioning and Version Types
 {: .no_toc }
 Adding a version to the file name should be the last element.
@@ -262,10 +240,9 @@ Use at least 2 digits with a leading zero for the version number, and/or indicat
    - Version type examples: _raw, _processed, _composite, etc.
  
 
-
 ### Exercise 2
 {: .no_toc }
-
+{: .label .label-green }
 <p style="margin-bottom: 20px"></p>
 
 Your lab has a spectrometer that measures thermal emissions once a day for a year for your experiment. There are three people who take that measurement in the lab.
@@ -281,7 +258,7 @@ How did you structure your file names and why?
 [//]: # (activity link: https://bit.ly/rdmactivity)
 
 <br>
-
+---
 <b>Here is a breakdown of what we covered:</b>
 File names should be machine-readable: use alphanumerical characters with snake or camel case, and don't have spaces or special characters. File names should also be human-readable: clear, concise, and follow a consistent naming method. Lastly, a good file naming convention helps with sorting and searching your files.
 {: .note}
