@@ -6,7 +6,7 @@ nav_order: 6
 # What is a README?
 {: .no_toc}
 
-A README file provides information about a project and helps ensure that data can be correctly interpreted by you and others when sharing or publishing data. It contains information commonly required to understand the dataset, its contents, provenance, licensing and how to interact with it. This helps maximize your dataset's usability and long-term preservation potential. A README file is generally named ```README``` and is typically a text or markdown file.
+A README file provides information about a project and helps ensure that data can be correctly interpreted by you and others when sharing or publishing datasets. It contains information commonly required to understand the dataset, its contents, provenance, licensing and how to interact with it. This helps maximize your dataset's usability and long-term preservation potential. A README file is generally named ```README``` and is typically a text or markdown file.
 
 In short, a README is a portable, durable way to inform other researchers about how to navigate, collaborate, or extend your project. Having them alongside your project(s) is good practice, especially when depositing data in a repository. 
 
@@ -126,8 +126,7 @@ READMEs are important documents containing information about your project's data
 - Cornell University. Guide to writing "readme" style metadata. <https://bit.ly/2W4t9xa>
 - The Graduate Institute Geneva. Readme.txt. <https://bit.ly/3aH6AUx>
 - GitHub Basic Writing and Formatting Syntax. <https://bit.ly/2y7c4dZ>
-- <https://pixabay.com>
-- <https://www.pexels.com>
+
 
 ---
 
