@@ -236,8 +236,7 @@ Directory structures are crucial for file access, retrieval, storage, and resear
 {: .no_toc }
 - New York University Libraries. <https://guides.nyu.edu/data_management/file-org>
 - Copeland, C., Pither, J., Vis-Dunbar, M. (2021). Procedures and Guidelines. <https://ubco-biology.github.io/Procedures-and-Guidelines/>
-- <https://pixabay.com>
-- <https://www.pexels.com>
+
 
 ---
 
