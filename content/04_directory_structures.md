@@ -4,20 +4,14 @@ title: Directory Structures
 nav_order: 8
 ---
 
-# Why are structured directories important?
+# Why Are Structured Directories Important?
 {: .no_toc }
 
 <p style="margin-top:15px"></p>
 
-Now, let’s pretend that you store everything on your computer in one single folder – some of us are probably known to use our desktops for this. Imagine how long it would take you to find data you collected on a specific day a few years ago. 
+Let's pretend you store everything on your computer in one folder. Imagine how long it would take to find data you collected on a specific day a few years ago. Instead of keeping every document in a single place, files are often organized using directories or folder structures. 
 
-<p style="margin-top:25px;margin-left:30px">
-<img src="figures/folders.png" width="300"/>
-</p>
-
-<p style="margin-bottom:25px"></p>
-
-Instead of keeping every document in a single place, we often organize our files using directory or folder structures. This helps us save precious time and improve our productivity. Organizing folders can also help us collaborate more effectively by ensuring that everyone can find the files they need.
+A good, consistent folder structure benefits you and others by making item access, retrieval, and storage more efficient. This ultimately saves time and improves productivity. Folder structures enable the research process to be more transparent and collaborative by ensuring everyone can find the files they need. 
 
 <p style="margin-bottom: 20px"></p>
 
@@ -25,7 +19,6 @@ Looking for a cheat sheet? Check out our <a href="https://osf.io/5br6a" target="
 {: .note}
 
 <br>
-
 
 <details open markdown="block">
   <summary>
@@ -36,21 +29,49 @@ Looking for a cheat sheet? Check out our <a href="https://osf.io/5br6a" target="
 {:toc}
 </details>
 
+<img src="figures/folder_organizing.png" width="400" style="margin-left:30px"/>
 
 <p style="margin-bottom: 30px"></p>
 
-<img src="figures/folder_organizing.png" width="500" style="margin-left:30px"/>
-
-<p style="margin-bottom: 50px"></p>
-
 ---
 
+# Organizing Your Directory Structure
+
+There are several things to consider when deciding on the organization (structure) of your project directory. This includes the names, structure, and relationships of the files and folders. We recommend starting simple and making modifications along the way. 
+
+Your directory should delineate segments of your projects to improve searchability. Some possible categories are project, time, location, and file type. 
+
+You should have a good balance between the depth and shallowness of your folder structure. 
+  * <b>Too deep:</b> too many clicks before you get to the file you need. A file path with too many folders to get through can max out the character limit
+    * For example:
+      * The length of a OneDrive root folder, like C:\users\meganb\OneDrive - Contoso, in addition to the relative path of the file (up to 400 characters), cannot exceed 520 characters [(Microsoft 2023)](https://support.microsoft.com/en-us/office/restrictions-and-limitations-in-onedrive-and-sharepoint-64883a5d-228e-48f5-b3d2-eb39e07630fa)
+      * In the Windows API, the maximum length for a path is 260 characters [(Microsoft 2024)](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=registry)
+    * Would you like to click through all these folders for a CSV file? `Z:\1232\New_Projects_shared\2000\2000_0889\site_a_name of the site payment\payment\year_4\payment_year4.csv` (by the way, is this good file-folder naming?)
+  * <b>Too shallow:</b> too many different subdirectories under your root directory. This can also result in many clicks (and subsequent back clicks) before finding the correct file
+
+File and folder names should reflect what they contain and follow good naming practices:
+* Machine-readable
+* Human-readable
+* See our workshop on [file naming](https://ubc-library-rc.github.io/rdm/content/01_file_naming.html) for more information 
+
+Lastly, when working with a team, consider implementing restrictions on sensitive files, such as making some files read-only. 
+
+  ```
+  -rwxr-xr-x    1 andrewli  staff   7113 22 Jul 11:56 01_file_naming.md
+  -rwxr-xr-x    1 andrewli  staff   6390 22 Jul 11:57 02_file_formats.md
+  -rwxr-xr-x    1 andrewli  staff   6664 11 Jul 09:46 03_create_readme.md
+  -r--r-xr-x    1 andrewli  staff   6664 11 Jul 09:46 VERY_IMPORTANT_DO_NOT_EDIT.md
+  ```
+
+<br>
 
 # Directory Hierarchies
   
+You should establish a folder hierarchy that aligns with your project. There is no one-size-fits-all model, so make an organizational system and hierarchy that works for you and anyone else who may be accessing the project, like your research team members or other collaborators. Deciding how to hierarchically organize depends on the nature of the project, but in general, you should put the most important item(s) first. 
+
 A typical directory structure is composed of a **root directory** (i.e. top-level folder), **subdirectories** (i.e. subfolders), and relevant **files**.
 
-Usually, we separate data, analysis, and reports into stand-alone subdirectories under the project's root directory. The structure looks like this:   
+Usually, we separate data, analysis, and reports into stand-alone subdirectories under the project's root directory. For example, the structure typically looks like this:   
 
 ```
 ├── Project-Folder/
@@ -64,47 +85,20 @@ Usually, we separate data, analysis, and reports into stand-alone subdirectories
 |   |   ├── File-2
 ```
 
-
 Directory names are frequently followed by a slash ```/``` to differentiate them from files. 
 {: .note}
 
-Question
+Question:
 {: .label .label-green}
 <p style="margin-bottom: 10px"></p>
 Which ones in this example are root directories? What about subdirectories?
 
 <br>
 
-# Organizing your directory structure
-
-There are several things to consider when you are deciding on the organization (structure) of your project directory. 
-
-* Consider organizing your directory such that you clearly delineate segments of your projects to improve searchability. 
-
-* You need to strike a balance between your folders being too deep or too shallow.
-    
-    * Too deep: this will lead to many clicks before your get to the file you need. Further, a file path that has too many folders can max out the character limit.
-
-      * The length of the OneDrive root folder (e.g. C:\users\meganb\OneDrive - Contoso) + the relative path of the file (up to 400 chars) cannot be more than 520 characters [(Microsoft 2023)](https://support.microsoft.com/en-us/office/restrictions-and-limitations-in-onedrive-and-sharepoint-64883a5d-228e-48f5-b3d2-eb39e07630fa)
-      * In the Windows API, the maximum length for a path is 260 characters [(Microsoft 2024)](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=registry)
-      * Would you like to click through all these folders for a csv file? `Z:\1232\New_Projects_shared\2000\2000_0889\site_a_name of the site payment\payment\year_4\payment_year4.csv` (by the way, is this good folder/file naming?)
-
-    * Too shallow: this will lead to too many different subdirectories under your root directory. Again, this can lead to many clicks (and subsequent back clicks) before finding the correct file. 
-* When working with a team, consider implementing limitations to sensitive files.
-
-  * Consider making some files "read only"
-
-  ```
-  -rwxr-xr-x    1 andrewli  staff   7113 22 Jul 11:56 01_file_naming.md
-  -rwxr-xr-x    1 andrewli  staff   6390 22 Jul 11:57 02_file_formats.md
-  -rwxr-xr-x    1 andrewli  staff   6664 11 Jul 09:46 03_create_readme.md
-  -r--r-xr-x    1 andrewli  staff   6664 11 Jul 09:46 VERY_IMPORTANT_DO_NOT_EDIT.md
-  ```
-
-* Be consistent with how you organize your folders and files! It becomes confusing if you mix this organization. Choose what makes sense for your project or stick to what the team/lab has already implemented. Noting your decisions in a README file or a Data Manual makes a big difference!
+# Directory Structure Examples
 
 ```
-This example folder is organized such that the different experiments are the top folders
+Example 1: This example folder is organized such that the different experiments are the top folders
 
 example_project 
 ├─ experiment_1
@@ -117,9 +111,8 @@ example_project
    └─ ...
 ```
 
-
 ```
-This example folder is organized such that the different components are the top folders 
+Example 2: This example folder is organized such that the different components are the top folders 
 
 another_example
 ├─ data
@@ -132,32 +125,24 @@ another_example
    └─ ...
 ```
 
-* Folder naming should follow good naming practices:
-  * Machine readable
-  * Human readable
-  * Check out our workshop on [file naming](https://ubc-library-rc.github.io/rdm/content/01_file_naming.html) for more information. 
-
 <br>
 
 # README Files and Data Dictionaries 
 
-README files and Data Dictionaries - containing a brief description of the major folder contents, naming conventions, and data structure - are critical for <b>transparency and reproducibility</b> because they allow others to easily understand the contents of your directory and data without needing to ask the creator. This is especially helpful when working with a group or sharing directories with others.
-
-Click <a href="https://ubc-library-rc.github.io/rdm/content/03_create_readme.html#how-do-i-create-a-readme" target="_blank">here</a> to review how to create a README file!
-{: .note}
+README files and data dictionaries are critical for transparency and reproducibility because they contain a brief description of the major folder contents, naming conventions, and data structure. They allow for an easier understanding of the contents of your directory and data without needing to ask the author(s). This is especially helpful when working with a group or sharing directories with others. See our workshops on [README files](https://ubc-library-rc.github.io/rdm/content/03_create_readme.html) and [data dictionaries](https://ubc-library-rc.github.io/rdm/content/07_data_dictionary.html). 
 
 ## Two types of files needed to store all metadata
 
-1. ```README``` file which resides in our **root directory** and elaborates on the contents of our folder structure, discusses how, where, and who did the data collection.
-2. ```DATA-DICTIONARY``` file that resides in our **data directory** and elaborates on how our data variables are defined and described.
+1. ```README``` file: resides in the **root directory** and elaborates on the contents and decision-making of the folder structure. It also discusses how, where, and who conducted the data collection.
+2. ```DATA-DICTIONARY``` file: resides in the **data directory** and elaborates on how the data variables are defined and described.
 
-The structure looks like this:
+For example, the directory structure may look like this:
 
 ```
 ├── Project-Folder/
-|   ├── README.md                  <--
+|   ├── README.md                  <----
 |   ├── Experiment-Data/
-|   |   ├── DATA-DICTIONARY.md     <--
+|   |   ├── DATA-DICTIONARY.md     <----
 |   |   ├── File-1
 |   |   ├── File-2
 |   ├── Experiment-Analysis/
@@ -167,32 +152,19 @@ The structure looks like this:
 |   |   ├── File-2
 ```
 
+```README``` files and ```DATA-DICTIONARIES``` should be the first things to appear when looking at any directory or folder, as these are your guides to its contents. We recommend naming them in all capital letters to stand out. 
 
-<br>
-
-### Naming
-{: .no_toc}
-```Readme files``` and ```data dictionaries``` should be the first things you look at when looking at any directory or folder, as this is your guide to its contents. Therefore, these files should be in all caps, so they really stand out.
-
-
-### Format
-{: .no_toc}
-```Readme files``` and ```data dictionaries``` should be written in <b>plain text</b>, for this will ensure that the files describing your project can be opened on any computer. You will often see readme files called ```README.txt``` or ```README.md```.
+```README``` files and ```DATA-DICTIONARIES``` should be written in a plain text format. This will ensure that these files won't rely on special proprietary software and can be opened on any computer. You will often see readme files called ```README.txt``` or ```README.md``` because they're commonly written in TXT or Markdown plain text formats.
 
 <p style="margin-bottom: 30px"></p>
 
-<br>
-
-## Exercise
+## Exercise 1
+{: .label .label-green}
 {: .no_toc}
 
-<p style="margin-bottom: 30px"></p>
+<p style="margin-bottom: 10px"></p>
 
-<img src="figures/folders2.png" width="200" style="margin-left:30px"/>
-
-<p style="margin-bottom: 30px"></p>
-
-Say you’re in BIOL 116 and you’re working on your research project. You have files that looked like the following before submitting our final assignment:
+You’re in the UBC course BIOL 116, and you’re working on your research project. You have files that looked like the following before submitting the final assignment:
 
 ```
 Pither_20210921_BIOL116RProject_ph-data.csv
@@ -209,10 +181,7 @@ Pither_BIOL116RProject_Lab-report_V2.docx
 Pither_BIOL116RProject_Lab-report_V3.docx
 ```
 
-
-
-Let's put them into structured folders! Please copy the template and use it for your exercise:
-
+Use the provided tools below to put the files into an organized folder structure. You can copy this template and use it for this exercise:
 ```
 ├── example/
 |   ├── example/           
@@ -220,8 +189,7 @@ Let's put them into structured folders! Please copy the template and use it for 
 
 ```
 
-Feel free to refer to the example that we saw earlier:
-
+You can also refer to the example that we saw earlier:
 ```
 ├── Project-Folder/
 |   ├── _README.md                  
@@ -236,31 +204,33 @@ Feel free to refer to the example that we saw earlier:
 |   |   ├── File-2
 ```
 
+<p style="margin-bottom: 30px"></p>
+
 [//]: # (activity link: https://bit.ly/rdmactivity)
 
-## Tools 
-{: .no_toc}
+## Suggested Design Tools 
 
-There are some useful tools to help you design your folder structures:
+Here are some useful tools to help you plan and design your folder structures:
+* [Project Tree Generator](https://woochanleee.github.io/project-tree-generator/): You can paste your GitHub repository URL to generate a project tree or create it from scratch
+* [Tree Generator by Nathan](https://t.co/AQzht2i703): Design a diagram for potential file tree with more options
+* In your terminal, you can use `tree` to generate a tree-like structure. Windows and Linux have this function, but you will need to install it for Mac
 
-* You paste a link to your GitHub repo URL to generate a project tree or create it from scratch: [https://woochanleee.github.io/project-tree-generator/](https://woochanleee.github.io/project-tree-generator/)
-
-* Design a diagram for potential file tree with more options: [https://t.co/AQzht2i703](https://t.co/AQzht2i703)
-
-* In your terminal you can use `tree` to generate a tree like structure. Windows and Linux have this function, but you will need to install for Mac.
+<img src="figures/folders2.png" width="100" style="margin-left:30px"/>
 
 <br>
+
+<b>Here is a breakdown of what we covered:</b>
+Directory structures are crucial for file access, retrieval, storage, and research transparency. Follow a consistent organizational structure that makes sense for your project and research team. Use clear naming, logical structuring, and consistent relationships between files and folders. Aim for a balanced folder structure — not too deep or too shallow. Lastly, README files and data dictionaries should be placed in the root directory or at the top of a subdirectory because they contain important guiding information. 
+{: .note}
 
 # Congrats!
 {: .no_toc }
 
-You know how to create structured directories for files now! Go ahead and organize your important personal or team files! 
-
+Now you know how to create structured directories for files. Go ahead and organize your important personal or team files! 
 
 <br>
 
 ---
-
 
 ### Sources
 {: .no_toc }
