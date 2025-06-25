@@ -226,7 +226,7 @@ Directory structures are crucial for file access, retrieval, storage, and resear
 # Congrats!
 {: .no_toc }
 
-Now you know how to create structured directories for files. Go ahead and organize your important personal or team files! 
+*Hooray!* Now you know how to create structured directories for files. Go ahead and organize your important personal or team files! 
 
 <br>
 
