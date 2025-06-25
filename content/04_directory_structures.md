@@ -208,7 +208,7 @@ You can also refer to the example that we saw earlier:
 
 [//]: # (activity link: https://bit.ly/rdmactivity)
 
-## Suggested Design Tools 
+# Suggested Design Tools 
 
 Here are some useful tools to help you plan and design your folder structures:
 * [Project Tree Generator](https://woochanleee.github.io/project-tree-generator/): You can paste your GitHub repository URL to generate a project tree or create it from scratch
