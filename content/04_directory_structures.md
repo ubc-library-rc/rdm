@@ -11,7 +11,7 @@ nav_order: 8
 
 Let's pretend you store everything on your computer in one folder. Imagine how long it would take to find data you collected on a specific day a few years ago. Instead of keeping every document in a single place, files are often organized using directories or folder structures. 
 
-A good, consistent folder structure benefits you and others by making item access, retrieval, and storage more efficient. This ultimately saves time and improves productivity. Folder structures enable the research process to be more transparent and collaborative by ensuring everyone can find the files they need. 
+A good, consistent folder structure benefits you and others by making item access, retrieval, and storage more efficient. This ultimately saves time and improves productivity. Folder structures make the research process more transparent and collaborative by ensuring everyone can find the files they need. 
 
 <p style="margin-bottom: 20px"></p>
 
@@ -54,14 +54,7 @@ File and folder names should reflect what they contain and follow good naming pr
 * Human-readable
 * See our workshop on [file naming](https://ubc-library-rc.github.io/rdm/content/01_file_naming.html) for more information 
 
-Lastly, when working with a team, consider implementing restrictions on sensitive files, such as making some files read-only. 
-
-  ```
-  -rwxr-xr-x    1 andrewli  staff   7113 22 Jul 11:56 01_file_naming.md
-  -rwxr-xr-x    1 andrewli  staff   6390 22 Jul 11:57 02_file_formats.md
-  -rwxr-xr-x    1 andrewli  staff   6664 11 Jul 09:46 03_create_readme.md
-  -r--r-xr-x    1 andrewli  staff   6664 11 Jul 09:46 VERY_IMPORTANT_DO_NOT_EDIT.md
-  ```
+Lastly, when working with a team, consider implementing restrictions on sensitive files. For example, make your raw data read-only and work only with its derivatives. In this way, your raw data is protected and can be referred back to if re-analysis is necessary. 
 
 <br>
 
@@ -84,9 +77,6 @@ Usually, we separate data, analysis, and reports into stand-alone subdirectories
 |   |   ├── File-1
 |   |   ├── File-2
 ```
-
-Directory names are frequently followed by a slash ```/``` to differentiate them from files. 
-{: .note}
 
 Question:
 {: .label .label-green}
@@ -134,7 +124,7 @@ README files and data dictionaries are critical for transparency and reproducibi
 ## Two types of files needed to store all metadata
 
 1. ```README``` file: resides in the **root directory** and elaborates on the contents and decision-making of the folder structure. It also discusses how, where, and who conducted the data collection.
-2. ```DATA-DICTIONARY``` file: resides in the **data directory** and elaborates on how the data variables are defined and described.
+2. ```DATA-DICTIONARY``` file: resides **where the data files are placed** and elaborates on how the data variables are defined and described.
 
 For example, the directory structure may look like this:
 
@@ -220,7 +210,7 @@ Here are some useful tools to help you plan and design your folder structures:
 <br>
 
 <b>Here is a breakdown of what we covered:</b>
-Directory structures are crucial for file access, retrieval, storage, and research transparency. Follow a consistent organizational structure that makes sense for your project and research team. Use clear naming, logical structuring, and consistent relationships between files and folders. Aim for a balanced folder structure — not too deep or too shallow. Lastly, README files and data dictionaries should be placed in the root directory or at the top of a subdirectory because they contain important guiding information. 
+Directory structures are crucial for file access, retrieval, storage, and research transparency. Follow a consistent organizational structure that makes sense for your project and research team. Use clear naming, logical structuring, and consistent relationships between files and folders. Aim for a balanced folder structure — not too deep or too shallow. Lastly, README files should be placed in the root directory, and data dictionaries should be placed where the data is found because they contain important guiding information. 
 {: .note}
 
 # Congrats!
@@ -234,8 +224,12 @@ Directory structures are crucial for file access, retrieval, storage, and resear
 
 ### Sources
 {: .no_toc }
-- New York University Libraries. <https://guides.nyu.edu/data_management/file-org>
 - Copeland, C., Pither, J., Vis-Dunbar, M. (2021). Procedures and Guidelines. <https://ubco-biology.github.io/Procedures-and-Guidelines/>
+- Harvard Biomedical Data Management. Directory Structure. <https://datamanagement.hms.harvard.edu/plan-design/directory-structure> 
+- MIT Broad Research Communication Lab. File Structure. <https://mitcommlab.mit.edu/broad/commkit/file-structure/>
+- MIT Libraries. File Naming and Folder Hierarchy. <https://libraries.mit.edu/data-management/store/organize/>
+- New York University Libraries. File Organization. <https://guides.nyu.edu/data_management/file-org>
+- UC Davis Library. Directory Structures. <https://guides.library.ucdavis.edu/data-management/directories>
 
 
 ---
