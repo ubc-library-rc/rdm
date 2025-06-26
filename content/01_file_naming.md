@@ -257,11 +257,12 @@ File names should be machine-readable: use alphanumerical characters with snake 
 
 ### Sources
 {: .no_toc }
-- <https://datacarpentry.org/rr-organization1/01-file-naming/index.html>
-- <https://authors.library.caltech.edu/103626/1/FileNamingConventionWorksheet_Caltech.pdf>
-- <http://www.exadox.com/en/articles/file-naming-convention-ten-rules-best-practice>
-- <https://datamanagement.hms.harvard.edu/collect/file-naming-conventions>
-- <https://pixabay.com>
+- Caltech Library. File Naming Convention Worksheet. <https://authors.library.caltech.edu/103626/1/FileNamingConventionWorksheet_Caltech.pdf>
+- Data Carpentry. File Organization: Naming. <https://datacarpentry.org/rr-organization1/01-file-naming/index.html>
+- Exadox. Folder and File Naming Convention - 10 Rules for Best Practice. <http://www.exadox.com/en/articles/file-naming-convention-ten-rules-best-practice>
+- Harvard Biomedical Data Management. File Naming Conventions. <https://datamanagement.hms.harvard.edu/collect/file-naming-conventions>
+- Harvard Library Guides. File Naming Best Practices. <https://guides.library.harvard.edu/c.php?g=1033502&p=7491825>
+- Stanford University Libraries. Data Best Practices and Case Studies. <https://guides.library.stanford.edu/data-best-practices>
 
 
 ---
