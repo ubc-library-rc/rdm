@@ -122,11 +122,11 @@ READMEs are important documents containing information about your project's data
 
 ### Sources
 {: .no_toc }
-- UBC Library DataGuide. <https://bit.ly/3HtrzM8>
-- Cornell University. Guide to writing "readme" style metadata. <https://bit.ly/2W4t9xa>
-- The Graduate Institute Geneva. Readme.txt. <https://bit.ly/3aH6AUx>
-- GitHub Basic Writing and Formatting Syntax. <https://bit.ly/2y7c4dZ>
-
+- Cornell Data Services. Writing READMEs for Research Data. <https://data.research.cornell.edu/data-management/sharing/readme/>
+- Harvard Biomedical Data Management. README Files. <https://datamanagement.hms.harvard.edu/collect-analyze/documentation-metadata/readme-files>
+- Princeton Research Data Service. READMEs for Research Data. <https://bit.ly/4lv23t3>
+- The Geneva Graduate Institute. README.txt. <https://libguides.graduateinstitute.ch/rdm/readme>
+- UBC Library. Research Data Management Data Guide. <https://bit.ly/3HtrzM8>
 
 ---
 
