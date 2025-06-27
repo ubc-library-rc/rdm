@@ -145,12 +145,13 @@ Open file formats are highly recommended because they're sustainable and preserv
 
 ### Sources
 {: .no_toc }
-- <https://lib.guides.umbc.edu/c.php?g=728911&p=5872066>
-- <https://guides.nyu.edu/data_management/file-formats>
-- <https://www.library.northwestern.edu/about/administration/policies/file-format-recommendations.html>
-- <https://www.loc.gov/preservation/resources/rfs>
-- <https://pixabay.com>
-- <https://www.pexels.com>
+- Duke University Libraries. File Formats for Preservation and Reuse. <https://guides.library.duke.edu/c.php?g=633433&p=4429351>
+- Library of Congress. Recommended Formats Statement. <https://www.loc.gov/preservation/resources/rfs>
+- MIT Libraries. File Formats for Long-Term Access. <https://libraries.mit.edu/data-management/store/formats/>
+- New York University Libraries. File Format Selection. <https://guides.nyu.edu/data_management/file-formats>
+- Northwestern Libraries. File Format Recommendations. <https://www.library.northwestern.edu/about/administration/policies/file-format-recommendations.html>
+- Stanford University Libraries. Data Best Practices and Case Studies. <https://guides.library.stanford.edu/data-best-practices/format-files> 
+- UMBC. Non-Proprietary File Formats. <https://lib.guides.umbc.edu/c.php?g=728911&p=5872066>
 
 ---
 
