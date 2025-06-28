@@ -6,8 +6,6 @@ nav_order: 4
 # Why is File Naming Important?
 {: .no_toc }
 
-
-<p style="margin-top:20px;margin-bottom:25px">
 Creating a well-organized hierarchy of files with clear naming conventions is an important part of improving your research process. This is especially important if you are working with large datasets and complex output files, or coordinating with multiple people across multiple institutions.
 
 There are many ways to structure your folders, and multiple naming conventions you can use. The key is <b>consistency</b>. Make your file names descriptive, and include information about dates and versioning. The best practice is to consult with your lab or with your co-workers to develop a naming schema that everyone is willing to follow consistently.
@@ -29,7 +27,6 @@ Looking for a cheat sheet? Check out our <a href="https://osf.io/pfweq" target="
 
 Warm-Up
 {: .label .label-green }
-{: .no_toc }
 What do you think about the following file names?
 - 10_data 2.txt 
 - figure 1.png 
@@ -41,8 +38,6 @@ Are these names better?
 - 003_raw-data_2022-07-09.txt
 - fig01_scatterplot-talk-length-vs-interest.png
 - 20220709_interview-script_v01.docx
-
-<p style="margin-bottom: 25px"></p>
  
 This is what happens when you do not have effective naming conventions:
 <img src="figures/file_names.png" width="200" style="margin-left:30px"/>
