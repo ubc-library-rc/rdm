@@ -92,7 +92,7 @@ Let's improve these file names using what we've learned so far! Pick a file and 
 
 What did you change and why?
 
-<img src="figures/cakes-example.jpeg" width="600" style="margin-left:30px"/></p>
+<img src="figures/cakes-example.jpeg" width="600" style="margin-left:30px"/>
 
 [//]: # (activity link: https://bit.ly/rdmactivity)
 
