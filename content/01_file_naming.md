@@ -3,14 +3,14 @@ layout: default
 title: File Naming
 nav_order: 4
 ---
-# Why is file naming important?
+# Why is File Naming Important?
 {: .no_toc }
 
 
 <p style="margin-top:20px;margin-bottom:25px">
-Creating a well-organized hierarchy of files with clear naming conventions is an important part of improving your research process. This is especially important if you are working with large data sets and complex output files or coordinating with multiple people at multiple institutions. There are many ways to structure your folders, and multiple naming conventions you can use. The key is <b>consistency</b>. Make your file names descriptive, and include information about dates and versioning. The best practice is to consult with your lab or with your co-workers to develop a naming schema that everyone is willing to follow consistently.
-</p>
+Creating a well-organized hierarchy of files with clear naming conventions is an important part of improving your research process. This is especially important if you are working with large datasets and complex output files, or coordinating with multiple people across multiple institutions.
 
+There are many ways to structure your folders, and multiple naming conventions you can use. The key is <b>consistency</b>. Make your file names descriptive, and include information about dates and versioning. The best practice is to consult with your lab or with your co-workers to develop a naming schema that everyone is willing to follow consistently.
 
 Looking for a cheat sheet? Check out our <a href="https://osf.io/pfweq" target="_blank">one-pager</a>!
 {: .note}
@@ -25,19 +25,16 @@ Looking for a cheat sheet? Check out our <a href="https://osf.io/pfweq" target="
 {:toc}
 </details>
 
-
 ---
 
-<b>Warm up!</b>  
+Warm-Up
 {: .label .label-green }
-
+{: .no_toc }
 What do you think about the following file names?
 - 10_data 2.txt 
 - figure 1.png 
 - final revision.docx
 - Lily's schedule&plan 2022Jul9.xlsx
-
-<p style="margin-bottom: 40px"></p>
 
 Are these names better? 
 - better-filenames.txt
@@ -45,50 +42,34 @@ Are these names better?
 - fig01_scatterplot-talk-length-vs-interest.png
 - 20220709_interview-script_v01.docx
 
-<p style="margin-bottom:40px"></p>
+<p style="margin-bottom: 25px"></p>
  
-<p>This is what happens when you do not have effective naming conventions:
-</p>
+This is what happens when you do not have effective naming conventions:
 <img src="figures/file_names.png" width="200" style="margin-left:30px"/>
 
 We will see very shortly why effective naming conventions are a necessity!
 
-<p style="margin-bottom: 20px"></p>
 ---
 <p style="margin-bottom: 30px"></p>
 
-# Follow these three principles!  &nbsp; <img src="figures/thumbs-up.png" align="center" width="45"/>
+# Follow These Three Principles!  &nbsp; <img src="figures/thumbs-up.png" align="center" width="45"/>
 {: .no_toc }
-
-<p style="margin-bottom: 25px"></p>
-
 *1*{: .circle .circle-blue} &nbsp;Machine-Readable
-
 *2*{: .circle .circle-red} &nbsp;Human-Readable 
-
 *3*{: .circle .circle-yellow} &nbsp;Supports Default Ordering 
 
-<br>
+--- 
 
 ## *1*{: .circle .circle-blue} &nbsp; Machine-Readable 
 <img src="figures/machine-reading.png" width="200" style="margin-left:30px"/>
-
-<p style="margin-top:20px;margin-bottom:20px">
-
-</p>
 
 ### Goals:
 {: .no_toc }
 - Characters in file names are handled correctly by all computer systems
 - Be consistent with the chosen naming convention
 
-<p style="margin-bottom: 25px"></p>
-
-### For files to be machine-readable, use the following:
+### For files to be machine-readable, consider the following:
 {: .no_toc }
-
-<p style="margin-bottom: 20px"></p>
-
 - Alphanumeric characters: Latin alphabetic characters and Arabic numerals 
 - Snake case: use _ <b>underscores</b> to separate words and numbers
    -  `this_is_snake_case`
@@ -98,36 +79,29 @@ We will see very shortly why effective naming conventions are a necessity!
    - `this-is-using-hyphens`
 - Avoid spaces and other special characters, such as: ~ ! @ # $ % ^ & * ( ) ` ; : < > ? . , [ ] { } ' " \|
    - Certain special characters are used by operating systems to perform tasks. This makes it difficult for the machine to read the file names
-- Be mindful of case sensitivity
-   - Some operating systems may search for file names of a certain case
+
+Also be mindful of case sensitivity, as some operating systems may search for file names of a certain case. 
 
 ### Be consistent:
 {: .no_toc }
-- The way you name your file should be consistent
-- The style you choose should be based on conventions adopted in a given project, organization, language, etc.
-   - Example: R and Python use snake case, so file names and folder names should follow this convention
+Make sure you're consistent in the way you name your files. The style you choose should be based on conventions adopted in a given project, organization, language, etc.
+- Example: R and Python use snake case, so file names and folder names should follow this convention
 
 ### Exercise 1
 {: .no_toc }
 {: .label .label-green }
 
-<p style="margin-bottom: 20px"></p>
-
 Let's improve these file names using what we've learned so far! Pick a file and rename it to make it more machine-readable. 
 
 What did you change and why?
 
-<p style="margin-top:20px">
 <img src="figures/cakes-example.jpeg" width="600" style="margin-left:30px"/></p>
 
 [//]: # (activity link: https://bit.ly/rdmactivity)
 
 
 ## *2*{: .circle .circle-red} &nbsp; Human-Readable
-
-<p style="margin-top:20px">
 <img src="figures/human-reading.jpg" width="200" style="margin-left:30px"/>
-</p>
 
 ### Goals: 
 {: .no_toc }
@@ -137,9 +111,6 @@ What did you change and why?
 
 ### For files to be human-readable, consider the following:
 {: .no_toc }
-
-<p style="margin-bottom: 20px"></p>
-
 - Have file names that follow a consistent naming method, and document this file naming method in your README file
     - Especially if acronyms, abbreviations, and/or codes are used, you should define what they mean in your README file
 - The file names should be concise but detailed enough so that they're still understandable to you and anyone else who has access
@@ -149,9 +120,7 @@ What did you change and why?
     - Example: you don't need to add "doc" to your file name of a text document
 - Overall, the amount of detail is up to you, but we recommend having 3 to 5 elements per file name
 
-<p style="margin-bottom:30px"></p>
-
-Examples:
+More examples:
 ```
 # not good
 a.txt
@@ -159,7 +128,7 @@ a.txt
 # too much information
 ubc_application_letter_for_institution_position_firstname_lastname_final_date.txt
 
-# okay but can be a more detailed
+# okay but can be a bit more detailed
 application.txt
 
 # not amazing, a bit too much detail
@@ -173,9 +142,7 @@ clean_data.py
 ```
 
 ## *3*{: .circle .circle-yellow} &nbsp; Supports Default Ordering 
-<p style="margin-top:20px">
 <img src="figures/comic.gif" width="200" style="margin-left:30px"/>
-</p>
 
 ### Goals:
 {: .no_toc }
@@ -184,10 +151,9 @@ clean_data.py
      - Logical order
 - Versioning and version types should be added as the last element
 
-
 ### Chronological order
 {: .no_toc }
-- Use <a href="http://www.w3.org/TR/NOTE-datetime" target="_blank">ISO 8601 standard</a>: <b>YYYYMMDD</b> or <b>YYYY-MM-DD</b> for consistent formatting and correct interpretation of dates
+Use <a href="http://www.w3.org/TR/NOTE-datetime" target="_blank">ISO 8601 standard</a>: <b>YYYYMMDD</b> or <b>YYYY-MM-DD</b> for consistent formatting and correct interpretation of dates.
 
 Sorting your files chronologically (having the date as the first name element) may look like this:
 ```
@@ -199,10 +165,10 @@ Sorting your files chronologically (having the date as the first name element) m
 
 ### Logical order
 {: .no_toc }
+When using a sequential numbering system, use <b>leading zeros</b> to make sure files sort in sequential order
+- Examples: 001, 002, 010, 011... 100, 101 ...
 
-- When using a sequential numbering system, use <b>leading zeros</b> to make sure files sort in sequential order
-   - Examples: 001, 002, 010, 011... 100,101 ...
-- We recommend ordering elements from general to specific to make searching easier
+We recommend ordering elements from general to specific to make searching easier.
 
 Sorting your files logically (using leading zeros) may look like this:
 ```
@@ -215,7 +181,7 @@ helper01_load_variables.R
 helper02_functions.R
 ```
 
-### Versioning and Version Types
+### Version Number and Version Types
 {: .no_toc }
 Adding a version to the file name should be the last element.
 
@@ -226,7 +192,6 @@ Use at least 2 digits with a leading zero for the version number, and/or indicat
 ### Exercise 2
 {: .no_toc }
 {: .label .label-green }
-<p style="margin-bottom: 20px"></p>
 
 Your lab has a spectrometer that measures thermal emissions once a day for a year for your experiment. There are three people who take that measurement in the lab.
 
@@ -234,9 +199,7 @@ Have a try at creating a file naming convention for these files to reflect what 
 
 How did you structure your file names and why? 
 
-<p style="margin-top:5px">
 <img src="figures/thermometer.jpg" width="200" style="margin-left:30px"/>
-</p>
 
 [//]: # (activity link: https://bit.ly/rdmactivity)
 
@@ -249,8 +212,6 @@ File names should be machine-readable: use alphanumerical characters with snake 
 # Congrats!
 {: .no_toc }
 *Hooray!* Now you know how to organize files with your own file naming conventions. 
-
-<br>
 
 ---
 
