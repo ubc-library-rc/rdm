@@ -50,7 +50,9 @@ We will see very shortly why effective naming conventions are a necessity!
 # Follow These Three Principles!  &nbsp; <img src="figures/thumbs-up.png" align="center" width="45"/>
 {: .no_toc }
 *1*{: .circle .circle-blue} &nbsp;Machine-Readable
+
 *2*{: .circle .circle-red} &nbsp;Human-Readable 
+
 *3*{: .circle .circle-yellow} &nbsp;Supports Default Ordering 
 
 --- 
