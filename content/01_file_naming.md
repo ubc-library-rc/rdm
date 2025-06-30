@@ -71,7 +71,7 @@ We will see very shortly why effective naming conventions are a necessity!
 - Snake case: use _ <b>underscores</b> to separate words and numbers
    -  `this_is_snake_case`
 - Camel case: use <b>capitalization</b> to separate words and numbers 
-   - `thisIsCamelCase`
+   - `ThisIsCamelCase`
 - Hyphens: use – <b>hyphens</b> to separate words and numbers
    - `this-is-using-hyphens`
 - Avoid spaces and other special characters, such as: ~ ! @ # $ % ^ & * ( ) ` ; : < > ? . , [ ] { } ' " \|
