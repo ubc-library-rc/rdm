@@ -108,7 +108,7 @@ What did you change and why?
 
 ### For files to be human-readable, consider the following:
 {: .no_toc }
-- Have file names that follow a consistent naming method, and document this file naming method in your README file
+- Have file names that follow a consistent naming method, and document this file naming method in your [README](https://ubc-library-rc.github.io/rdm/content/03_create_readme.html) file
     - Especially if acronyms, abbreviations, and/or codes are used, you should define what they mean in your README file
 - The file names should be concise but detailed enough so that they're still understandable to you and anyone else who has access
     - Names shouldn't be *too* long
