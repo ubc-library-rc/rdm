@@ -142,7 +142,7 @@ For example, the directory structure may look like this:
 |   |   ├── File-2
 ```
 
-```README``` files and ```DATA-DICTIONARIES``` should be the first things to appear when looking at any directory or folder, as these are your guides to its contents. We recommend naming them in all capital letters to stand out. 
+```README``` files and ```DATA-DICTIONARIES``` should be the first things to appear when looking at any directory or folder, as these are your guides to its contents. We recommend naming them in all capital letters and including an underscore (_) at the start of the file name to make them stand out and appear at the top. 
 
 ```README``` files and ```DATA-DICTIONARIES``` should be written in a plain text format. This will ensure that these files won't rely on special proprietary software and can be opened on any computer. You will often see readme files called ```README.txt``` or ```README.md``` because they're commonly written in TXT or Markdown plain text formats.
 
