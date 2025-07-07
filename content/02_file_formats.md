@@ -46,13 +46,13 @@ What do you notice?
 ---
 <b>What are some file formats you use often?</b> 
 - .xls (Microsoft Excel) 
-- .mp3 (for digital audio)
-- .docx (Microsoft Word) 
+- .m4a (for digital audio)
+- .doc (Microsoft Word) 
 - .gdoc (Google Document)
 
 <p style="margin-bottom: 25px"></p>
 
-These are all commonly used file formats. However, these are not recommended for data curation because they are proprietary! In other words, these common formats are unsustainable. <img src="figures/say-no.png" width="20">
+These are some commonly used file formats. However, these are not recommended for data curation because they are proprietary! In other words, these common formats are unsustainable. <img src="figures/say-no.png" width="20">
 
 <p style="margin-bottom: 30px"></p>
 
@@ -114,9 +114,9 @@ File quality and file size:
 
 <p style="margin-bottom: 10px"></p>
 
-Help us to preserve datasets for the long term! Download an Excel file ( .xls) from the dataset below and convert it to CSV.
+Help us to preserve datasets for the long term! Download the Excel file ( .xls) from the dataset below and convert it to CSV.
   
-Access this dataset:  
+Access this dataset here:  
 >Yarmand, Shahram, 2019, "Replication data for: Stochastic and Deterministic Modeling of the Future Price of Crude oil and Bottled Water", <a href="https://doi.org/10.5683/SP2/VPF8J8" target="_blank"> https://doi.org/10.5683/SP2/VPF8J8</a>, Borealis, V1
 
 How did you convert the Excel file into a CSV file? What did you notice?
