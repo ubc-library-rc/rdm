@@ -4,17 +4,27 @@ title: Create a Data Dictionary
 nav_order: 12
 ---
 
-# Data dictionary
+# What is a Data Dictionary? 
 {: .no_toc }
 
+A data dictionary is a type of documentation that provides important information about the variables in the dataset, such as their definitions, descriptions, and structure. This is especially important if you are working with multiple tables or with a database. 
 
-A data dictionary is a variable-level documentation that tells us important information about the variables in the dataset. This is especially important if you are working with multiple tables or with a database. A data dictionary is typically formatted as a table with a row corresponding to a variable in your dataset and columns representing a field of information about that variable. The data dictionary should include variable names, data types, descriptions, and sample values.
+It's useful to have a data dictionary because it's a critical tool for research reproducibility and revisitation. The main goal of a data dictionary is to help people understand and use the dataset(s). It will help answer questions like, "What does this variable mean?" 
 
-The main goal of the data dictionary is to help people understand datasets. It will help your peers answer questions such as: "What does this variable mean?"
-<p style="margin-bottom: 25px"></p>
 
-Looking for a cheat sheet? Check out our <a href="https://osf.io/akzpq" target="_blank">one-pager</a>!
+Looking for a cheat sheet? Check out our <a href="https://osf.io/akzpq" target="_blank">one-pager</a>
 {: .note}
+
+<details open markdown="block">
+ <summary>
+   Table of Contents
+ </summary>
+ {: .text-delta }
+- TOC
+{:toc}
+</details>
+
+---
 
 Most long-standing research projects will have a data dictionary, below are some open-source examples:
 
@@ -71,7 +81,7 @@ Alternatively, here is an example of a dataset with a decent data dictionary:
     * Values (this is useful if a column uses a scale/test)
     * Other notes 
 
-## Template 
+# Template 
 
 Below is an example data dictionary for the dataset we looked at earlier. This template was designed to capture most general datasets. There are other data dictionary templates available for more specific needs. 
 **NOTE: These values here are <u>made up</u> for educational purposes, they do not reflect what the real study had in mind.**
@@ -95,7 +105,7 @@ You can download this template in CSV [here](https://ubc-library-rc.github.io/rd
 | SCPCT       | Senior Citizen Percentage | Percentage of population over 65 years old.                                                                                                                                                   | Number    | Fact                  | 10.4, 15.8, 20.1                            |
 | WCPCT       | Working Class Percentage  | Percentage of households in the working class.                                                                                                                                                | Number    | Fact                  | 45.2, 62.1, 51.3                            |
 
-## The Style 
+# The Style 
 
 How you write your data dictionary is as important as the information you include. Always remember to be as clear as possible. Follow the style guide provided by your team to be consistent. The following are some general best practices related to data documentation:
 
@@ -104,7 +114,7 @@ How you write your data dictionary is as important as the information you includ
 * House the data dictionary where you [store data](https://ubc-library-rc.github.io/rdm/content/04_directory_structures.html)
 * Make it [machine-readable](https://ubc-library-rc.github.io/rdm/content/01_file_naming.html#1--machine-readable)
 
-## The process 
+# The process 
 
 Document your work as you go, so you don’t lose track of any details. If you wait until the end of your project, you might already have lost or forgotten valuable information.
 
