@@ -39,6 +39,7 @@ It's common for long-standing research projects to have a data dictionary. Here 
 
 A data dictionary can be a simple table (spreadsheet or PDF) or a detailed web application. Some projects only need one data dictionary that can be created and maintained by a single person while others will require a whole team to create and maintain it. 
 
+<p style="margin-bottom: 30px"></p> 
 
 ## Exercise 1
 {: .no_toc}
@@ -71,6 +72,8 @@ Place the data dictionary where your data files are stored. Having the data dict
 
 A data dictionary can be created with any text editor or word processor, but we suggest using spreadsheet software. The spreadsheet should be saved as a CSV or TSV file because it's a lightweight, non-proprietary file format that's accessible to everyone and future-friendly. 
 
+<p style="margin-bottom: 30px"></p> 
+
 # Stylistic Considerations of a Data Dictionary
 
 How you write your data dictionary is as important as the information you include. To ensure consistency, follow the style that's agreed upon by the research team. Also make sure to note any stylistic decisions in your [README file](https://ubc-library-rc.github.io/rdm/content/03_create_readme.html#stylistic-considerations-of-a-readme) if necessary. 
@@ -81,6 +84,8 @@ The following are some general best practices related to data documentation:
 * Define terms, abbreviations, and acronyms 
 * Keep the data dictionary where you [store your data](https://ubc-library-rc.github.io/rdm/content/04_directory_structures.html)
 * Follow [good naming conventions](https://ubc-library-rc.github.io/rdm/content/01_file_naming.html#1--machine-readable) and a consistent formatting style
+
+<p style="margin-bottom: 30px"></p> 
 
 # Recommended Content 
 
@@ -103,6 +108,8 @@ Secondary fields to consider:
 * Question text: include the exact wording from the survey questions
 * Missing data: describe all missing codes and indicate the types of missing data, like system missing, data instrument error, and participant skip error
 
+<p style="margin-bottom: 30px"></p> 
+
 # Sample Data Dictionary 
 
 Below is a shortened data dictionary for the dataset we looked at in exercise 1. You can download the sample data dictionary [here](https://ubc-library-rc.github.io/rdm/content/assets/templates/data_dictionary_template.csv) (CSV file) 
@@ -115,6 +122,8 @@ Below is a shortened data dictionary for the dataset we looked at in exercise 1.
 | COUNTYFP10  | County code               | The unique numeric code for the county. More information on county codes can be found [here](https://www2.census.gov/programs-surveys/decennial/2010/partners/pdf/FIPS_StateCounty_Code.pdf). | String    | Dimension Foreign Key | “001”, “003”, “005”                         |
 | GEOID10     | Geographical ID           | Combined state, county, and tract identifier.                                                                                                                                                 | String    | Dimension Foreign Key | “26163593300”                               |
 | FFFPCT      | Fast Food Percentage      | Percentage of restaurants classified as fast food.                                                                                                                                            | Number    | Fact                  | 40.3, 55.8, 22.5                            |
+
+<p style="margin-bottom: 20px"></p> 
 
 ## Data Dictionary Template
 
@@ -129,15 +138,16 @@ You can download a data dictionary template [here](https://repository.upenn.edu/
 {: .no_toc }
 
 *Hooray!* You can now create a data dictionary so you and other researchers can understand the dataset with no problems!
-
 <br>
+
 ---
 
 <b>Sources</b>
-* Harvard Biomedical Data Management. Data Dictionary. (https://datamanagement.hms.harvard.edu/collect-analyze/documentation-metadata/data-dictionary)
-* Penn Libraries Guides. Data Management Resources. (https://guides.library.upenn.edu/c.php?g=564157&p=9554907)
-* Phegley, L. (2023). University of Pennsylvania. Data Dictionary Blank Template. (https://repository.upenn.edu/entities/publication/0430ccdd-cbd8-4404-9f54-11cb81d5b3b1)
-* Stony Brook University Data Governance. Data Dictionary Standards. (https://www.stonybrook.edu/commcms/datagovernance/structureandroles/datadictionarystandards)
+{: .no_toc }
+* Harvard Biomedical Data Management. Data Dictionary. <https://datamanagement.hms.harvard.edu/collect-analyze/documentation-metadata/data-dictionary> 
+* Penn Libraries Guides. Data Management Resources. <https://guides.library.upenn.edu/c.php?g=564157&p=9554907>
+* Phegley, L. (2023). University of Pennsylvania. Data Dictionary Blank Template. <https://repository.upenn.edu/entities/publication/0430ccdd-cbd8-4404-9f54-11cb81d5b3b1>
+* Stony Brook University Data Governance. Data Dictionary Standards. <https://www.stonybrook.edu/commcms/datagovernance/structureandroles/datadictionarystandards>
 
 ---
 
