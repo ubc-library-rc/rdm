@@ -26,111 +26,120 @@ Looking for a cheat sheet? Check out our <a href="https://osf.io/akzpq" target="
 
 ---
 
-Most long-standing research projects will have a data dictionary, below are some open-source examples:
+## Warm-Up
+{: .no_toc}
+{: .label .label-green }
+
+It's common for long-standing research projects to have a data dictionary. Here are some open-source examples to explore:
 
 * [National Database of Deep-Sea Corals](https://www.ncei.noaa.gov/waf/dsc-data/metadata/20221213-0_NOAA_NDB_corals_sponges_data_dictionary.html)
 * [Climate and Forecast Conventions](http://cfconventions.org/Data/cf-standard-names/46/build/cf-standard-name-table.html)
 * [Organic Carbon Sorption and Decomposition in Selected Global Soils](https://tes-sfa.ornl.gov/sites/default/files/Soil_C_Decomp_Data_Dictionary_20140616.pdf)
-* [Human Health Risk Assessment](https://rais.ornl.gov/documents/tm232.pdf)
-* [Drug Product Database - Health Canada](https://www.canada.ca/en/health-canada/services/drugs-health-products/drug-products/drug-product-database/terminology.html)
-* [NCI Proteomic Data Commons](https://proteomic.datacommons.cancer.gov/data-dictionary/dictionary.html)
-* [EarthExploer USGS Landsat](https://www.usgs.gov/centers/eros/science/landsat-data-dictionary#data_category)
 * [Planetary Science Dictionary (NASA)](https://pds.nasa.gov/tools/dd-search/)
 
-As you can see, a data dictionary can be a simple table (spreadsheet or PDF) or a full-fledged web application. Some projects only need one data dictionary that can be created and maintained by a single person while others will require a whole team to create and maintain it. 
+A data dictionary can be a simple table (spreadsheet or PDF) or a detailed web application. Some projects only need one data dictionary that can be created and maintained by a single person while others will require a whole team to create and maintain it. 
 
 
 ## Exercise 1
 {: .no_toc}
 {: .label .label-green }
 
-Please help us to make sense of a dataset.
+Please help us make sense of the dataset below.
 
-Access a dataset:  
+Access this dataset:  
 
 >Florida, Richard, 2013, "Class-Divided Cities, Detroit Edition Published in Atlantic Cities", <a href="https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/SNXXHQ" target="_blank">https://doi.org/10.5683/SP3/SNXXHQ</a>, Borealis, V3
 
-Download the data file <b>"Detroit Class Data.xlsx"</b> in the <b>Original File Format</b>. Examining the data, try to answer the following questions:
+Download the data file <b>"Detroit Class Data.xlsx"</b> in the <b>Original File Format</b>. While examining the data, try to answer the following questions:
 1. What do you think the columns `STATEFP10` and `COUNTYFP10` mean?
 2. Describe the different measures in this study.
 3. How was the data collected?
 
-Alternatively, here is an example of a dataset with a decent data dictionary:
+Alternatively, here is an example of another dataset with a better data dictionary:
 >Barsky, Eugene; Mitchell, Marjorie; Buhler, Jeremy, 2019, "UBC Research Data Management Survey: Science and Engineering", [https://doi.org/10.5683/SP2/9VEAT9](https://doi.org/10.5683/SP2/9VEAT9), Borealis, V3
 
 * You can see how a data dictionary allows users to make sense of the data very fast.
 * Data dictionary can travel with the dataset or even serve as a stand-alone data item.
 
-# How to create a Data Dictionary
+---
 
-* A data dictionary will typically be structured so each row corresponds to a column in your dataset and each column represents a field of information about the column. 
-* Include the following fields: 
-  
-    * Column name 
-    * Column name in plain English
-    * Description of the Column
-    * Data type 
-    * Data usage type
-    * Sample values
+# The Process of Creating a Data Dictionary 
 
-* Optional fields to include
+Document your work as you go, such as making updates when new elements and variables are added or updated. This reduces the risk of forgetting valuable information or losing details. 
 
-    * Transformations (Was the column the result of a transformation?)
-    * Example usage (SQL queries)
-    * Missing values 
-    * Values (this is useful if a column uses a scale/test)
-    * Other notes 
+Place the data dictionary where your data files are stored. Having the data dictionary nearby makes it easier to understand the data, as it serves as a guide to its contents. Check out our [directory structures](https://ubc-library-rc.github.io/rdm/content/03_create_readme.html#stylistic-considerations-of-a-readme) workshop for more information. 
 
-# Template 
+A data dictionary can be created with any text editor or word processor, but we suggest using spreadsheet software. The spreadsheet should be saved as a CSV or TSV file because it's a lightweight, non-proprietary file format that's accessible to everyone and future-friendly. 
 
-Below is an example data dictionary for the dataset we looked at earlier. This template was designed to capture most general datasets. There are other data dictionary templates available for more specific needs. 
+# Stylistic Considerations of a Data Dictionary
+
+How you write your data dictionary is as important as the information you include. To ensure consistency, follow the style that's agreed upon by the research team. Also make sure to note any stylistic decisions in your [README file](https://ubc-library-rc.github.io/rdm/content/03_create_readme.html#stylistic-considerations-of-a-readme) if necessary. 
+
+The following are some general best practices related to data documentation:
+* Be as clear as possible
+* Don't use jargon 
+* Define terms, abbreviations, and acronyms 
+* Keep the data dictionary where you [store your data](https://ubc-library-rc.github.io/rdm/content/04_directory_structures.html)
+* Follow [good naming conventions](https://ubc-library-rc.github.io/rdm/content/01_file_naming.html#1--machine-readable) and a consistent formatting style
+
+# Recommended Content 
+
+A data dictionary is usually formatted as a table with the variables in rows and variable information in columns. Every project is different, so consider which of the following applies to your project.
+
+Key fields to consider:
+* Name of the dataset(s)
+* Variable: the name used to identify the field, can be alphanumeric
+* Variable name: the human-intelligible name of the variable (such as English). Don't include abbreviations or acronyms
+* Variable definition: an explanation of what the variable means
+* Variable type: the format of the variable (e.g. string, number, percentage, etc.)
+* Allowable values/parameters for the variable: a description of what data may be entered into a field. For numerical fields: minimum and maximum values. For character fields: allowable values
+* Date created: the date the dictionary entry was created
+* Date updated: the date the dictionary entry was modified
+* Notes: any additional notes, remarks, or comments that contextualize the information conveyed in the variable or relay special instructions
+
+Secondary fields to consider:
+* Measurement units of the variable
+* Example usage
+* Question text: include the exact wording from the survey questions
+* Missing data: describe all missing codes and indicate the types of missing data, like system missing, data instrument error, and participant skip error
+
+# Sample Data Dictionary 
+
+Below is a shortened data dictionary for the dataset we looked at in exercise 1. You can download the sample data dictionary [here](https://ubc-library-rc.github.io/rdm/content/assets/templates/data_dictionary_template.csv) (CSV file) 
+
 **NOTE: These values here are <u>made up</u> for educational purposes, they do not reflect what the real study had in mind.**
-
-<p style="margin-bottom: 25px"></p>
-
-You can download this template in CSV [here](https://ubc-library-rc.github.io/rdm/content/assets/templates/data_dictionary_template.csv)
-{: .note}
-
 
 | Column Name | Meaningful Name             | Description                                                                                                                                                                                   | Data Type | Data Usage Type       | Sample Values                               |
 |-------------|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|-----------------------|---------------------------------------------|
 | STATEFP10   | State code                | The unique numeric code for the state. More information on state codes can be found [here](https://www23.statcan.gc.ca/imdb/p3VD.pl?Function=getVD&TVD=53971).                                | String    | Dimension Attribute   | “01”, “02”, “06”                            |
 | COUNTYFP10  | County code               | The unique numeric code for the county. More information on county codes can be found [here](https://www2.census.gov/programs-surveys/decennial/2010/partners/pdf/FIPS_StateCounty_Code.pdf). | String    | Dimension Foreign Key | “001”, “003”, “005”                         |
-| TRACTCE10   | Census Tract Code         | Code identifying a specific census tract. More information on tract codes can be found [here](https://transition.fcc.gov/form477/Geo/more_about_census_tracts.pdf).                           | String    | Dimension Attribute   | “593300”                                    |
 | GEOID10     | Geographical ID           | Combined state, county, and tract identifier.                                                                                                                                                 | String    | Dimension Foreign Key | “26163593300”                               |
-| NAMELSAD10  | Area Name                 | The full name of the census area.                                                                                                                                                             | String    | Attribute             | “Los Angeles County, CA”, “Cook County, IL” |
-| class       | Land Classification       | Indicates land use or classification.                                                                                                                                                         | String    | Dimension Attribute   | “Residential”, “Commercial”, “Agricultural” |
-| CCPCT       | Child Care Percentage     | Percentage of households using child care services.                                                                                                                                           | Number    | Fact                  | 15.2, 25.4, 32.7                            |
 | FFFPCT      | Fast Food Percentage      | Percentage of restaurants classified as fast food.                                                                                                                                            | Number    | Fact                  | 40.3, 55.8, 22.5                            |
-| SCPCT       | Senior Citizen Percentage | Percentage of population over 65 years old.                                                                                                                                                   | Number    | Fact                  | 10.4, 15.8, 20.1                            |
-| WCPCT       | Working Class Percentage  | Percentage of households in the working class.                                                                                                                                                | Number    | Fact                  | 45.2, 62.1, 51.3                            |
 
-# The Style 
+## Data Dictionary Template
 
-How you write your data dictionary is as important as the information you include. Always remember to be as clear as possible. Follow the style guide provided by your team to be consistent. The following are some general best practices related to data documentation:
+You can download a data dictionary template [here](https://repository.upenn.edu/entities/publication/0430ccdd-cbd8-4404-9f54-11cb81d5b3b1). Modify the elements included so they fit your project. 
 
-* Don't use jargon 
-* Define terms and acronyms 
-* House the data dictionary where you [store data](https://ubc-library-rc.github.io/rdm/content/04_directory_structures.html)
-* Make it [machine-readable](https://ubc-library-rc.github.io/rdm/content/01_file_naming.html#1--machine-readable)
+<br> 
 
-# The process 
-
-Document your work as you go, so you don’t lose track of any details. If you wait until the end of your project, you might already have lost or forgotten valuable information.
-
-You can create a data dictionary with any text editor but we suggest using some kind of spreadsheet (Excel, Numbers, etc.). Although you should edit the data dictionary with spreadsheet software, we suggest saving it as a CSV or TSV file as it is a non-proprietary format and freely available for everyone to use in the future. 
-
+<b>Here is a breakdown of what we covered:</b> A data dictionary is an informative document about the dataset's variables, content, structure, and other details needed for understanding and reproducing the research. Remember to have a consistent and clear style, and record any updates made. Aim to make your data dictionary accessible to others and for the future by saving it in a non-proprietary format.
+{: .note}
 
 # Congrats!
 {: .no_toc }
 
-<p style="margin-top:25px;margin-left:30px">
-<img src="figures/angel-congrats.jpg" width="300"/>
-</p>
-
-You are now ready to create your data dictionary so other researchers can understand your dataset with no problems!
+*Hooray!* You can now create a data dictionary so you and other researchers can understand the dataset with no problems!
 
 <br>
+---
+
+<b>Sources</b>
+* Harvard Biomedical Data Management. Data Dictionary. (https://datamanagement.hms.harvard.edu/collect-analyze/documentation-metadata/data-dictionary)
+* Penn Libraries Guides. Data Management Resources. (https://guides.library.upenn.edu/c.php?g=564157&p=9554907)
+* Phegley, L. (2023). University of Pennsylvania. Data Dictionary Blank Template. (https://repository.upenn.edu/entities/publication/0430ccdd-cbd8-4404-9f54-11cb81d5b3b1)
+* Stony Brook University Data Governance. Data Dictionary Standards. (https://www.stonybrook.edu/commcms/datagovernance/structureandroles/datadictionarystandards)
+
+---
 
 Need help?
 {: .label .label-blue }
