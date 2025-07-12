@@ -61,6 +61,8 @@ Alternatively, here is another dataset example with a better data dictionary:
 
 You can see how a data dictionary allows users to make sense of the data very fast.
 
+<img src="figures/data_dictionary.png" width="200"/>
+
 ---
 
 # The Process of Creating a Data Dictionary 
@@ -98,7 +100,7 @@ Key fields to consider:
 |-----------|-------------|
 | **Variable ID** | The name used to identify the specific variable. This can be a sequence of alphanumeric characters. |
 | **Variable Name** | The name of the specific variable in a human language, like English. Don’t include abbreviations or acronyms. |
-| **Variable Definition** | An explanation of what the variable means, how it was calculated, how it should be used, or any known patterns. You can refer to existing vocabularies to increase interoperability (e.g. Unified Medical Language System). |
+| **Variable Definition** | An explanation of what the variable means, how it was calculated, how it should be used, or any known patterns. You can refer to existing vocabularies to increase interoperability (e.g. [Unified Medical Language System](https://www.nlm.nih.gov/research/umls/index.html)). |
 | **Variable Type** | The format of the variable (e.g., string, number, percentage, date). |
 | **Allowable Values / Parameters** | Describe the values that can be entered. For example: min/max values for numbers, a list of options for characters, or whether the field accepts nulls. |
 | **Requirement** | Indicate if the variable is required with a "yes" or "no". |
