@@ -93,17 +93,19 @@ A data dictionary is usually formatted as a table with the variables in rows and
 Every project is different, so consider which of the following applies to your project.
 
 Key fields to consider:
+
 | **Field** | **Details** |
 |-----------|-------------|
 | **Variable ID** | The name used to identify the specific variable. This can be a sequence of alphanumeric characters. |
 | **Variable Name** | The name of the specific variable in a human language, like English. Don’t include abbreviations or acronyms. |
-| **Variable Definition** | An explanation of what the variable means, how it was calculated, how it should be used, or any known patterns. You can refer to existing vocabularies to increase interoperability, e.g., [Unified Medical Language System](https://www.nlm.nih.gov/research/umls/index.html). |
+| **Variable Definition** | An explanation of what the variable means, how it was calculated, how it should be used, or any known patterns. You can refer to existing vocabularies to increase interoperability (e.g. Unified Medical Language System). |
 | **Variable Type** | The format of the variable (e.g., string, number, percentage, date). |
 | **Allowable Values / Parameters** | Describe the values that can be entered. For example: min/max values for numbers, a list of options for characters, or whether the field accepts nulls. |
 | **Requirement** | Indicate if the variable is required with a "yes" or "no". |
 | **Notes** | Add any extra notes, remarks, or instructions that help contextualize the variable. |
 
 Secondary fields to consider:
+
 | **Field** | **Details** |
 |-----------|-------------|
 | **Example Usage/Sample Values** | Provide some examples of how the variable is implemented, or what the variable looks like. |
