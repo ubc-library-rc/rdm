@@ -7,7 +7,7 @@ nav_order: 12
 # What is a Data Dictionary? 
 {: .no_toc }
 
-A data dictionary is a type of documentation that provides important information about the variables in the dataset, such as their definitions, descriptions, and structure. This is especially important if you are working with multiple tables or with a database. 
+A data dictionary is a type of documentation that provides important information about the variables in the dataset, such as their definitions, descriptions, and structure. This is especially important if you are working with multiple tables or with a database. A data dictionary can accompany the dataset or can be a standalone data item. 
 
 It's useful to have a data dictionary because it's a critical tool for research reproducibility and revisitation. The main goal of a data dictionary is to help people understand and use the dataset(s). It will help answer questions like, "What does this variable mean?" 
 
@@ -37,7 +37,7 @@ It's common for long-standing research projects to have a data dictionary. Here 
 * [Organic Carbon Sorption and Decomposition in Selected Global Soils](https://tes-sfa.ornl.gov/sites/default/files/Soil_C_Decomp_Data_Dictionary_20140616.pdf)
 * [Planetary Science Dictionary (NASA)](https://pds.nasa.gov/tools/dd-search/)
 
-A data dictionary can be a simple table (spreadsheet or PDF) or a detailed web application. Some projects only need one data dictionary that can be created and maintained by a single person while others will require a whole team to create and maintain it. 
+A data dictionary can be a simple table (spreadsheet or PDF) or a detailed web application. For some projects, a data dictionary is created and maintained by one research member, but this can also be done by the entire research team. 
 
 <p style="margin-bottom: 30px"></p> 
 
@@ -56,11 +56,10 @@ Download the data file <b>"Detroit Class Data.xlsx"</b> in the <b>Original File 
 2. Describe the different measures in this study.
 3. How was the data collected?
 
-Alternatively, here is an example of another dataset with a better data dictionary:
+Alternatively, here is another dataset example with a better data dictionary:
 >Barsky, Eugene; Mitchell, Marjorie; Buhler, Jeremy, 2019, "UBC Research Data Management Survey: Science and Engineering", [https://doi.org/10.5683/SP2/9VEAT9](https://doi.org/10.5683/SP2/9VEAT9), Borealis, V3
 
-* You can see how a data dictionary allows users to make sense of the data very fast.
-* Data dictionary can travel with the dataset or even serve as a stand-alone data item.
+You can see how a data dictionary allows users to make sense of the data very fast.
 
 ---
 
@@ -76,7 +75,7 @@ A data dictionary can be created with any text editor or word processor, but we 
 
 # Stylistic Considerations of a Data Dictionary
 
-How you write your data dictionary is as important as the information you include. To ensure consistency, follow the style that's agreed upon by the research team. Also make sure to note any stylistic decisions in your [README file](https://ubc-library-rc.github.io/rdm/content/03_create_readme.html#stylistic-considerations-of-a-readme) if necessary. 
+How you write your data dictionary is as important as the information you include. To ensure consistency, follow the style that's agreed upon by the research team. Also, make sure to note any stylistic decisions in your [README file](https://ubc-library-rc.github.io/rdm/content/03_create_readme.html#stylistic-considerations-of-a-readme) if necessary. 
 
 The following are some general best practices related to data documentation:
 * Be as clear as possible
@@ -89,45 +88,50 @@ The following are some general best practices related to data documentation:
 
 # Recommended Content 
 
-A data dictionary is usually formatted as a table with the variables in rows and variable information in columns. Every project is different, so consider which of the following applies to your project.
+A data dictionary is usually formatted as a table with the variables in rows and variable information in columns. At the top, you should mention relevant metadata such as the dataset's name, the creation date of the data dictionary, and the version number or last updated date. 
+
+Every project is different, so consider which of the following applies to your project.
 
 Key fields to consider:
-* Name of the dataset(s)
-* Variable: the name used to identify the field, can be alphanumeric
-* Variable name: the human-intelligible name of the variable (such as English). Don't include abbreviations or acronyms
-* Variable definition: an explanation of what the variable means
-* Variable type: the format of the variable (e.g. string, number, percentage, etc.)
-* Allowable values/parameters for the variable: a description of what data may be entered into a field. For numerical fields: minimum and maximum values. For character fields: allowable values
-* Date created: the date the dictionary entry was created
-* Date updated: the date the dictionary entry was modified
-* Notes: any additional notes, remarks, or comments that contextualize the information conveyed in the variable or relay special instructions
+| Field | Details | 
+| --- | --- |
+| <b>Variable ID</b> | The name used to identify the specific variable. This can be a sequence of alphanumeric characters. |
+| <b>Variable Name</b> | The name of the specific variable in a human language, like English. Don’t include abbreviations or acronyms. | 
+| <b>Variable Definition</b> | An explanation of what the variable means. How the variable was calculated, how it should be used, or any patterns can also be elaborated here. Existing vocabulary can be implemented here to increase interoperability amongst research data (e.g. [Unified Medical Language System](https://www.nlm.nih.gov/research/umls/index.html)). |
+| <b>Variable Type</b> | The format type of the variable, for example, string, number, percentage, date, etc. |
+| <b>Allowable Values/Parameters</b> | A description of what data may be entered into a field. For example, for numerical fields this could be minimum and maximum values, for character fields you can list allowable values or have a table that has allowable values, or you can have an open text field. Also indicate if null values are allowable (meaning no measurement was taken). |
+| <b>Requirement</b> | Indicate if the variable is required with a “yes” or “no”. | 
+| <b>Notes</b> | Add any extra notes, remarks, or comments that contextualize the information for the variable. Special instructions can be added here. |
 
 Secondary fields to consider:
-* Measurement units of the variable
-* Example usage
-* Question text: include the exact wording from the survey questions
-* Missing data: describe all missing codes and indicate the types of missing data, like system missing, data instrument error, and participant skip error
+| Field | Details |
+| --- | --- |
+| <b>Example Usage/Sample Values</b> | Provide some examples of how the variable is implemented, or what the variable looks like. |
+| <b>Measurement Units</b> | The measurement units of the variable. |
+| <b>Questions Text</b> | Include the exact wording from the survey, interview, task, etc. |
+| <b>Timestamp</b> | The indicated time the variable’s data was collected. |
+| <b>Missing Data</b> | A description of the missing data for the specific variable. Indicate the type of missing data, such as the system missing the data, a data instrument error, or a participant skip error, etc. |
 
 <p style="margin-bottom: 30px"></p> 
 
 # Sample Data Dictionary 
 
-Below is a shortened data dictionary for the dataset we looked at in exercise 1. You can download the sample data dictionary [here](https://ubc-library-rc.github.io/rdm/content/assets/templates/data_dictionary_template.csv) (CSV file) 
+Below is a shortened data dictionary for the dataset we looked at in exercise 1. You can download a sample data dictionary based on exercise 1 [here](https://ubc-library-rc.github.io/rdm/content/assets/templates/data_dictionary_template.csv) (CSV file). The fields and existing values can be deleted and modified to fit your project.  
 
-**NOTE: These values here are <u>made up</u> for educational purposes, they do not reflect what the real study had in mind.**
+**NOTE: The values here are <u>made-up examples</u> for educational purposes. They do not reflect the real study.**
 
-| Column Name | Meaningful Name             | Description                                                                                                                                                                                   | Data Type | Data Usage Type       | Sample Values                               |
-|-------------|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|-----------------------|---------------------------------------------|
-| STATEFP10   | State code                | The unique numeric code for the state. More information on state codes can be found [here](https://www23.statcan.gc.ca/imdb/p3VD.pl?Function=getVD&TVD=53971).                                | String    | Dimension Attribute   | “01”, “02”, “06”                            |
-| COUNTYFP10  | County code               | The unique numeric code for the county. More information on county codes can be found [here](https://www2.census.gov/programs-surveys/decennial/2010/partners/pdf/FIPS_StateCounty_Code.pdf). | String    | Dimension Foreign Key | “001”, “003”, “005”                         |
-| GEOID10     | Geographical ID           | Combined state, county, and tract identifier.                                                                                                                                                 | String    | Dimension Foreign Key | “26163593300”                               |
-| FFFPCT      | Fast Food Percentage      | Percentage of restaurants classified as fast food.                                                                                                                                            | Number    | Fact                  | 40.3, 55.8, 22.5                            |
+| Column Name | Meaningful Name | Description | Data Type | Data Usage Type | Sample Values |
+| --- | --- | --- | --- | --- | --- |
+| STATEFP10 | State code | The unique numeric code for the state. More information on state codes can be found [here](https://www23.statcan.gc.ca/imdb/p3VD.pl?Function=getVD&TVD=53971). | String | Dimension Attribute | “01”, “02”, “06” |
+| COUNTYFP10 | County code | The unique numeric code for the county. More information on county codes can be found [here](https://www2.census.gov/programs-surveys/decennial/2010/partners/pdf/FIPS_StateCounty_Code.pdf). | String | Dimension Foreign Key | “001”, “003”, “005” |
+| GEOID10 | Geographical ID | Combined state, county, and tract identifier. | String | Dimension Foreign Key | “26163593300” |
+| FFFPCT | Fast Food Percentage | Percentage of restaurants classified as fast food. | Number | Fact | 40.3, 55.8, 22.5 |
 
 <p style="margin-bottom: 20px"></p> 
 
 ## Data Dictionary Template
 
-You can download a data dictionary template [here](https://repository.upenn.edu/entities/publication/0430ccdd-cbd8-4404-9f54-11cb81d5b3b1). Modify the elements included so they fit your project. 
+You can download a blank data dictionary template [here](https://repository.upenn.edu/entities/publication/0430ccdd-cbd8-4404-9f54-11cb81d5b3b1). Modify the header and fields included to fit your project. 
 
 <br> 
 
