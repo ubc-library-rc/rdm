@@ -83,7 +83,6 @@ The following are some general best practices related to data documentation:
 * Be as clear as possible
 * Don't use jargon 
 * Define terms, abbreviations, and acronyms 
-* Keep the data dictionary where you [store your data](https://ubc-library-rc.github.io/rdm/content/04_directory_structures.html)
 * Follow [good naming conventions](https://ubc-library-rc.github.io/rdm/content/01_file_naming.html#1--machine-readable) and a consistent formatting style
 
 <p style="margin-bottom: 30px"></p> 
@@ -98,23 +97,23 @@ Key fields to consider:
 
 | **Field** | **Details** |
 |-----------|-------------|
-| **Variable ID** | The name used to identify the specific variable. This can be a sequence of alphanumeric characters. |
-| **Variable Name** | The name of the specific variable in a human language, like English. Don’t include abbreviations or acronyms. |
-| **Variable Definition** | An explanation of what the variable means, how it was calculated, how it should be used, or any known patterns. You can refer to existing vocabularies to increase interoperability (e.g. [Unified Medical Language System](https://www.nlm.nih.gov/research/umls/index.html)). |
-| **Variable Type** | The format of the variable (e.g., string, number, percentage, date). |
-| **Allowable Values / Parameters** | Describe the values that can be entered. For example: min/max values for numbers, a list of options for characters, or whether the field accepts nulls. |
-| **Requirement** | Indicate if the variable is required with a "yes" or "no". |
-| **Notes** | Add any extra notes, remarks, or instructions that help contextualize the variable. |
+| **Variable ID** | The name used to identify a specific variable. This can be a sequence of alphanumeric characters. |
+| **Variable Name** | The name of a specific variable in a human language, like English. Don’t include abbreviations or acronyms. |
+| **Variable Definition** | An explanation of what the variable means, how it was calculated, how it should be used, or any known patterns. You can refer to existing discipline-specific vocabularies to increase interoperability (e.g. [Unified Medical Language System](https://www.nlm.nih.gov/research/umls/index.html)). |
+| **Variable Type** | The format of a variable (e.g., string, number, percentage, date). |
+| **Allowable Values / Parameters** | Describe the values that can be entered. For example: min/max values for numerical entries, a list of options for character values, or whether the field accepts nulls. |
+| **Requirement** | Indicate if a variable is required with a "yes" or "no". |
+| **Notes** | Add any extra notes, remarks, or instructions that help contextualize a variable. |
 
 Secondary fields to consider:
 
 | **Field** | **Details** |
 |-----------|-------------|
-| **Example Usage/Sample Values** | Provide some examples of how the variable is implemented, or what the variable looks like. |
-| **Measurement Units** | The measurement units of the variable. |
-| **Questions Text** | Include the exact wording from the survey, interview, task, etc. |
-| **Timestamp** | The indicated time the variable’s data was collected. |
-| **Missing Data** | A description of the missing data for the specific variable. Indicate the type of missing data, such as the system missing the data, a data instrument error, or a participant skip error, etc. |
+| **Example Usage/Sample Values** | Provide some examples of how a variable is implemented, or what a variable may look like. |
+| **Measurement Units** | The measurement units of a variable. |
+| **Question Text** | Include the exact wording from the survey, interview, task, etc. |
+| **Timestamp** | The indicated time a variable’s data was collected. |
+| **Missing Data** | A description of the missing data for a specific variable. Indicate the type of missing data, such as the system missing the data, a data instrument error, or a participant skip error, etc. |
 
 <p style="margin-bottom: 30px"></p> 
 
