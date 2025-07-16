@@ -99,7 +99,7 @@ Key fields to consider:
 |-----------|-------------|
 | **Variable ID** | The name used to identify a specific variable. This can be a sequence of alphanumeric characters. |
 | **Variable Name** | The name of a specific variable in a human language, like English. Don’t include abbreviations or acronyms. |
-| **Variable Definition** | An explanation of what a variable means, how it was calculated, how it should be used, or any known patterns. You can refer to existing discipline-specific vocabularies to increase interoperability (e.g. [Unified Medical Language System](https://www.nlm.nih.gov/research/umls/index.html)). |
+| **Variable Definition** | The explanation of what a variable means, how it was calculated, how it should be used, or any known patterns. You can refer to existing discipline-specific vocabularies to increase interoperability (e.g. [Unified Medical Language System](https://www.nlm.nih.gov/research/umls/index.html)). |
 | **Variable Type** | The format of a variable (e.g., string, number, percentage, date). |
 | **Allowable Values / Parameters** | Describe the values that can be entered. For example: min/max values for numerical entries, a list of options for character values, or whether the field accepts nulls. |
 | **Requirement** | Indicate if a variable is required with a "yes" or "no". |
@@ -113,7 +113,7 @@ Secondary fields to consider:
 | **Measurement Units** | The measurement units of a variable. |
 | **Question Text** | Include the exact wording from the survey, interview, task, etc. |
 | **Timestamp** | The indicated time a variable’s data was collected. |
-| **Missing Data** | A description of the missing data for a specific variable. Indicate the type of missing data, such as the system missing the data, a data instrument error, or a participant skip error, etc. |
+| **Missing Data** | Describe the missing data for a specific variable. Indicate the type of missing data, such as the system missing the data, a data instrument error, or a participant skip error, etc. |
 
 <p style="margin-bottom: 30px"></p> 
 
