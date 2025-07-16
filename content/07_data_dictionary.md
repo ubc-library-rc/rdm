@@ -11,8 +11,8 @@ A data dictionary is a type of documentation that provides essential information
 
 Having a data dictionary is important for research reproducibility and revisitation. It clarifies questions like, "What does this variable mean?"
 
-Looking for a cheat sheet? Check out our <a href="https://osf.io/akzpq" target="_blank">one-pager</a>
-
+- Looking for a cheat sheet? Check out our <a href="https://osf.io/akzpq" target="_blank">one-pager</a>
+- Looking for a template to reuse? Check out our <a href="https://ubc-library-rc.github.io/rdm/content/assets/templates/data_dictionary_template_blank.csv" target="_blank">data dictionary template</a> 
 {: .note}
 
 <details open markdown="block">
@@ -119,7 +119,9 @@ Secondary fields to consider:
 
 # Sample Data Dictionary 
 
-Below is a shortened data dictionary for the dataset we looked at in exercise 1. You can download a sample data dictionary based on exercise 1 [here](https://ubc-library-rc.github.io/rdm/content/assets/templates/data_dictionary_sample.csv). The fields and existing values can be deleted and modified to fit your project.  
+Below is a shortened data dictionary for the dataset we looked at in exercise 1. 
+
+You can download a sample data dictionary based on exercise 1 [here](https://ubc-library-rc.github.io/rdm/content/assets/templates/data_dictionary_sample.csv). The fields and existing values can be deleted and modified to fit your project.  
 
 **NOTE: The values here are <u>made-up examples</u> for educational purposes. They do not reflect the real study.**
 
@@ -134,7 +136,7 @@ Below is a shortened data dictionary for the dataset we looked at in exercise 1.
 
 ## Data Dictionary Template
 
-You can download a blank data dictionary template [here](https://ubc-library-rc.github.io/rdm/content/assets/templates/data_dictionary_template_blank.csv). You can modify the header and fields to fit your project. 
+You can download a blank data dictionary template [here](https://ubc-library-rc.github.io/rdm/content/assets/templates/data_dictionary_template_blank.csv). The header and fields can be modified to fit your project. 
 
 <br> 
 
