@@ -110,7 +110,7 @@ Secondary fields to consider:
 | **Field** | **Details** |
 |-----------|-------------|
 | **Example Usage/Sample Values** | Provide some examples of how a variable is implemented, or what a variable may look like. |
-| **Measurement Units** | The measurement units of a variable. |
+| **Measurement Units** | The measurement unit of a variable. |
 | **Question Text** | Include the exact wording from the survey, interview, task, etc. |
 | **Timestamp** | The indicated time a variable’s data was collected. |
 | **Missing Data** | Describe the missing data for a specific variable. Indicate the type of missing data, such as the system missing the data, a data instrument error, or a participant skip error, etc. |
