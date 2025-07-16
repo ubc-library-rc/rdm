@@ -7,12 +7,12 @@ nav_order: 12
 # What is a Data Dictionary? 
 {: .no_toc }
 
-A data dictionary is a type of documentation that provides important information about the variables in the dataset, such as their definitions, descriptions, and structure. This is especially important if you are working with multiple tables or with a database. A data dictionary can accompany the dataset or can be a standalone data item. 
+A data dictionary is a type of documentation that provides essential information about variables in a dataset, including their definitions, descriptions, and structure. The primary goal of a data dictionary is to help people understand and use a dataset, especially if you are working with multiple tables or with a database. A data dictionary may be included with the dataset or exist as an independent resource. 
 
-It's useful to have a data dictionary because it's a critical tool for research reproducibility and revisitation. The main goal of a data dictionary is to help people understand and use the dataset(s). It will help answer questions like, "What does this variable mean?" 
-
+Having a data dictionary is important for research reproducibility and revisitation. It clarifies questions like, "What does this variable mean?"
 
 Looking for a cheat sheet? Check out our <a href="https://osf.io/akzpq" target="_blank">one-pager</a>
+
 {: .note}
 
 <details open markdown="block">
@@ -119,22 +119,22 @@ Secondary fields to consider:
 
 # Sample Data Dictionary 
 
-Below is a shortened data dictionary for the dataset we looked at in exercise 1. You can download a sample data dictionary based on exercise 1 [here](https://ubc-library-rc.github.io/rdm/content/assets/templates/data_dictionary_template.csv) (CSV file). The fields and existing values can be deleted and modified to fit your project.  
+Below is a shortened data dictionary for the dataset we looked at in exercise 1. You can download a sample data dictionary based on exercise 1 [here](https://ubc-library-rc.github.io/rdm/content/assets/templates/data_dictionary_sample.csv). The fields and existing values can be deleted and modified to fit your project.  
 
 **NOTE: The values here are <u>made-up examples</u> for educational purposes. They do not reflect the real study.**
 
-| Column Name | Meaningful Name | Description | Data Type | Data Usage Type | Sample Values |
-| --- | --- | --- | --- | --- | --- |
-| STATEFP10 | State code | The unique numeric code for the state. More information on state codes can be found [here](https://www23.statcan.gc.ca/imdb/p3VD.pl?Function=getVD&TVD=53971). | String | Dimension Attribute | “01”, “02”, “06” |
-| COUNTYFP10 | County code | The unique numeric code for the county. More information on county codes can be found [here](https://www2.census.gov/programs-surveys/decennial/2010/partners/pdf/FIPS_StateCounty_Code.pdf). | String | Dimension Foreign Key | “001”, “003”, “005” |
-| GEOID10 | Geographical ID | Combined state, county, and tract identifier. | String | Dimension Foreign Key | “26163593300” |
-| FFFPCT | Fast Food Percentage | Percentage of restaurants classified as fast food. | Number | Fact | 40.3, 55.8, 22.5 |
+| Varible ID | Variable Name | Variable Definition | Variable Type | Allowable Values/Parameters | Requirement | Notes | 
+| --- | --- | --- | --- | --- | --- | --- | 
+| STATEFP10 | State code | The unique numeric code for the state. More information on state codes can be found [here](https://www23.statcan.gc.ca/imdb/p3VD.pl?Function=getVD&TVD=53971). | String | Numerical values of 01-50 allowed | “01”, “02”, “06” | | 
+| COUNTYFP10 | County code | The unique numeric code for the county. More information on county codes can be found [here](https://www2.census.gov/programs-surveys/decennial/2010/partners/pdf/FIPS_StateCounty_Code.pdf). | String | Numerical values of 001-110 allowed | “001”, “003”, “005” | | 
+| GEOID10 | Geographical ID | Combined state, county, and tract identifier. | String | Numerical and alphabetical values allowed | “26163593300” | | 
+| FFFPCT | Fast Food Percentage | Percentage of restaurants classified as fast food. | Number | Percentages from 0-100 allowed with one decimal place | 40.3, 55.8, 22.5 | | 
 
 <p style="margin-bottom: 20px"></p> 
 
 ## Data Dictionary Template
 
-You can download a blank data dictionary template [here](https://repository.upenn.edu/entities/publication/0430ccdd-cbd8-4404-9f54-11cb81d5b3b1). Modify the header and fields included to fit your project. 
+You can download a blank data dictionary template [here](https://ubc-library-rc.github.io/rdm/content/assets/templates/data_dictionary_template_blank.csv). You can modify the header and fields to fit your project. 
 
 <br> 
 
