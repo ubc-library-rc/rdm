@@ -133,9 +133,9 @@ For example, the directory structure may look like this:
 
 ```
 ├── Project-Folder/
-|   ├── README.md                  <----
+|   ├── _README.md                  <----
 |   ├── Experiment-Data/
-|   |   ├── DATA-DICTIONARY.md     <----
+|   |   ├── _DATA-DICTIONARY.md     <----
 |   |   ├── File-1
 |   |   ├── File-2
 |   ├── Experiment-Analysis/
