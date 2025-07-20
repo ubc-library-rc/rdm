@@ -88,7 +88,7 @@ Which ones in this example are root directories? What about subdirectories?
 # Directory Structure Examples
 
 ```
-Example 1: This example folder is organized such that the different experiments are the top folders
+Example 1: This example folder is organized such that the different experiments are in the subfolders
 
 example_project
 ├── Project-Example_Folder/
@@ -104,7 +104,7 @@ example_project
 ```
 
 ```
-Example 2: This example folder is organized such that the different components are the top folders 
+Example 2: This example folder is organized such that the different components are in the subfolders 
 
 another_example
 ├── Another-Example_Folder/
