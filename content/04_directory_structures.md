@@ -90,29 +90,32 @@ Which ones in this example are root directories? What about subdirectories?
 ```
 Example 1: This example folder is organized such that the different experiments are the top folders
 
-example_project 
-├─ experiment_1
-│  ├─ data.csv
-│  ├─ data_cleaning.R
-│  └─ model.R
-├─ experiment_2
-│  └─ ...
-└─ experiment_3 
-   └─ ...
+example_project
+├── Project-Example_Folder/
+|   ├── Experiment_1/
+│   |   ├─ data.csv
+│   |   ├─ data_cleaning.R
+│   |   └─ model.R
+|   ├── Experiment_2/
+|   |   └─ . . . 
+|   ├── Experiment_3/
+|   |   ├── File-1
+|   |   └─ . . .
 ```
 
 ```
 Example 2: This example folder is organized such that the different components are the top folders 
 
 another_example
-├─ data
-│  ├─ data_exp_1.csv
-│  └─ data_exp_2.csv
-├─ cleaning
-│  ├─ clean_exp1.R
-│  └─ clean_exp2.R
-└─ visualization
-   └─ ...
+├── Another-Example_Folder/
+|   ├── data/
+│   |   ├─ data_exp_1.csv
+│   |   └─ data_exp_2.csv
+|   ├── cleaning/
+│   |   ├─ clean_exp1.R
+│   |   └─ clean_exp2.R
+|   ├── visualization/
+|   |   └─ . . .
 ```
 
 <br>
