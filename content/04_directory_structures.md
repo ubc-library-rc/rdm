@@ -151,6 +151,15 @@ For example, the directory structure may look like this:
 
 <p style="margin-bottom: 30px"></p>
 
+# Suggested Design Tools 
+
+Here are some useful tools to help you plan and design your folder structures:
+* [Project Tree Generator](https://woochanleee.github.io/project-tree-generator/): You can paste your GitHub repository URL to generate a project tree or create it from scratch
+* [Tree Generator by Nathan](https://t.co/AQzht2i703): Design a diagram for potential file tree with more options
+* In your terminal, you can use `tree` to generate a tree-like structure. Windows and Linux have this function, but you will need to install it for Mac
+
+<img src="figures/folders2.png" width="100" style="margin-left:30px"/>
+
 ## Exercise 1
 {: .label .label-green}
 {: .no_toc}
@@ -200,15 +209,6 @@ You can also refer to the example that we saw earlier:
 <p style="margin-bottom: 30px"></p>
 
 [//]: # (activity link: https://bit.ly/rdmactivity)
-
-# Suggested Design Tools 
-
-Here are some useful tools to help you plan and design your folder structures:
-* [Project Tree Generator](https://woochanleee.github.io/project-tree-generator/): You can paste your GitHub repository URL to generate a project tree or create it from scratch
-* [Tree Generator by Nathan](https://t.co/AQzht2i703): Design a diagram for potential file tree with more options
-* In your terminal, you can use `tree` to generate a tree-like structure. Windows and Linux have this function, but you will need to install it for Mac
-
-<img src="figures/folders2.png" width="100" style="margin-left:30px"/>
 
 <br>
 
