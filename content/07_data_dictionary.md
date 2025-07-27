@@ -85,11 +85,11 @@ The following are some general best practices related to data documentation:
 * Define terms, abbreviations, and acronyms 
 * Follow [good naming conventions](https://ubc-library-rc.github.io/rdm/content/01_file_naming.html#1--machine-readable) and a consistent formatting style
 
+A data dictionary is usually formatted as a table with the variables in rows and variable information in columns. At the top, you should mention relevant metadata such as the dataset's name, the creation date of the data dictionary, and the version number or last updated date. 
+
 <p style="margin-bottom: 30px"></p> 
 
 # Recommended Content 
-
-A data dictionary is usually formatted as a table with the variables in rows and variable information in columns. At the top, you should mention relevant metadata such as the dataset's name, the creation date of the data dictionary, and the version number or last updated date. 
 
 Every project is different, so consider which of the following applies to your project.
 
