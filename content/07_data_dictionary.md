@@ -125,12 +125,12 @@ You can download a sample data dictionary based on exercise 1 [here](https://ubc
 
 **NOTE: The values here are <u>made-up examples</u> for educational purposes. They do not reflect the real study.**
 
-| Varible ID | Variable Name | Variable Definition | Variable Type | Allowable Values/Parameters | Requirement | Notes | 
-| --- | --- | --- | --- | --- | --- | --- | 
-| STATEFP10 | State code | The unique numeric code for the state. More information on state codes can be found [here](https://www23.statcan.gc.ca/imdb/p3VD.pl?Function=getVD&TVD=53971). | String | Numerical values of 01-50 allowed | “01”, “02”, “06” | | 
-| COUNTYFP10 | County code | The unique numeric code for the county. More information on county codes can be found [here](https://www2.census.gov/programs-surveys/decennial/2010/partners/pdf/FIPS_StateCounty_Code.pdf). | String | Numerical values of 001-110 allowed | “001”, “003”, “005” | | 
-| GEOID10 | Geographical ID | Combined state, county, and tract identifier. | String | Numerical and alphabetical values allowed | “26163593300” | | 
-| FFFPCT | Fast Food Percentage | Percentage of restaurants classified as fast food. | Number | Percentages from 0-100 allowed with one decimal place | 40.3, 55.8, 22.5 | | 
+| Variable ID | Variable Name | Variable Definition | Variable Type | Allowable Values/Parameters | Requirement | Sample Values | Notes | 
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| STATEFP10 | State code | The unique numeric code for the state. More information on state codes can be found [here](https://www23.statcan.gc.ca/imdb/p3VD.pl?Function=getVD&TVD=53971). | String | Numerical values of 01-50 allowed | Yes | “01”, “02”, “06” | | 
+| COUNTYFP10 | County code | The unique numeric code for the county. More information on county codes can be found [here](https://www2.census.gov/programs-surveys/decennial/2010/partners/pdf/FIPS_StateCounty_Code.pdf). | String | Numerical values of 001-110 allowed | Yes | “001”, “003”, “005” | | 
+| GEOID10 | Geographical ID | Combined state, county, and tract identifier. | String | Numerical and alphabetical values allowed | Yes | “26163593300” | | 
+| FFFPCT | Fast Food Percentage | Percentage of restaurants classified as fast food. | Number | Percentages from 0-100 allowed with one decimal place | Yes| 40.3, 55.8, 22.5 | | 
 
 <p style="margin-bottom: 20px"></p> 
 
