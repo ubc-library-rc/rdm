@@ -93,7 +93,7 @@ A data dictionary is usually formatted as a table with the variables in rows and
 
 Every project is different, so consider which of the following applies to your project.
 
-Key fields to consider:
+Primary fields to consider:
 
 | **Field** | **Details** |
 |-----------|-------------|
