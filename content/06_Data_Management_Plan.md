@@ -103,7 +103,7 @@ To create your DMP, please use <span class="fs-3" align="bottom"> <a href="https
 
 This is a free, open-source Canadian tool created by the Portage network (now The Digital Research Alliance of Canada) for preparing DMPs. It is available in *both English and French* and allows you to create and export your DMP. 
 
-UBC has a *general template for UBC researchers*. This tool follows best practices in data stewardship and walks researchers step-by-step through key questions about data management. 
+UBC has a *simplified and a comprehensive template for UBC researchers*. This tool follows best practices in data stewardship and walks researchers step-by-step through key questions about data management. 
 
 <p style="margin-top:25px;margin-left:30px;margin-bottom:25px">
 <img src="figures/dmp_assistant.jpeg" width="700"/>
