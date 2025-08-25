@@ -48,24 +48,33 @@ So far, we are seeing the following funding opportunities requiring DMPs, in add
 
 - Network Grants in Skin Health, Bone Health and Muscular Dystrophy (October 2022)
 - Team Grants: Strengthening the Health Workforce for System Transformation (June 2023)
-  Note: Formerly "Virtual Care/Digital Health Team Grants"
 - Team Grants: Lung Health (July 2023)
 - Operating Grant: Clinical Trials Projects (July 2023)
 - Team Grants: Improving Health and Administrative Data and Monitoring for Rare Diseases (August 2023)
-- Infectious and Congenital Syphilis in Canada: Implementation and Intervention Research Response (September 2023)
+- Operating Grant: Addressing Infectious and Congenital Syphilis in Canada (September 2023)
 - Canadian Consortium on Neurodegeneration in Aging (September 2023)
-- Team Grants: Embracing Diversity to Achieve Precision and Health Equity (November 2023)
+- Team Grants: Embracing Diversity to Achieve Precision and Health Equity (October 2023)
+- Canadian Immunization Research Network (CIRN) renewal (November 2023)
+- Team Grant: HIV/AIDS and STBBI Community-Based Research (December 2023)
+- Team Grant: Biomedical Research for HIV/AIDS and STBBI (April 2024)
+- Canadian Consortium on Neurodegeneration in Aging Phase III: Research Teams (August 2024)
+- Operating Grant: HCRI—Data Analysis Using Existing Databases and Cohorts (May 2024)
+- Team Grant: Bringing Biology to Cancer Prevention (forthcoming)
+- Team Grant: Pan-Canadian Network: Emerging Learning Health System in Perinatal Mental Health
 
 
 ### <a style="font-size:17px">NSERC</a>
 {: .label .label-yellow .no_toc }
 
-- Subatomic Physics Discovery Grants program (Individual and Project).
+- Subatomic Physics Discovery Grants - Individual and Project (November 2023)
+- NSERC - ECCC Call for Proposals on Plastics Science and Innovation for a Cleaner and More Sustainable Future (May 2025)
+- Alliance Society (September 2025)
 
 ### <a style="font-size:17px">SHHRC</a>
 {: .label .label-yellow .no_toc }
 
-- Partnership Grants Phase 2.
+- Partnership Grants Stage 2 (October 2023)
+- Policy Innovation Partnership Grants (September 2025)
 
 <br>
 
