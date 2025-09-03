@@ -9,7 +9,7 @@ nav_order: 8
 
 <p style="margin-top:15px"></p>
 
-Let's pretend you store everything on your computer in one folder. Imagine how long it would take to find data you collected on a specific day a few years ago. Instead of keeping every document in a single place, files are often organized using directories or folder structures. 
+Let's pretend you store everything on your computer in one folder. Imagine how long it would take to find the data you collected on a specific day a few years ago. Instead of keeping every document in a single place, files are often organized using directories or folder structures. 
 
 A good, consistent folder structure benefits you and others by making item access, retrieval, and storage more efficient. This ultimately saves time and improves productivity. Folder structures make the research process more transparent and collaborative by ensuring everyone can find the files they need. 
 
@@ -213,7 +213,7 @@ You can also refer to the example that we saw earlier:
 <br>
 
 <b>Here is a breakdown of what we covered:</b>
-Directory structures are crucial for file access, retrieval, storage, and research transparency. Follow a consistent organizational structure that makes sense for your project and research team. Use clear naming, logical structuring, and consistent relationships between files and folders. Aim for a balanced folder structure — not too deep or too shallow. Lastly, README files should be placed in the root directory, and data dictionaries should be placed where the data is found because they contain important guiding information. 
+Directory structures are crucial for file access, retrieval, storage, and research transparency. Follow a consistent organizational structure that makes sense for your project and research team. Use clear naming, logical structuring, and consistent relationships between files and folders. Limit the number of nested folders (neither too deep nor too shallow) and strive to make folder hierarchies as simple as possible. Lastly, README files should be placed in the root directory, and data dictionaries should be placed where the data is found because they contain important guiding information. 
 {: .note}
 
 # Congrats!
