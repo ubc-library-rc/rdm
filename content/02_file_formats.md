@@ -9,7 +9,9 @@ nav_order: 5
 
 <p style="margin-bottom: 20px"></p>
 
-A file format encodes information within a computer file so that it can be recognized by an application and accessed. It is indicated by the file name extension. Each file type (such as text, images, or sound) has many file formats available. We strongly recommend using non-proprietary (open) file formats because it's important for preserving readability and long-term access for you and anyone else.
+A file format encodes information within a computer file so that it can be recognized by an application and accessed. The file name extension helps indicate the kind of format being used. Each file type (such as text, images, or sound, for example) has many file formats available. 
+
+Software and data storage technology change quickly, and files can become obsolete or difficult to access. In general, data files should be copied to new media every 2-5 years, especially if technology changes or if files begin to degrade. We strongly recommend using non-proprietary (open) file formats because it's important for preserving readability and long-term access for you and anyone else.
 
 <p style="margin-bottom: 25px"></p>
 
