@@ -111,7 +111,7 @@ What did you change and why?
 - Have file names that follow a consistent naming method, and document this file naming method in your [README](https://ubc-library-rc.github.io/rdm/content/03_create_readme.html) file
     - Especially if acronyms, abbreviations, and/or codes are used, you should define what they mean in your README file
 - The file names should be concise but detailed enough so that they're still understandable to you and anyone else who has access
-    - The amount of detail is up to you, but the names shouldn't be *too* long - we recommend having 3 to 5 elements per file name
+    - The amount of detail is up to you, but the names shouldn't be *too* long - we recommend having 3 to 5 elements per file name, or under 32 characters
     - This is especially important for the future!
 - Avoid including application (software) details in your file names
     - Example: you don't need to add "doc" to the file name of a text document
@@ -135,6 +135,9 @@ ubc_application_letter.txt
 
 # good
 clean_data.py
+
+# also great
+FileNm_Guidelines_20180409_v01.docx
 ```
 
 ## *3*{: .circle .circle-yellow} &nbsp; Supports Default Ordering 
