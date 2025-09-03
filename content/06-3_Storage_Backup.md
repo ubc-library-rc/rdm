@@ -66,6 +66,8 @@ Data can be lost for a number of reasons including:
 
 <img src="figures/thumbs-up.png" align="center" width="25"/> &nbsp;The best practice is to follow the 3-2-1 backup rule, which entails maintaining  **three copies** of your data stored in at least **two locations** (in case of a failure at one location), **one of them off-site**. Even if each location is a cloud-based server, do not store all of your backups on the same cloud-based server as a precaution. Cloud-based servers do have internal redundancies to prevent the loss of data, but *utilizing multiple services* is a good practice in the off-chance of a catastrophic loss.
 
+<img src="figures/321_backup.jpg" width="300"/>
+
 <br>
 
 
