@@ -101,11 +101,11 @@ File quality and file size:
 
 | File Type | Recommended Formats                      | Avoided Formats                |
 |-----------|------------------------------------------|--------------------------------|
-| Text      | XML, ASCII, txt, PDF, LaTeX, .docx       | .doc, .wpd                     |
-| Images    | TIFF, JPEG2000, PNG, JPEG/JFIF, PDF      | RAW, Adobe Photoshop           |
-| Video     | MOV, MPEG-2                              | .wmv                           |
-| Audio     | PCM, WAVE, DSD, .mp3                     | CD, DVD, .m4p, xmi, .mod       |
-| Dataset   | CSV, TSV, .db, .sqlite, Shapefile, .xlsx | .xls                           |
+| Text      | .txt, PDF, XML, HTML, .docx, RTF           | .doc, .wpd                     |
+| Digital Images    | TIFF, JPEG2000, JPEG/JFIF, PNG, PDF      | RAW, Adobe Photoshop           |
+| Digital Videos     | MKV, MPEG-4, MOV                          | .wmv                           |
+| Digital Audios     | WAVE, MP3, FLAC, AIFF                     | CD, DVD, .m4p, xmi, .mod       |
+| Datasets   | CSV, TSV, .db, .sqlite, Shapefile, .xlsx | .xls                           |
 | Web Data  | JSON, XML, HTML                          |                                |
 
 <br>
