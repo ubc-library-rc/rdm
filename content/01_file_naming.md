@@ -165,7 +165,7 @@ Sorting your files chronologically (having the date as the first name element) m
 ### Logical order
 {: .no_toc }
 When using a sequential numbering system, use <b>leading zeros</b> to make sure files sort in sequential order
-- Examples: 001, 002, 010, 011... 100, 101 ...
+- Examples: 001, 002, 010, 011...
 
 We recommend ordering elements from general to specific to make searching easier.
 
