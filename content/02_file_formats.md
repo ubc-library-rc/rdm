@@ -105,7 +105,7 @@ File quality and file size:
 | Digital Images    | TIFF, JPEG2000, JPEG/JFIF, PNG, PDF      | RAW, Adobe Photoshop           |
 | Digital Videos     | MKV, MPEG-4, MOV                          | .wmv                           |
 | Digital Audios     | WAVE, MP3, FLAC, AIFF                     | CD, DVD, .m4p, xmi, .mod       |
-| Datasets   | CSV, TSV, .db, .sqlite, Shapefile, .xlsx | .xls                           |
+| Datasets   | CSV, TSV, .db, Shapefile, .xlsx | .xls                           |
 | Web Data  | JSON, XML, HTML                          |                                |
 
 <br>
