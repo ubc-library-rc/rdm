@@ -93,8 +93,19 @@ Under this license, research outputs can’t be remixed (new works derived from 
 Are you taking things from many places and making something new, like a smoothie? Then it would be considered a “derivative” work. However, it’s still good to give credit to the parts you used to make your derivative work. 
 
 ### How can I apply a CC license?
+To apply a CC license, you need to be the copyright owner of the work. If you don’t have copyright ownership over a portion of the work you’re licensing, then you need to obtain special permission from the owner of that work.
+
+Remember that you need to be specific about what part(s) of your work are being CC licensed (if the work contains third-party copyrighted material and the work isn’t 100% yours). 
 
 ### Which CC license do I choose?
+Selecting a CC license depends on your preferences:
+- How much freedom do you want users to have?
+- How much control do you want?
+- Do you want others to attribute you? Do you not want others to make derivatives? Do you want to allow users to make money off your work (commercial use)?
+
+The Creative Commons also has a tool to help you choose the right license for you: (HYPERLINK)
+
+The Borealis data repository is supported by the UBC Library to allow the application of any suite of the CC licenses. (HYPERLINK)
 
 # CC0 Universal 
 What does CC0 indicate? CC0 is not a license, but instead a public dedication tool that indicates the creator giving up copyright for their work and releasing their work into the public domain. Their work can be used openly for whatever reason. Users can distribute, remix, adapt, add to the work, and more, unconditionally. 
@@ -102,7 +113,7 @@ What does CC0 indicate? CC0 is not a license, but instead a public dedication to
 What does CC0 do? It does many things than just give up copyright:
 - Waives copyright and any other rights
 - If there are rights that the right holder cannot waive under applicable law, they are licensed in a way that mirrors as closely as possible the legal effect of a waiver
-- If there are any rights that the rights holders cannot waive or license, they affirm that they will not exercise them and they will not assert any claim with respect to the use of the work 
+- If there are any rights that the rights holders cannot waive or license, they affirm that they will not exercise them, and they will not assert any claim with respect to the use of the work 
 
 Exercise 1
 Of these datasets provided, which can and can't be used based on these 2 scenarios:
