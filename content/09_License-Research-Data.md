@@ -75,7 +75,7 @@ Here are the license terms that are used in CC licenses:
 
 There are many kinds of CC licenses (HYPERLINK)
 | **CC license** | **What it indicates** |
-| -- | -- |
+| -------------- | --------------------- |
 | CC BY | Give credit to the creator. |
 | CC BY-ND | Give credit to the creator but can’t derive (remix) or adapt the work. |
 | CC BY-NC | Give credit to the creator and only use the work for non-commercial purposes. | 
