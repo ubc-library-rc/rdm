@@ -73,7 +73,8 @@ Here are the license terms that are used in CC licenses:
 - ND: no derivatives
 - NC: non-commercial use
 
-There are many kinds of CC licenses (HYPERLINK)
+There are many kinds of CC licenses (HYPERLINK):
+
 | **CC license** | **What it indicates** |
 | -------------- | --------------------- |
 | CC BY | Give credit to the creator. |
