@@ -10,18 +10,34 @@ nav_order: 13
 </p>
 
 # Licensing Your Research 
+{: .no_toc}
 It's great that you want to share your research to support open research initiatives. However, not everyone is comfortable waiving their copyright over their work. Using a license is a good way of communicating permission to potential users about how your work can be used. It ensures you're getting the proper credit for your work when you're sharing it.
 
 There are many kinds of licenses for various kinds of products, contexts, and disciplines. Each has its own unique purpose, policies, and legal protection. Choosing the best license depends on your preferences and the nature of your work. 
 
-(Note box)
-Looking for a cheat sheet? Check out our one-pager
+<p style="margin-bottom: 20px"></p>
 
-Warm-up
-Take a look at this workshop page. Can you use the information openly? 
+Looking for a cheat sheet? Check out our one-pager (ONE-PAGER IN PROGRESS)
+{: .note}
 
-What about this dataset? Can you use the data freely?
-Access the dataset here: Binfield, Lucy, 2025, "Student perceptions of waste sorting interventions, and participation rates in interventions, in high-density student housing", https://doi.org/10.5683/SP3/POXHD6, Borealis, V1
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+ - TOC
+{:toc}
+</details>
+---
+<p style="margin-bottom: 20px"></p>
+
+## Warm-up
+{: .no_toc}
+{: .label .label-green }
+
+1) Take a look at this workshop page. Can you use the information openly? 
+2) What about this dataset? Can you use the data freely?
+>Access the dataset here: Binfield, Lucy, 2025, "Student perceptions of waste sorting interventions, and participation rates in interventions, in high-density student housing", [https://doi.org/10.5683/SP3/POXHD6](https://doi.org/10.5683/SP3/POXHD6), Borealis, V1
 
 # What is copyright?
 Copyright is a legal concept where an individual or an organization, the copyright holder, has the right to control what becomes of their work, such as:
@@ -32,9 +48,9 @@ Copyright is a legal concept where an individual or an organization, the copyrig
 - Translation
 - Telecommunications
 
-In other words, the copyright holder gets to *control* how users can use their work. A copyrighted work can be used with the author's permission or by user rights, as outlined in Canada's Copyright Act (HYPERLINK). Another way users can be permitted to use copyrighted work is through licences. 
+In other words, the copyright holder gets to *control* how users can use their work. A copyrighted work can be used with the author's permission or by user rights, as outlined in Canada's Copyright Act (HYPERLINK). Another way users can be permitted to use copyrighted work is through licenses. 
 
-### What can't be copyrighted?
+## What can't be copyrighted?
 What can't be copyrighted is more complicated. For example, some forms of data analysis may not be "creatively" driven and can't be protected by copyright. Another example is when research is replicated using the original raw data to reproduce the results. Neither the original data nor the reproduced data is copyrightable.
 
 Solid examples include:
@@ -46,12 +62,13 @@ Solid examples include:
 - Raw data
 - Simple visualisations, like simple line graphs
 
-### Why is data not copyrightable?
+## Why is data not copyrightable?
+{: .no_toc}
 Copyrighting raw, factual data would hinder academic, scientific, intellectual, and artistic freedoms, in addition to obstructing research transparency and replicability. Having factual information freely available improves the learning and knowledge of a discipline.
 
 As a counterbalance, creative outputs based on facts are protected by copyright.
 
-### What can be copyrighted?
+## What can be copyrighted?
 A work produced that has something done to it (modified) in a creative, unique intellectual way can be copyrighted. Most of the time, creative products of the research can be covered by copyright. 
 
 Copyrighted things could be:
@@ -87,18 +104,20 @@ There are many kinds of CC licenses HYPERLINK
 (INSERT IMAGE)
 Different CC licenses have varying levels of freedom and control, with some being more restrictive (less free) and others being more open. For example, CC BY is the license that allows many things (remixing, adding upon the work, free distribution, and commercial use), while CC BY-NC-ND is the license that has many restrictions (doesn’t allow for commercial use and remixing or modification). 
 
-### CC BY-ND: Why this license may not be the best for researchers working with data
+## CC BY-ND: Why this license may not be the best for researchers working with data
+{: .no_toc}
 Under this license, research outputs can’t be remixed (new works derived from the original copyrighted work), which is, in many cases, counterproductive to sharing research data. 
 
-### A "derivative" work: Are you making a smoothie?
+## A "derivative" work: Are you making a smoothie?
+{: .no_toc}
 Are you taking things from many places and making something new, like a smoothie? Then it would be considered a “derivative” work. However, it’s still good to give credit to the parts you used to make your derivative work. 
 
-### How can I apply a CC license?
+## How can I apply a CC license?
 To apply a CC license, you need to be the copyright owner of the work. If you don’t have copyright ownership over a portion of the work you’re licensing, then you need to obtain special permission from the owner of that work.
 
 Remember that you need to be specific about what part(s) of your work are being CC licensed (if the work contains third-party copyrighted material and the work isn’t 100% yours). 
 
-### Which CC license do I choose?
+## Which CC license do I choose?
 Selecting a CC license depends on your preferences:
 - How much freedom do you want users to have?
 - How much control do you want?
@@ -127,7 +146,7 @@ Access the datasets here:
 - Ali, Naila; White, Hailie; Min, Jason; Leung, Larry, 2025, "Pharmacy Program in a BC First Nation: Perspectives of Patients, Clinicians, and Student Learners in a Rural and Remote Indigenous Context", https://doi.org/10.5683/SP3/TAWTOV, Borealis, V2
 
 # Open Government Licenses
- Open Government Licenses (OGLs) allow users to use government data openly. Applying an OGL supports and encourages policies related to government transparency and accountability, such as BC’s Open Information and Open Data policy (HYPERLINK) 
+Open Government Licenses (OGLs) allow users to use government data openly. Applying an OGL supports and encourages policies related to government transparency and accountability, such as BC’s Open Information and Open Data policy (HYPERLINK) 
 
 Different levels of government of different provinces and territories have their own version of an OGL. For example:
 - OGL-Canada version 2.0
@@ -139,9 +158,21 @@ The Open Government Licenses can be very similar to one another, but they can va
 **Here's a breakdown of what we covered:**
 Licensing and copyright can only be applied to things that are products of creative or unique intellectual activity. Licenses like Creative Commons and Open Government Licenses help to concisely communicate how to use a work properly and legally within the copyright framework. The level of permission can vary — some licenses openly allow modification and commercial use, while some don’t. Choose the license that best suits your preferences and the subject for your research output(s).
 
-Sources
+# Congrats!
+{: .no_toc }
+*Hooray!* You are now ready to write up a good README file so you and other researchers can understand your project with no problems.
+<br>
 
+---
 
+### Sources
+{: .no_toc} 
+
+---
+
+Need help?
+{: .label .label-blue }
+  Please reach out to `research.data@ubc.ca` for assistance with any of your research data questions.
 
 
 
