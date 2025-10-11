@@ -95,9 +95,10 @@ Here are the license terms that are used in CC licenses:
 - ND: no derivatives
 - NC: non-commercial use
 
+There are many kinds of [CC licenses:](https://creativecommons.org/share-your-work/cclicenses/)
+
 (INSERT IMAGE)
 
-There are many kinds of [CC licenses:](https://creativecommons.org/share-your-work/cclicenses/)
 | **CC license** | **What it indicates** |
 |----------------|-----------------------|
 | CC BY | Give credit to the creator. |
@@ -155,7 +156,9 @@ Let's now have a try at practicing the knowledge we've learned so far. Of these 
 
 Access the datasets here:
 >Azadian, Amin; Protopopova, Alexandra, 2025, "Replication Data for: Stability in Cognitive and Behavioural Performance Varies Between Dog Breed Clades", [https://doi.org/10.5683/SP3/8MC0X2](https://doi.org/10.5683/SP3/8MC0X2), Borealis, V1
+
 >Hives, Benjamin; Bruno D. Zumbo; Mark R. Beauchamp; Yan Liu; Eli Puterman, 2025, "COVID-19 Pandemic and Exercise (COPE) Trial: Engagement with exercise apps and psychological stress", [https://doi.org/10.5683/SP3/SJYOUF](https://doi.org/10.5683/SP3/SJYOUF), Borealis, V1
+
 >Ali, Naila; White, Hailie; Min, Jason; Leung, Larry, 2025, "Pharmacy Program in a BC First Nation: Perspectives of Patients, Clinicians, and Student Learners in a Rural and Remote Indigenous Context", [https://doi.org/10.5683/SP3/TAWTOV](https://doi.org/10.5683/SP3/TAWTOV), Borealis, V2
 
 # Open Government Licenses
@@ -176,7 +179,7 @@ Licensing and copyright can only be applied to things that are products of creat
 
 # Congrats!
 {: .no_toc }
-*Hooray!* You now know much about copyright and licensing in a research data context. 
+*Hooray!* You now know about copyright and licensing in a research data context, and can communicate to users how you want your work to be properly interacted with.  
 
 <br>
 
