@@ -84,6 +84,8 @@ Copyrighted things could be:
 - Datasets
 - Databases
 
+<img src="figures/copyright_umbrella.png" width="250"/>
+
 # Creative Commons licenses
 [Creative Commons (CC)](https://creativecommons.org/mission/) is a non-profit organization that issues standardized and free licenses to protect your work when you share it. CC licenses are recognized and applicable internationally. 
 
