@@ -119,7 +119,7 @@ Different CC licenses have varying levels of freedom and control, with some bein
 <p>
 <img src="figures/Foter_infographic_CC.jpg" width="500"/>
 </p> 
-Image from "How to Attribute Creative Commons Photos" by Foter, used under CC BY-SA. 
+Image from ["How to Attribute Creative Commons Photos"](https://foter.com/blog/how-to-attribute-creative-commons-photos/) by Foter, used under CC BY-SA. 
 
 ### A "derivative" work: Are you making a smoothie?
 {: .no_toc}
@@ -154,7 +154,7 @@ What does CC0 do? It does many things than just give up copyright:
 - If there are any rights that the rights holders cannot waive or license, they affirm that they will not exercise them, and they will not assert any claim with respect to the use of the work
 
 <p>
-<img src="figures/publicdomain.jpg" width="250"/>
+<img src="figures/publicdomain.jpg" width="100"/>
 </p> 
 
 ## Exercise 1
