@@ -101,7 +101,9 @@ Here are the license terms that are used in CC licenses:
 
 There are many kinds of [CC licenses:](https://creativecommons.org/share-your-work/cclicenses/)
 
-(INSERT IMAGE)
+<p>
+<img src="figures/CClicenses_all.png" width="250"/>
+</p>
 
 | **CC license** | **What it indicates** |
 |----------------|-----------------------|
@@ -114,7 +116,10 @@ There are many kinds of [CC licenses:](https://creativecommons.org/share-your-wo
 
 Different CC licenses have varying levels of freedom and control, with some being more restrictive (less free) and others being more open. For example, CC BY is the license that allows many things (remixing, adding upon the work, free distribution, and commercial use), while CC BY-NC-ND is the license that has many restrictions (doesn’t allow for commercial use and remixing or modification). 
 
-(INSERT IMAGE) Image from "How to Attribute Creative Commons Photos" by Foter, used CC BY-SA. 
+<p>
+<img src="figures/Foter_infographic_CC.jpg" width="500"/>
+</p> 
+Image from "How to Attribute Creative Commons Photos" by Foter, used under CC BY-SA. 
 
 ### A "derivative" work: Are you making a smoothie?
 {: .no_toc}
@@ -148,7 +153,9 @@ What does CC0 do? It does many things than just give up copyright:
 - If there are rights that the right holder cannot waive under applicable law, they are licensed in a way that mirrors as closely as possible the legal effect of a waiver
 - If there are any rights that the rights holders cannot waive or license, they affirm that they will not exercise them, and they will not assert any claim with respect to the use of the work
 
-(INSERT IMAGE)
+<p>
+<img src="figures/publicdomain.jpg" width="250"/>
+</p> 
 
 ## Exercise 1
 {: .no_toc}
