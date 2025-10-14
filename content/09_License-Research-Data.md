@@ -5,7 +5,7 @@ nav_order: 13
 ---
 
 # This workshop is under development
-<p style="margin-top:25px;margin-left:30px">
+<p >
 <img src="figures/work-in-progress.png" width="600"/>
 </p>
 
