@@ -84,8 +84,8 @@ Copyrighted things could be:
 - Datasets
 - Databases
 
-<p >
-<img src="content/figures/copyright_umbrella.png" width="250"/>
+<p>
+<img src="figures/copyright_umbrella.png" width="250"/>
 </p>
 
 # Creative Commons licenses
