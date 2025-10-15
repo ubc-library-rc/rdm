@@ -117,6 +117,7 @@ There are many kinds of [CC licenses:](https://creativecommons.org/share-your-wo
 Different CC licenses have varying levels of freedom and control, with some being more restrictive (less free) and others being more open. For example, CC BY is the license that allows many things (remixing, adding upon the work, free distribution, and commercial use), while CC BY-NC-ND is the license that has many restrictions (doesn’t allow for commercial use and remixing or modification). 
 
 <p>
+<p>
 <img src="figures/Foter_infographic_CC.jpg" width="500"/>
 </p> 
 Image from ["How to Attribute Creative Commons Photos"](https://foter.com/blog/how-to-attribute-creative-commons-photos/) by Foter, used under CC BY-SA. 
@@ -143,9 +144,9 @@ Selecting a CC license depends on your preferences and the nature of your resear
 
 The Creative Commons also [provides a tool](https://creativecommons.org/chooser/) that can help you choose the right license. 
 
-The Borealis data repository is supported by the UBC Library to allow the application of any suite of the CC licenses. Please see [here](https://researchdata.library.ubc.ca/deposit/dataverse/) for more information. You can also consult [UBC's Creative Commons Guide](https://copyright.ubc.ca/creative-commons/) for more detailed information about CC licenses.
+The [Borealis data repository](https://researchdata.library.ubc.ca/deposit/dataverse/) is supported by the UBC Library to allow the application of any suite of the CC licenses. Please see [here](https://researchdata.library.ubc.ca/deposit/dataverse/) for more information. You can also consult [UBC's Creative Commons Guide](https://copyright.ubc.ca/creative-commons/) for more detailed information about CC licenses.
 
-# CC0 Universal 
+## CC0 Universal 
 What does CC0 indicate? CC0 is not a license, but instead a public dedication tool that indicates the creator giving up copyright for their work and releasing their work into the public domain. Their work can be used openly for whatever reason. Users can distribute, remix, adapt, add to the work, and more, unconditionally. 
 
 What does CC0 do? It does many things than just give up copyright:
@@ -173,7 +174,7 @@ Access the datasets here:
 >Ali, Naila; White, Hailie; Min, Jason; Leung, Larry, 2025, "Pharmacy Program in a BC First Nation: Perspectives of Patients, Clinicians, and Student Learners in a Rural and Remote Indigenous Context", [https://doi.org/10.5683/SP3/TAWTOV](https://doi.org/10.5683/SP3/TAWTOV), Borealis, V2
 
 # Open Government Licenses
-Open Government Licenses (OGLs) allow users to use government data openly. Applying an OGL supports and encourages policies related to government transparency and accountability, such as BC’s Open Information and Open Data policy (HYPERLINK) 
+Open Government Licenses (OGLs) allow users to use government data openly. Applying an OGL supports and encourages policies related to government transparency and accountability, such as [BC’s Open Information and Open Data policy] (https://www2.gov.bc.ca/assets/gov/british-columbians-our-governments/services-policies-for-government/information-management-technology/information-privacy/resources/policies-guidelines/open-information-open-data-policy.pdf)
 
 Different levels of government of different provinces and territories have their own version of an OGL. For example:
 - [OGL-Canada](https://search.open.canada.ca/opendata/) version 2.0
