@@ -117,9 +117,11 @@ There are many kinds of [CC licenses:](https://creativecommons.org/share-your-wo
 Different CC licenses have varying levels of freedom and control, with some being more restrictive (less free) and others being more open. For example, CC BY is the license that allows many things (remixing, adding upon the work, free distribution, and commercial use), while CC BY-NC-ND is the license that has many restrictions (doesn’t allow for commercial use and remixing or modification). 
 
 <p>
+</p>
+<p>  
 <img src="figures/Foter_infographic_CC.jpg" width="500"/>
 </p> 
-Image from [How to Attribute Creative Commons Photos](https://foter.com/blog/how-to-attribute-creative-commons-photos/) by Foter, used under CC BY-SA. 
+[Image](https://foter.com/blog/how-to-attribute-creative-commons-photos/) from How to Attribute Creative Commons Photos by Foter, used under CC BY-SA. 
 
 ### A "derivative" work: Are you making a smoothie?
 {: .no_toc}
