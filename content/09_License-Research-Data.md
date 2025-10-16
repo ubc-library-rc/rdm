@@ -187,7 +187,7 @@ The Open Government Licenses can be very similar to one another, but they can va
 <br>
 
 **Here's a breakdown of what we covered:**
-Licensing and copyright can only be applied to things that are products of creative or unique intellectual activity. Licenses like Creative Commons and Open Government Licenses help to concisely communicate how to use a work properly and legally within the copyright framework. The level of permission can vary — some licenses openly allow modification and commercial use, while some don’t. Choose the license that best suits your preferences and the subject for your research output(s).
+Licensing and copyright can only be applied to things that are products of creative or unique intellectual activity. Licenses like Creative Commons and Open Government Licenses help to concisely communicate how to use a work properly and legally within the copyright framework. The level of permission can vary — some licenses openly allow modification and commercial use, while some don’t. Choose the license that best suits your preferences and the subject for your research output.
 {: .note}
 
 # Congrats!
@@ -200,6 +200,13 @@ Licensing and copyright can only be applied to things that are products of creat
 
 ### Sources
 {: .no_toc} 
+- Creative Commons. About CC Licenses. [https://creativecommons.org/share-your-work/cclicenses/](https://creativecommons.org/share-your-work/cclicenses/) 
+- Government of British Columbia. Open Data Policy. [https://www2.gov.bc.ca/gov/content/data/policy-standards/data-policies/open-data](https://www2.gov.bc.ca/gov/content/data/policy-standards/data-policies/open-data) 
+- Harvard Biomedical Data Management. Intellectual Property. [https://datamanagement.hms.harvard.edu/share-publish/intellectual-property](https://datamanagement.hms.harvard.edu/share-publish/intellectual-property)  
+- Labastida, I. & Margoni, T. (2020). Licensing FAIR Data for Reuse. [https://doi.org/10.1162/dint_a_00042](https://doi.org/10.1162/dint_a_00042) 
+- Ray, J. M. (2014). Research Data Management : Practical Strategies for Information Professionals. 6. Copyright, Open Data, and the Availability-Usability Gap: Challenges, Opportunities, and Approaches for Libraries. [https://ebookcentral.proquest.com/lib/ubc/detail.action?docID=3120304](https://ebookcentral.proquest.com/lib/ubc/detail.action?docID=3120304) 
+- SFU Library. Data and Copyright. [https://www.lib.sfu.ca/help/academic-integrity/copyright/authors/data-copyright#how-does-copyright-apply-to-data](https://www.lib.sfu.ca/help/academic-integrity/copyright/authors/data-copyright#how-does-copyright-apply-to-data)
+- UBC Scholarly Communications and Copyright Office. Creative Commons Guide. [https://copyright.ubc.ca/creative-commons/](https://copyright.ubc.ca/creative-commons/)
 
 ---
 
