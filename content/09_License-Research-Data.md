@@ -11,7 +11,7 @@ nav_order: 13
 
 # Licensing Your Research 
 {: .no_toc}
-It's great that you want to share your research to support open research initiatives. However, not everyone is comfortable waiving their copyright over their work. Using a license is a good way of communicating permission to potential users about how your work can be used. It ensures you're getting the proper credit for your work when sharing it.
+It's great that you want to share your research to support open research initiatives. However, not everyone is comfortable waiving their copyright over their work. Using a license is a good way of communicating permission to potential users how your work can be used. It ensures you're getting the proper credit for your work when sharing it.
 
 There are many kinds of licenses for various kinds of products, contexts, and disciplines. Each has its own unique purpose, policies, and legal protection. Choosing the best license depends on your preferences and the nature of your work. 
 
