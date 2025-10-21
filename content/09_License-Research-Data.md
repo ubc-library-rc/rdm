@@ -50,7 +50,7 @@ Copyright is a legal concept where an individual or an organization, the copyrig
 - Performances
 - Publications
 - Adaptations
-- Translation
+- Translations
 - Telecommunications
 
 In other words, the copyright holder gets to *control* how users can use their work. A copyrighted work can be used with the author's permission or by user rights, as outlined in [Canada's Copyright Act](https://laws-lois.justice.gc.ca/eng/acts/C-42/). Another way users can be permitted to use copyrighted work is through licenses. 
@@ -74,7 +74,7 @@ Copyrighting raw, factual data would hinder academic, scientific, intellectual, 
 As a counterbalance, creative outputs based on facts are protected by copyright.
 
 ## What can be copyrighted?
-A work produced that has something done to it (modified) in a creative, unique intellectual way can be copyrighted. Most of the time, creative products of the research can be covered by copyright. 
+A work produced that has something done to it (modified) in a creative, unique intellectual way can be copyrighted. Most of the time, creative products of research can be covered by copyright. 
 
 Copyrighted things could be:
 - Complex visualisations, like infographics and pamphlets
