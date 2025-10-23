@@ -148,7 +148,7 @@ The Creative Commons also [provides a tool](https://creativecommons.org/chooser/
 The [Borealis data repository](https://researchdata.library.ubc.ca/deposit/dataverse/) is supported by the UBC Library to allow the application of any suite of the CC licenses. Please see [here](https://researchdata.library.ubc.ca/deposit/dataverse/) for more information. You can also consult [UBC's Creative Commons Guide](https://copyright.ubc.ca/creative-commons/) for more detailed information about CC licenses.
 
 ## CC0 Universal 
-What does CC0 indicate? CC0 is not a license, but instead a public dedication tool that indicates the creator giving up copyright for their work and releasing their work into the public domain. A work may also enter the public domain if the copyright protection expires. Copyright protection for works will expire 70 years after the calendar year in which the creator's death occurred. Therefore, the work is no longer protected by copyright, and it can be used openly for any purpose. Users can distribute, remix, adapt, add to the work, and more, unconditionally. 
+What does CC0 indicate? CC0 is not a license, but instead a public domain dedication tool that indicates the creator giving up copyright for their work and releasing it into the public domain. A work may also enter the public domain if the copyright protection expires. Copyright protection for works will expire 70 years after the calendar year in which the creator's death occurred. Therefore, the work is no longer protected by copyright, and it can be used openly for any purpose. Users can distribute, remix, adapt, add to the work, and more, unconditionally. 
 
 What does CC0 do? It does many things than just give up copyright:
 - Waives copyright and any other rights
