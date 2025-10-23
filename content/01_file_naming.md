@@ -113,6 +113,7 @@ What did you change and why?
 - The file names should be concise but detailed enough so that they're still understandable to you and anyone else who has access
     - The amount of detail is up to you, but the names shouldn't be *too* long - we recommend having 3 to 5 elements per file name, or under 32 characters
     - This is especially important for the future!
+    - We recommend ordering elements from general to specific to make searching easier
 - Avoid including application (software) details in your file names
     - Example: you don't need to add "doc" to the file name of a text document
 
@@ -166,8 +167,6 @@ Sorting your files chronologically (having the date as the first name element) m
 {: .no_toc }
 When using a sequential numbering system, use <b>leading zeros</b> to make sure files sort in sequential order
 - Examples: 001, 002, 010, 011...
-
-We recommend ordering elements from general to specific to make searching easier.
 
 Sorting your files logically (using leading zeros) may look like this:
 ```
