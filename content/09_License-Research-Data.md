@@ -11,7 +11,7 @@ nav_order: 13
 
 # Licensing Your Research 
 {: .no_toc}
-It's great that you want to share your research to support open research initiatives. However, not everyone is comfortable waiving their copyright over their work. Using a license is a good way of communicating permission to potential users how your work can be used. It ensures you're getting the proper credit for your work when sharing it.
+It's great that you want to share your research to support open research initiatives. However, not everyone is comfortable waiving their copyright over their work. Using a license is a good way of communicating permission to potential users on how your work can be used. It ensures you're getting the proper credit for your work when sharing it.
 
 There are many types of licenses for various kinds of products, contexts, and disciplines. Each has its own unique purpose, policies, and legal protection. Choosing the best license depends on your preferences and the nature of your work. 
 
@@ -148,12 +148,14 @@ The Creative Commons also [provides a tool](https://creativecommons.org/chooser/
 The [Borealis data repository](https://researchdata.library.ubc.ca/deposit/dataverse/) is supported by the UBC Library to allow the application of any suite of the CC licenses. Please see [here](https://researchdata.library.ubc.ca/deposit/dataverse/) for more information. You can also consult [UBC's Creative Commons Guide](https://copyright.ubc.ca/creative-commons/) for more detailed information about CC licenses.
 
 ## CC0 Universal 
-What does CC0 indicate? CC0 is not a license, but instead a public dedication tool that indicates the creator giving up copyright for their work and releasing their work into the public domain. Their work can be used openly for whatever reason. Users can distribute, remix, adapt, add to the work, and more, unconditionally. 
+What does CC0 indicate? CC0 is not a license, but instead a public dedication tool that indicates the creator giving up copyright for their work and releasing their work into the public domain. A work may also enter the public domain if the copyright protection expires. Copyright protection for works will expire 70 years after the calendar year in which the creator's death occurred. Therefore, the work is no longer protected by copyright, and it can be used openly for any purpose. Users can distribute, remix, adapt, add to the work, and more, unconditionally. 
 
 What does CC0 do? It does many things than just give up copyright:
 - Waives copyright and any other rights
 - If there are rights that the right holder cannot waive under applicable law, they are licensed in a way that mirrors as closely as possible the legal effect of a waiver
 - If there are any rights that the rights holders cannot waive or license, they affirm that they will not exercise them, and they will not assert any claim with respect to the use of the work
+
+More information about the public domain and the duration of copyright protection for certain kinds of work can be found [here](https://copyright.ubc.ca/public-domain/).
 
 <p>
 <img src="figures/publicdomain.jpg" width="100"/>
@@ -207,6 +209,7 @@ Licensing and copyright can only be applied to things that are products of creat
 - Ray, J. M. (2014). Research Data Management : Practical Strategies for Information Professionals. 6. Copyright, Open Data, and the Availability-Usability Gap: Challenges, Opportunities, and Approaches for Libraries. [https://ebookcentral.proquest.com/lib/ubc/detail.action?docID=3120304](https://ebookcentral.proquest.com/lib/ubc/detail.action?docID=3120304) 
 - SFU Library. Data and Copyright. [https://www.lib.sfu.ca/help/academic-integrity/copyright/authors/data-copyright#how-does-copyright-apply-to-data](https://www.lib.sfu.ca/help/academic-integrity/copyright/authors/data-copyright#how-does-copyright-apply-to-data)
 - UBC Scholarly Communications and Copyright Office. Creative Commons Guide. [https://copyright.ubc.ca/creative-commons/](https://copyright.ubc.ca/creative-commons/)
+- UBC Scholarly Communications and Copyright Office. Public Domain. [https://copyright.ubc.ca/public-domain/](https://copyright.ubc.ca/public-domain/) 
 
 ---
 
