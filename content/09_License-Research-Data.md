@@ -4,10 +4,7 @@ title: License Research Data
 nav_order: 13
 ---
 
-# This workshop is under development
-<p >
-<img src="figures/work-in-progress.png" width="600"/>
-</p>
+
 
 # Licensing Your Research 
 {: .no_toc}
