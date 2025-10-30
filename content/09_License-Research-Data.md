@@ -6,7 +6,7 @@ nav_order: 13
 
 
 
-# Licensing Your Research 
+# Licensing Your Research Data
 {: .no_toc}
 It's great that you want to share your research to support open research initiatives. However, not everyone is comfortable waiving their copyright over their work. Using a license is a good way of communicating permission to potential users on how your work can be used. It ensures you're getting the proper credit for your work when sharing it.
 
