@@ -8,8 +8,7 @@ nav_order: 6
 
 A README file provides information about a project and helps ensure that data can be correctly interpreted by you and others when sharing or publishing datasets. It contains information commonly required to understand the dataset, its contents, provenance, licensing and how to interact with it. This helps maximize your dataset's usability and long-term preservation potential. A README file is generally named ```README``` and is typically a text or markdown file.
 
-In short, a README is a portable, durable way to inform other researchers about how to navigate, collaborate, or extend your project. Having them alongside your project(s) is good practice, especially when depositing data in a repository. 
-
+In short, a README file is a simple text document that accompanies your dataset, serving as a quick start guide that summarizes the essential information another researcher might need to understand, reanalyze, or repurpose your data. Without this context, readers could spend hours combing through related manuscripts or searching online to decipher file contents and acronyms.
 <p style="margin-bottom: 20px"></p>
 
 - Looking for a cheat sheet? Check out our <a href="https://osf.io/aqxw3" target="_blank">one-pager</a>
