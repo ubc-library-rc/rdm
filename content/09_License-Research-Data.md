@@ -53,25 +53,24 @@ Copyright is a legal concept where an individual or an organization, the copyrig
 In other words, the copyright holder gets to *control* how users can use their work. A copyrighted work can be used with the author's permission or by user rights, as outlined in [Canada's Copyright Act](https://laws-lois.justice.gc.ca/eng/acts/C-42/). Another way users can be permitted to use copyrighted work is through licenses. 
 
 ## What can't be copyrighted?
-What can't be copyrighted is more complicated. For example, some forms of data analysis may not be "creatively" driven and can't be protected by copyright. Another example is when research is replicated using the original raw data to reproduce the results. Neither the original data nor the reproduced data is copyrightable.
+What can't be copyrighted is more complicated. Works that don't have enough "originality" may not be protected by copyright. For example, some forms of data analysis may not be "creatively" driven and can't be protected by copyright. Another example is when research is replicated using the original raw data to reproduce the results. Neither the original data nor the reproduced data is copyrightable.
 
 Solid examples include:
 - Facts
 - Ideas
 - Procedures
-- News
 - Methods of operations, math concepts
 - Raw data
 - Simple visualisations, like simple line graphs
 
-## Why is data not copyrightable?
+## Why is raw data not copyrightable?
 {: .no_toc}
+Raw data itself doesn't meet the threshold for copyright protection. However, as a counterbalance, expressions of raw data in an original way can benefit from copyright protection and licensing. 
+
 Copyrighting raw, factual data would hinder academic, scientific, intellectual, and artistic freedoms, in addition to obstructing research transparency and replicability. Having factual information freely available improves the learning and knowledge of a discipline.
 
-As a counterbalance, creative outputs based on facts are protected by copyright.
-
 ## What can be copyrighted?
-A work produced that has something done to it (modified) in a creative, unique intellectual way can be copyrighted. Most of the time, creative products of research can be covered by copyright. 
+An original, unique work produced by a creator can be protected by copyright. Most of the time, creative products of research can be covered by copyright. 
 
 Copyrighted things could be:
 - Complex visualisations, like infographics and pamphlets
