@@ -159,15 +159,17 @@ Use DOIs in citations, publications, on your personal/research group websites--a
 
 Click <a href="https://researchdata.library.ubc.ca/plan/get-dois/" target="_blank">here</a> for more information about UBC DOIs.
 
-### *2*{: .circle .circle-red} &nbsp;Private URL 
+### *2*{: .circle .circle-red} &nbsp;Preview URL 
 {: .no_toc}
 
 A **temporary link** for use with **unpublished** data. The dataset can only be seen by those who have the link, and users *do not need a Dataverse account*. Great for giving pre-publication access to journals, reviewers, and collaborators.
 
-To create a Private URL, click `Private URL`. The generated URL can be access from this location until the dataset is published, so you can copy it again and again as needed. The Private URL will automatically disappear once the dataset is published.
+To create a Preview URL, click `Edit Dataset > Preview URL`. The generated URL can be accessed from this location until the dataset is published, so you can copy it again and again as needed. The Preview URL will automatically disappear once the dataset is published.
+
+Preview URL can also be anonymized, e.g. names, affiliations, ORCIDs, etc would be masked.  
 
 <p style="margin-top:25px;margin-left:30px">
-<img src="figures/borealis-private-url.png" width="500"/> </p>
+<img src="figures/previewurl.jpg" width="500"/> </p>
 
 
 <br>
