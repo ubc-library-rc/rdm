@@ -39,18 +39,18 @@ Looking for a cheat sheet? Check out our <a href="https://osf.io/5u4f3" target="
 <p style="margin-bottom:25px;margin-left:30px">
 <img src="figures/all-file-types.png" width="250"/> </p> 
 
-**Any kind of file** can be uploaded to Dataverse, but extra functionality is supported for some filetypes:
+**Any kind of file** can be uploaded to Borealis, but extra functionality is supported for some file types:
 
 ## Tabular data
 {: .no_toc}
 
-Tabular data (Stata, SPSS, Excel, R, & CS) is <b>normalized to .tab</b> format on upload--a non-proprietary archival format that a variety of programs can read. 
+Tabular data (Stata, SPSS, Excel, R, & CS) is <b>normalized to .tab</b> format on upload, as it is a non-proprietary archival format that a variety of programs can read. 
 
 Normalization is important for long-term preservation of digital data. 
 The deposited files can be downloaded in multiple formats, but always including the original. 
 {: .note}
 
-In Dataverse, tabular normalization also allows you to perform statistical data exploration and visualization *right in your browser*. Click the `Data Explore` button to see what it can do. 
+In Borealis, tabular normalization also allows you to perform statistical data exploration and visualization *right in your browser*. Click the `Data Explore` button to see what it can do. 
 
 <p style="margin-top:25px;margin-left:30px">
 <img src="figures/borealis-download.png" width="600"/> </p> 
@@ -60,11 +60,11 @@ In Dataverse, tabular normalization also allows you to perform statistical data 
 ## Compressed Files (.zip, tar)
 {: .no_toc}
 
-Compressed files are the preferred method for uploading large datasets or many files to Dataverse.
+Compressed files are the preferred method for uploading large datasets or many files to Borealis.
 
 **Zip files are automatically extracted on upload**, and the contents will appear as a list under the Files tab. Folder structure and file hierarchy within the zip file are maintained on extraction.
 
-Sometimes, it is a good idea to deposit the zipped folder to preserve the content as it is, especially if you need your files to remain together. In this case, please *double-zip* your directory as the software will unzip it once upon upload.
+Sometimes, it is a good idea to deposit the zipped folder to preserve the content as it is, especially if you need your files to remain together. In this case, please **double-zip** your directory as the software will unzip it once upon upload.
 {: .note}
 
 
@@ -77,8 +77,8 @@ Sometimes, it is a good idea to deposit the zipped folder to preserve the conten
 # File Size
 
 Borealis is not intended to handle Big Data. Current file size limits are:
-- For upload: **5 Gb** per file (unlimited number of files in a dataset). If you are depositing files larger than 5GB, *double-zip* your directory.
-- For tabular normalization: **500 Mb** per file. Tabular files over this size will remain in their original format, e.g. Excel.
+- For upload: **5GB** per file (up to 1,000 files). If you are depositing files larger than 5GB, *double-zip* your directory.
+- For tabular normalization: **500MB** per file. Tabular files over this size will remain in their original format, e.g. Excel.
 
 While there is no cap on the overall number of files that you can upload, if your data exceeds 10 Gb, please contact `research.data@ubc.ca` to discuss the best repository options, as we have other solutions (e.g. FRDR).
 {: .note}
