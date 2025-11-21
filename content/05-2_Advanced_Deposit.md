@@ -76,11 +76,11 @@ Sometimes, it is a good idea to deposit the zipped folder to preserve the conten
 
 # File Size
 
-Borealis is not intended to handle Big Data. Current file size limits are:
+Borealis is not intended to handle very large datasets. Current file size limits are:
 - For upload: **5GB** per file (up to 1,000 files). If you are depositing files larger than 5GB, *double-zip* your directory.
 - For tabular normalization: **500MB** per file. Tabular files over this size will remain in their original format, e.g. Excel.
 
-While there is no cap on the overall number of files that you can upload, if your data exceeds 10 Gb, please contact `research.data@ubc.ca` to discuss the best repository options, as we have other solutions (e.g. FRDR).
+While there is no cap on the overall number of files that you can upload, if your individual data files exceed 10GB, please contact `research.data@ubc.ca` to discuss the best repository options, as we have other solutions (e.g. [FRDR](https://www.frdr-dfdr.ca/)).
 {: .note}
 
 <br>
@@ -123,25 +123,28 @@ Every change made to a dataset—adding files, editing metadata, etc—is saved 
 
 Data deposited in UBC Dataverse Collection is indexed by, and integrated with, many services on the Web, including:
 
+- <a href="https://scholar.google.ca/" target="_blank">**Google Scholar**</a>
+- <a href="https://datasetsearch.research.google.com/" target="_blank">**Google Data**</a>
+- <a href="https://explore.openaire.eu/" target="_blank">**The EU's OpenAIRE**</a>
+- <a href="https://library.utoronto.ca/" target="_blank">**Most university libraries, like the University of Toronto**</a>
+- <a href="https://datasetcatalog.nlm.nih.gov/" target="_blank">**US National Library of Medicine**</a>
 - <a href="http://datacite.org" target="_blank">**DataCite**</a>
 - <a href="https://orcid.org/" target="_blank">**ORCID**</a>
-- <a href="https://www.lunaris.ca/en" target="_blank">**Lunaris**</a>: a scalable, national research data discovery service
-- **Google/Google Scholar/Google Data**
-- <a href="https://www.openaire.eu" target="_blank">**OpenAIRE**</a>
+- <a href="https://www.lunaris.ca/en" target="_blank">**Lunaris**</a>: Canadian national research data discovery service
 - **Any APIs**
 
 
 ## Social Media
 Spread the word about your research and improve your altmetrics by sharing your linked data on social media!
 
-Dataverse provides a `Share` button for
-1. Each Dataverse collection
+Borealis provides a `Share` button for
+1. Each Borealis collection
 2. Each dataset
 
 <p style="margin-top:25px;margin-left:30px">
 <img src="figures/borealis-social-media.png" width="500"/> </p> 
 
-This button gives you the option to create a post with a link to your data on Facebook, Twitter, Linkedin.
+This button gives you the option to create a post with a link to your data on Facebook, Twitter, and LinkedIn.
 
 <br>
 
@@ -152,7 +155,7 @@ There are two main ways to direct people to your dataset:
 ### *1*{: .circle .circle-blue} &nbsp;DOI
 {: .no_toc}
 
-A **a DOI (Digital Object Identifier)** is assigned to the dataset by Borealis when the first Draft is created. Once the dataset is **Published**, anyone can use the DOI link to find it. While the dataset is still **unpublished**, the DOI can only be used by Dataverse *account holders* with permission to view that Dataverse.
+A **a DOI (Digital Object Identifier)** is assigned to the dataset by Borealis when the first draft is created. Once the dataset is **Published**, anyone can use the DOI link to find it. While the dataset is still **unpublished**, the DOI can only be used by Dataverse *account holders* with permission to view that dataset.
 
 Use DOIs in citations, publications, on your personal/research group websites--anywhere you want the link to your data stable over time.
 {: .note}
@@ -176,7 +179,7 @@ Preview URL can also be anonymized, e.g. names, affiliations, ORCIDs, etc would 
 
 ## Licenses and Terms
 
-You have control over how your data can be used. Dataverse allows for a variety of licenses and terms of use.
+You have control over how your data can be used. Borealis allows for a variety of licenses and terms of use.
 
 ### **Built-in License Templates** 
 {: .no_toc}
@@ -188,7 +191,7 @@ Templates can be selected at dataset creation, and changed at any time. These au
 
 <p style="margin-top:15px"></p>
 
-You can use <a href="https://copyright.ubc.ca/creative-commons/" target="_blank">UBC Library Copyright page </a>  to decide what license to use with your dataset. We recommend **CC-BY or CC-0** license.  
+You can use <a href="https://copyright.ubc.ca/creative-commons/" target="_blank">UBC Library Creative Commons page </a>  to decide what license to use with your dataset. We recommend **CC-BY or CC-0** license.  
 {: .note }
 
 <p style="margin-top:15px"></p>
@@ -217,7 +220,7 @@ If you need help creating a custom license, contact `research.data@ubc.ca`.
 
 You are an expert in data deposit in the UBC Dataverse collection now! 
 
-If you need have more options to customize and control the way your Dataverse collections look and act, you need to know more! Check out our <a href="05-3_Admin_Access.md" target="_blank">Admin Access in the UBC Dataverse collection Workshop</a>.
+If you need have more options to customize and control the way your Dataverse collections look and act, you need to know more! Check out our <a href="05-3_Admin_Access.md" target="_blank">Admin Access in the UBC Dataverse collection workshop</a>.
 
 ---
 
