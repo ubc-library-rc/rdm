@@ -8,7 +8,7 @@ nav_order: 3
 # Admin Access in UBC Dataverse Collection
 {: .no_toc}
 
-Some users, such as data managers or curators, have more options to customize and control the way their Dataverse collections look and act. To get an admin access to your Dataverse collection, please reach out to us at `research.data@ubc.ca`.
+Some users, such as data managers or curators, have more options to customize and control the way their Borealis collections look and act. To get admin access to your Dataverse collection, please reach out to us at `research.data@ubc.ca`.
 
 
 <details open markdown="block">
@@ -28,7 +28,7 @@ Looking for a cheat sheet? Check out our <a href="https://osf.io/2f5wg" target="
 
 ## Create A New (Sub-) Dataverse Collection
 
-From the main page of the Dataverse collection within which you’d like to create a sub-Dataverse collection (for example, the *Research Commons Workshops Dataverse*), click `+Add Data` > `New Dataverse` to create a sub-Dataverse collection.
+From the main page of the Borealis collection, within which you’d like to create a sub-Dataverse collection (for example, the *Research Commons Workshops Dataverse*), click `+Add Data` > `New Dataverse` to create a sub-Dataverse collection.
 
 <p style="margin-top:25px;margin-left:30px">
 <img src="figures/borealis-create-dataverse.png" width="550"/> </p> 
@@ -41,7 +41,7 @@ From the main page of the Dataverse collection within which you’d like to crea
 
 ## Customize a Dataverse Collection
 
-On the main page for the Dataverse collection you want to customize, click the `Edit` button and you will then see a dropdown menu with several options:
+On the main page for the Borealis collection you want to customize, click the `Edit` button and you will then see a dropdown menu with several options:
 
 <p style="margin-top:25px;margin-left:30px">
 <img src="figures/borealis-edit-dataverse.png" width="550"/> </p> 
@@ -55,7 +55,7 @@ On the main page for the Dataverse collection you want to customize, click the `
 
 <p style="margin-top:15px"></p>
 
-You can change basic information about the Dataverse collection, such as:
+You can change basic information about the Borealis collection, such as:
 
 - Collection name
 - URL
@@ -75,7 +75,7 @@ You can change basic information about the Dataverse collection, such as:
 ### Theme
 {: .no_toc}
 
-You can change the look of the Dataverse collection, including colour scheme, adding a logo, tagline, and website link. You can also choose to inherit the theme from the University of British Columbia Dataverse collection. See below the UBC Farm these embedded in their Dataverse collection.
+You can change the look of the Dataverse collection, including colour scheme, adding a logo, tagline, and website link. You can also choose to inherit the theme from the University of British Columbia Dataverse collection. See below the UBC Farm Borealis collection.
 
 <p style="margin-top:25px;margin-left:30px">
 <img src="figures/borealis-theme.png" width="550"/> </p> 
@@ -92,7 +92,7 @@ If you want to display your Dataverse collection or dataset on your personal or 
 1. Dataverse collection <b>Search Box Widget</b> allows users to search your Dataverse collection without leaving your site
 2. Dataverse collection <b>Listings Widget</b> shows all your Dataverse collections and datasets and allows users to view their contents and even download files directly from your site.  
 
-    An example of listings Widget from our colleagues at the <a href="https://housingresearchcollaborative.allard.ubc.ca/dataverse/">UBC Housing Research Collaborative</a>:
+    An example of a listings Widget from our colleagues at the UBC Housing Research Collaborative:
 
 <p style="margin-top:25px;margin-left:30px">
 <img src="figures/borealis-listing-widget.png" width="550"/> </p> 
@@ -113,7 +113,7 @@ How to get the widget code?
 
 <p style="margin-top:15px"></p>
 
-Here you can refine who has access to your Dataverse collection, and what actions they can perform. 
+Here you can refine who has access to your Borealis collection and what actions they can perform. 
 
 The Permissions page has the following tabs:
 
@@ -143,7 +143,7 @@ If you need to assign different roles to many different users (e.g. multiple col
 
 1. Click `+ Create Group`
 2. Assign the group a name, identifier, description
-3. Type the users' names or user IDS in `Users/Groups`, and Dataverse collection will suggest matching users. 
+3. Type the users' names or user IDs in `Users/Groups`, and the Borealis collection will suggest matching users. 
 
 Once the group is created, you can Edit or Delete it from the Groups page. Groups can then be assigned Roles from the Permissions page (described above).
 
