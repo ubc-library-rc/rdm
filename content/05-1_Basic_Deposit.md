@@ -182,7 +182,7 @@ We can also assign a **[Preview URL](https://ubc-library-rc.github.io/rdm/conten
 - Changes made to Files, Metadata, or Terms <b>after publishing</b> your dataset will be saved as a Draft version. Click `Submit for Review` or `Publish` again to make the changes go live; the new version will supersede the old.
 
 
-Admin assistance is needed to deaccession a dataset, so triple-check before Publishing your data. The DOI cannot be delated. 
+Admin assistance is needed to deaccession a dataset, so triple-check before Publishing your data. The DOI cannot be deleted. 
 {: .warn }
 
 
