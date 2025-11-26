@@ -10,7 +10,7 @@ nav_order: 1
 
 <p style="margin-bottom: 15px"></p>
 
-<a href="https://borealisdata.ca/dataverse/ubc" target="_blank"><b>UBC Dataverse Collection</b> </a>is a cross-disciplinary research data collection on Borealis. Datasets in the Dataverse collection are discoverable by Google, UBC Library Summon, FRDR, DataCite, and much more. It is an open-source application to publish, share, reference, cite, extract and analyze research data. 
+<a href="https://borealisdata.ca/dataverse/ubc" target="_blank"><b>UBC Dataverse Collection</b> </a>is a cross-disciplinary research data collection on Borealis. Datasets in Borealis are discoverable by Google, Google Data, Google Scholar, US National Library of Medicine, UBC Library Summon, Lunaris, DataOne, DataCite, and much more. It is an open-source application to publish, share, reference, cite, extract and analyze research data.
 
 <p style="margin-top:25px;margin-left:30px;margin-bottom:25px"></p>
 
@@ -157,12 +157,12 @@ By default, the software will unzip your directory upon upload. If you want to p
 
 
 Depending on your user permissions, you will have a button for either:
-- `Submit for Review` (the draft dataset is reviewed by a research data admins)
+- `Submit for Review` (the draft dataset is reviewed by a research data administrator)
 - `Publish` (makes the dataset publicly available)
 
 Once a dataset is published, Dataverse assigns a **DOI** to permanently identify the dataset.  
 
-We can also assign a **Private URL** to share with a journal and/or peer-reviewers without publishing the data. 
+We can also assign a **[Preview URL](https://ubc-library-rc.github.io/rdm/content/05-2_Advanced_Deposit.html#2-preview-url)** to share with a journal and/or peer reviewers without publishing the data. 
 
 <p style="margin-top:25px; margin-left:30px">
 <img src="figures/publish.jpg" width="300"/></p>
@@ -182,7 +182,7 @@ We can also assign a **Private URL** to share with a journal and/or peer-reviewe
 - Changes made to Files, Metadata, or Terms <b>after publishing</b> your dataset will be saved as a Draft version. Click `Submit for Review` or `Publish` again to make the changes go live; the new version will supersede the old.
 
 
-Admin assistance is needed to un-publish a dataset, so be sure before Submitting or Publishing.
+Admin assistance is needed to deaccession a dataset, so triple-check before Publishing your data. The DOI cannot be delated. 
 {: .warn }
 
 
