@@ -125,10 +125,6 @@ You can download a sample data dictionary based on exercise 1 [here](https://ubc
 
 **NOTE: The values here are <u>made-up examples</u> for educational purposes. They do not reflect the real study.**
 
-.md-grid {
-  max-width: initial;
-}
-
 | Variable ID | Variable Name | Variable Definition | Variable Type | Allowable Values/Parameters | Requirement | Sample Values | Notes | 
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | STATEFP10 | State code | The unique numeric code for the state. More information on state codes can be found [here](https://www23.statcan.gc.ca/imdb/p3VD.pl?Function=getVD&TVD=53971). | String | Numerical values of 01-50 allowed | Yes | “01”, “02”, “06” | | 
