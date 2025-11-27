@@ -3,17 +3,6 @@ layout: default
 title: Create a Data Dictionary
 nav_order: 12
 ---
-
-.content {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
- --- 
  
 # What is a Data Dictionary? 
 {: .no_toc }
