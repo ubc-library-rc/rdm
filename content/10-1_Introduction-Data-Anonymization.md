@@ -5,7 +5,7 @@ parent: Data Anonymization
 nav_order: 1
 ---
 
-<img src="content/figures/work-in-progress.png" width="600"/>
+<img src="figures/work-in-progress.png" width="600"/>
 
 ## Introduction 
 
