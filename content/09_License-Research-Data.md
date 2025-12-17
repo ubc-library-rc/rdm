@@ -173,14 +173,15 @@ Access the datasets here:
 >Ali, Naila; White, Hailie; Min, Jason; Leung, Larry, 2025, "Pharmacy Program in a BC First Nation: Perspectives of Patients, Clinicians, and Student Learners in a Rural and Remote Indigenous Context", [https://doi.org/10.5683/SP3/TAWTOV](https://doi.org/10.5683/SP3/TAWTOV), Borealis, V2
 
 # Open Government Licenses
-Open Government Licenses (OGLs) allow users to use government data openly. Applying an OGL supports and encourages policies related to government transparency and accountability, such as BC’s Open Information and Open Data [policy](https://www2.gov.bc.ca/assets/gov/british-columbians-our-governments/services-policies-for-government/information-management-technology/information-privacy/resources/policies-guidelines/open-information-open-data-policy.pdf)
+Open Government Licenses (OGLs) allow users to use government data openly. Applying an OGL supports and encourages policies related to government transparency and accountability, such as BC’s Open Information and Open Data [policy](https://www2.gov.bc.ca/gov/content/data/policy-standards/data-policies/open-data). 
 
-Different levels of government of different provinces and territories have their own version of an OGL. For example:
+Different levels of government of different provinces and territories have their own version of an OGL. The Open Government Licenses can be very similar to one another, but they can vary by attribution name and information provider. 
+
+Here are some examples of data portals by various levels of government:
 - [OGL-Canada](https://search.open.canada.ca/opendata/) version 2.0
 - [OGL-BC](https://catalogue.data.gov.bc.ca/) version 2.0
 - [OGL-Vancouver](https://opendata.vancouver.ca/pages/home/) version 1.0
 
-The Open Government Licenses can be very similar to one another, but they can vary by attribution name and information provider. 
 
 <br>
 
