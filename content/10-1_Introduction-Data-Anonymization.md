@@ -13,6 +13,7 @@ Although it is good practice to share our research data and findings, we need to
 Sensitive data requires careful handling and security to protect participant privacy and confidentiality and to comply with ethical and legal requirements. Leaked sensitive data poses major harm and risks, such as revealing identities, which negatively affect the interests of people, communities, and/or animals involved in the research.
 
 ### Terminology
+{: .no_toc}
 In UBC terminology [(Information Technology Standard U1)](https://cio.ubc.ca/information-security-standards/U1), sensitive data is classified as medium risk, high risk, or very high risk. For the purposes of this workshop, however, we will use the term “sensitive data” to align with the terminology in Sensitive Data: Practical and Theoretical Considerations (Rod & Thompson, 2023). In this context, these terms will be treated as equivalent. 
 {: .note}
 
@@ -57,6 +58,39 @@ Examples of who may be harmed:
   - Victimization status
   - Criminal/delinquent behaviour
   - Health-related questions, medical conditions, and mental health questions
+ 
+## What makes data "sensitive"?
+
+### Direct identifiers
+{: .no_toc}
+### Indirect identifiers ("quasi-identifiers")
+{: .no_toc}
+### Non-identifiers
+{: .no_toc}
+### Hidden identifiers
+{: .no_toc} 
+
+## Exercise 1
+{: .no_toc}
+{: .label .label-green }
+  
+# Consent language
+
+# Future use of data
+
+# Assessing risk and anonymization: "k-anonymity" 
+
+## Exercise 2
+{: .no_toc}
+{: .label .label-green }
+
+# How to protect and preserve sensitive data?
+
+
+<b>Here's a breakdown of what we covered:</b>
+
+
+
 
 
 
