@@ -25,4 +25,10 @@ There are specific considerations and protocols for Indigenous research data col
 * The [First Nations Principles of OCAP](https://fnigc.ca/ocap-training/) for data governance by the First Nations Information Governance Centre
 * The [National Inuit Strategy on Research](https://www.itk.ca/wp-content/uploads/2018/04/ITK_NISR-Report_English_low_res.pdf)
 * The [Principles of Métis Ethical Research](https://achh.ca/wp-content/uploads/2018/07/Guide_Ethics_NAHOMetisCentre.pdf)
-* The [CARE Principles for Indigenous Data Governance](https://static1.squarespace.com/static/5d3799de845604000199cd24/t/5da9f4479ecab221ce848fb2/1571419335217/CARE%2BPrinciples_One%2BPagers%2BFINAL_Oct_17_2019.pdf) 
+* The [CARE Principles for Indigenous Data Governance](https://static1.squarespace.com/static/5d3799de845604000199cd24/t/5da9f4479ecab221ce848fb2/1571419335217/CARE%2BPrinciples_One%2BPagers%2BFINAL_Oct_17_2019.pdf)
+
+---
+
+Need help?
+{: .label .label-blue }
+Please reach out to `research.data@ubc.ca` for assistance with any of your research data questions.
