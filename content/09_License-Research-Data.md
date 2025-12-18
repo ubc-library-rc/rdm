@@ -125,7 +125,9 @@ Are you taking things from many places and making something new, like a smoothie
 
 ### CC BY-ND: Why this license may not be the best for researchers working with data
 {: .no_toc}
-Under this license, research outputs can’t be remixed (new works derived from the original copyrighted work), which is, in many cases, counterproductive to sharing research data. 
+Under this license, research outputs cannot be remixed (i.e., new works derived from the original copyrighted material), which is often counterproductive for sharing and reusing research data.
+
+The “ND” (NoDerivatives) term means that while adaptations or transformations may be created (for private use, for example), any newly adapted or derived work cannot be distributed, limiting data reuse.
 
 ## How can I apply a CC license?
 To apply a CC license, you need to be the copyright owner of the work. If you don’t have copyright ownership over a portion of the work you’re licensing, then you need to obtain special permission from the owner of that work.
