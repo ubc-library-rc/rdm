@@ -127,7 +127,7 @@ Are you taking things from many places and making something new, like a smoothie
 {: .no_toc}
 Under this license, research outputs cannot be remixed (i.e., new works derived from the original copyrighted material), which is often counterproductive for sharing and reusing research data.
 
-The “ND” (NoDerivatives) term means that while adaptations or transformations may be created (for private use, for example), any newly adapted or derived work cannot be distributed, limiting data reuse.
+The [“ND” (NoDerivatives)](https://creativecommons.org/licenses/by-nd/4.0/deed.en) term means that while adaptations or transformations may be created (for private use, for example), any newly adapted or derived work cannot be distributed, limiting data reuse.
 
 ## How can I apply a CC license?
 To apply a CC license, you need to be the copyright owner of the work. If you don’t have copyright ownership over a portion of the work you’re licensing, then you need to obtain special permission from the owner of that work.
