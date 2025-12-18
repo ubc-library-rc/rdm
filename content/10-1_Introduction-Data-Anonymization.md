@@ -123,23 +123,93 @@ The size of the dataset also matters because machine learning can be applied to 
 ## Exercise 1
 {: .no_toc}
 {: .label .label-green }
-  
+You are a researcher investigating what factors are linked to production efficiencies – quantities and costs – of apple growers in the Pacific Northwest. Here is the (dummy) data collected from surveying apple growers: (place dataset as a table in GitHub). Please note that this dataset has been created for a workshop and doesn’t reflect a real study with real participants.
+
+From the provided, answer these questions:
+1. What data points are direct identifiers?
+2. What data points are indirect identifiers?  
+
+Here is the answer key for you to check your understanding, provided as a downloadable spreadsheet, as an XLSX to preserve formatting, as it will have a multiple sheets:
+- Sheet 1: unprocessed data
+- Sheet 2: direct identifiers
+- Sheet 3: indirect identifiers
+- Sheet 4: data dictionary
+
 # Consent language
+Anytime human participants are involved in research, informed consent is needed. Informed consent needs to include how the collected data will be handled during the active research phase and in the future. Always keep in mind that many journals now are asking for a subset of data to be available, and if the original consent does not address the future availability of data, then a paper would be stuck. It is much harder to change the consent forms after the fact. 
+
+In Canada, ethical guidelines for human research participants are outlined in the [Tri-Council Policy Statement (TCPS 2)](https://ethics.gc.ca/eng/policy-politique_tcps2-eptc2_2022.html). To comply with these guidelines, there is specific information that needs to be included, depending on the area of research being conducted. 
+* The [Sensitive Data Toolkit for Researchers](https://zenodo.org/records/4107178#.Y-PFQxOZPao) by the Alliance contains language that can be included in the consent form to notify the participant about what happens to their data, explain the anonymization process, and more.
+* The [UBC ARC Information Privacy](https://arc.ubc.ca/security-privacy/information-privacy) contains considerations when working with human participant information, including consent.
+
+Research ethics boards (REBs) of institutions are very careful about consent language to make sure privacy and confidentiality are protected, and that participants know about the extent of their participation. Generally, consent forms should include information like:
+* Research participation is voluntary
+* Participation can be withdrawn from the research at any time (including the process for consent withdrawal)
+* In plain and concise language, a description of the study with any potential risks and benefits to the participants. This is especially important for studies that include participants of vulnerable populations, socially taboo topics, coercion, and/or deception
+* What will happen to the data: whether it will be made available to other researchers or to the public, and under what conditions, in which specific repository, in what format, and what information is included
 
 # Future use of data
+When writing an application to a REB specific to the area of study, there are many things to consider. One important consideration is “what happens to the sensitive data in the future?”, which refers to how the sensitive data will be dealt with after the research project is completed. 
+
+Let’s look at UBC’s [Behavioural Research Ethics Board (BREB)](https://researchethics.ubc.ca/behavioural-research-ethics/breb-guidance-notes/guidance-notes-behavioural-application) guidance notes for the Future Use of Data (section 8.6) as an example: 
+> “Describe any known future use of the data beyond the conclusion of this research project, and indicate whether participant consent will be obtained in the current consent procedure or if the participant will be contacted later to obtain consent. Either possibility must be described in the consent process. If consent is to be obtained now, future use of data must also be described in full in the consent form. If consent will be obtained later, an amendment will be needed that includes the full details and updated consent form before the additional use of data begins.”
+  
+One of the future uses of sensitive data is making it openly accessible and available. As a part of some funding and publishing requirements, de-identified data and research findings may be required to be deposited in a repository. Participants must be informed when the data will be made available and accessible. Language to inform participants on this topic is specified in UBC BREB section 8.6, [Access to Research Data.](https://researchethics.ubc.ca/behavioural-research-ethics/breb-guidance-notes/guidance-notes-behavioural-application)
 
 # Assessing risk and anonymization: "k-anonymity" 
+There are several ways to ensure that sensitive data does not lead to any risk of harm, such as re-identification. For example, a “statistical disclosure risk assessment” can be applied to evaluate the level of risk of potential identifiers. 
+
+One kind of risk assessment method is “k-anonymity”, which is a mathematical approach to demonstrating that a dataset has been anonymized. The concept of “k-anonymity” means that we shouldn’t be able to isolate less than “k” participants based on any combination of identifying variables. In other words, each participant’s record should “blend in” with a group of at least “k” records that share the same values of select indirect identifiers. 
+
+“k” is a numerical value that is determined by the researchers, which is commonly 3 or 5. For example, if k=5 then there needs to be at least 4 participants in the dataset with the same set of indirect characteristics to be unidentifiable. 
+* Terminology when discussing k-anonymity:
+  - Equivalence class: the same values for a set of variables
+  - Sample unique: a unique combination of values for a set of variables, there are no “data twins”
+
+Here is an example to illustrate this concept:
+* Cases 1, 6, and 13 have an equivalence class with a k value of 3: this group of 3 records with the same values for a set of variables has a k value of 3, specifically.
+* Case 14 is a sample unique with no “data twins” and has an equivalence class with a k value of 1: no other record shares this exact combination.
+* The overall k value for this sample dataset is the equivalence class with the smallest k value, which is 1. This k value is not good because it does not offer sufficient anonymization. There is a record that is unique and can identify a participant. 
+
+(INSERT TABLE IMAGE)
+
+To achieve the determined k value (to prevent uniqueness that may lead to re-identification), there are some methods that can be done:
+* Global data reduction: changes are made to variables across datasets, such as grouping responses into categories. This removes the risky variables of a dataset.
+* Local suppression: individual cases or responses are deleted
+
+Keep in mind that k-anonymity is not fail-proof because, regardless of how well you assess anonymity, there is still the risk of re-identification. 
 
 ## Exercise 2
 {: .no_toc}
 {: .label .label-green }
+Here is a sample of a dataset from a survey about living costs across Canada. From this dataset, answer these questions:
+1. Identify the equivalence classes and determine the k-anonymity for each class
+2. Determine the overall k-anonymity for the dataset. Is this a “good” k value? 
 
+(INSERT TABLE IMAGE)
 # How to protect and preserve sensitive data?
+Once you collected all your data and identified the associated risks, including re-identification, how would you protect and preserve it to prevent privacy and confidentiality violations?
+
+There are many processes to protect the privacy of participants, for example: de-identification, anonymization, and/or pseudonymization.
+* For structured data, such as data contained in a spreadsheet, statistical methods are commonly used.
+* For unstructured data, such as qualitative data in the form of transcripts (both published and unpublished) from interviews or focus groups, software can be used to some extent. Document your decisions on what pieces of information are redacted or replaced with placeholders in a codebook.  
+
+Some example data anonymization software:
+* ARX: a well-used open-source data anonymization software
+* Amnesia: open-source data anonymization software from EU’s OpenAIRE
 
 
-<b>Here's a breakdown of what we covered:</b>
+<b>Here's a breakdown of what we covered:</b> Sensitive data contains information that may lead to the identification of individuals, therefore it needs to be anonymized to protect against the risk and harm of possible unauthorized access and violations of privacy and confidentiality. Data is “sensitive” because it contains different kinds of identifying pieces of information: direct, indirect, non-identifying, and hidden. Assessing the level of risk sensitivity for a dataset can be done using various statistical methods. A common method is determining the “k-anonymity”. How sensitive data is collected and dealt with must be addressed in your consent form for participants.
+{: .note}
 
+# Congrats!
+{: .no_toc}
+---
+Sources
 
+Need help?
+{: .label .label-blue }
+  Please reach out to `research.data@ubc.ca` for assistance with any of your research data questions.
 
 
 
