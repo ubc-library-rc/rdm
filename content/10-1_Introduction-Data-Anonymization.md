@@ -61,7 +61,7 @@ Examples of who may be harmed:
   - Criminal/delinquent behaviour
   - Health-related questions, medical conditions, and mental health questions
 
-<img src="figures/incognito.png" width="200"/>
+<img src="figures/incognito.png" width="250"/>
 
 ## What makes data "sensitive"?
 Within a dataset, there are different kinds of identifying pieces of information that may be included in a dataset: **direct identifiers, indirect identifiers, non-identifiers, and hidden identifiers**. These kinds of identifiers can immediately identify a participant or can identify them when combined with other identifiers.
@@ -125,7 +125,7 @@ Like indirect identifiers, hidden identifiers are when non-identifiers are conte
 
 The size of the dataset also matters because machine learning can be applied to reveal patterns and potentially re-identify participants. For example, comparing public restaurant reviews to a dataset containing ratings of barbeque buffets can re-identify a participant with sufficient effort. 
 
-<img src="figures/anonymity.png" width="200"/>
+<img src="figures/anonymity.png" width="150"/>
 
 ## Exercise 1
 {: .no_toc}
@@ -136,7 +136,7 @@ Please answer these questions based on the data collected (see below) from surve
 1. What data points are direct identifiers?
 2. What data points are indirect identifiers?  
 
-[Here is the data collected](https://github.com/ubc-library-rc/rdm/blob/rdm-pages/content/exercise_files/WorkerSatisfaction_Unprocessed_KEY.xlsx) from surveying apple growers as a downloadable XLSX file with multiple sheets. The first sheet contains the unprocessed data, the second sheet has the answers for the direct identifiers, the third sheet has the answers for the indirect identifiers, and the fourth sheet is a data dictionary.  
+[Here is the data collected](https://ubc-library-rc.github.io/rdm/content/exercise_files/WorkerSatisfaction_Unprocessed_KEY.xlsx) from surveying apple growers as a downloadable XLSX file with multiple sheets. The first sheet contains the unprocessed data, the second sheet has the answers for the direct identifiers, the third sheet gas the answers for the indirect identifiers, and the fourth sheet serves as a data dictionary.  
 
 Please note that this dataset was created for this workshop and doesn’t reflect a real study with real participants.
 
@@ -187,9 +187,9 @@ Here is an example to illustrate this concept:
 
 <img src="figures/k_anon_table.png" width="300"/>
 
-To achieve the determined k value (to prevent uniqueness that may lead to re-identification), there are some methods that can be done:
-* Global data reduction: changes are made to variables across datasets, such as grouping responses into categories. This removes the risky variables of a dataset.
-* Local suppression: individual cases or responses are deleted
+To achieve the determined k value (to prevent uniqueness that may lead to re-identification), there are some methods that can be used:
+* **Global data reduction**: changes are made to variables across datasets, such as grouping responses into categories. This removes the risky variables of a dataset.
+* **Local suppression**: individual cases or responses are deleted
 
 Keep in mind that k-anonymity is not fail-proof because, regardless of how well you assess anonymity, there is still the risk of re-identification. 
 
@@ -228,7 +228,7 @@ Some examples of data anonymization software:
 * Rod, A. B. & Thompson, K. (2023). Chapter 13: Sensitive data: Practical and theoretical considerations. [https://doi.org/10.5206/EKCH6181](https://doi.org/10.5206/EKCH6181) 
 * Thompson, K. (2023, Nov. 7). McGill data anonymization workshop series - 1. Reducing risk: An introduction to data anonymization. [https://doi.org/10.5281/zenodo.10079239](https://doi.org/10.5281/zenodo.10079239)
 * UBC Advanced Research Computing. Research information classification. [https://arc.ubc.ca/security-privacy/research-information-classification](https://arc.ubc.ca/security-privacy/research-information-classification)
-* UBC Office of Research Ethics. Writing behavioural ethics applications: Guidance notes, section 8.6 "future use of data". [https://researchethics.ubc.ca/behavioural-research-ethics/breb-guidance-notes/guidance-notes-behavioural-application](https://researchethics.ubc.ca/behavioural-research-ethics/breb-guidance-notes/guidance-notes-behavioural-application)
+* UBC Office of Research Ethics. Writing behavioural ethics applications: Guidance notes, subsection 8.6 "future use of data". [https://researchethics.ubc.ca/behavioural-research-ethics/breb-guidance-notes/guidance-notes-behavioural-application](https://researchethics.ubc.ca/behavioural-research-ethics/breb-guidance-notes/guidance-notes-behavioural-application)
 
 --- 
 
