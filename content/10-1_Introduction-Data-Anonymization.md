@@ -211,11 +211,11 @@ Some example data anonymization software:
 ---
 ### Sources
 {: .no_toc}
-* Rochlin, N. Introduction sensitive data & de-identification. [https://osf.io/hv9pf/overview](https://osf.io/hv9pf/overview)
+* Rochlin, N. (2020, Oct. 14). Introduction to sensitive data & de-identification. [https://osf.io/hv9pf/overview](https://osf.io/hv9pf/overview)
 * Rod, A. B & Thompson, K. (2023). Chapter 13: Sensitive data: Practical and theoretical considerations. [https://ecampusontario.pressbooks.pub/canadardm/chapter/sensitive-data-practical-and-theoretical-considerations/](https://ecampusontario.pressbooks.pub/canadardm/chapter/sensitive-data-practical-and-theoretical-considerations/) 
 * Thompson, K. (2023, Nov. 7). McGill data anonymization workshop series - 1. Reducing risk: An introduction to data anonymization. [https://doi.org/10.5281/zenodo.10079239](https://doi.org/10.5281/zenodo.10079239)
 * UBC Advanced Research Computing. Research information classification. [https://arc.ubc.ca/security-privacy/research-information-classification](https://arc.ubc.ca/security-privacy/research-information-classification)
-* UBC Office of Research Ethics. Writing behavioural ethics applications: Guidance notes, section 8.6 future use of data. [https://researchethics.ubc.ca/behavioural-research-ethics/breb-guidance-notes/guidance-notes-behavioural-application](https://researchethics.ubc.ca/behavioural-research-ethics/breb-guidance-notes/guidance-notes-behavioural-application)
+* UBC Office of Research Ethics. Writing behavioural ethics applications: Guidance notes, section 8.6 "future use of data". [https://researchethics.ubc.ca/behavioural-research-ethics/breb-guidance-notes/guidance-notes-behavioural-application](https://researchethics.ubc.ca/behavioural-research-ethics/breb-guidance-notes/guidance-notes-behavioural-application)
 
 Need help?
 {: .label .label-blue }
