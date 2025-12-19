@@ -14,10 +14,10 @@ Sensitive data requires careful handling and security to protect participant pri
 
 ### Terminology
 {: .no_toc}
-In UBC terminology [(Information Technology Standard U1)](https://cio.ubc.ca/information-security-standards/U1), sensitive data is classified as medium risk, high risk, or very high risk. For the purposes of this workshop, however, we will use the term “sensitive data” to align with the terminology in Sensitive Data: Practical and Theoretical Considerations (Rod & Thompson, 2023). In this context, these terms will be treated as equivalent. 
+In UBC terminology [(Information Technology Standard U1)](https://cio.ubc.ca/information-security-standards/U1), sensitive data is classified as medium risk, high risk, or very high risk. For the purposes of this workshop, however, we will use the term “sensitive data” to align with the terminology in Sensitive Data: Practical and Theoretical Considerations [(Rod & Thompson, 2023, pp. 251-273)](https://ecampusontario.pressbooks.pub/canadardm/chapter/sensitive-data-practical-and-theoretical-considerations/). In this context, these terms will be treated as equivalent. 
 {: .note}
 
-Looking for a cheat sheet? Check out our one-pager (TBD)
+Looking for a cheat sheet? Check out our one-pager (ONE-PAGER IN PROGRESS)
 {: .note}
 
 <details open markdown="block">
@@ -40,7 +40,9 @@ Examples of data that are considered “sensitive”:
 * Data protected by institutional policy
 
 ## Why do we anonymize data?
-Data is anonymized to minimize the risk of harm to individuals, communities, and animal species in the event of a confidentiality breach. Data anonymization is also done to prevent possible re-identification, where participants could be isolated in a dataset and then matched to other information that could identify them with reasonable effort.  The level of harm that may impact participants depends on the population, topic, and context of the data.
+Data is anonymized to minimize the risk of harm to individuals, communities, and animal species in the event of a confidentiality breach. 
+
+Data anonymization is also done to prevent possible re-identification, where participants could be isolated in a dataset and then matched to other information that could identify them with reasonable effort. The level of harm that may impact participants depends on the population, topic, and context of the data.
 
 Examples of who may be harmed:
 * Vulnerable populations
@@ -85,15 +87,16 @@ Here are 15 direct identifiers compiled by Rod & Thompson (2023) in their textbo
 
 ### Indirect identifiers ("quasi-identifiers")
 {: .no_toc}
-Indirect identifiers, or “quasi-identifiers”, are pieces of information that, when combined, could identify a participant. The removal of this kind of information should be evaluated in the context of what is known or may be reasonably inferred. For example:
-* Likely to pose a high risk:
-  - Variables containing groups with small numbers of respondents
-  - Extreme values or unusual combinations of variables
+Indirect identifiers, or “quasi-identifiers”, are pieces of information that, when combined, could identify a participant. The removal of this kind of information should be evaluated in the context of what is known or may be reasonably inferred. 
+
+For example, these are likely to pose a high risk:
+* Variables containing groups with small numbers of respondents
+* Extreme values or unusual combinations of variables
 
 Consider the size of the potentially-identifiable group(s) in the general population, and the contextual information that accompanies the data.
 
 Here are some more examples of indirect identifiers:
-* Participant surveys or interviews (who consented to have their information be used for research purposes)
+* Participant surveys or interviews (who consented to have their information used for research purposes)
 * Medical records
 * Disability
 * Tax-filer records
@@ -169,7 +172,7 @@ Here is an example to illustrate this concept:
 * Case 14 is a sample unique with no “data twins” and has an equivalence class with a k value of 1: no other record shares this exact combination.
 * The overall k value for this sample dataset is the equivalence class with the smallest k value, which is 1. This k value is not good because it does not offer sufficient anonymization. There is a record that is unique and can identify a participant. 
 
-<img src="figures/k_anon_table.png" width="250"/>
+<img src="figures/k_anon_table.png" width="300"/>
 
 To achieve the determined k value (to prevent uniqueness that may lead to re-identification), there are some methods that can be done:
 * Global data reduction: changes are made to variables across datasets, such as grouping responses into categories. This removes the risky variables of a dataset.
@@ -194,8 +197,8 @@ There are many processes to protect the privacy of participants, for example: de
 * For unstructured data, such as qualitative data in the form of transcripts (both published and unpublished) from interviews or focus groups, software can be used to some extent. Document your decisions on what pieces of information are redacted or replaced with placeholders in a codebook.  
 
 Some example data anonymization software:
-* ARX: a well-used open-source data anonymization software
-* Amnesia: open-source data anonymization software from EU’s OpenAIRE
+* [ARX](https://arx.deidentifier.org/): a well-used open-source data anonymization software
+* [Amnesia](https://amnesia.openaire.eu/): open-source data anonymization software from EU’s OpenAIRE
 
 
 <b>Here's a breakdown of what we covered:</b> Sensitive data contains information that may lead to the identification of individuals, therefore it needs to be anonymized to protect against the risk and harm of possible unauthorized access and violations of privacy and confidentiality. Data is “sensitive” because it contains different kinds of identifying pieces of information: direct, indirect, non-identifying, and hidden. Assessing the level of risk sensitivity for a dataset can be done using various statistical methods. A common method is determining the “k-anonymity”. How sensitive data is collected and dealt with must be addressed in your consent form for participants.
@@ -203,8 +206,16 @@ Some example data anonymization software:
 
 # Congrats!
 {: .no_toc}
+*Hooray!* You now have an introductory understanding of why research data undergoes anonymization, the different kinds of identifiers of a sensitive dataset, and one method of assessing the risk of a sensitive dataset.  
+
 ---
-Sources
+### Sources
+{: .no_toc}
+* Rochlin, N. Introduction sensitive data & de-identification. [https://osf.io/hv9pf/overview](https://osf.io/hv9pf/overview)
+* Rod, A. B & Thompson, K. (2023). Chapter 13: Sensitive data: Practical and theoretical considerations. [https://ecampusontario.pressbooks.pub/canadardm/chapter/sensitive-data-practical-and-theoretical-considerations/](https://ecampusontario.pressbooks.pub/canadardm/chapter/sensitive-data-practical-and-theoretical-considerations/) 
+* Thompson, K. (2023, Nov. 7). McGill data anonymization workshop series - 1. Reducing risk: An introduction to data anonymization. [https://doi.org/10.5281/zenodo.10079239](https://doi.org/10.5281/zenodo.10079239)
+* UBC Advanced Research Computing. Research information classification. [https://arc.ubc.ca/security-privacy/research-information-classification](https://arc.ubc.ca/security-privacy/research-information-classification)
+* UBC Office of Research Ethics. Writing behavioural ethics applications: Guidance notes, section 8.6 future use of data. [https://researchethics.ubc.ca/behavioural-research-ethics/breb-guidance-notes/guidance-notes-behavioural-application](https://researchethics.ubc.ca/behavioural-research-ethics/breb-guidance-notes/guidance-notes-behavioural-application)
 
 Need help?
 {: .label .label-blue }
