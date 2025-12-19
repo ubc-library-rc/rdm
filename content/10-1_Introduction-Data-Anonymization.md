@@ -123,17 +123,15 @@ The size of the dataset also matters because machine learning can be applied to 
 ## Exercise 1
 {: .no_toc}
 {: .label .label-green }
-You are a researcher investigating what factors are linked to production efficiencies – quantities and costs – of apple growers in the Pacific Northwest. Here is the (dummy) data collected from surveying apple growers: (place dataset as a table in GitHub). Please note that this dataset has been created for a workshop and doesn’t reflect a real study with real participants.
+You are a researcher investigating what factors are linked to production efficiencies – quantities and costs – of apple growers in the Pacific Northwest. 
 
-From the provided, answer these questions:
+Please answer these questions based on the data collected (see below) from surveying apple growers:
 1. What data points are direct identifiers?
 2. What data points are indirect identifiers?  
 
-Here is the answer key for you to check your understanding, provided as a downloadable spreadsheet, as an XLSX to preserve formatting, as it will have a multiple sheets:
-- Sheet 1: unprocessed data
-- Sheet 2: direct identifiers
-- Sheet 3: indirect identifiers
-- Sheet 4: data dictionary
+[Here is the data collected](https://github.com/ubc-library-rc/rdm/blob/rdm-pages/content/exercise_files/WorkerSatisfaction_Unprocessed_KEY.xlsx) from surveying apple growers as a downloadable XLSX file with multiple sheets. The first sheet contains the unprocessed data, the second sheet has the answers for the direct identifiers, the third sheet has the answers for the indirect identifiers, and the fourth sheet is a data dictionary.  
+
+Please note that this dataset was created for this workshop and doesn’t reflect a real study with real participants
 
 # Consent language
 Anytime human participants are involved in research, informed consent is needed. Informed consent needs to include how the collected data will be handled during the active research phase and in the future. Always keep in mind that many journals now are asking for a subset of data to be available, and if the original consent does not address the future availability of data, then a paper would be stuck. It is much harder to change the consent forms after the fact. 
@@ -171,7 +169,7 @@ Here is an example to illustrate this concept:
 * Case 14 is a sample unique with no “data twins” and has an equivalence class with a k value of 1: no other record shares this exact combination.
 * The overall k value for this sample dataset is the equivalence class with the smallest k value, which is 1. This k value is not good because it does not offer sufficient anonymization. There is a record that is unique and can identify a participant. 
 
-<img src="figures/k_anon_table.png" width="400"/>
+<img src="figures/k_anon_table.png" width="250"/>
 
 To achieve the determined k value (to prevent uniqueness that may lead to re-identification), there are some methods that can be done:
 * Global data reduction: changes are made to variables across datasets, such as grouping responses into categories. This removes the risky variables of a dataset.
@@ -186,7 +184,22 @@ Here is a sample of a dataset from a survey about living costs across Canada. Fr
 1. Identify the equivalence classes and determine the k-anonymity for each class
 2. Determine the overall k-anonymity for the dataset. Is this a “good” k value? 
 
-(INSERT TABLE IMAGE)
+| RecordID | Gender | AgeGroup | Income  | City           |
+|----------|--------|----------|---------|----------------|
+| 1        | F      | 40-50    | $80,000 | Vancouver      |
+| 2        | F      | 29-39    | $75,000 | Charlottetown  |
+| 3        | M      | 51-61    | $80,000 | Victoria       |
+| 4        | F      | 40-50    | $80,000 | Vancouver      |
+| 5        | M      | 51-61    | $80,000 | Victoria       |
+| 6        | F      | 29-39    | $75,000 | Charlottetown  |
+| 7        | F      | 29-39    | $75,000 | Charlottetown  |
+| 8        | M      | 51-61    | $80,000 | Victoria       |
+| 9        | F      | 29-39    | $75,000 | Charlottetown  |
+| 10       | F      | 40-50    | $80,000 | Vancouver      |
+| 11       | F      | 40-50    | $80,000 | Vancouver      |
+| 12       | F      | 40-50    | $80,000 | Vancouver      |
+| 13       | F      | 40-50    | $80,000 | Vancouver      |
+
 # How to protect and preserve sensitive data?
 Once you collected all your data and identified the associated risks, including re-identification, how would you protect and preserve it to prevent privacy and confidentiality violations?
 
