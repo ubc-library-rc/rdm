@@ -171,7 +171,7 @@ Here is an example to illustrate this concept:
 * Case 14 is a sample unique with no “data twins” and has an equivalence class with a k value of 1: no other record shares this exact combination.
 * The overall k value for this sample dataset is the equivalence class with the smallest k value, which is 1. This k value is not good because it does not offer sufficient anonymization. There is a record that is unique and can identify a participant. 
 
-![](content/figures/k_anon_table.png)
+![](https://github.com/ubc-library-rc/rdm/blob/rdm-pages/content/figures/k_anon_table.png)
 
 To achieve the determined k value (to prevent uniqueness that may lead to re-identification), there are some methods that can be done:
 * Global data reduction: changes are made to variables across datasets, such as grouping responses into categories. This removes the risky variables of a dataset.
