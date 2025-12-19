@@ -184,21 +184,7 @@ Here is a sample of a dataset from a survey about living costs across Canada. Fr
 1. Identify the equivalence classes and determine the k-anonymity for each class
 2. Determine the overall k-anonymity for the dataset. Is this a “good” k value? 
 
-| RecordID | Gender | AgeGroup | Income  | City           |
-|----------|--------|----------|---------|----------------|
-| 1        | F      | 40-50    | $80,000 | Vancouver      |
-| 2        | F      | 29-39    | $75,000 | Charlottetown  |
-| 3        | M      | 51-61    | $80,000 | Victoria       |
-| 4        | F      | 40-50    | $80,000 | Vancouver      |
-| 5        | M      | 51-61    | $80,000 | Victoria       |
-| 6        | F      | 29-39    | $75,000 | Charlottetown  |
-| 7        | F      | 29-39    | $75,000 | Charlottetown  |
-| 8        | M      | 51-61    | $80,000 | Victoria       |
-| 9        | F      | 29-39    | $75,000 | Charlottetown  |
-| 10       | F      | 40-50    | $80,000 | Vancouver      |
-| 11       | F      | 40-50    | $80,000 | Vancouver      |
-| 12       | F      | 40-50    | $80,000 | Vancouver      |
-| 13       | F      | 40-50    | $80,000 | Vancouver      |
+<img src="figures/data_anon_exercise2.png" width="500"/>
 
 # How to protect and preserve sensitive data?
 Once you collected all your data and identified the associated risks, including re-identification, how would you protect and preserve it to prevent privacy and confidentiality violations?
