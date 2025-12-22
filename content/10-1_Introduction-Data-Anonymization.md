@@ -144,11 +144,11 @@ Please answer these questions based on the data collected (see below) from surve
 # Consent language
 Anytime human participants are involved in research, informed consent is needed. Informed consent needs to include how the collected data will be handled during the active research phase and in the future. 
 
-Always keep in mind that many journals now are asking for a subset of data to be available, and if the original consent does not address the future availability of data, then a paper would be stuck. It is much harder to change the consent forms after the fact. 
+Try to keep in mind that many journals now are asking for a subset of data to be available, and if the original consent does not address the future availability of data, then a paper would be stuck. It is much harder to change the consent forms after the fact. 
 
 In Canada, ethical guidelines for human research participants are outlined in the [Tri-Council Policy Statement (TCPS 2)](https://ethics.gc.ca/eng/policy-politique_tcps2-eptc2_2022.html). To comply with these guidelines, there is specific information that needs to be included, depending on the area of research being conducted. 
 * The [Sensitive Data Toolkit for Researchers](https://zenodo.org/records/4107178#.Y-PFQxOZPao) by the Alliance contains language that can be included in the consent form to notify the participant about what happens to their data, explain the anonymization process, and more.
-* The [UBC ARC Information Privacy](https://arc.ubc.ca/security-privacy/information-privacy) contains considerations when working with human participant information, including consent.
+* The [UBC ARC Information Privacy](https://arc.ubc.ca/security-privacy/information-privacy) page contains considerations when working with human participant information, including consent.
 
 Research ethics boards (REBs) of institutions are very careful about consent language to make sure privacy and confidentiality are protected, and that participants know about the extent of their participation. 
 
