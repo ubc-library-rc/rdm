@@ -70,7 +70,7 @@ Within a dataset, there are different kinds of identifying pieces of information
 {: .no_toc}
 Direct identifiers are pieces of information that will immediately re-identify a participant. This type of information <b>must</b> be removed from any published dataset. You also want to consider removing direct identifiers when sharing data within the research group. 
 
-Here are 15 direct identifiers compiled by Rod & Thompson (2023) in their textbook chapter:
+Here are 15 direct identifiers compiled by Rod & Thompson (2023):
 * Full or partial names or initials
 * Dates linked to individuals, such as birth, graduation, or hospitalization (year alone or month alone may be acceptable)
 * Full or partial addresses (large units of geography, such as city, fall under indirect identifiers and need to be reviewed)
@@ -136,7 +136,8 @@ Please answer these questions based on the data collected (see below) from surve
 1. What data points are direct identifiers?
 2. What data points are indirect identifiers?  
 
-[Here is the data collected](https://ubc-library-rc.github.io/rdm/content/exercise_files/WorkerSatisfaction_Unprocessed_KEY.xlsx) from surveying apple growers as a downloadable XLSX file with multiple sheets. The first sheet contains the unprocessed data, the second sheet has the answers for the direct identifiers, the third sheet gas the answers for the indirect identifiers, and the fourth sheet serves as a data dictionary.  
+### Mock Exercise Dataset
+[Here is the data collected](https://ubc-library-rc.github.io/rdm/content/exercise_files/WorkerSatisfaction_Unprocessed_KEY.xlsx) from surveying apple growers as a downloadable XLSX file with multiple sheets. The first sheet contains the unprocessed data, the second sheet has the answers for the direct identifiers, the third sheet has the answers for the indirect identifiers, and the fourth sheet serves as a data dictionary.  
 
 Please note that this dataset was created for this workshop and doesn’t reflect a real study with real participants.
 
