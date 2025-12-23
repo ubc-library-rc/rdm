@@ -1,0 +1,10 @@
+---
+layout: default
+title: Manual Data Anonymization
+parent: Data Anonymization
+nav_order: 2
+---
+
+<img src="figures/work-in-progress.png" width="600"/>
+
+# Introduction to Manual Data Anonymization
