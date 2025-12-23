@@ -32,7 +32,7 @@ Looking for a cheat sheet? Check out our one-pager (ONE-PAGER IN PROGRESS)
 ---
 
 # What is sensitive data?
-Sensitive data is “information that must be safeguarded against unwarranted access or disclosure” (Rod & Thompson, 2023, p. 252) and may relate to both humans and animals.
+Sensitive data is “information that must be safeguarded against unwarranted access or disclosure” [(Rod & Thompson, 2023, p. 252)](https://doi.org/10.5206/EKCH6181) and may relate to both humans and animals.
 
 Examples of data that are considered “sensitive”:
 * Personal health information
