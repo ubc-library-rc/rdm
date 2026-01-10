@@ -14,10 +14,10 @@ Sensitive data requires careful handling and security to protect participant pri
 
 ### Terminology
 {: .no_toc}
-In UBC terminology [(Information Technology Standard U1)](https://cio.ubc.ca/information-security-standards/U1), sensitive data is classified as medium risk, high risk, or very high risk. For the purposes of this workshop, however, we will use the term “sensitive data” to align with the terminology in Sensitive Data: Practical and Theoretical Considerations [(Rod & Thompson, 2023, pp. 251-273)](https://doi.org/10.5206/EKCH6181). In this context, these terms will be treated as equivalent. 
+In UBC terminology [(Information Technology Standard U1)](https://cio.ubc.ca/information-security-standards/U1), sensitive data is classified as medium risk, high risk, or very high risk information. For this workshop, however, we will use the term “sensitive data” to align with the terminology in Sensitive Data: Practical and Theoretical Considerations [(Rod & Thompson, 2023, pp. 251-273)](https://doi.org/10.5206/EKCH6181). In this context, these terms will be treated as equivalent. 
 {: .note}
 
-Looking for a cheat sheet? Check out our one-pager (ONE-PAGER IN PROGRESS)
+Looking for a cheat sheet? Check out our two-pager (TWO-PAGER IN PROGRESS)
 {: .note}
 
 <details open markdown="block">
@@ -32,7 +32,7 @@ Looking for a cheat sheet? Check out our one-pager (ONE-PAGER IN PROGRESS)
 ---
 
 # What is sensitive data?
-Sensitive data is “information that must be safeguarded against unwarranted access or disclosure” [(Rod & Thompson, 2023, p. 252)](https://doi.org/10.5206/EKCH6181) and may relate to both humans and animals.
+In addition to UBC's terminology to define sensitive data, this kind of information can also be understood as “information that must be safeguarded against unwarranted access or disclosure” [(Rod & Thompson, 2023, p. 252)](https://doi.org/10.5206/EKCH6181) and may relate to both humans and animals.
 
 Examples of data that are considered “sensitive”:
 * Personal health information
@@ -64,16 +64,16 @@ Examples of who may be harmed:
 <img src="figures/incognito.png" width="250"/>
 
 ## What makes data "sensitive"?
-Within a dataset, there are different kinds of identifying pieces of information that may be included in a dataset: **direct identifiers, indirect identifiers, non-identifiers, and hidden identifiers**. These kinds of identifiers can immediately identify a participant or can identify them when combined with other identifiers.
+Within a dataset, there are different kinds of identifying pieces of information that may be included in a dataset: **direct identifiers, indirect identifiers, non-identifiers, and hidden identifiers**. Depending on the type, these kinds of identifiers can immediately identify a participant or can identify them when combined with other identifiers.
 
 ### Direct identifiers
 {: .no_toc}
-Direct identifiers are pieces of information that will immediately re-identify a participant. This type of information <b>must</b> be removed from any published dataset. You also want to consider removing direct identifiers when sharing data within the research group. 
+Direct identifiers are pieces of information that will immediately re-identify a participant. This type of information <b>must</b> be removed from any published dataset. Also, consider removing direct identifiers when sharing data within the research group. 
 
 Here are 15 direct identifiers compiled by Rod & Thompson (2023):
 * Full or partial names or initials
 * Dates linked to individuals, such as birth, graduation, or hospitalization (year alone or month alone may be acceptable)
-* Full or partial addresses (large units of geography, such as city, fall under indirect identifiers and need to be reviewed)
+* Full or partial addresses (large units of geography, such as a city, fall under indirect identifiers and need to be reviewed)
 * Full or partial postal codes (the first three digits may be acceptable)
 * Telephone or fax numbers
 * Email addresses
@@ -85,7 +85,7 @@ Here are 15 direct identifiers compiled by Rod & Thompson (2023):
 * Photographs or individuals or their houses or locations, or video recordings containing these; medical images or scans
 * Audio recordings of individuals
 * Biometric data
-* Any unique and recognizable characteristics of individuals (for example, a Canada research chair in Physics)
+* Any unique and recognizable characteristics of individuals (for example, a Canadian Research Chair in Physics)
 
 ### Indirect identifiers ("quasi-identifiers")
 {: .no_toc}
@@ -113,7 +113,7 @@ Here are some examples of indirect identifiers:
 
 ### Non-identifiers
 {: .no_toc}
-Non-identifiers are pieces of information that likely won’t identify a participant. For example:
+Non-identifiers are pieces of information that are unlikely to identify a participant. For example:
 * Ratings on a Likert scale, rankings, and opinions
 * Temporary measures, like a resting heart rate or the number of times you ate a meal in the last week
 
@@ -121,9 +121,7 @@ However, still consider the level of sensitivity of the data. A dataset with med
 
 ### Hidden identifiers
 {: .no_toc} 
-Like indirect identifiers, hidden identifiers are when non-identifiers are contextually combined in some way that may re-identify participants. 
-
-The size of the dataset also matters because machine learning can be applied to reveal patterns and potentially re-identify participants. For example, comparing public restaurant reviews to a dataset containing ratings of barbeque buffets can re-identify a participant with sufficient effort. 
+Like indirect identifiers, hidden identifiers are pieces of non-identifying information that, when contextually combined in some way, may re-identify participants. 
 
 <img src="figures/anonymity.png" width="150"/>
 
@@ -179,7 +177,7 @@ One kind of risk assessment method is “k-anonymity”, which is a mathematical
 
 Terminology when discussing k-anonymity:
   - Equivalence class: the same values for a set of variables
-  - Sample unique: a unique combination of values for a set of variables, there are no “data twins”
+  - Sample unique: a unique combination of values for a set of variables, meaning that there are no “data twins”
 
 Here is an example to illustrate this concept:
 * Cases 1, 6, and 13 have an equivalence class with a k value of 3: this group of 3 records with the same values for a set of variables has a k value of 3, specifically.
@@ -206,11 +204,9 @@ Here is a sample of a dataset from a survey about living costs across Canada. Fr
 # How to protect and preserve sensitive data
 Once you collected all your data and identified the associated risks, including re-identification, how would you protect and preserve it to prevent privacy and confidentiality violations?
 
-There are many processes to protect the privacy of participants, for example: de-identification, anonymization, and/or pseudonymization.
-* For structured data, such as data contained in a spreadsheet, statistical methods are commonly used.
-* For unstructured data, such as qualitative data in the form of transcripts (both published and unpublished) from interviews or focus groups, software can be used to some extent. Document your decisions on what pieces of information are redacted or replaced with placeholders in a codebook.  
+There are many processes to protect the privacy of participants, for example: de-identification, anonymization, and/or pseudonymization. The good news is that there is software that can be helpful to some extent for tabular data. 
 
-Some examples of data anonymization software:
+Here are some examples of data anonymization software:
 * [ARX](https://arx.deidentifier.org/): a well-used open-source data anonymization software
 * [Amnesia](https://amnesia.openaire.eu/): open-source data anonymization software from EU’s OpenAIRE
 
