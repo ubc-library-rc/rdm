@@ -5,8 +5,6 @@ parent: Data Anonymization
 nav_order: 1
 ---
 
-<img src="figures/work-in-progress.png" width="600"/>
-
 # Introduction to Data Anonymization
 {: .no_toc}
 Although it is good practice to share our research data and findings, we need to consider precautions when conducting ethical, reliable, and responsible research. 
@@ -17,7 +15,7 @@ Sensitive data requires careful handling and security to protect participant pri
 In UBC terminology [(Information Technology Standard U1)](https://cio.ubc.ca/information-security-standards/U1), sensitive data is classified as medium risk, high risk, or very high risk information. For this workshop, however, we will use the term “sensitive data” to align with the terminology in Sensitive Data: Practical and Theoretical Considerations [(Rod & Thompson, 2023, pp. 251-273)](https://doi.org/10.5206/EKCH6181). In this context, these terms will be treated as equivalent. 
 {: .note}
 
-Looking for a cheat sheet? Check out our two-pager (TWO-PAGER IN PROGRESS)
+Looking for a cheat sheet? Check out our [two-pager](https://osf.io/a3t7m)
 {: .note}
 
 <details open markdown="block">
