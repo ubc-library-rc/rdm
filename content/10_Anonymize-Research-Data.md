@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Data Anonymization
+title: Data Anonymization and De-identification
 has_children: true
 nav_order: 14
 ---
@@ -27,7 +27,7 @@ There are specific considerations and protocols for Indigenous research data col
 * The [Principles of Métis Ethical Research](https://achh.ca/wp-content/uploads/2018/07/Guide_Ethics_NAHOMetisCentre.pdf)
 * The [CARE Principles for Indigenous Data Governance](https://static1.squarespace.com/static/5d3799de845604000199cd24/t/5da9f4479ecab221ce848fb2/1571419335217/CARE%2BPrinciples_One%2BPagers%2BFINAL_Oct_17_2019.pdf)
 
-### Three interdependent workshops on Data Anonymization:
+### Three interdependent workshops on Data Anonymization and De-identification:
 In these three workshops, we will introduce the fundamentals of data anonymization. The first session covers key concepts and practical definitions, the second focuses on manual techniques for de-identifying data, and the third explores software-based approaches to anonymization. Please note that all workshops are introductory; for more advanced guidance, refer to the links provided at the end of each session.
 
 ---
