@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Data Anonymization and De-identification
+title: Data De-identification
 has_children: true
 nav_order: 14
 ---
