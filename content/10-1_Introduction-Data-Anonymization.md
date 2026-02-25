@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Introduction to Data De-identification
-parent: Data De-identification
+parent: De-identify Research Data
 nav_order: 1
 ---
 
