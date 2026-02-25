@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Data De-identification
+title: De-identify Research Data
 has_children: true
 nav_order: 14
 ---
