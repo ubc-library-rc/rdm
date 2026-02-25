@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Introduction to Data Anonymization
-parent: Data Anonymization and De-identification
+title: Introduction to De-identification
+parent: Data De-identification
 nav_order: 1
 ---
 
