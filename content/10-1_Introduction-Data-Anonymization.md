@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Introduction to De-identification
+title: Introduction to Data De-identification
 parent: Data De-identification
 nav_order: 1
 ---
