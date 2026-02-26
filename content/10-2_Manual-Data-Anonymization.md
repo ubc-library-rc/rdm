@@ -18,13 +18,41 @@ If you want to share a dataset containing sensitive data among your research tea
 UBC does not define the term “sensitive data”. Instead, UBC electronic information is classified using a schema outlined in UBC [Information Security Standard U1 (ISS-U1)](https://cio.ubc.ca/information-security-standards/U1). For the purposes of this workshop, however, we will use the term “sensitive data” to align with the terminology in Sensitive Data: Practical and Theoretical Considerations (Rod & Thompson, 2023). In this context, the term “sensitive data” will be treated as equivalent to information classified as “high risk” and “very-high risk” in UBC ISS-U1.
 {: .note}
 
->Looking for a cheat sheet? Check out our two-pager (IN PROGRESS)
+Looking for a cheat sheet? Check out our two-pager (IN PROGRESS)
 {: .note}
 
-### Methods for manual de-identification
+<details open markdown="block">
+<summary>
+  Table of contents
+</summary>
+  {: .text-delta }
+ - TOC
+{:toc}
+</details>
 
-### Manual de-identification steps
+---
+
+## Methods for manual de-identification
+Examples include, but are not listed in any particular order: 
+**Anonymization:** all identifying information is removed from the dataset and cannot be restored
+- Advantage: ensures a high level of privacy protection
+- Disadvantage: may reduce the usefulness and quality of data
+- *When to use:* this method can be used when data of a variable isn’t necessary for data analysis, or when data de-identification and privacy policies require that data values be fully removed 
+
+## Manual de-identification steps
 
 ### Alternative steps
 
-### Here's a breakdown of what we covered:
+<b>Here's a breakdown of what we covered:</b>
+
+# Congrats!
+{: .no_toc}
+*Hooray!*
+---
+### Sources
+{: .no_toc}
+--- 
+
+Need help?
+{: .label .label-blue }
+  Please reach out to `research.data@ubc.ca` for assistance with any of your research data questions.
