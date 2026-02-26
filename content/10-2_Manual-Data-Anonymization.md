@@ -8,9 +8,15 @@ nav_order: 2
 <img src="figures/work-in-progress.png" width="600"/>
 
 # Introduction to Manual Data De-identification
-If you want to share a dataset containing sensitive data among your research team or with another researcher, there should be de-identification efforts to protect the personal information of participants. Manual de-identification methods can be used to help prepare a dataset with sufficient de-identification so it can be shared among the research team or for researcher collaboration.
+{: .no_toc} 
+If you want to share a dataset containing sensitive data among your research team members or with another researcher, there should be de-identification efforts to protect participants' personal information. Manual de-identification methods can be used to help prepare a dataset with sufficient de-identification so it can be shared among the research team or for researcher collaboration.
 
-### Terminology
+### Terminology & disclaimer
+{: .no_toc}
+UBC does not define the term “sensitive data”. Instead, UBC electronic information is classified using a schema outlined in UBC [Information Security Standard U1 (ISS-U1)](https://cio.ubc.ca/information-security-standards/U1). For the purposes of this workshop, however, we will use the term “sensitive data” to align with the terminology in Sensitive Data: Practical and Theoretical Considerations (Rod & Thompson, 2023). In this context, the term “sensitive data” will be treated as equivalent to information classified as “high risk” and “very-high risk” in UBC ISS-U1.
+
+Please note that this workshop offers a foundational introduction to manual data de-identification. It’s recommended to consult with your institutional or departmental privacy, legal, or compliance expert for assistance with data de-identification. 
+{: .note} 
 
 ### Methods for manual de-identification
 
