@@ -35,7 +35,7 @@ Looking for a cheat sheet? Check out our two-pager (IN PROGRESS)
 # Methods for manual de-identification
 Examples include, but are not listed in any particular order:
 
-**Anonymization:** all identifying information is removed from the dataset and cannot be restored.
+<font color="blue">**Anonymization:**</font> all identifying information is removed from the dataset and cannot be restored.
 - Advantage: ensures a high level of privacy protection
 - Disadvantage: may reduce the usefulness and quality of data
 - *When to use:* this method can be used when data of a variable isn’t necessary for data analysis, or when data de-identification and privacy policies require that data values be fully removed 
@@ -65,6 +65,8 @@ Examples include, but are not listed in any particular order:
 - Disadvantage: the quality of data decreases, which impacts its usefulness
 - *When to use:* this method can be used when there are outlier records or when data anonymity and sensitivity assessments, like k anonymity, aren’t met
 
+(INSERT IMAGE)
+
 # Manual de-identification steps
 You're a researcher looking into the production efficiencies of apple growers in the Pacific Northwest. Here is the example dummy dataset for this workshop (PLACE DATASET HERE). This dataset was created for this workshop and doesn’t reflect a real study with real participants. We will be using this example dataset to illustrate the following manual de-identification procedures. 
 
@@ -83,7 +85,7 @@ Examples of direct identifiers:
 |---------------------|-------------|
 | James Strange | person1 |
 | Maya Liya | person2 |
-| Amelio Beal | person 3 |
+| Amelio Beal | person3 |
 
 **Step 2: Dates**
 
@@ -114,7 +116,7 @@ Examples of geographical data:
 | *Orchard name* | *orchard_id* |
 |---|---|
 | Applejacks | farm1 |
-| Applejacks | farm2 |
+| Applejacks | farm1 |
 | West Kelowna Apples | farm2 |
 
 **Step 4: Data potentially linked to external sources**
@@ -142,8 +144,10 @@ For this workshop, however, we will keep the k anonymity value of 1 because it�
 | *worker_id* | *orchard_id* | *age* |
 |---|---|---|
 | person1 | farm1 | 25-29 | 
-| person2 | farm2 | 30-34 |
+| person2 | farm1 | 30-34 |
 | person3 | farm2 | 30-34 |
+
+(INSERT IMAGE) 
 
 ## Alternative steps
 Previously, we demonstrated one manual de-identification method for each step. However, other kinds of methods (mentioned at the beginning of this workshop) could be applied as well. 
