@@ -94,7 +94,11 @@ Examples of dates that could be linked to public records:
   - Date of birth
   - Date of interview or treatment
  
-(INSERT TABLE HERE) 
+| *Date of birth* | *age* |
+|---|---|
+| 1998-09-10 | 25-29 |
+| 1994-08-04 | 30-34 |
+| 1995-01-02 | 30-34 |
 
 **Step 3: Geographic data**
 
@@ -107,7 +111,11 @@ Examples of geographical data:
   - Country
   - Area population of less than 100,000
  
-(INSERT TABLE HERE)
+| *Orchard name* | *orchard_id* |
+|---|---|
+| Applejacks | farm1 |
+| Applejacks | farm2 |
+| West Kelowna Apples | farm2 |
 
 **Step 4: Data potentially linked to external sources**
 
@@ -117,7 +125,11 @@ Examples of indirect variables:
   - Social media profiles
   - A medical clinic matched with a business revenue database
 
-(INSERT TABLE HERE)
+| *LinkedIn username* | *Full anonymization* |
+|---|---|
+| james.strg |  |
+| ML_9504 |  |
+| beal_a |  |
 
 **The finalized de-identified dataset**
 
@@ -127,7 +139,11 @@ To assess the anonymity of this dataset, we can look at the overall k anonymity 
 
 For this workshop, however, we will keep the k anonymity value of 1 because it’s only a dummy dataset and no real participants are involved. 
 
-(INSERT TABLE HERE)
+| *worker_id* | *orchard_id* | *age* |
+|---|---|---|
+| person1 | farm1 | 25-29 | 
+| person2 | farm2 | 30-34 |
+| person3 | farm2 | 30-34 |
 
 ## Alternative steps
 Previously, we demonstrated one manual de-identification method for each step. However, other kinds of methods (mentioned at the beginning of this workshop) could be applied as well. 
