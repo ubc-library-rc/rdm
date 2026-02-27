@@ -35,7 +35,7 @@ Looking for a cheat sheet? Check out our two-pager (IN PROGRESS)
 # Methods for manual de-identification
 Examples include, but are not listed in any particular order:
 
-<font color="blue">**Anonymization:**</font> all identifying information is removed from the dataset and cannot be restored.
+<b style="color:blue;">Anonymization:</b> all identifying information is removed from the dataset and cannot be restored.
 - Advantage: ensures a high level of privacy protection
 - Disadvantage: may reduce the usefulness and quality of data
 - *When to use:* this method can be used when data of a variable isn’t necessary for data analysis, or when data de-identification and privacy policies require that data values be fully removed 
