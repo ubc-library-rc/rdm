@@ -89,7 +89,7 @@ Examples of direct identifiers:
 
 **Step 2: Dates**
 
-Next, we’re going to identify and re-code specific dates in a way that will still allow data analysis. You should consider removing any dates that aren’t important for analysis. We will use <u>aggregation</u> for the “date of birth” variable. For example, 5-year age ranges will replace each individual birth dates
+Next, we’re going to identify and re-code specific dates in a way that will still allow data analysis. You should consider removing any dates that aren’t important for analysis. We will use <u>aggregation</u> for the “date of birth” variable. For example, 5-year age ranges will replace each birth date.
 
 Examples of dates that could be linked to public records:
   - Specific days
@@ -147,7 +147,6 @@ For this workshop, however, we will keep the k anonymity value of 1 because it�
 | person2 | farm1 | 30-34 |
 | person3 | farm2 | 30-34 |
 
-(INSERT IMAGE) 
 
 ## Alternative steps
 Previously, we demonstrated one manual de-identification method for each step. However, other kinds of methods (mentioned at the beginning of this workshop) could be applied as well. 
@@ -157,6 +156,8 @@ For example:
 - In step 2, generalization can be applied to the birth dates to only use the birth years. However, be aware of outliers.
 - In step 3, anonymization can also be applied to the “city” variable, as the province could be enough for data analysis. This would look like removing all data for the “city” variable, leaving only data related to the province variable.
 - In step 4, masking could be applied to the social media profiles, blurring out the participants’ social media usernames. This could be using asterisks in place of the usernames for each record. 
+
+(INSERT IMAGE) 
 
 
 <b>Here's a breakdown of what we covered:</b>
