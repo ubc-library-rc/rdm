@@ -68,7 +68,7 @@ Examples include, but are not listed in any particular order:
 (INSERT IMAGE)
 
 # Manual de-identification steps
-You're a researcher looking into the production efficiencies of apple growers in the Pacific Northwest. Here is the example dummy dataset for this workshop (PLACE DATASET HERE). This dataset was created for this workshop and doesn’t reflect a real study with real participants. We will be using this example dataset to illustrate the following manual de-identification procedures. 
+You're a researcher looking into the production efficiencies of apple growers in the Pacific Northwest. Here is the [example dummy dataset](https://ubc-library-rc.github.io/rdm/content/exercise_files/WorkerSatisfaction_deIDsteps_KEY_workshop_v01.xlsx) for this workshop. This dataset was created for this workshop and doesn’t reflect a real study with real participants. We will be using this example dataset to illustrate the following manual de-identification procedures. 
 
 Please note that most of the records of the example dataset have already been de-identified. However, the first record is not de-identified, so you can practice the manual de-identification methods by following the steps outlined below. 
 
