@@ -65,7 +65,7 @@ Examples include, but are not listed in any particular order:
 - Disadvantage: the quality of data decreases, which impacts its usefulness
 - *When to use:* this method can be used when there are outlier records or when data anonymity and sensitivity assessments, like k anonymity, aren’t met
 
-<img src="figures/documentation.png" width="250"/>
+<img src="figures/documentation.png" width="200"/>
 
 # Manual de-identification steps
 You're a researcher looking into the production efficiencies of apple growers in the Pacific Northwest. Here is the [example dummy dataset](https://ubc-library-rc.github.io/rdm/content/exercise_files/WorkerSatisfaction_deIDsteps_KEY_workshop_v01.xlsx) for this workshop. 
@@ -160,7 +160,7 @@ For example:
 - In step 3, anonymization can also be applied to the “city” variable, as the province could be enough for data analysis. This would look like removing all data for the “city” variable, leaving only data related to the province variable.
 - In step 4, masking could be applied to the social media profiles, blurring out the participants’ social media usernames. This could be using asterisks in place of the usernames for each record. 
 
-<img src="figures/document.png" width="250"/>
+<img src="figures/document.png" width="200"/>
 
 <b>Here's a breakdown of what we covered:</b>
 Participants’ private and identifiable information needs to be protected when sharing a dataset containing sensitive data. A sensitive dataset can be sufficiently de-identified using the manual de-identification methods outlined in this workshop, so it can be safely shared with your research team or other researchers. These methods include anonymization, pseudonymization, aggregation, masking, generalization, and local suppression. For each step of the de-identification process, select the method that is the most appropriate to address the sensitivity of the variable being de-identified. Also, remember to assess the anonymity of your finalized dataset to make sure it’s properly de-identified. 
