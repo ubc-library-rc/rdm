@@ -80,7 +80,7 @@ Examples of direct identifiers:
   - Photos, biometric ID
  
 | *Identifiable name* | *worker_id* |
-|---|---|
+|---------------------|-------------|
 | James Strange | person1 |
 | Maya Liya | person2 |
 | Amelio Beal | person 3 |
