@@ -73,17 +73,23 @@ Please note that most of the records of the example dataset have already been de
 **Step 1: Direct identifiers** 
 
 Here, let’s first find the direct identifiers and select a method to remove them. We will use <u>pseudonymization</u>. For example, names will be replaced with “person1”, “person2”, and so on.  
-- Examples of direct identifiers:
+
+Examples of direct identifiers:
   - Names, addresses, phone numbers, emails
   - Government ID number, IP addresses
   - Photos, biometric ID
  
-(INSERT TABLE HERE)
+| *Identifiable name* | *worker_id* |
+|---|---|
+| James Strange | person1 |
+| Maya Liya | person2 |
+| Amelio Beal | person 3 |
 
 **Step 2: Dates**
 
 Next, we’re going to identify and re-code specific dates in a way that will still allow data analysis. You should consider removing any dates that aren’t important for analysis. We will use <u>aggregation</u> for the “date of birth” variable. For example, 5-year age ranges will replace each individual birth dates
-- Examples of dates that could be linked to public records:
+
+Examples of dates that could be linked to public records:
   - Specific days
   - Date of birth
   - Date of interview or treatment
@@ -93,7 +99,8 @@ Next, we’re going to identify and re-code specific dates in a way that will st
 **Step 3: Geographic data**
 
 Keep in mind that if geographical specificity is needed for analysis, then take extra precautions to protect other variables that may contribute to re-identification. For this step, we’re going to use <u>pseudonymization</u> again for the geographical variables. For example, orchard names will be replaced with “farm1”, “farm2”, “farm3”, and so on. 
-- Examples of geographical data:
+
+Examples of geographical data:
   - Street address
   - Census tract
   - Postal code or zip code
@@ -105,7 +112,8 @@ Keep in mind that if geographical specificity is needed for analysis, then take 
 **Step 4: Data potentially linked to external sources**
 
 Keep an eye out for (indirect) variables that could link to publicly accessible sources of data, like government registries or social media profiles. These kinds of data matched with geographical data could lead to re-identification. Here, we will use <u>anonymization</u> for the social media profiles included in the dataset. For example, for each record, we will remove the participant’s username from their social media profile.
-- Examples of indirect variables:
+
+Examples of indirect variables:
   - Social media profiles
   - A medical clinic matched with a business revenue database
 
