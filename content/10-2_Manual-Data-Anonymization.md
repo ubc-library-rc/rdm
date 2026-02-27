@@ -66,10 +66,74 @@ Examples include, but are not listed in any particular order:
 - *When to use:* this method can be used when there are outlier records or when data anonymity and sensitivity assessments, like k anonymity, aren’t met
 
 # Manual de-identification steps
+You're a researcher looking into the production efficiencies of apple growers in the Pacific Northwest. Here is the example dummy dataset for this workshop (PLACE DATASET HERE). This dataset was created for this workshop and doesn’t reflect a real study with real participants. We will be using this example dataset to illustrate the following manual de-identification procedures. 
+
+Please note that most of the records of the example dataset have already been de-identified. However, the first record is not de-identified, so you can practice the manual de-identification methods by following the steps outlined below. 
+
+**Step 1: Direct identifiers** 
+
+Here, let’s first find the direct identifiers and select a method to remove them. We will use <u>pseudonymization</u>. For example, names will be replaced with “person1”, “person2”, and so on.  
+- Examples of direct identifiers:
+  - Names, addresses, phone numbers, emails
+  - Government ID number, IP addresses
+  - Photos, biometric ID
+ 
+(INSERT TABLE HERE)
+
+**Step 2: Dates**
+
+Next, we’re going to identify and re-code specific dates in a way that will still allow data analysis. You should consider removing any dates that aren’t important for analysis. We will use <u>aggregation</u> for the “date of birth” variable. For example, 5-year age ranges will replace each individual birth dates
+- Examples of dates that could be linked to public records:
+  - Specific days
+  - Date of birth
+  - Date of interview or treatment
+ 
+(INSERT TABLE HERE) 
+
+**Step 3: Geographic data**
+
+Keep in mind that if geographical specificity is needed for analysis, then take extra precautions to protect other variables that may contribute to re-identification. For this step, we’re going to use <u>pseudonymization</u> again for the geographical variables. For example, orchard names will be replaced with “farm1”, “farm2”, “farm3”, and so on. 
+- Examples of geographical data:
+  - Street address
+  - Census tract
+  - Postal code or zip code
+  - Country
+  - Area population of less than 100,000
+ 
+(INSERT TABLE HERE)
+
+**Step 4: Data potentially linked to external sources**
+
+Keep an eye out for (indirect) variables that could link to publicly accessible sources of data, like government registries or social media profiles. These kinds of data matched with geographical data could lead to re-identification. Here, we will use <u>anonymization</u> for the social media profiles included in the dataset. For example, for each record, we will remove the participant’s username from their social media profile.
+- Examples of indirect variables:
+  - Social media profiles
+  - A medical clinic matched with a business revenue database
+
+(INSERT TABLE HERE)
+
+**The finalized de-identified dataset**
+
+Here is the final product after manually de-identifying the dataset. The dataset is sufficiently de-identified enough that it can be shared with research team members or external partners, for example. 
+
+To assess the anonymity of this dataset, we can look at the overall k anonymity value, which is k=1. In real life, this k anonymity value would be <u>unacceptable</u>. This tells us that the dataset was not sufficiently de-identified and that participants are easily identifiable. Ideally in real life, a k anonymity value of 3 or 5 would be good. 
+
+For this workshop, however, we will keep the k anonymity value of 1 because it’s only a dummy dataset and no real participants are involved. 
+
+(INSERT TABLE HERE)
 
 ## Alternative steps
+Previously, we demonstrated one manual de-identification method for each step. However, other kinds of methods (mentioned at the beginning of this workshop) could be applied as well. 
+
+For example:
+- In step 1, anonymization can be applied to some direct identifiers, like emails. This means removing all data for the “email_id”.
+- In step 2, generalization can be applied to the birth dates to only use the birth years. However, be aware of outliers.
+- In step 3, anonymization can also be applied to the “city” variable, as the province could be enough for data analysis. This would look like removing all data for the “city” variable, leaving only data related to the province variable.
+- In step 4, masking could be applied to the social media profiles, blurring out the participants’ social media usernames. This could be using asterisks in place of the usernames for each record. 
+
 
 <b>Here's a breakdown of what we covered:</b>
+Participants’ private and identifiable information needs to be protected when sharing a dataset containing sensitive data. A sensitive dataset can be sufficiently de-identified using the manual de-identification methods outlined in this workshop, so it can be safely shared with your research team or other researchers. These methods include anonymization, pseudonymization, aggregation, masking, generalization, and local suppression. For each step of the de-identification process, select the method that is the most appropriate to address the sensitivity of the variable being de-identified. Also, remember to assess the anonymity of your finalized dataset to make sure it’s properly de-identified. 
+{: .note}
 
 # Congrats!
 {: .no_toc}
