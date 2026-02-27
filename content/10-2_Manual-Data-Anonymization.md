@@ -50,6 +50,8 @@ Examples include, but are not listed in any particular order:
 - Disadvantage: reduces the level of detail and variability in the data, and information could still be inferred
 - *When to use:* this method can be used when individual record values aren’t necessary, and clumped data values (into categories or ranges) are still useful for analysis
 
+<img src="figures/document.png" width="200"/>
+
 **Masking:** identifying information is hidden or obscured by using techniques, such as encryption, hashing, blurring, or noise addition.
 - Advantage: preserves the ability for data analyses
 - Disadvantage: introduces errors or distortions in the data
@@ -65,10 +67,12 @@ Examples include, but are not listed in any particular order:
 - Disadvantage: the quality of data decreases, which impacts its usefulness
 - *When to use:* this method can be used when there are outlier records or when data anonymity and sensitivity assessments, like k anonymity, aren’t met
 
-(INSERT IMAGE)
+<img src="figures/documentation.png" width="250"/>
 
 # Manual de-identification steps
-You're a researcher looking into the production efficiencies of apple growers in the Pacific Northwest. Here is the [example dummy dataset](https://ubc-library-rc.github.io/rdm/content/exercise_files/WorkerSatisfaction_deIDsteps_KEY_workshop_v01.xlsx) for this workshop. This dataset was created for this workshop and doesn’t reflect a real study with real participants. We will be using this example dataset to illustrate the following manual de-identification procedures. 
+You're a researcher looking into the production efficiencies of apple growers in the Pacific Northwest. Here is the [example dummy dataset](https://ubc-library-rc.github.io/rdm/content/exercise_files/WorkerSatisfaction_deIDsteps_KEY_workshop_v01.xlsx) for this workshop. 
+
+This dataset was created for this workshop and doesn’t reflect a real study with real participants. We will be using this example dataset to illustrate the following manual de-identification procedures. 
 
 Please note that most of the records of the example dataset have already been de-identified. However, the first record is not de-identified, so you can practice the manual de-identification methods by following the steps outlined below. 
 
@@ -157,8 +161,7 @@ For example:
 - In step 3, anonymization can also be applied to the “city” variable, as the province could be enough for data analysis. This would look like removing all data for the “city” variable, leaving only data related to the province variable.
 - In step 4, masking could be applied to the social media profiles, blurring out the participants’ social media usernames. This could be using asterisks in place of the usernames for each record. 
 
-(INSERT IMAGE) 
-
+<img src="igures/risk_assessment.jpg" width="250"/>
 
 <b>Here's a breakdown of what we covered:</b>
 Participants’ private and identifiable information needs to be protected when sharing a dataset containing sensitive data. A sensitive dataset can be sufficiently de-identified using the manual de-identification methods outlined in this workshop, so it can be safely shared with your research team or other researchers. These methods include anonymization, pseudonymization, aggregation, masking, generalization, and local suppression. For each step of the de-identification process, select the method that is the most appropriate to address the sensitivity of the variable being de-identified. Also, remember to assess the anonymity of your finalized dataset to make sure it’s properly de-identified. 
