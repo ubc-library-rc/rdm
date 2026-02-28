@@ -168,10 +168,17 @@ Participants’ private and identifiable information needs to be protected when 
 
 # Congrats!
 {: .no_toc}
-*Hooray!*
+*Hooray!* You now know about some types of manual de-identification methods to protect participants' information when sharing a dataset, and practiced some of these methods with a dummy dataset. 
+
 ---
 ### Sources
 {: .no_toc}
+- John Hopkins Sheridan Libraries. (2025, Oct. 29). Protecting human subject identifiers. [https://guides.library.jhu.edu/protecting_identifiers/de-id_steps](https://guides.library.jhu.edu/protecting_identifiers/de-id_steps)
+- Personal Data Protection Commission Singapore. (2024, July 24). Guide to basic data anonymisation. [https://www.pdpc.gov.sg/help-and-resources/2018/01/basic-anonymisation](https://www.pdpc.gov.sg/help-and-resources/2018/01/basic-anonymisation)
+- Rochlin, N. (2020, Oct. 14). Introduction to sensitive data & de-identification. [https://osf.io/hv9pf/overview](https://osf.io/hv9pf/overview)
+- Rod, A. B. & Thompson, K. (2023). Chapter 13: Sensitive data: Practical and theoretical considerations. [https://doi.org/10.5206/EKCH6181](https://doi.org/10.5206/EKCH6181)
+- UBC Library. (2025). Research Data Management Data Guide. [https://osf.io/nht4x/files/yujkv](https://osf.io/nht4x/files/yujkv)
+
 --- 
 
 Need help?
