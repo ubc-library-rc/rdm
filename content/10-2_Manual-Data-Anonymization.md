@@ -5,8 +5,6 @@ parent: De-identify Research Data
 nav_order: 2
 ---
 
-<img src="figures/work-in-progress.png" width="600"/>
-
 # Introduction to Manual Data De-identification
 {: .no_toc} 
 If you want to share a dataset containing sensitive data among your research team members or with another researcher, there should be de-identification efforts to protect participants' personal information. Manual de-identification methods can be used to help prepare a dataset with sufficient de-identification so it can be shared among the research team or for researcher collaboration.
