@@ -43,7 +43,7 @@ Examples include, but are not listed in any particular order:
 **Pseudonymization:** identifying information is replaced with artificial identifiers, such as codes or numbers.
 - Advantage: allows data to be linked across different sources, datasets, or over time, which can be useful 
 - Disadvantage: increases the risk of re-identification if the codes are exposed or compromised
-- *When to use:* this method can be used when it’s necessary to keep data values distinct, but without having the unique identifying data
+- *When to use:* this method can be used when it is necessary to keep data values distinct while removing the original direct identifiers
 
 **Aggregation:** individual data points are grouped together into categories or ranges.
 - Advantage: preserves some statistical properties and patterns
@@ -63,7 +63,7 @@ Examples include, but are not listed in any particular order:
 **Local suppression:** individual cases or responses (individual records) are deleted.
 - Advantage: like anonymization, privacy is protected
 - Disadvantage: the quality of data decreases, which impacts its usefulness
-- *When to use:* this method can be used when there are outlier records or when data anonymity and sensitivity assessments, like k anonymity, aren’t met
+- *When to use:* this method can be used to address outlier records or when anonymity assessments, such as k-anonymity, are not met
 
 <img src="figures/documentation.png" width="200"/>
 
