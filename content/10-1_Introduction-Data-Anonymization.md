@@ -5,14 +5,14 @@ parent: De-identify Research Data
 nav_order: 1
 ---
 
-# Introduction to Data Anonymization
+# Introduction to Data De-Identification
 {: .no_toc}
 Although it is good practice to share our research data and findings, we need to consider precautions when conducting ethical, reliable, and responsible research. 
 Sensitive data requires careful handling and security to protect participant privacy and confidentiality and to comply with ethical and legal requirements. Leaked sensitive data poses major harm and risks, such as revealing identities, which negatively affect the interests of people, communities, and/or animals involved in the research.
 
 ### Terminology
-{: .no_toc}
-In UBC terminology [(Information Technology Standard U1)](https://cio.ubc.ca/information-security-standards/U1), sensitive data is classified as medium risk, high risk, or very high risk information. For this workshop, however, we will use the term “sensitive data” to align with the terminology in Sensitive Data: Practical and Theoretical Considerations [(Rod & Thompson, 2023, pp. 251-273)](https://doi.org/10.5206/EKCH6181). In this context, these terms will be treated as equivalent. 
+{: .no_toc} 
+UBC does not define the term “sensitive data”. Instead, UBC electronic information is classified using a schema outlined in UBC [Information Security Standard U1 (ISS-U1)](https://cio.ubc.ca/information-security-standards/U1). For the purposes of this workshop, however, we will use the term “sensitive data” to align with the terminology in Sensitive Data: Practical and Theoretical Considerations [(Rod & Thompson, 2023, pp. 251-273)](https://doi.org/10.5206/EKCH6181).In this context, the term “sensitive data” will be treated as equivalent to information classified as “high risk” and “very-high risk” in UBC ISS-U1.
 {: .note}
 
 Looking for a cheat sheet? Check out our [two-pager](https://osf.io/a3t7m)
@@ -37,10 +37,10 @@ Examples of data that are considered “sensitive”:
 * Some kinds of geographical information, like the locations of endangered species
 * Data protected by institutional policy
 
-## Why do we anonymize data?
-Data is anonymized to *minimize the risk of harm* to individuals, communities, and animal species in the event of a confidentiality breach. 
+## Why do we de-identify data?
+Data is de-identified to *minimize the risk of harm* to individuals, communities, and animal species in the event of a confidentiality breach. 
 
-Data anonymization is also done to *prevent possible re-identification*, where participants could be isolated in a dataset and then matched to other information that could identify them with reasonable effort. The level of harm that may impact participants depends on the population, topic, and context of the data.
+Data de-identification is also done to *prevent possible re-identification*, where participants could be isolated in a dataset and then matched to other information that could identify them with reasonable effort. The level of harm that may impact participants depends on the population, topic, and context of the data.
 
 Examples of who may be harmed:
 * Vulnerable populations
@@ -133,17 +133,17 @@ Please answer these questions based on the data collected (see below) from surve
 2. What data points are indirect identifiers?  
 
 #### Exercise Dataset
-[Here is the data collected](https://ubc-library-rc.github.io/rdm/content/exercise_files/WorkerSatisfaction_Unprocessed_KEY.xlsx) from surveying apple growers as a downloadable XLSX file with multiple sheets. The first sheet contains the unprocessed data, the second sheet has the answers for the direct identifiers, the third sheet has the answers for the indirect identifiers, and the fourth sheet serves as a data dictionary.  
+[Here is the collected data](https://ubc-library-rc.github.io/rdm/content/exercise_files/WorkerSatisfaction_Unprocessed_KEY.xlsx) from surveying apple growers as a downloadable XLSX file with multiple sheets. The first sheet contains the unprocessed data, the second sheet has the answers for the direct identifiers, the third sheet has the answers for the indirect identifiers, and the fourth sheet serves as a data dictionary.  
 
 * Please note that this dataset was created for this workshop and doesn’t reflect a real study with real participants.
 
 # Consent language
 Anytime human participants are involved in research, informed consent is needed. Informed consent needs to include how the collected data will be handled during the active research phase and in the future. 
 
-Try to keep in mind that many journals now are asking for a subset of data to be available, and if the original consent does not address the future availability of data, then a paper would be stuck. It is much harder to change the consent forms after the fact. 
+Try to keep in mind that many journals are now asking for a subset of data to be available, and if the original consent does not address the future availability of data, then a paper would be stuck. It is much harder to change the consent forms after the fact. 
 
 In Canada, ethical guidelines for human research participants are outlined in the [Tri-Council Policy Statement (TCPS 2)](https://ethics.gc.ca/eng/policy-politique_tcps2-eptc2_2022.html). To comply with these guidelines, there is specific information that needs to be included, depending on the area of research being conducted. 
-* The [Sensitive Data Toolkit for Researchers](https://zenodo.org/records/4107178#.Y-PFQxOZPao) by the Alliance contains language that can be included in the consent form to notify the participant about what happens to their data, explain the anonymization process, and more.
+* The [Sensitive Data Toolkit for Researchers](https://zenodo.org/records/4107178#.Y-PFQxOZPao) by the Alliance contains language that can be included in the consent form to notify the participant about what happens to their data, explain the de-identification process, and more.
 * The [UBC ARC Information Privacy](https://arc.ubc.ca/security-privacy/information-privacy) page contains considerations when working with human participant information, including consent.
 
 Research ethics boards (REBs) of institutions are very careful about consent language to make sure privacy and confidentiality are protected, and that participants know about the extent of their participation. 
@@ -166,10 +166,10 @@ More language to inform participants on this topic is specified in UBC BREB subs
 
 <img src="figures/network.jpg" width="200"/>
 
-# Assessing risk and anonymization: "k-anonymity" 
+# Assessing re-identification risk: "k-anonymity" 
 There are several ways to ensure that sensitive data does not lead to any risk of harm, such as re-identification. For example, a “statistical disclosure risk assessment” can be applied to evaluate the level of risk of potential identifiers. 
 
-One kind of risk assessment method is “k-anonymity”, which is a mathematical approach to demonstrating that a dataset has been anonymized. The concept of “k-anonymity” means that we shouldn’t be able to isolate less than “k” participants based on any combination of identifying variables. In other words, each participant’s record should “blend in” with a group of at least “k” records that share the same values of select indirect identifiers. 
+One kind of risk assessment method is “k-anonymity”, which is a mathematical approach to demonstrating that a dataset has been de-identified. The concept of “k-anonymity” means that we shouldn’t be able to isolate less than “k” participants based on any combination of identifying variables. In other words, each participant’s record should “blend in” with a group of at least “k” records that share the same values of select indirect identifiers. 
 
 “k” is a numerical value that is determined by the researchers, which is commonly 3 or 5. For example, if k=5 then there needs to be at least 4 participants in the dataset with the same set of indirect characteristics to be unidentifiable. 
 
@@ -180,7 +180,7 @@ Terminology when discussing k-anonymity:
 Here is an example to illustrate this concept:
 * Cases 1, 6, and 13 have an equivalence class with a k value of 3: this group of 3 records with the same values for a set of variables has a k value of 3, specifically.
 * Case 14 is a sample unique with no “data twins” and has an equivalence class with a k value of 1: no other record shares this exact combination.
-* The overall k value for this sample dataset is the equivalence class with the smallest k value, which is 1. This k value is not good because it does not offer sufficient anonymization. There is a record that is unique and can identify a participant. 
+* The overall k value for this sample dataset is the equivalence class with the smallest k value, which is 1. This k value is not good because it does not offer sufficient de-identification. There is a record that is unique and can identify a participant. 
 
 <img src="figures/k_anon_table.png" width="300"/>
 
@@ -188,7 +188,7 @@ To achieve the determined k value (to prevent uniqueness that may lead to re-ide
 * **Global data reduction**: changes are made to variables across datasets, such as grouping responses into categories. This removes the risky variables of a dataset.
 * **Local suppression**: individual cases or responses are deleted
 
-Keep in mind that k-anonymity is not fail-proof because, regardless of how well you assess anonymity, there is still the risk of re-identification. 
+Keep in mind that k-anonymity is not fail-proof because, regardless of how well you assess your dataset's sensitivity, there is still the risk of re-identification. 
 
 ## Exercise 2
 {: .no_toc}
@@ -200,12 +200,12 @@ Here is a sample of a dataset from a survey about living costs across Canada. Fr
 <img src="figures/data_anon_exercise2.png" width="500"/>
 
 
-<b>Here's a breakdown of what we covered:</b> Sensitive data contains information that may lead to the identification of individuals, therefore it needs to be anonymized to protect against the risk and harm of possible unauthorized access and violations of privacy and confidentiality. Data is “sensitive” because it contains different kinds of identifying pieces of information: direct, indirect, non-identifying, and hidden. Assessing the level of risk sensitivity for a dataset can be done using various statistical methods. A common method is determining the “k-anonymity”. How sensitive data is collected and dealt with must be addressed in your consent form for participants.
+<b>Here's a breakdown of what we covered:</b> Sensitive data contains information that may lead to the identification of individuals, therefore it needs to be de-identified to protect against the risk and harm of possible unauthorized access and violations of privacy and confidentiality. Data is “sensitive” because it contains different kinds of identifying pieces of information: direct, indirect, non-identifying, and hidden. Assessing the level of risk for a dataset can be done using various statistical methods. A common method is determining the “k-anonymity”. How sensitive data is collected and dealt with must be addressed in your consent form for participants.
 {: .note}
 
 # Congrats!
 {: .no_toc}
-*Hooray!* You now have an introductory understanding of why research data undergoes anonymization, the different kinds of identifiers of a sensitive dataset, and one method of assessing the risk of a sensitive dataset.  
+*Hooray!* You now have an introductory understanding of why research data undergoes de-identification, the different kinds of identifiers of a sensitive dataset, and one method of assessing the risk of a sensitive dataset.  
 
 ---
 ### Sources
