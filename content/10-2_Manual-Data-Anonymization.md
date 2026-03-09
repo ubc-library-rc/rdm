@@ -18,7 +18,7 @@ If you want to share a dataset containing sensitive data among your research tea
 UBC does not define the term “sensitive data”. Instead, UBC electronic information is classified using a schema outlined in UBC [Information Security Standard U1 (ISS-U1)](https://cio.ubc.ca/information-security-standards/U1). For the purposes of this workshop, however, we will use the term “sensitive data” to align with the terminology in Sensitive Data: Practical and Theoretical Considerations (Rod & Thompson, 2023). In this context, the term “sensitive data” will be treated as equivalent to information classified as “high risk” and “very-high risk” in UBC ISS-U1.
 {: .note}
 
-Looking for a cheat sheet? Check out our two-pager (IN PROGRESS)
+Looking for a cheat sheet? Check out our [two-pager](https://osf.io/xhuj7) 
 {: .note}
 
 <details open markdown="block">
