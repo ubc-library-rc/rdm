@@ -199,15 +199,6 @@ Here is a sample of a dataset from a survey about living costs across Canada. Fr
 
 <img src="figures/data_anon_exercise2.png" width="500"/>
 
-# How to protect and preserve sensitive data
-Once you collected all your data and identified the associated risks, including re-identification, how would you protect and preserve it to prevent privacy and confidentiality violations?
-
-There are many processes to protect the privacy of participants, for example: de-identification, anonymization, and/or pseudonymization. The good news is that there is software that can be helpful to some extent for tabular data. 
-
-Here are some examples of data anonymization software:
-* [ARX](https://arx.deidentifier.org/): a well-used open-source data anonymization software
-* [Amnesia](https://amnesia.openaire.eu/): open-source data anonymization software from EU’s OpenAIRE
-
 
 <b>Here's a breakdown of what we covered:</b> Sensitive data contains information that may lead to the identification of individuals, therefore it needs to be anonymized to protect against the risk and harm of possible unauthorized access and violations of privacy and confidentiality. Data is “sensitive” because it contains different kinds of identifying pieces of information: direct, indirect, non-identifying, and hidden. Assessing the level of risk sensitivity for a dataset can be done using various statistical methods. A common method is determining the “k-anonymity”. How sensitive data is collected and dealt with must be addressed in your consent form for participants.
 {: .note}
