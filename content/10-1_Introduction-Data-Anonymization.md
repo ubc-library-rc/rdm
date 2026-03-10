@@ -134,9 +134,10 @@ Please answer these questions based on the data collected (see below) from surve
 
 ### Exercise Dataset
 [Here is the collected data](https://ubc-library-rc.github.io/rdm/content/exercise_files/WorkerSatisfaction_Unprocessed_KEY.xlsx) from surveying apple growers as a downloadable XLSX file with multiple sheets. The first sheet contains the unprocessed data, the second sheet has the answers for the direct identifiers, the third sheet has the answers for the indirect identifiers, and the fourth sheet serves as a data dictionary.  
+{: .note}
 
 * Please note that this dataset was created for this workshop and doesn’t reflect a real study with real participants.
-{: .note}
+
 
 # Consent language
 Anytime human participants are involved in research, informed consent is needed. Informed consent needs to include how the collected data will be handled during the active research phase and in the future. 
