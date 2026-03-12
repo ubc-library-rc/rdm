@@ -191,7 +191,7 @@ Templates can be selected at dataset creation, and changed at any time. These au
 
 <p style="margin-top:15px"></p>
 
-You can use <a href="https://copyright.ubc.ca/creative-commons/" target="_blank">UBC Library Creative Commons page </a>  to decide what license to use with your dataset. We recommend **CC-BY or CC-0** license.  
+You can use <a href="https://copyright.ubc.ca/creative-commons/" target="_blank">UBC Library Creative Commons page </a>  to decide what license to use with your dataset. We recommend **CC-BY** license.  
 {: .note }
 
 <p style="margin-top:15px"></p>
