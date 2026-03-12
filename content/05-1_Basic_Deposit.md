@@ -112,7 +112,7 @@ Click to Download the Files
 
 - Choose `+Add Data` > `New Dataset` (not New Dataverse) from the dropdown menu
 
-- Select a <b>dataset template</b> for the desired <a href="https://copyright.ubc.ca/creative-commons/" target="_blank">Creative Commons license</a> (default license is CC0). You can learn more about data licensing in the <a href="https://ubc-library-rc.github.io/rdm/content/05-2_Advanced_Deposit" target="_blank">Advanced Deposit workshop</a>. Selecting a template will clear all other data fields, so do this first.
+- Select a <b>dataset template</b> for the desired <a href="https://copyright.ubc.ca/creative-commons/" target="_blank">Creative Commons license</a> (default license is CC-BY). You can learn more about data licensing in the <a href="https://ubc-library-rc.github.io/rdm/content/05-2_Advanced_Deposit" target="_blank">Advanced Deposit workshop</a>. Selecting a template will clear all other data fields, so do this first.
 
 
 - Fill in <b>required metadata</b> fields marked with a <a style="font-size:22px; color:red">*</a>.
