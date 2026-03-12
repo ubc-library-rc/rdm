@@ -62,7 +62,7 @@ In Borealis, tabular normalization also allows you to perform statistical data e
 
 Compressed files are the preferred method for uploading large datasets or many files to Borealis.
 
-**Zip files are automatically extracted on upload**, and the contents will appear as a list under the Files tab. Folder structure and file hierarchy within the zip file are maintained on extraction.
+**Zip files are automatically extracted on upload**, and the contents will appear as a list under the Files tab. Folder structure and file hierarchy within the zip file are maintained on extraction. Please ensure that if your zip files contain many files that they are organized or categorized into folders. Borealis can read this and display it in a tree view. If you have multiple files that are not organized we recommend double zipping.
 
 Sometimes, it is a good idea to deposit the zipped folder to preserve the content as it is, especially if you need your files to remain together. In this case, please upload your zipped directory, and Borealis software will unzip it once upon upload.
 {: .note}
