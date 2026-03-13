@@ -41,6 +41,8 @@ From the main page of the Borealis collection, within which you’d like to crea
 
 ## Customize a Dataverse Collection
 
+Please be sure that you are within your own collection or a collection you have permissions for. If you are not able to edit, you may be in the 'UBC Dataverse Collection' which is the default. In this case, search your collection using the search bar. 
+
 On the main page for the Borealis collection you want to customize, click the `Edit` button and you will then see a dropdown menu with several options:
 
 <p style="margin-top:25px;margin-left:30px">
