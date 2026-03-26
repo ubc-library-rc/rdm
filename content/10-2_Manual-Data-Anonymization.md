@@ -140,7 +140,7 @@ Here is the final product after manually de-identifying the dataset. The dataset
 
 Keeping the data key file well protected is essential because it is the sole mechanism that can re‑identify individuals in otherwise de‑identified research data, and its compromise can undermine confidentiality protections and cause harm to participants. In the UBC environment, the key file must be stored separately from research data on UBC‑approved secure systems, with access restricted to authorized personnel only and never stored on personal devices or unapproved cloud services.
 Here is an example of a [data key file](content/exercise_files/WorkerSatisfaction_IDs.xlsx) for the work described above; this is a dummy file provided for illustrative purposes only, and in real‑world research settings, such files must never be shared on public systems.
-{: .warning}
+{: .warn}
 
 To assess the anonymity of this dataset, we can look at the overall k-anonymity value, which is k=1. In real life, this k anonymity value would be <u>unacceptable</u>. This tells us that the dataset was not sufficiently de-identified and that participants are easily identifiable. Ideally, in real life, a k anonymity value of 3 or 5 would be good. 
 
