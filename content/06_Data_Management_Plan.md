@@ -41,7 +41,7 @@ Looking for a cheat sheet? Check out our <a href="https://osf.io/wmh5n" target="
 </p>
 
 
-So far, we are seeing the following funding opportunities requiring DMPs, in addition to all CFI (Canada Foundation for Innovation) applications:
+So far, in Canada, we are seeing the [following funding opportunities](https://science.gc.ca/site/science/en/interagency-research-funding/policies-and-guidelines/research-data-management/funding-opportunities-requiring-data-management-plans) requiring DMPs, in addition to all CFI (Canada Foundation for Innovation) applications:
 
 ### <a style="font-size:17px">CIHR</a>
 {: .label .label-yellow .no_toc }
