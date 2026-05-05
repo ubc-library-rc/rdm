@@ -1,6 +1,6 @@
 ---
 layout: default
-title: AI-Assisted Data De-identification
+title: AI-Assisted Data De-identification with Copilot for Microsoft 365
 parent: De-identify Research Data
 nav_order: 4
 ---
