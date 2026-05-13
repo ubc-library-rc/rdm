@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Data De-identification with R
+title: Programmatic Data De-identification with R
 parent: De-identify Research Data
 nav_order: 3
 ---
