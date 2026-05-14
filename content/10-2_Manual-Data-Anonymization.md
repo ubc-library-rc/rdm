@@ -90,7 +90,7 @@ Examples of direct identifiers:
 
 **Step 2: Dates**
 
-Next, we’re going to identify and re-code specific dates in a way that will still allow data analysis. You should consider removing any dates that aren’t important for analysis. We will use <u>aggregation</u> for the “date of birth” variable. For example, 5-year age ranges will replace each birth date.
+Next, we’re going to identify and re-code specific dates in a way that will still allow data analysis. You should consider removing any dates that aren’t important for analysis. We will use <u>aggregation</u> for the “age” variable. For example, 5-year age ranges will replace each birth date.
 
 Examples of dates that could be linked to public records:
   - Specific days
