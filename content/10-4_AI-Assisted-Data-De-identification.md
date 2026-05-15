@@ -15,7 +15,7 @@ With an increase of artificial intelligence (AI) tools, we’re curious to see a
 
 There is no promise that the Co-Pilot agent will work properly, such as encountering errors, inconsistencies, or Co-Pilot may suddenly cease activity. You may encounter the message, “Editing with Copilot is temporarily unavailable due to high demand. Try again later or turn off edits to keep chatting with Copilot.”
 
-**Please consider these when using any kind of AI tool for research:**
+Please consider these when using any kind of AI tool for research:
 - UBC Risk Management has a summary of what AI tools could be used for different purposes as approved by the PIA process. For this workshop, we will be using the Copilot M365 Embedded assistant in Microsoft 365 approved for up to high-risk data (not the Copilot M365 Chat which has been approved only to up to medium risk data).
 - Additionally, note that:
   - There is a risk that Co-Pilot M365 Embedded assistant will make errors and not de-identify all identifiers
@@ -51,3 +51,23 @@ In our second workshop, we introduced you to some common examples of manual de-i
 -	Local suppression: individual cases or responses (individual records) are deleted. 
 
 ## Recap: Manual de-identification steps 
+As a demonstration of some of the de-identification methods, we used a dummy dataset for a mock research project looking at production efficiencies of apple growers in the Pacific Northwest. Here are the steps we did:
+-	Step 1: For direct identifiers, we applied pseudonymization by replacing participant names with “person1”, “person2”, and so on.
+-	Step 2: For birth dates, we used aggregation to replace individual dates with 5-year age ranges. 
+-	Step 3: For geographic data, we applied pseudonymization again by replacing orchard names with “farm1”, “farm2”, and so on.
+-	Step 4: For data that may be linked to external sources and result in re-identification, we used anonymization by removing this data for the variables affected. 
+-	After following these steps, we received a de-identified dataset and created a separate data key file that is safely stored with the research records.
+
+We are now going to replicate our second workshop on manual de-identification methods using Co-Pilot, to see its capabilities in assisting with the de-identification process. Here is the same dummy dataset (INSERT DUMMY DATASET) for you to download and use for this workshop.
+
+## Using the MS Co-Pilot embedded assistant to help with data de-identification
+1) Navigate to MS Excel on your web browser to access Co-Pilot as an embedded assistant, not the desktop application because Co-Pilot is not available there. You may need to log in with your UBC CWL. 
+2) In your toolbar, find and select the Co-Pilot icon. A new chat should open.
+3) Near the text entry box, find and select the “options” icon to activate “Edit with Co-Pilot”. This will ensure Co-Pilot will make changes directly to your duplicate file and not generate a new file each time.
+
+## Some prompting tips to note before proceeding
+-	It’s always best to be as clear as possible when prompting Co-Pilot. This can include specifying which variables will be modified, what exactly will happen to them, and what they will be replaced with (if using pseudonymization, aggregation, masking, or generalization). For example, if you use anonymization, specify exactly that the task is to remove variable data. If not specified, Co-Pilot will randomly decide and apply another de-identification method, such as aggregation or local suppression. 
+-	In your prompt, you should specify to place the de-identification results in a new sheet. If not, Co-Pilot will apply changes directly on the original sheet. You can also name the new sheets by prompting for and indicating what you want the sheet name to be.
+-	To create a data key file for your original raw data, we found (by a lot of trial-and-error) that it’s best to finish all de-identification methods and then prompt for a data key file. You may run into issues, such as incorrect data key updates or, as you move along the de-identification process.
+
+
