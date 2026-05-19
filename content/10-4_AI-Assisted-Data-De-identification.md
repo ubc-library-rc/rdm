@@ -40,7 +40,7 @@ UBC does not define the term “sensitive data”. Instead, UBC electronic infor
 ---
 
 ## Recap: Manual de-identification methods
-In our second workshop, we introduced you to some common examples of manual de-identification methods for sensitive data. Have a look at the list below for a refresher on the types we discussed: 
+In our second workshop - ["Introduction to Manual Data De-identification"](https://ubc-library-rc.github.io/rdm/content/10-2_Manual-Data-Anonymization.html), we introduced you to some common examples of manual de-identification methods for sensitive data. Have a look at the list below for a refresher on the types we discussed: 
 - Anonymization: all identifying information is removed from the dataset and cannot be restored.
 - Pseudonymization: identifying information is replaced with artificial identifiers, such as codes or numbers.
 -	Aggregation: individual data points are grouped together into categories or ranges.
@@ -56,7 +56,10 @@ As a demonstration of some of the de-identification methods, we used a dummy dat
 -	Step 4: For data that may be linked to external sources and result in re-identification, we used anonymization by removing this data for the variables affected. 
 -	After following these steps, we received a de-identified dataset and created a separate data key file that is safely stored with the research records.
 
-We are now going to replicate our second workshop on manual de-identification methods using Co-Pilot, to see its capabilities in assisting with the de-identification process. Here is the same dummy dataset (INSERT DUMMY DATASET) for you to download and use for this workshop.
+We are now going to replicate our second workshop on manual de-identification methods using Co-Pilot, to see its capabilities in assisting with the de-identification process. Microsoft Copilot is an AI-powered assistant embedded directly across the Microsoft ecosystem, including Windows and Office 365.
+
+Here is the same dummy dataset (INSERT DUMMY DATASET) for you to download and use for this workshop.
+{: .note}
 
 ## Using the MS Co-Pilot embedded assistant to help with data de-identification
 1. Navigate to MS Excel on your web browser to access Co-Pilot as an embedded assistant, not the desktop application because Co-Pilot is not available there. You may need to log in with your UBC CWL.
