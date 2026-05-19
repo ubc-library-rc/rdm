@@ -67,14 +67,14 @@ Here is the same dummy dataset (INSERT DUMMY DATASET) for you to download and us
 ## Using the MS Co-Pilot embedded assistant to help with data de-identification
 1. Navigate to MS Excel 365 on your web browser to access Co-Pilot as an embedded assistant, not the desktop application because Co-Pilot is not available there. You may need to log in with your UBC CWL.
 2. In your toolbar, find and select the Co-Pilot icon. A new chat should open.
-3. Near the text entry box, find and select the “options” icon to activate “Edit with Co-Pilot”. This will ensure Co-Pilot will make changes directly to your duplicate file and not generate a new file each time.
+3. Near the text entry box, find and select the “options” icon to activate **“Edit with Co-Pilot”**. This will ensure Co-Pilot will make changes directly to your duplicate file and not generate a new file each time.
 
 ## Some prompting tips to note before proceeding
 -	It’s always best to be as clear as possible when prompting Co-Pilot. This can include specifying which variables will be modified, what exactly will happen to them, and what they will be replaced with (if using pseudonymization, aggregation, masking, or generalization). For example, if you use anonymization, specify exactly that the task is to remove variable data. If not specified, Co-Pilot will randomly decide and apply another de-identification method, such as aggregation or local suppression. 
 -	In your prompt, you should specify to place the de-identification results in a new sheet. If not, Co-Pilot will apply changes directly on the original sheet. You can also name the new sheets by prompting for and indicating what you want the sheet name to be.
 -	To create a data key file for your original raw data, we found (by a lot of trial-and-error) that it’s best to finish all de-identification methods and then prompt for a data key file. You may run into issues, such as incorrect data key updates or, as you move along the de-identification process.
 
-# Replicating manual de-identification methods with Co-Pilot
+# Replicating manual de-identification methods with Co-Pilot M365 Embedded assistant
 Here are the same steps as the manual de-identification methods workshop. Each step has a suggested prompt you can use for Co-Pilot, and the output you may receive. 
 
 ### Step 1: Direct identifiers
@@ -133,7 +133,7 @@ The Co-Pilot response may look like:
 Now we need to separate the data key sheet into a stand-alone protected file. To move an Excel 365 online sheet to a new file, the easiest method is to export a sheet into a CSV file. Go to File > Export > Download as CSV UTF-8 to save the data key as a stand-alone .csv file to your computer, and save it in a secure location, such as UBC OneDrive.
 
 ## Quality assurance: Checking for errors and consistency
-From our experimentation in Spring 2026, we see that we can’t completely trust that the AI tool being used will produce consistent and reliable results. To check, we can create a quality assurance prompt to flag possible errors, inconsistencies, or missed records that weren’t de-identified. Similar to the previous prompts, we should specify which variables we want to include in the quality assurance assessment. 
+From our experimentation in Spring 2026, we see that we can’t completely trust that the Co-Pilot M365 Embedded assistant tool being used will produce consistent and reliable results. To check, we can create a quality assurance prompt to flag possible errors, inconsistencies, or missed records that weren’t de-identified. Similar to the previous prompts, we should specify which variables we want to include in the quality assurance assessment. 
 
 Here is the prompt: Verify that this dataset sheet “Comments” has been properly de-identified by: scan the direct identifier variables “worker_id”, “email_id”, and “owner_id” for any identifying names and emails, scan the variable “age” for any individual dates of birth, scan the geographic variable “orchard_id”  for any workplace names or full addresses, scan the indirect identifiers “username_id” and “immigration_stat” for any social media usernames and indicated immigration status, and scan the variable “comments” for any identifying information like names, orchard names, emails, dates of birth, cities, provinces, social media usernames, and immigration status. Flag any anomalies and any combination of variables that could re-identify a participant.
 
