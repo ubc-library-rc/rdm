@@ -7,23 +7,21 @@ nav_order: 4
 
 <img src="figures/work-in-progress.png" width="600"/>
 
-We will be designing this workshop in Spring 2026. Please stay tuned...
-
 # Introduction to AI-Assisted Data De-identification
 {: .no_toc} 
-With an increase of artificial intelligence (AI) tools, we’re curious to see and understand how well they perform as an assistant in the de-identification process of sensitive data. There is potential for ethically using an AI tool to help with this process (not to replace), especially for large amounts of data, but it has not been guaranteed yet. Please be aware that we aren’t recommending any specific AI tool or using AI as a robust and reliable process for data de-identification. In fact, our experiments showcased that AI is not ready yet to perform equally for the data de-identification tasks. The purpose of this workshop is to only experiment with an AI tool for this kind of task.
+As AI tools become increasingly prevalent, we want to explore how effectively they can assist with the de-identification of sensitive data. While there is potential for AI to ethically support (not replace) human effort in this process, particularly when handling large volumes of data, this has yet to be established with confidence. We are not endorsing any specific AI tool, nor are we presenting AI as a dependable solution for data de-identification. Our own experiments have shown that AI is not yet capable of performing these tasks consistently and reliably. The goal of this workshop is simply to explore what AI can offer in this context.
 
 There is no promise that the Co-Pilot agent will work properly, such as encountering errors, inconsistencies, or Co-Pilot may suddenly cease activity. You may encounter the message, “Editing with Copilot is temporarily unavailable due to high demand. Try again later or turn off edits to keep chatting with Copilot.”
 
 **Please consider these when using any kind of AI tool for research:**
-- UBC Risk Management has a summary of what AI tools could be used for different purposes as approved by the PIA process. For this workshop, we will be using the Copilot M365 Embedded assistant in Microsoft 365 approved for up to high-risk data (not the Copilot M365 Chat which has been approved only to up to medium risk data).
+- UBC Risk Management has a summary of what AI tools could be used for different purposes, as approved by the PIA process. For this workshop, we will be using the Copilot M365 Embedded assistant in Microsoft 365, approved for up to high-risk data (not the Copilot M365 Chat, which has been approved only for up to medium risk data).
 - Additionally, note that:
-  - There is a risk that Co-Pilot M365 Embedded assistant will make errors and not de-identify all identifiers
-  - There is a risk that Co-Pilot M365 Embedded assistant will alter other data that shouldn’t be changed
-  - Please ensure some quality assurance process after you use Co-Pilot M365 Embedded assistant for data de-identification
+  - There is a risk that the Co-Pilot M365 Embedded assistant will make errors and not de-identify all identifiers
+  - There is a risk that the Co-Pilot M365 Embedded assistant will alter other data that shouldn’t be changed
+  - Please ensure a quality assurance process after you use the Co-Pilot M365 Embedded assistant for data de-identification
 {: .warn}
 
-As a reminder, please make sure you’re working with a duplicate/copy file of your data for this experiment and not with your original data file(s).
+As a reminder, please make sure you’re working with a **duplicate/copy file** of your data for this experiment and not with your original data file(s).
 
 ### Terminology 
 {: .no_toc} 
