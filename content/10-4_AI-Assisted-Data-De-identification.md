@@ -7,6 +7,9 @@ nav_order: 4
 
 <img src="figures/work-in-progress.png" width="600"/>
 
+Please be aware that as of May 16, 2026, Microsoft 365 Copilot is no longer available to UBC users following a recent change. However, this workshop is still relevant and beneficial for institutions and/or individuals who have an active Microsoft 365 Copilot license.
+{: .warn}
+
 # Introduction to AI-Assisted Data De-identification
 {: .no_toc} 
 As AI tools become increasingly prevalent, we want to explore how effectively they can assist with the de-identification of sensitive data. While there is potential for AI to ethically support (not replace) human effort in this process, particularly when handling large volumes of data, this has yet to be established with confidence. We are not endorsing any specific AI tool, nor are we presenting AI as a dependable solution for data de-identification. Our own experiments have shown that AI is not yet capable of performing these tasks consistently and reliably. The goal of this workshop is simply to explore what AI can offer in this context.
@@ -62,7 +65,7 @@ Here is the same dummy dataset (INSERT DUMMY DATASET) for you to download and us
 {: .note}
 
 ## Using the MS Co-Pilot embedded assistant to help with data de-identification
-1. Navigate to MS Excel on your web browser to access Co-Pilot as an embedded assistant, not the desktop application because Co-Pilot is not available there. You may need to log in with your UBC CWL.
+1. Navigate to MS Excel 365 on your web browser to access Co-Pilot as an embedded assistant, not the desktop application because Co-Pilot is not available there. You may need to log in with your UBC CWL.
 2. In your toolbar, find and select the Co-Pilot icon. A new chat should open.
 3. Near the text entry box, find and select the “options” icon to activate “Edit with Co-Pilot”. This will ensure Co-Pilot will make changes directly to your duplicate file and not generate a new file each time.
 
