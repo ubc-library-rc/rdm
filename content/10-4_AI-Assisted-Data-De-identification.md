@@ -44,19 +44,19 @@ UBC does not define the term “sensitive data”. Instead, UBC electronic infor
 
 ## Recap: Manual de-identification methods
 In our second workshop - ["Introduction to Manual Data De-identification"](https://ubc-library-rc.github.io/rdm/content/10-2_Manual-Data-Anonymization.html), we introduced you to some common examples of manual de-identification methods for sensitive data. Have a look at the list below for a refresher on the types we discussed: 
-- Anonymization: all identifying information is removed from the dataset and cannot be restored.
-- Pseudonymization: identifying information is replaced with artificial identifiers, such as codes or numbers.
--	Aggregation: individual data points are grouped together into categories or ranges.
--	Masking: identifying information is hidden or obscured by using techniques, such as encryption, hashing, blurring, or noise addition.
--	Generalization: identifying information is replaced with more general or vague terms.
--	Local suppression: individual cases or responses (individual records) are deleted. 
+- *Anonymization*: all identifying information is removed from the dataset and cannot be restored.
+- *Pseudonymization*: identifying information is replaced with artificial identifiers, such as codes or numbers.
+-	*Aggregation*: individual data points are grouped together into categories or ranges.
+-	*Masking*: identifying information is hidden or obscured by using techniques, such as encryption, hashing, blurring, or noise addition.
+-	*Generalization*: identifying information is replaced with more general or vague terms.
+-	*Local suppression*: individual cases or responses (individual records) are deleted. 
 
 ## Recap: Manual de-identification steps 
 As a demonstration of some of the de-identification methods, we used a dummy dataset for a mock research project looking at production efficiencies of apple growers in the Pacific Northwest. Here are the steps we did:
--	Step 1: For direct identifiers, we applied pseudonymization by replacing participant names with “person1”, “person2”, and so on.
--	Step 2: For birth dates, we used aggregation to replace individual dates with 5-year age ranges. 
--	Step 3: For geographic data, we applied pseudonymization again by replacing orchard names with “farm1”, “farm2”, and so on.
--	Step 4: For data that may be linked to external sources and result in re-identification, we used anonymization by removing this data for the variables affected. 
+-	*Step 1*: For direct identifiers, we applied pseudonymization by replacing participant names with “person1”, “person2”, and so on.
+-	*Step 2*: For birth dates, we used aggregation to replace individual dates with 5-year age ranges. 
+-	*Step 3*: For geographic data, we applied pseudonymization again by replacing orchard names with “farm1”, “farm2”, and so on.
+-	*Step 4*: For data that may be linked to external sources and result in re-identification, we used anonymization by removing this data for the variables affected. 
 -	After following these steps, we received a de-identified dataset and created a separate data key file that is safely stored with the research records.
 
 We are now going to replicate our second workshop on manual de-identification methods using Co-Pilot, to see its capabilities in assisting with the de-identification process. Microsoft Copilot is an AI-powered assistant embedded directly across the Microsoft ecosystem, including Windows and Office 365.
@@ -65,14 +65,14 @@ Here is the same [dummy dataset](https://ubc-library-rc.github.io/rdm/content/ex
 {: .note}
 
 ## Using the MS Co-Pilot embedded assistant to help with data de-identification
-1. Navigate to MS Excel 365 on your web browser to access Co-Pilot as an embedded assistant, not the desktop application because Co-Pilot is not available there. You may need to log in with your UBC CWL.
+1. Navigate to MS Excel 365 on your web browser to access Co-Pilot as an embedded assistant, not the desktop application, because Co-Pilot is not available there. You may need to log in with your UBC CWL.
 2. In your toolbar, find and select the Co-Pilot icon. A new chat should open.
-3. Near the text entry box, find and select the “options” icon to activate **“Edit with Co-Pilot”**. This will ensure Co-Pilot will make changes directly to your duplicate file and not generate a new file each time.
+3. Near the text entry box, find and select the “options” icon to activate **“Edit with Co-Pilot”**. This will ensure Co-Pilot makes changes directly to your duplicate file and does not generate a new file each time.
 
 ## Some prompting tips to note before proceeding
 -	It’s always best to be as clear as possible when prompting Co-Pilot. This can include specifying which variables will be modified, what exactly will happen to them, and what they will be replaced with (if using pseudonymization, aggregation, masking, or generalization). For example, if you use anonymization, specify exactly that the task is to remove variable data. If not specified, Co-Pilot will randomly decide and apply another de-identification method, such as aggregation or local suppression. 
--	In your prompt, you should specify to place the de-identification results in a new sheet. If not, Co-Pilot will apply changes directly on the original sheet. You can also name the new sheets by prompting for and indicating what you want the sheet name to be.
--	To create a data key file for your original raw data, we found (by a lot of trial-and-error) that it’s best to finish all de-identification methods and then prompt for a data key file. You may run into issues, such as incorrect data key updates or, as you move along the de-identification process.
+-	In your prompt, you should specify to place the de-identification results in a new sheet. If not, Co-Pilot will apply changes directly to the original sheet. You can also name the new sheets by prompting for and indicating what you want the sheet name to be.
+-	To create a data key file for your original raw data, we found (by a lot of trial-and-error) that it’s best to finish all de-identification methods and then prompt for a data key file. You may run into issues, such as incorrect data key updates, as you move along the de-identification process.
 
 # Replicating manual de-identification methods with Co-Pilot M365 Embedded assistant
 Here are the same steps as the manual de-identification methods workshop. Each step has a suggested prompt you can use for Co-Pilot, and the output you may receive. 
@@ -80,65 +80,71 @@ Here are the same steps as the manual de-identification methods workshop. Each s
 ### Step 1: Direct identifiers
 Co-Pilot may not be able to recognize direct identifiers automatically, so we made sure to explicitly indicate which specific variables are direct identifiers. We then told it what kind of pseudonyms we want the variable data to be replaced with, and to put the results in a new sheet.
 
-Here is the prompt: The direct identifiers are worker_id, email_id, and owner_id. Apply pseudonymization to replace the values of each direct identifier with pseudonyms such as person1, person2, person3, etc. for worker_id, email1, email2, email3, etc. for email_id, and owner1, owner2, owner3, etc. for owner_id. Put the results in a new sheet called “Direct identifiers”. Do not change other variables such as age for now. 
+<u>Here is the prompt</u>: The direct identifiers are worker_id, email_id, and owner_id. Apply pseudonymization to replace the values of each direct identifier with pseudonyms such as person1, person2, person3, etc. for worker_id, email1, email2, email3, etc. for email_id, and owner1, owner2, owner3, etc. for owner_id. Put the results in a new sheet called “Direct identifiers”. Do not change other variables such as age for now. 
 
-The Co-Pilot response may look like:
-<img src="figures/step1_dataDe-ID_workshop10_4.png" width="2000"/>
+<u>The Co-Pilot response may look like:</u>
+<img src="figures/step1_dataDe-ID_workshop10_4.png" width="1500"/>
 
 ### Step 2: Dates
 Before prompting, make sure your dates are in a preferred format with a consistent style, such as ISO 8601 (YYYY-MM-DD).  However, please note the limitation that although you may prompt Co-Pilot to format your dates in a certain style, it may not always be successful. It may take some trial and error or not work at all. 
 
-Here is the prompt: The variable “age” in the contains identifiable information. Apply aggregation to replace the values with 5-year age ranges. Put the results in a new sheet called “Dates”. 
+<u>Here is the prompt</u>: The variable “age” in the contains identifiable information. Apply aggregation to replace the values with 5-year age ranges. Put the results in a new sheet called “Dates”. 
 
-The Co-Pilot response may look like: 
+<u>The Co-Pilot response may look like:</u>
+<img src="figures/step2_dataDe-ID_workshop10_4.png" width="1500"/>
 
 ### Step 3: Geographic data
 Similar to step 1, we specified what pseudonyms we want to be used as replacements for geographic variable data, and to put the results in a new sheet.  
 
-Here is the prompt: The variables “city” and “orchard_id” contain identifiable geographic data. Apply pseudonymization to replace the values of each variable with pseudonyms such as city1, city2, city3, etc. for city, and orchard1, orchard2, orchard3, etc. for orchard_id. Put the results in a new sheet called “Geographical data”. 
+<u>Here is the prompt</u>: The variables “city” and “orchard_id” contain identifiable geographic data. Apply pseudonymization to replace the values of each variable with pseudonyms such as city1, city2, city3, etc. for city, and orchard1, orchard2, orchard3, etc. for orchard_id. Put the results in a new sheet called “Geographical data”. 
 
-The Co-Pilot response may look like: 
+<u>The Co-Pilot response may look like:</u>
+<img src="figures/step3_dataDe-ID_workshop10_4.png" width="1500"/>
 
 ### Step 4: Data potentially linked to external sources
 These variables could also link to publicly accessible sources of data and be re-identified. We specified to Co-Pilot which variables will be removed for the anonymization process. As a reminder, you should clearly convey what task(s) will be done as part of the anonymization prompt, or Co-Pilot will randomly select and apply a method.
 
-Here is the prompt: The indirect identifiers are immigration_stat and username_id. Apply anonymization to remove these variables and its values. Put the results in a new sheet called “External sources”. 
+<u>Here is the prompt</u>: The indirect identifiers are immigration_stat and username_id. Apply anonymization to remove these variables and its values. Put the results in a new sheet called “External sources”. 
 
-The Co-Pilot response may look like: 
+<u>The Co-Pilot response may look like:</u>
+<img src="figures/step4_dataDe-ID_workshop10_4.png" width="1500"/>
 
 ### Step 5: Participant comments
 Participant comments from a survey or interview, for example, can contain identifying information that can reveal identities, especially when paired with other variables containing identifying information. Depending on the context, all or a part of the comment(s) may be removed (fully anonymized), pseudonymized, masked, or locally suppressed. We specified to Co-Pilot to scan each comment record for names, orchard names, social media usernames, dates of birth, cities, provinces, and emails
 
-Here is the prompt: The “comments” variable contains identifying information. Scan each comment record for names, orchard names, emails, dates of birth, cities, provinces, social media usernames, and immigration status, and anonymize those pieces of information by removing them. Put the results in a new sheet called “Comments”.
-
-The Co-Pilot response may look like: 
+<u>Here is the prompt</u>: The “comments” variable contains identifying information. Scan each comment record for names, orchard names, emails, dates of birth, cities, provinces, social media usernames, and immigration status, and anonymize those pieces of information by removing them. Put the results in a new sheet called “Comments”.
 
 ## The resulting de-identified dataset & k-anonymity assessment
 Although the final product may be a de-identified dataset, we can’t be sure that it has been sufficiently de-identified enough for sharing or publishing. However, we can prompt Co-Pilot to assess the k-anonymity of the data.
 
-Here is the prompt: Assess the data for k-anonymity by determining the k value. Is the determined k value acceptable?
+<u>Here is the prompt</u>: Assess the data for k-anonymity by determining the k value. Is the determined k value acceptable?
 
-The Co-Pilot response may look like:
+<u>The Co-Pilot response may look like:</u>
+<img src="figures/step_kanonymity_dataDe-ID_workshop10_4.png" width="1500"/>
 
 Remember that a k-value of 1 is unacceptable in real life, but for the purpose of this workshop, we’ll keep it because it’s only a dummy dataset with fake participants. Achieving a k value of 3 or 5 would be good in real life.
 
 ## Creating the data key
 A data key is created so we, or another researcher, can know (re-identify) the original participant information, prior to de-identification. Because this file contains sensitive, identifiable information, it must be stored separately from the dataset, protected with encryption or a password in order to not compromise participant confidentiality and cause harm.
 
-Here is the prompt: Create a separate data key sheet that stores the original identifiable data of variables worker_id, email_id, age (follow YYYY-MM-DD format), immigration_stat, city, orchard_id, owner_id, username_id, and comments with the corresponding de-identified data of the variable.
+<u>Here is the prompt</u>: Create a separate data key sheet that stores the original identifiable data of variables worker_id, email_id, age (follow YYYY-MM-DD format), immigration_stat, city, orchard_id, owner_id, username_id, and comments with the corresponding de-identified data of the variable.
 
 You may notice that the date format is not in the ISO 8601 format, even if we prompted for it. This is an interesting limitation to observe. In this case, you should be extra careful and pay attention to Co-Pilot’s outputs, even if you explicitly prompt for it.
 
-The Co-Pilot response may look like:
+<u>The Co-Pilot response may look like:</u>
+<img src="figures/step_datakey_dataDe-ID_workshop10_4.png" width="1500"/>
 
 Now we need to separate the data key sheet into a stand-alone protected file. To move an Excel 365 online sheet to a new file, the easiest method is to export a sheet into a CSV file. Go to File > Export > Download as CSV UTF-8 to save the data key as a stand-alone .csv file to your computer, and save it in a secure location, such as UBC OneDrive.
+
+<img src="figures/step_save_dataDe-ID_workshop10_4.png" width="1500"/>
 
 ## Quality assurance: Checking for errors and consistency
 From our experimentation in Spring 2026, we see that we can’t completely trust that the Co-Pilot M365 Embedded assistant tool being used will produce consistent and reliable results. To check, we can create a quality assurance prompt to flag possible errors, inconsistencies, or missed records that weren’t de-identified. Similar to the previous prompts, we should specify which variables we want to include in the quality assurance assessment. 
 
-Here is the prompt: Verify that this dataset sheet “Comments” has been properly de-identified by: scan the direct identifier variables “worker_id”, “email_id”, and “owner_id” for any identifying names and emails, scan the variable “age” for any individual dates of birth, scan the geographic variable “orchard_id”  for any workplace names or full addresses, scan the indirect identifiers “username_id” and “immigration_stat” for any social media usernames and indicated immigration status, and scan the variable “comments” for any identifying information like names, orchard names, emails, dates of birth, cities, provinces, social media usernames, and immigration status. Flag any anomalies and any combination of variables that could re-identify a participant.
+<u>Here is the prompt</u>: Verify that this dataset sheet “Comments” has been properly de-identified by: scan the direct identifier variables “worker_id”, “email_id”, and “owner_id” for any identifying names and emails, scan the variable “age” for any individual dates of birth, scan the geographic variable “orchard_id”  for any workplace names or full addresses, scan the indirect identifiers “username_id” and “immigration_stat” for any social media usernames and indicated immigration status, and scan the variable “comments” for any identifying information like names, orchard names, emails, dates of birth, cities, provinces, social media usernames, and immigration status. Flag any anomalies and any combination of variables that could re-identify a participant.
 
-The Co-Pilot response may look like: 
+<u>The Co-Pilot response may look like:</u>
+<img src="figures/step_QA_dataDe-ID_workshop10_4.png" width="1500"/>
 
 <br>
 
