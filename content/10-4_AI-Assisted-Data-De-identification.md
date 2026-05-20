@@ -85,7 +85,10 @@ Co-Pilot may not be able to recognize direct identifiers automatically, so we ma
 
 <u>The Co-Pilot response may look like:</u>
 
-<img src="figures/step1_dataDe-ID_workshop10_4.png" target="_blank" width="2000"/>
+<a href="figures/step1_dataDe-ID_workshop10_4.png" target="_blank">
+  <img src="figures/step1_dataDe-ID_workshop10_4.png" width="2000" />
+</a>
+
 
 ### Step 2: Dates
 Before prompting, make sure your dates are in a preferred format with a consistent style, such as [ISO 8601](http://www.w3.org/TR/NOTE-datetime) (YYYY-MM-DD).  However, please note the limitation that although you may prompt Co-Pilot to format your dates in a certain style, it may not always be successful. It may take some trial and error, or not work at all. 
