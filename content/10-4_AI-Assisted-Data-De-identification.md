@@ -81,12 +81,12 @@ Here are the same steps as the manual de-identification methods workshop. Each s
 ### Step 1: Direct identifiers
 Co-Pilot may not be able to recognize direct identifiers automatically, so we made sure to explicitly indicate which specific variables are direct identifiers. We then told it what kind of pseudonyms we want the variable data to be replaced with, and to put the results in a new sheet.
 
-<u>Here is the prompt</u>: The direct identifiers are worker_id, email_id, and owner_id. Apply pseudonymization to replace the values of each direct identifier with pseudonyms such as person1, person2, person3, etc. for worker_id, email1, email2, email3, etc. for email_id, and owner1, owner2, owner3, etc. for owner_id. Put the results in a new sheet called “Direct identifiers”. Do not change other variables such as age for now. 
+<u>Here is the prompt</u>: The direct identifiers are worker_id, email_id, and owner_id. Apply pseudonymization to replace the values of each direct identifier with pseudonyms such as person1, person2, person3, etc. for worker_id, email1, email2, email3, etc. for email_id, and owner1, owner2, owner3, etc. for owner_id. Put the results in a new sheet called “Direct identifiers”. Do not change other variables, such as age, for now. 
 
 <u>The Co-Pilot response may look like:</u>
 
 <a href="figures/step1_dataDe-ID_workshop10_4.png" target="_blank">
-  <img src="figures/step1_dataDe-ID_workshop10_4.png" width="2000" />
+  <img src="figures/step1_dataDe-ID_workshop10_4.png" width="3000" />
 </a>
 
 
