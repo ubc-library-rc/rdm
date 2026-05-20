@@ -83,7 +83,7 @@ Co-Pilot may not be able to recognize direct identifiers automatically, so we ma
 Here is the prompt: The direct identifiers are worker_id, email_id, and owner_id. Apply pseudonymization to replace the values of each direct identifier with pseudonyms such as person1, person2, person3, etc. for worker_id, email1, email2, email3, etc. for email_id, and owner1, owner2, owner3, etc. for owner_id. Put the results in a new sheet called “Direct identifiers”. Do not change other variables such as age for now. 
 
 The Co-Pilot response may look like:
-<img src="figures/step1_dataDe-ID_workshop10_4.png" width="1500"/>
+<img src="figures/step1_dataDe-ID_workshop10_4.png" width="2000"/>
 
 ### Step 2: Dates
 Before prompting, make sure your dates are in a preferred format with a consistent style, such as ISO 8601 (YYYY-MM-DD).  However, please note the limitation that although you may prompt Co-Pilot to format your dates in a certain style, it may not always be successful. It may take some trial and error or not work at all. 
