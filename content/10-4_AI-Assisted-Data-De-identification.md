@@ -61,7 +61,7 @@ As a demonstration of some of the de-identification methods, we used a dummy dat
 
 We are now going to replicate our second workshop on manual de-identification methods using Co-Pilot, to see its capabilities in assisting with the de-identification process. Microsoft Copilot is an AI-powered assistant embedded directly across the Microsoft ecosystem, including Windows and Office 365.
 
-Here is the same dummy dataset (INSERT DUMMY DATASET) for you to download and use for this workshop.
+Here is the same [dummy dataset](https://ubc-library-rc.github.io/rdm/content/exercise_files/WorkerSatisfaction_deIDsteps_workshop04_v01_shared.xlsx) for you to download and use for this workshop.
 {: .note}
 
 ## Using the MS Co-Pilot embedded assistant to help with data de-identification
@@ -83,7 +83,7 @@ Co-Pilot may not be able to recognize direct identifiers automatically, so we ma
 Here is the prompt: The direct identifiers are worker_id, email_id, and owner_id. Apply pseudonymization to replace the values of each direct identifier with pseudonyms such as person1, person2, person3, etc. for worker_id, email1, email2, email3, etc. for email_id, and owner1, owner2, owner3, etc. for owner_id. Put the results in a new sheet called “Direct identifiers”. Do not change other variables such as age for now. 
 
 The Co-Pilot response may look like:
-<img src="figures/step1_dataDe-ID_workshop10_4.png" width="500"/>
+<img src="figures/step1_dataDe-ID_workshop10_4.png" width="1500"/>
 
 ### Step 2: Dates
 Before prompting, make sure your dates are in a preferred format with a consistent style, such as ISO 8601 (YYYY-MM-DD).  However, please note the limitation that although you may prompt Co-Pilot to format your dates in a certain style, it may not always be successful. It may take some trial and error or not work at all. 
