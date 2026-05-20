@@ -7,7 +7,7 @@ nav_order: 4
 
 <img src="figures/work-in-progress.png" width="600"/>
 
-Please be aware that as of May 16, 2026, Microsoft 365 Copilot is no longer available to UBC users following a recent change. However, this workshop is still relevant and beneficial for institutions and/or individuals who have an active Microsoft 365 Copilot license.
+Please be aware that as of May 16, 2026, Microsoft 365 Copilot is no longer available to UBC users following a recent change in product licensing. However, this workshop is still relevant and beneficial for institutions and/or individuals who have an active Microsoft 365 Copilot license.
 {: .warn}
 
 # Introduction to AI-Assisted Data De-identification
