@@ -70,6 +70,8 @@ Here is the same [dummy dataset](https://ubc-library-rc.github.io/rdm/content/ex
 2. In your toolbar, find and select the Co-Pilot icon. A new chat should open.
 3. Near the text entry box, find and select the “options” icon to activate **“Edit with Co-Pilot”**. This will ensure Co-Pilot makes changes directly to your duplicate file and does not generate a new file each time.
 
+<img src="figures/step_copilot_extension_dataDe-ID_workshop10_4.jpeg" width="400"/>
+
 ## Some prompting tips to note before proceeding
 -	It’s always best to be as clear as possible when prompting Co-Pilot. This can include specifying which variables will be modified, what exactly will happen to them, and what they will be replaced with (if using pseudonymization, aggregation, masking, or generalization). For example, if you use anonymization, specify exactly that the task is to remove variable data. If not specified, Co-Pilot will randomly decide and apply another de-identification method, such as aggregation or local suppression. 
 -	In your prompt, you should specify to place the de-identification results in a new sheet. If not, Co-Pilot will apply changes directly to the original sheet. You can also name the new sheets by prompting for and indicating what you want the sheet name to be.
@@ -86,7 +88,7 @@ Co-Pilot may not be able to recognize direct identifiers automatically, so we ma
 <u>The Co-Pilot response may look like:</u>
 (Click to expand image)
 <a href="figures/step1_dataDe-ID_workshop10_4.png" target="_blank">
-  <img src="figures/step1_dataDe-ID_workshop10_4.png" height="200%" width="2000" />
+  <img src="figures/step1_dataDe-ID_workshop10_4.png" height="200%"/>
 </a>
 
 
