@@ -88,7 +88,7 @@ Co-Pilot may not be able to recognize direct identifiers automatically, so we ma
 <u>The Co-Pilot response may look like:</u>
 (Click to expand image)
 <a href="figures/step1_dataDe-ID_workshop10_4.png" target="_blank">
-  <img src="figures/step1_dataDe-ID_workshop10_4.png" height="200%"/>
+  <img src="figures/step1_dataDe-ID_workshop10_4.png" height="500%" width="2000"/>
 </a>
 
 
@@ -99,7 +99,9 @@ Before prompting, make sure your dates are in a preferred format with a consiste
 
 <u>The Co-Pilot response may look like:</u>
 (Click to expand image)
-<img src="figures/step2_dataDe-ID_workshop10_4.png" width="2000"/>
+<a href="figures/step2_dataDe-ID_workshop10_4.png" target="_blank">
+  <img src="figures/step2_dataDe-ID_workshop10_4.png" height="200%" width="2000"/>
+</a>
 
 ### Step 3: Geographic data
 Similar to step 1, we specified what pseudonyms we want to be used as replacements for geographic variable data, and to put the results in a new sheet.  
@@ -107,7 +109,10 @@ Similar to step 1, we specified what pseudonyms we want to be used as replacemen
 <u>Here is the prompt</u>: The variables “city” and “orchard_id” contain identifiable geographic data. Apply pseudonymization to replace the values of each variable with pseudonyms such as city1, city2, city3, etc. for city, and orchard1, orchard2, orchard3, etc. for orchard_id. Put the results in a new sheet called “Geographical data”. 
 
 <u>The Co-Pilot response may look like:</u>
-<img src="figures/step3_dataDe-ID_workshop10_4.png" width="2000"/>
+(Click to expand image)
+<a href="figures/step3_dataDe-ID_workshop10_4.png" target="_blank">
+  <img src="figures/step3_dataDe-ID_workshop10_4.png" height="200%" width="2000"/>
+</a>
 
 ### Step 4: Data potentially linked to external sources
 These variables could also link to publicly accessible sources of data and be re-identified. We specified to Co-Pilot which variables will be removed for the anonymization process. As a reminder, you should clearly convey what task(s) will be done as part of the anonymization prompt, or Co-Pilot will randomly select and apply a method.
@@ -115,7 +120,10 @@ These variables could also link to publicly accessible sources of data and be re
 <u>Here is the prompt</u>: The indirect identifiers are immigration_stat and username_id. Apply anonymization to remove these variables and its values. Put the results in a new sheet called “External sources”. 
 
 <u>The Co-Pilot response may look like:</u>
-<img src="figures/step4_dataDe-ID_workshop10_4.png" width="2000"/>
+(Click to expand image)
+<a href="figures/step4_dataDe-ID_workshop10_4.png" target="_blank">
+  <img src="figures/step4_dataDe-ID_workshop10_4.png" height="200%" width="2000"/>
+</a>
 
 ### Step 5: Participant comments
 Participant comments from a survey or interview, for example, can contain identifying information that can reveal identities, especially when paired with other variables containing identifying information. Depending on the context, all or part of the comment(s) may be removed (fully anonymized), pseudonymized, masked, or locally suppressed. We specified to Co-Pilot to scan each comment record for names, orchard names, social media usernames, dates of birth, cities, provinces, and emails
@@ -128,7 +136,10 @@ Although the final product may be a de-identified dataset, we can’t be sure th
 <u>Here is the prompt</u>: Assess the data for k-anonymity by determining the k value. Is the determined k value acceptable?
 
 <u>The Co-Pilot response may look like:</u>
-<img src="figures/step_kanonymity_dataDe-ID_workshop10_4.png" width="2000"/>
+(Click to expand image)
+<a href="figures/step_kanonymity_dataDe-ID_workshop10_4.png" target="_blank">
+  <img src="figures/step_kanonymity_dataDe-ID_workshop10_4.png" height="200%" width="2000"/>
+</a>
 
 Remember that **a k-value of 1 is unacceptable in real life**, but for the purpose of this workshop, we’ll keep it because it’s only a dummy dataset with fake participants. Achieving a k value of 3 or 5 would be good in real life.
 
@@ -140,7 +151,10 @@ A data key is created so we, or another researcher, can know (re-identify) the o
 You may notice that the date format is not in the ISO 8601 format, even if we prompted for it. This is an interesting limitation to observe. In this case, you should be extra careful and pay attention to Co-Pilot’s outputs, even if you explicitly prompt for it.
 
 <u>The Co-Pilot response may look like:</u>
-<img src="figures/step_datakey_dataDe-ID_workshop10_4.png" width="2000"/>
+(Click to expand image)
+<a href="figures/step_datakey_dataDe-ID_workshop10_4.png" target="_blank">
+  <img src="figures/step_datakey_dataDe-ID_workshop10_4.png" height="200%" width="2000"/>
+</a>
 
 Now we need to separate the data key sheet into a stand-alone protected file. To move an Excel 365 online sheet to a new file, the easiest method is to export a sheet into a CSV file. Go to File > Export > Download as CSV UTF-8 to save the data key as a stand-alone .csv file to your computer, and save it in a secure location, such as UBC OneDrive.
 
@@ -154,7 +168,10 @@ To check, we can create a quality assurance prompt to flag possible errors, inco
 <u>Here is the prompt</u>: Verify that this dataset sheet “Comments” has been properly de-identified by: scan the direct identifier variables “worker_id”, “email_id”, and “owner_id” for any identifying names and emails, scan the variable “age” for any individual dates of birth, scan the geographic variable “orchard_id”  for any workplace names or full addresses, scan the indirect identifiers “username_id” and “immigration_stat” for any social media usernames and indicated immigration status, and scan the variable “comments” for any identifying information like names, orchard names, emails, dates of birth, cities, provinces, social media usernames, and immigration status. Flag any anomalies and any combination of variables that could re-identify a participant.
 
 <u>The Co-Pilot response may look like:</u>
-<img src="figures/step_QA_dataDe-ID_workshop10_4.png" width="2000"/>
+(Click to expand image)
+<a href="figures/step_QA_dataDe-ID_workshop10_4.png" target="_blank">
+  <img src="figures/step_QA_dataDe-ID_workshop10_4.png" height="200%" width="2000"/>
+</a>
 
 <br>
 
