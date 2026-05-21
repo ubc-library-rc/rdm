@@ -184,6 +184,9 @@ To check, we can create a quality assurance prompt to flag possible errors, inco
 ---
 ### Sources
 {: .no_toc}
-- Data Privacy Office Europe. (2025). AI for data privacy and compliance: Prompt engineering for DPOs. [https://data-privacy-office.eu/ai-for-data-privacy-and-compliance-prompt-engineering-for-dpos/](https://data-privacy-office.eu/ai-for-data-privacy-and-compliance-prompt-engineering-for-dpos/) 
 - Rod, A. B. & Thompson, K. (2023). Chapter 13: Sensitive data: Practical and theoretical considerations. [https://doi.org/10.5206/EKCH6181](https://doi.org/10.5206/EKCH6181)
+
+### Extra information that may be helpful
+{: .no_toc}
+- Data Privacy Office Europe. (2025). AI for data privacy and compliance: Prompt engineering for DPOs. [https://data-privacy-office.eu/ai-for-data-privacy-and-compliance-prompt-engineering-for-dpos/](https://data-privacy-office.eu/ai-for-data-privacy-and-compliance-prompt-engineering-for-dpos/) 
 
