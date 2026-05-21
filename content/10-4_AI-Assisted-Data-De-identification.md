@@ -98,8 +98,8 @@ Before prompting, make sure your dates are in a preferred format with a consiste
 
 <u>The Co-Pilot response may look like:</u>
 (Click to expand image)
-<a href="figures/step2_dataDe-ID_workshop10_4.png" target="_blank">
-  <img src="figures/step2_dataDe-ID_workshop10_4.png" height="200%" width="2000"/>
+<a href="figures/10_4_step2.png" target="_blank">
+  <img src="figures/10_4_step2.png" height="200%" width="2000"/>
 </a>
 
 ### Step 3: Geographic data
@@ -109,8 +109,8 @@ Similar to step 1, we specified what pseudonyms we want to be used as replacemen
 
 <u>The Co-Pilot response may look like:</u>
 (Click to expand image)
-<a href="figures/step3_dataDe-ID_workshop10_4.png" target="_blank">
-  <img src="figures/step3_dataDe-ID_workshop10_4.png" height="200%" width="2000"/>
+<a href="figures/10_4_step3.png" target="_blank">
+  <img src="figures/10_4_step3.png" height="200%" width="2000"/>
 </a>
 
 ### Step 4: Data potentially linked to external sources
@@ -120,8 +120,8 @@ These variables could also link to publicly accessible sources of data and be re
 
 <u>The Co-Pilot response may look like:</u>
 (Click to expand image)
-<a href="figures/step4_dataDe-ID_workshop10_4.png" target="_blank">
-  <img src="figures/step4_dataDe-ID_workshop10_4.png" height="200%" width="2000"/>
+<a href="figures/10_4_step4.png" target="_blank">
+  <img src="figures/10_4_step4.png" height="200%" width="2000"/>
 </a>
 
 ### Step 5: Participant comments
@@ -136,8 +136,8 @@ Although the final product may be a de-identified dataset, we can’t be sure th
 
 <u>The Co-Pilot response may look like:</u>
 (Click to expand image)
-<a href="figures/step_kanonymity_dataDe-ID_workshop10_4.png" target="_blank">
-  <img src="figures/step_kanonymity_dataDe-ID_workshop10_4.png" height="200%" width="2000"/>
+<a href="figures/10_4_step_kanonymity.png" target="_blank">
+  <img src="figures/10_4_step_kanonymity.png" height="200%" width="2000"/>
 </a>
 
 Remember that **a k-value of 1 is unacceptable in real life**, but for the purpose of this workshop, we’ll keep it because it’s only a dummy dataset with fake participants. Achieving a k value of 3 or 5 would be good in real life.
@@ -151,8 +151,8 @@ You may notice that the date format is not in the ISO 8601 format, even if we pr
 
 <u>The Co-Pilot response may look like:</u>
 (Click to expand image)
-<a href="figures/step_datakey_dataDe-ID_workshop10_4.png" target="_blank">
-  <img src="figures/step_datakey_dataDe-ID_workshop10_4.png" height="200%" width="2000"/>
+<a href="figures/10_4_step_datakey.png" target="_blank">
+  <img src="figures/10_4_step_datakey.png" height="200%" width="2000"/>
 </a>
 
 Now we need to separate the data key sheet into a stand-alone protected file. To move an Excel 365 online sheet to a new file, the easiest method is to export a sheet into a CSV file. Go to File > Export > Download as CSV UTF-8 to save the data key as a stand-alone .csv file to your computer, and save it in a secure location, such as UBC OneDrive.
@@ -168,8 +168,8 @@ To check, we can create a quality assurance prompt to flag possible errors, inco
 
 <u>The Co-Pilot response may look like:</u>
 (Click to expand image)
-<a href="figures/step_QA_dataDe-ID_workshop10_4.png" target="_blank">
-  <img src="figures/step_QA_dataDe-ID_workshop10_4.png" height="200%" width="2000"/>
+<a href="figures/10_4_step_QA.png" target="_blank">
+  <img src="figures/10_4_step_QA.png" height="200%" width="2000"/>
 </a>
 
 <br>
@@ -184,3 +184,6 @@ To check, we can create a quality assurance prompt to flag possible errors, inco
 ---
 ### Sources
 {: .no_toc}
+- Data Privacy Office Europe. (2025). AI for data privacy and compliance: Prompt engineering for DPOs. [https://data-privacy-office.eu/ai-for-data-privacy-and-compliance-prompt-engineering-for-dpos/](https://data-privacy-office.eu/ai-for-data-privacy-and-compliance-prompt-engineering-for-dpos/) 
+- Rod, A. B. & Thompson, K. (2023). Chapter 13: Sensitive data: Practical and theoretical considerations. [https://doi.org/10.5206/EKCH6181](https://doi.org/10.5206/EKCH6181)
+
