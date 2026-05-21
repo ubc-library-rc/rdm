@@ -87,8 +87,8 @@ Co-Pilot may not be able to recognize direct identifiers automatically, so we ma
 
 <u>The Co-Pilot response may look like:</u>
 (Click to expand image)
-<a href="figures/step1_dataDe-ID_workshop10_4.png" target="_blank">
-  <img src="figures/step1_dataDe-ID_workshop10_4.png" height="200%" width="2000"/>
+<a href="figures/10_4_step1.png" target="_blank">
+  <img src="figures/10_4_step1.png" height="200%" width="2000"/>
 </a>
 
 ### Step 2: Dates
