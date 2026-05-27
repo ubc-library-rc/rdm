@@ -75,6 +75,8 @@ Here is the same [dummy dataset](https://ubc-library-rc.github.io/rdm/content/ex
 -	In your prompt, you should specify to place the de-identification results in a new sheet. If not, Co-Pilot will apply changes directly to the original sheet. You can also name the new sheets by prompting for and indicating what you want the sheet name to be.
 -	To create a data key file for your original raw data, we found (by a lot of trial-and-error) that it’s best to finish all de-identification methods and then prompt for a data key file. You may run into issues, such as incorrect data key updates, as you move along the de-identification process.
 
+<img src="figures/anonymity.png" width="150"/>
+
 # Replicating manual de-identification methods with Co-Pilot M365 Embedded assistant
 Here are the same steps as the manual de-identification methods workshop. Each step has a suggested prompt you can use for Co-Pilot, and the output you may receive. 
 
@@ -139,6 +141,8 @@ Although the final product may be a de-identified dataset, we can’t be sure th
 </a>
 
 Remember that **a k-value of 1 is unacceptable in real life**, but for the purpose of this workshop, we’ll keep it because it’s only a dummy dataset with fake participants. Achieving a k value of 3 or 5 would be good in real life.
+
+<img src="figures/encryption.jpg" width="200"/>
 
 ## Creating the data key
 A data key is created so we, or another researcher, can know (re-identify) the original participant information prior to de-identification. Because this file contains sensitive, identifiable information, it must be stored separately from the dataset, protected with encryption or a password in order to not compromise participant confidentiality and cause harm.
