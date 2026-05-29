@@ -12,9 +12,7 @@ nav_order: 3
 We will be designing an R-based workshop during the summer of 2026. Please stay tuned...
 
 
-<iframe
-  src="{{ site.baseurl }}/content/exercise_files/Workbook_WorkerSatisfaction_Deidentification.html"
-  width="100%"
-  height="900"
-  style="border:1px solid #ccc;">
-</iframe>
+
+## Worker Satisfaction workbook
+
+<p><a href="/rdm/content/exercise_files/Workbook_WorkerSatisfaction_Deidentification.html" target="_blank">Open workbook in full tab ↗</a></p>
