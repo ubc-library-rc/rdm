@@ -10,3 +10,6 @@ nav_order: 3
 # Introduction to Data De-identification with R
 
 We will be designing an R-based workshop during the summer of 2026. Please stay tuned...
+
+
+[Open the workbook](../exercise_files/Workbook_WorkerSatisfaction_Deidentification.html)
