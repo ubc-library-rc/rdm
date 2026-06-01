@@ -26,7 +26,7 @@ Looking for a cheat sheet? Check out our <a href="https://osf.io/pfweq" target="
 
 ---
 
-Although these file names may look acceptable, they have poor formatting characteristics that will help you in the short- and long-term. 
+Although these file names may look acceptable, they have poor formatting characteristics that will be unhelpful to you in the short- and long-term. 
 - 10_data 2.txt 
 - Lily's schedule&plan 2022Jul9.xlsx
 
@@ -52,7 +52,7 @@ The overall goals of good file names are:
 - Be consistent with the chosen naming convention
 
 ## *1*{: .circle .circle-blue} &nbsp; Machine-readable 
-### Consider the following for your files to be machine-readable:
+### Consider the following for your file names to be machine-readable:
 {: .no_toc }
 - Use alphanumeric characters: Latin alphabetic characters (abc) and Arabic numerals (123)
 - Use a type of spacing case to separate file name elements:
