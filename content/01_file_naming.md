@@ -98,7 +98,7 @@ Here are some more examples of good versus bad file names:
 | *Poor file names* | *Better file names* |
 | -- | -- |
 | application.txt | ubc_application_letter.txt |
-| ubc_guidelines_institution_position_firstname_lastname_final_date.txt | FileNm_Guidelines_20180409_v01.docx |
+| ubc_guidelines_institution_position_firstname_final.txt | FileNm_Guidelines_20180409_v01.docx |
 | clean_data_py_script.py | clean_data_script.py |
 
 <img src="figures/human-reading.jpg" width="200" style="margin-left:30px"/>
