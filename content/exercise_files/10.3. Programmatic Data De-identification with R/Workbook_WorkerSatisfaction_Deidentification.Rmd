@@ -1,0 +1,444 @@
+---
+title: "Worker Satisfaction Survey — Data De-identification Workbook"
+author: "Data De-identification Advisor"
+date: "`r format(Sys.Date(), '%B %d, %Y')`"
+output:
+  pdf_document:
+    toc: true
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: show
+    theme: flatly
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  message = FALSE,
+  warning = FALSE,
+  fig.width = 8,
+  fig.height = 4
+)
+```
+
+# Introduction
+
+This workbook guides you through de-identifying the **Apple Grower Satisfaction Survey** (`WorkerSatisfaction_300rows.xlsx`: 300 rows, 16 columns).
+
+### Learning objectives
+
+-   Identify privacy risks in survey data
+-   Apply de-identification steps in R using **dplyr**
+-   Export a shareable dataset and a separate data key file
+
+### Workflow
+
+1.  **Setup** — load packages and set file paths
+2.  **Load and assess** — inspect raw data and review privacy risks
+3.  **Transform** — apply de-identification rules step by step
+4.  **Verify and deliver** — run QA checks and export output files
+
+### Output files
+
+-   **`WorkerSatisfaction_300rows_deidentified.xlsx`** — for research team and analysts
+-   **`data_key_file/WorkerSatisfaction_data_key_DUMMY.xlsx`** — for authorized personnel only; store separately from the de-identified data (dummy example)
+
+Do not edit the raw source file (`WorkerSatisfaction_300rows.xlsx`).
+
+### Roadmap
+
+| Part | Section | What happens |
+|------------------|----------------------|--------------------------------|
+| **1** | Setup | Install packages, set paths |
+| **2** | Load and assess | Read raw data; review direct IDs, dates, geography, free text |
+| **3** | Transform | Remove, generalize, suppress, and pseudonymize — preview after each step |
+| **4** | Verify and deliver | QA checks → export de-identified file → export data key |
+
+| Risk | What to look for (Part 2) | What to do (Part 3) |
+|-----------------|-------------------------------|------------------------|
+| Direct identifiers | Names, emails, handles, owner names | Remove columns |
+| Dates | `age` is date of birth | Replace with 5-year age bands |
+| Geography | Small city counts | Suppress rare cities, then anonymize |
+| External sources | Free-text `comments` | Remove column |
+| Quasi-identifiers | Orchard names | Pseudonymize to `Orchard_01`, … |
+
+------------------------------------------------------------------------
+
+# Part 1 — Setup
+
+### Required packages
+
+| Package   | Purpose                             |
+|-----------|-------------------------------------|
+| `readxl`  | Read the original Excel survey file |
+| `dplyr`   | Transform data (native pipe `\|>`)  |
+| `writexl` | Export Excel outputs                |
+
+Run **Install packages** once if a package is missing.
+
+```{r install-packages, eval = FALSE}
+# install.packages("readxl")
+# install.packages("dplyr")
+# install.packages("writexl")
+# install.packages(c("readxl", "dplyr", "writexl"))
+```
+
+```{r packages}
+library(readxl)
+library(dplyr)
+library(writexl)
+```
+
+```{r constants}
+DATA_FILE   <- "WorkerSatisfaction_300rows.xlsx"
+OUTPUT_FILE <- "WorkerSatisfaction_300rows_deidentified.xlsx"
+KEY_DIR     <- "data_key_file"
+KEY_FILE    <- file.path(KEY_DIR, "WorkerSatisfaction_data_key_DUMMY.xlsx")
+K_THRESHOLD <- 5
+```
+
+**k-anonymity threshold:** categories with fewer than `r K_THRESHOLD` records will be pooled before anonymization.
+
+```{r show-constants}
+cat("K_THRESHOLD =", K_THRESHOLD, "\n")
+cat("Data key file:", KEY_FILE, "\n")
+```
+
+------------------------------------------------------------------------
+
+# Part 2 — Load and Assess
+
+Load the unmodified survey and review what makes the data identifiable.
+
+## 2.1 Load raw data
+
+```{r load-raw}
+raw <- read_excel(DATA_FILE, sheet = "Unmodified data")
+
+cat("Raw data:", nrow(raw), "rows ×", ncol(raw), "columns\n")
+head(raw, 10)
+```
+
+## 2.2 Direct identifiers
+
+These variables point to a specific person and will be removed in Part 3:
+
+| Variable      | Why it is risky                         |
+|---------------|-----------------------------------------|
+| `worker_id`   | Full name (300 unique values)           |
+| `email_id`    | Email address (300 unique values)       |
+| `username_id` | Social-media handle (265 unique values) |
+| `owner_id`    | Orchard owner name                      |
+
+## 2.3 Dates
+
+The column `age` stores **date of birth**, not a numeric age. Exact DOB is a strong quasi-identifier when combined with location and employer.
+
+```{r dob-explore}
+data.frame(
+  earliest     = as.character(min(as.Date(raw$age))),
+  latest       = as.character(max(as.Date(raw$age))),
+  unique_dates = length(unique(raw$age))
+)
+```
+
+Exact DOB will be replaced with **5-year age bands** in Part 3.
+
+## 2.4 Geography
+
+`city` has 12 levels; `province` is always B.C. Small groups are easier to re-identify.
+
+```{r geo-explore}
+raw |>
+  count(city, sort = TRUE) |>
+  mutate(rare = n < K_THRESHOLD)
+```
+
+```{r geo-rare-cities}
+rare_cities <- raw |>
+  count(city) |>
+  filter(n < K_THRESHOLD) |>
+  pull(city)
+
+cat("Rare cities (n <", K_THRESHOLD, "):\n")
+rare_cities
+```
+
+```{r geo-immigration-check}
+raw |> count(immigration_stat, sort = TRUE)
+```
+
+> **Note:** Pool rare cities to `"Other BC community"`, then replace all city names with codes (`City_01`, …). Immigration counts are checked here; recoding is only needed if any group falls below `r K_THRESHOLD`.
+
+## 2.5 External sources (free text)
+
+The `comments` field can name people, employers, platforms, and birth years — even after other columns are cleaned.
+
+```{r comments-risk}
+raw |>
+  filter(comments != "None") |>
+  slice(1:10) |>
+  select(comments)
+```
+
+> **Note:** Remove `comments` entirely. Free text cannot be reliably de-identified without manual review.
+
+## 2.6 Quasi-identifiers (orchards)
+
+Orchard names link respondents to a specific workplace. They will be pseudonymized in Part 3.
+
+```{r orchard-explore}
+raw |> count(orchard_id, sort = TRUE)
+```
+
+> **Note:** Replace orchard names with non-descriptive codes (`Orchard_01`, …).
+
+------------------------------------------------------------------------
+
+# Part 3 — Transform
+
+Apply each rule from Part 2. Run chunks in order; each step shows **10 rows** of the updated dataframe.
+
+## 3.1 Remove direct identifiers and comments
+
+```{r step-remove-direct}
+direct_ids <- c("worker_id", "email_id", "username_id", "owner_id")
+
+step1 <- raw |>
+  select(-all_of(direct_ids), -comments)
+
+cat("Step 3.1:", nrow(step1), "rows ×", ncol(step1), "columns\n")
+head(step1, 10)
+```
+
+## 3.2 Generalize date of birth
+
+```{r step-generalize-dob}
+to_age_band <- function(dob) {
+  yrs <- as.integer(difftime(Sys.Date(), as.Date(dob), units = "days") / 365.25)
+  if (yrs < 25)      "18-24"
+  else if (yrs < 35) "25-34"
+  else if (yrs < 45) "35-44"
+  else if (yrs < 55) "45-54"
+  else               "55+"
+}
+
+step2 <- step1 |>
+  mutate(age_band = sapply(age, to_age_band)) |>
+  select(-age) |>
+  relocate(age_band, .before = immigration_stat)
+
+cat("Step 3.2:", nrow(step2), "rows ×", ncol(step2), "columns\n")
+head(step2, 10)
+```
+
+## 3.3 Suppress rare cities
+
+```{r step-suppress-applied}
+step3 <- step2 |>
+  mutate(city = if_else(city %in% rare_cities, "Other BC community", city))
+
+cat("Step 3.3:", nrow(step3), "rows ×", ncol(step3), "columns\n")
+head(step3, 10)
+```
+
+```{r step-city-counts-before-anon}
+step3 |> count(city, sort = TRUE)
+```
+
+## 3.4 Anonymize city
+
+```{r step-anonymize-city}
+step4 <- step3 |>
+  mutate(city = paste0(
+    "City_", sprintf("%02d", as.integer(factor(city)))
+  ))
+
+cat("Step 3.4:", nrow(step4), "rows ×", ncol(step4), "columns\n")
+head(step4, 10)
+```
+
+```{r step-city-counts}
+step4 |> count(city, sort = TRUE)
+```
+
+## 3.5 Pseudonymize orchard
+
+```{r step-pseudonymize-orchard}
+step5 <- step4 |>
+  mutate(orchard_id = paste0(
+    "Orchard_", sprintf("%02d", as.integer(factor(orchard_id)))
+  ))
+
+deid <- step5
+
+cat("Step 3.5 — final:", nrow(deid), "rows ×", ncol(deid), "columns\n")
+head(deid, 10)
+```
+
+```{r step-orchard-counts}
+deid |> count(orchard_id, sort = TRUE)
+```
+
+### What changed
+
+| Removed | Transformed |
+|------------------------------|------------------------------------------|
+| `worker_id`, `email_id`, `username_id`, `owner_id`, `comments`, exact DOB (`age`) | `age` → `age_band`; rare cities pooled; `city` → `City_01` …; `orchard_id` → `Orchard_01` … |
+
+------------------------------------------------------------------------
+
+# Part 4 — Verify and Deliver
+
+## 4.1 QA checks
+
+Confirm the de-identified data is safe to export. All checks should show `TRUE`.
+
+```{r qa-checks}
+data.frame(
+  check = c(
+    "No direct ID columns",
+    "No comments column",
+    "No exact DOB column",
+    "Row count unchanged",
+    "Rare cities suppressed",
+    "Cities anonymized",
+    "Orchards pseudonymized"
+  ),
+  passed = c(
+    !any(direct_ids %in% names(deid)),
+    !"comments" %in% names(deid),
+    !"age" %in% names(deid),
+    nrow(deid) == nrow(raw),
+    !any(rare_cities %in% deid$city),
+    !any(unique(raw$city) %in% deid$city),
+    !any(unique(raw$orchard_id) %in% deid$orchard_id)
+  )
+)
+```
+
+```{r qa-summary-stats}
+data.frame(
+  rows               = nrow(deid),
+  columns            = ncol(deid),
+  smallest_city      = min(table(deid$city)),
+  smallest_age_band  = min(table(deid$age_band)),
+  smallest_orchard   = min(table(deid$orchard_id))
+)
+```
+
+> **Note:** Each group should ideally have at least `r K_THRESHOLD` records, or be pooled into a broader category.
+
+## 4.2 Export de-identified dataset
+
+This is the file you can share for analysis. It does **not** include the data key.
+
+```{r export}
+write_xlsx(deid, OUTPUT_FILE)
+
+cat("Exported:", OUTPUT_FILE, "\n")
+cat("Rows:", nrow(deid), "| Columns:", ncol(deid), "\n\n")
+cat("Preview of exported data:\n")
+head(deid, 10)
+```
+
+## 4.3 Data key file (DUMMY — illustrative only)
+
+Keeping the data key file well protected is essential because it is the sole mechanism that can re-identify individuals in otherwise de-identified research data, and its compromise can undermine confidentiality protections and cause harm to participants. In the UBC environment, the key file must be stored separately from research data on UBC-approved secure systems, with access restricted to authorized personnel only and never stored on personal devices or unapproved cloud services.
+
+Here is an example of a data key file for the work described above; this is a **dummy file provided for illustrative purposes only**, and in real-world research settings, such files must never be shared on public systems.
+
+**File path:** `r KEY_FILE`
+
+| Sheet                | Contents                                      |
+|----------------------|-----------------------------------------------|
+| `README`             | Dummy disclaimer and UBC storage requirements |
+| `orchard_key`        | Original orchard name → pseudonym code        |
+| `city_key`           | City label after suppression → pseudonym code |
+| `rare_city_suppress` | Cities pooled to `"Other BC community"`       |
+
+The key holds **orchard and city code mappings only** — not worker names, emails, or other direct identifiers removed in step 3.1.
+
+```{r build-data-key}
+orchard_key <- step1 |>
+  distinct(orchard_id) |>
+  arrange(orchard_id) |>
+  transmute(
+    original_orchard = orchard_id,
+    pseudonym_code   = paste0("Orchard_", sprintf("%02d", row_number()))
+  )
+
+city_key <- step3 |>
+  distinct(city) |>
+  arrange(city) |>
+  transmute(
+    city_after_suppression = city,
+    pseudonym_code         = paste0("City_", sprintf("%02d", row_number()))
+  )
+
+if (length(rare_cities) > 0) {
+  rare_city_key <- data.frame(
+    original_city = rare_cities,
+    pooled_to     = "Other BC community"
+  )
+} else {
+  rare_city_key <- data.frame(
+    original_city = "(none — all cities at or above k threshold)",
+    pooled_to     = NA_character_
+  )
+}
+
+key_readme <- data.frame(
+  field = c(
+    "File status",
+    "Purpose",
+    "Contains",
+    "Storage requirement (UBC)"
+  ),
+  description = c(
+    "DUMMY — illustrative example only; not for production use",
+    "Reverse pseudonym codes for orchard and city in the de-identified file",
+    "Orchard map, city map, rare-city suppression list — no worker names or emails",
+    "Store separately from de-identified data on UBC-approved secure systems; authorized access only"
+  )
+)
+
+cat("Orchard key:\n")
+head(orchard_key, 10)
+
+cat("\nCity key:\n")
+city_key
+```
+
+```{r export-data-key}
+dir.create(KEY_DIR, showWarnings = FALSE)
+
+write_xlsx(
+  list(
+    README             = key_readme,
+    orchard_key        = orchard_key,
+    city_key           = city_key,
+    rare_city_suppress = rare_city_key
+  ),
+  KEY_FILE
+)
+
+cat("Data key exported:", KEY_FILE, "\n")
+cat("Sheets: README, orchard_key, city_key, rare_city_suppress\n")
+cat("Store separately from", OUTPUT_FILE, "— never on public systems.\n")
+```
+
+------------------------------------------------------------------------
+
+# Closing Summary
+
+| Stage | What changed |
+|--------------------------|----------------------------------------------|
+| Direct identifiers | Removed `worker_id`, `email_id`, `username_id`, `owner_id` |
+| External sources | Removed `comments` |
+| Dates | `age` (DOB) → `age_band` (5-year groups) |
+| Geography | Rare cities pooled; all cities → `City_01` … |
+| Quasi-identifiers | `orchard_id` → `Orchard_01` …; mappings in `r KEY_FILE` (dummy, separate storage) |
+
+The de-identified dataset keeps all satisfaction and treatment ratings for analysis while substantially lowering re-identification risk. The data key remains the only link back to original orchard and city names — protect it accordingly.
