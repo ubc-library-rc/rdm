@@ -3,6 +3,8 @@ layout: default
 title: File Naming
 nav_order: 4
 ---
+<img src="figures/work-in-progress.png" width="500" style="margin-left:30px"/>
+
 # Why is File Naming Important?
 {: .no_toc }
 
@@ -25,91 +27,74 @@ Looking for a cheat sheet? Check out our <a href="https://osf.io/pfweq" target="
 
 ---
 
-Warm-Up
-{: .label .label-green }
-What do you think about the following file names?
+Although these file names may look acceptable, they have poor formatting characteristics that will help you in the short- and long-term. 
 - 10_data 2.txt 
-- figure 1.png 
-- final revision.docx
 - Lily's schedule&plan 2022Jul9.xlsx
 
-Are these names better? 
-- better-filenames.txt
-- 003_raw-data_2022-07-09.txt
-- fig01_scatterplot-talk-length-vs-interest.png
-- 20220709_interview-script_v01.docx
- 
-This is what happens when you do not have effective naming conventions:
+When using ineffective file naming conventions, this is what you may encounter:
 <img src="figures/file_names.png" width="200" style="margin-left:30px"/>
 
-We will see very shortly why effective naming conventions are a necessity!
+These example file names are better and more effective. We'll see why in the following sections
+- 003_raw-data_2022-07-09.txt
+- 20220709_interview-script_v01.docx
 
 ---
-<p style="margin-bottom: 30px"></p>
 
-# Follow These Three Principles!  &nbsp; <img src="figures/thumbs-up.png" align="center" width="45"/>
+# Three principles for optimal file names  &nbsp; <img src="figures/thumbs-up.png" align="center" width="45"/>
 {: .no_toc }
-*1*{: .circle .circle-blue} &nbsp;Machine-Readable
+1. Machine-Readable
+2. Human-Readable
+3. Supports Default Ordering 
 
-*2*{: .circle .circle-red} &nbsp;Human-Readable 
-
-*3*{: .circle .circle-yellow} &nbsp;Supports Default Ordering 
-
---- 
-
-## *1*{: .circle .circle-blue} &nbsp; Machine-Readable 
-<img src="figures/machine-reading.png" width="200" style="margin-left:30px"/>
-
-### Goals:
-{: .no_toc }
-- Characters in file names are handled correctly by all computer systems
+The overall goals of good file names are:
+- Have the file name characters be correctly handled by all computer systems
+- Have the file name be comprehensible to humans
+- Have the file name be concise, yet descriptive
 - Be consistent with the chosen naming convention
 
-### For files to be machine-readable, consider the following:
+## *1*{: .circle .circle-blue} &nbsp; Machine-Readable 
+### Consider the following for your files to be machine-readable:
 {: .no_toc }
-- Alphanumeric characters: Latin alphabetic characters and Arabic numerals 
-- Snake case: use _ <b>underscores</b> to separate words and numbers
-   -  `this_is_snake_case`
-- Camel case: use <b>capitalization</b> to separate words and numbers 
-   - `ThisIsCamelCase`
-- Hyphens: use – <b>hyphens</b> to separate words and numbers
-   - `this-is-using-hyphens`
-- Avoid spaces and other special characters, such as: ~ ! @ # $ % ^ & * ( ) ` ; : < > ? . , [ ] { } ' " \|
-   - Certain special characters are used by operating systems to perform tasks. This makes it difficult for the machine to read the file names
+- Use alphanumeric characters: Latin alphabetic characters (abc) and Arabic numerals (123)
+- Use a type of spacing case to separate file name elements:
+   - Snake case: use <b>underscores</b> _ to separate words and numbers
+   - Camel case: use <b>capitalization</b> to separate words and numbers
+   - Hyphens: use <b>hyphens</b> – to separate words and numbers
 
-Also be mindful of case sensitivity, as some operating systems may search for file names of a certain case. 
+Spacing case examples:
+- `this_is_snake_case`
+- ThisIsCamelCase`
+- `this-is-using-hyphens` 
+ 
+When using capital and/or lowercase letters, be mindful of case sensitivity. This is because some operating systems may search for file names of a certain case, such as only capital letters or lowercase letters.
 
-### Be consistent:
-{: .no_toc }
-Make sure you're consistent in the way you name your files. The style you choose should be based on conventions adopted in a given project, organization, language, etc.
-- Example: R and Python use snake case, so file names and folder names should follow this convention
+Also, it's best to avoid empty spaces and special characters because these may be used by operating systems to perform tasks. This also could make it difficult for your machine to read the file name properly.
+- Special characters such as: ~ ! @ # $ % ^ & * ( ) ` ; : < > ? . , [ ] { } ' " \ | 
+
+<img src="figures/machine-reading.png" width="200" style="margin-left:30px"/>
 
 ### Exercise 1
 {: .no_toc }
 {: .label .label-green }
 
-Let's improve these file names using what we've learned so far! Pick a file and rename it to make it more machine-readable. 
+Here's a look into someone's folder containing dessert recipes. Let's improve these file names using what we've learned so far! Pick a file and rename it to make it more machine-readable. 
 
 What did you change and why?
 
 <img src="figures/cakes-example.jpeg" width="600" style="margin-left:30px"/>
 
-[//]: # (activity link: https://bit.ly/rdmactivity)
-
 
 ## *2*{: .circle .circle-red} &nbsp; Human-Readable
-<img src="figures/human-reading.jpg" width="200" style="margin-left:30px"/>
-
-### Goals: 
-{: .no_toc }
-- Consistency
-- Intelligible to humans
-- Concise yet descriptive
-
-### For files to be human-readable, consider the following:
+### Consider the following for files to be human-readable:
 {: .no_toc }
 - Have file names that follow a consistent naming method, and document this file naming method in your [README](https://ubc-library-rc.github.io/rdm/content/03_create_readme.html) file
     - Especially if acronyms, abbreviations, and/or codes are used, you should define what they mean in your README file
+
+ ### Be consistent:
+{: .no_toc }
+Make sure you're consistent in the way you name your files. The style you choose should be based on conventions adopted in a given project, organization, language, etc.
+- Example: R and Python use snake case, so file names and folder names should follow this convention
+ 
 - The file names should be concise but detailed enough so that they're still understandable to you and anyone else who has access
     - The amount of detail is up to you, but the names shouldn't be *too* long - we recommend having 3 to 5 elements per file name, or under 32 characters
     - This is especially important for the future!
@@ -140,6 +125,9 @@ clean_data.py
 # also great
 FileNm_Guidelines_20180409_v01.docx
 ```
+
+<img src="figures/human-reading.jpg" width="200" style="margin-left:30px"/>
+
 
 ## *3*{: .circle .circle-yellow} &nbsp; Supports Default Ordering 
 <img src="figures/comic.gif" width="200" style="margin-left:30px"/>
