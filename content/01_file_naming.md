@@ -109,7 +109,7 @@ At the start of naming your files, decide how you want to sort and search for yo
 
 ### Chronological order
 {: .no_toc }
-Using a chronological ordering system includes having the date as the first element. This date should follow the [ISO 8601 standard](http://www.w3.org/TR/NOTE-datetime) for consistent formatting and correct interpretation.
+Using a chronological ordering system includes having the date as the first element. This date should follow the [ISO 8601 standard](http://www.w3.org/TR/NOTE-datetime) (YYYYMMDD or YYYY-MM-DD) for consistent formatting and correct interpretation.
 
 Sorting your files chronologically may look like this:
 ```
