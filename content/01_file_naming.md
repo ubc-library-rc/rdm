@@ -3,7 +3,6 @@ layout: default
 title: File Naming
 nav_order: 4
 ---
-<img src="figures/work-in-progress.png" width="500" style="margin-left:30px"/>
 
 # Why is File Naming Important?
 {: .no_toc }
@@ -67,7 +66,7 @@ The overall goals of good file names are:
 When using capital and/or lowercase letters, **be mindful of case sensitivity**. This is because some operating systems may search for file names in a certain case, such as only uppercase or lowercase letters.
 
 Also, it's best to **avoid empty spaces and special characters** because operating systems may use these to perform tasks. This could also make it difficult for your machine to read the file name properly.
-- Special characters such as: ~ ! @ # $ % ^ & * ( ) ` ; : < > ? . , [ ] { } ' " \ | 
+- Special characters such as: ~ ! @ # $ % ^ & * ( ) ` ; : < > ? . , [ ] { } ' " \ 
 
 <img src="figures/machine-reading.png" width="200" style="margin-left:30px"/>
 
@@ -94,7 +93,8 @@ File names should be **concise but detailed** enough to be understandable to you
  
 Lastly, avoid including application (software) details in your file names. For example, you don't need to add "doc" to the file name if that file is a text or Word document.
 
-Here are some more examples of good versus bad file names
+Here are some more examples of good versus bad file names:
+
 | *Poor file names* | *Better file names* |
 | -- | -- |
 | application.txt | ubc_application_letter.txt |
