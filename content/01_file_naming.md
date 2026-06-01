@@ -42,9 +42,9 @@ These example file names are better and more effective. We'll see why in the fol
 
 # Three principles for optimal file names  &nbsp; <img src="figures/thumbs-up.png" align="center" width="45"/>
 {: .no_toc }
-1. Machine-Readable
-2. Human-Readable
-3. Supports Default Ordering 
+1. Machine-readable
+2. Human-readable
+3. Supports default ordering 
 
 The overall goals of good file names are:
 - Have the file name characters be correctly handled by all computer systems
@@ -52,23 +52,21 @@ The overall goals of good file names are:
 - Have the file name be concise, yet descriptive
 - Be consistent with the chosen naming convention
 
-## *1*{: .circle .circle-blue} &nbsp; Machine-Readable 
+## *1*{: .circle .circle-blue} &nbsp; Machine-readable 
 ### Consider the following for your files to be machine-readable:
 {: .no_toc }
 - Use alphanumeric characters: Latin alphabetic characters (abc) and Arabic numerals (123)
 - Use a type of spacing case to separate file name elements:
    - Snake case: use <b>underscores</b> _ to separate words and numbers
+     `this_is_snake_case`
    - Camel case: use <b>capitalization</b> to separate words and numbers
+     `ThisIsCamelCase`
    - Hyphens: use <b>hyphens</b> – to separate words and numbers
+     `this-is-using-hyphens`
 
-Spacing case examples:
-- `this_is_snake_case`
-- ThisIsCamelCase`
-- `this-is-using-hyphens` 
- 
-When using capital and/or lowercase letters, be mindful of case sensitivity. This is because some operating systems may search for file names of a certain case, such as only capital letters or lowercase letters.
+When using capital and/or lowercase letters, **be mindful of case sensitivity**. This is because some operating systems may search for file names in a certain case, such as only uppercase or lowercase letters.
 
-Also, it's best to avoid empty spaces and special characters because these may be used by operating systems to perform tasks. This also could make it difficult for your machine to read the file name properly.
+Also, it's best to **avoid empty spaces and special characters** because operating systems may use these to perform tasks. This could also make it difficult for your machine to read the file name properly.
 - Special characters such as: ~ ! @ # $ % ^ & * ( ) ` ; : < > ? . , [ ] { } ' " \ | 
 
 <img src="figures/machine-reading.png" width="200" style="margin-left:30px"/>
@@ -84,66 +82,36 @@ What did you change and why?
 <img src="figures/cakes-example.jpeg" width="600" style="margin-left:30px"/>
 
 
-## *2*{: .circle .circle-red} &nbsp; Human-Readable
+## *2*{: .circle .circle-red} &nbsp; Human-readable
 ### Consider the following for files to be human-readable:
 {: .no_toc }
-- Have file names that follow a consistent naming method, and document this file naming method in your [README](https://ubc-library-rc.github.io/rdm/content/03_create_readme.html) file
-    - Especially if acronyms, abbreviations, and/or codes are used, you should define what they mean in your README file
+You should aim to be consistent in the way you name your files. The style you choose could be based on conventions adopted in a given project, organization, language, etc. For example, R and Python commonly use files with snake case, so your file and folder names should follow this convention.
 
- ### Be consistent:
-{: .no_toc }
-Make sure you're consistent in the way you name your files. The style you choose should be based on conventions adopted in a given project, organization, language, etc.
-- Example: R and Python use snake case, so file names and folder names should follow this convention
+You should also document your naming method in your [README file](https://ubc-library-rc.github.io/rdm/content/03_create_readme.html), especially if you're using acronyms, abbreviations, and/or special codes as part of your naming convention (which would need to be defined).
+
+File names should be **concise but detailed** enough to be understandable to you and anyone else with access. The amount of detail is up to you, but names shouldn't be *too* long. Our recommendation is **3 to 5 elements per file name**, or around 32 characters, and ordering these elements from general to specific to make searching easier.  
+- This is especially important for when you revisit your files in the future!
  
-- The file names should be concise but detailed enough so that they're still understandable to you and anyone else who has access
-    - The amount of detail is up to you, but the names shouldn't be *too* long - we recommend having 3 to 5 elements per file name, or under 32 characters
-    - This is especially important for the future!
-    - We recommend ordering elements from general to specific to make searching easier
-- Avoid including application (software) details in your file names
-    - Example: you don't need to add "doc" to the file name of a text document
+Lastly, avoid including application (software) details in your file names. For example, you don't need to add "doc" to the file name if that file is a text or Word document.
 
-More examples:
-```
-# not good
-a.txt
-
-# too much information
-ubc_application_letter_for_institution_position_firstname_lastname_final_date.txt
-
-# okay but can be a bit more detailed
-application.txt
-
-# not amazing, a bit too much detail
-clean_data_py_script.py
-
-# good, just enough detail
-ubc_application_letter.txt
-
-# good
-clean_data.py
-
-# also great
-FileNm_Guidelines_20180409_v01.docx
-```
+Here are some more examples of good versus bad file names
+| *Poor file names* | *Better file names* |
+| -- | -- |
+| application.txt | ubc_application_letter.txt |
+| ubc_guidelines_institution_position_firstname_lastname_final_date.txt | FileNm_Guidelines_20180409_v01.docx |
+| clean_data_py_script.py | clean_data_script.py |
 
 <img src="figures/human-reading.jpg" width="200" style="margin-left:30px"/>
 
 
-## *3*{: .circle .circle-yellow} &nbsp; Supports Default Ordering 
-<img src="figures/comic.gif" width="200" style="margin-left:30px"/>
-
-### Goals:
-{: .no_toc }
-- Decide at the beginning how you want to sort and search for your files to ensure a good hierarchical directory structure:
-     - Chronological order
-     - Logical order
-- Versioning and version types should be added as the last element
+## *3*{: .circle .circle-yellow} &nbsp; Supports default ordering 
+At the start of naming your files, decide how you want to sort and search for your files to have a good hierarchical directory structure. Some people want their files to sort themselves without manual organization, and the two common ways to achieve this are by using a chronological or logical system.  
 
 ### Chronological order
 {: .no_toc }
-Use <a href="http://www.w3.org/TR/NOTE-datetime" target="_blank">ISO 8601 standard</a>: <b>YYYYMMDD</b> or <b>YYYY-MM-DD</b> for consistent formatting and correct interpretation of dates.
+Using a chronological ordering system includes having the date as the first element. This date should follow the [ISO 8601 standard](http://www.w3.org/TR/NOTE-datetime) for consistent formatting and correct interpretation.
 
-Sorting your files chronologically (having the date as the first name element) may look like this:
+Sorting your files chronologically may look like this:
 ```
 2024-01-01_subject_1_results.xlsx
 2024-01-01_subject_2_results.xlsx
@@ -153,10 +121,9 @@ Sorting your files chronologically (having the date as the first name element) m
 
 ### Logical order
 {: .no_toc }
-When using a sequential numbering system, use <b>leading zeros</b> to make sure files sort in sequential order
-- Examples: 001, 002, 010, 011...
+Using a logical ordering system includes sequential numbers as the first element. However, make sure to include **leading zeros** as the first digit(s) so that files sort themselves logically. For example: 01, 02, 03, 001, 002, 003, 010, 012, 013, etc. 
 
-Sorting your files logically (using leading zeros) may look like this:
+Sorting your files logically may look like this:
 ```
 00_innit.R
 01_read_data.R
@@ -167,32 +134,28 @@ helper01_load_variables.R
 helper02_functions.R
 ```
 
-### Version Number and Version Types
+### Version number and version type
 {: .no_toc }
-Adding a version to the file name should be the last element.
+If you decide to add a version number and/or version type as a part of your file name, these should be placed as the **last** element. 
+- Version numbers should include leading zeros too. For example: V01, V02, V03, etc.
+- Version types should be separated with a spacing case as mentioned previously. For example: _raw, _processed, _composite, etc.
 
-Use at least 2 digits with a leading zero for the version number, and/or indicate the version type.
-   - Version number examples: V01, V03, etc.
-   - Version type examples: _raw, _processed, _composite, etc.
+<img src="figures/comic.gif" width="200" style="margin-left:30px"/>
 
 ### Exercise 2
 {: .no_toc }
 {: .label .label-green }
 
-Your lab has a spectrometer that measures thermal emissions once a day for a year for your experiment. There are three people who take that measurement in the lab.
+Your lab has a spectrometer that measures thermal emissions once a day for a year as part of your experiment. There are three people in your research team who also help take those measurements in the lab.
 
-Have a try at creating a file naming convention for these files to reflect what you learned about today's session. 
-
-How did you structure your file names and why? 
+Try creating a file naming convention for these files to reflect what you've learned. How did you structure your file names and why? 
 
 <img src="figures/thermometer.jpg" width="200" style="margin-left:30px"/>
-
-[//]: # (activity link: https://bit.ly/rdmactivity)
 
 <br>
 
 <b>Here is a breakdown of what we covered:</b>
-File names should be machine-readable: use alphanumerical characters with snake or camel case, and don't have spaces or special characters. File names should also be human-readable: clear, concise, and follow a consistent naming method. Lastly, a good file naming convention helps with sorting and searching your files.
+File names should be machine-readable: use alphanumeric characters with snake or camel case, and don't have spaces or special characters. File names should also be human-readable: clear, concise, and follow a consistent naming method. Lastly, a good file naming convention helps with sorting and searching your files.
 {: .note}
 
 # Congrats!
