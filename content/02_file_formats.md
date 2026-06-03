@@ -13,7 +13,7 @@ nav_order: 5
 
 <p style="margin-bottom: 20px"></p>
 
-A file format encodes information within a computer file so that it can be recognized by an application and accessed. The file name extension helps indicate the kind of format being used. Each file type (such as text, images, or sound, for example) has many file formats available. 
+A file format encodes information within a computer file so that it can be recognized by an application and accessed. The file name extension helps indicate the kind of format being used. Each file type (such as text, images, or sound) has many file formats available. 
 
 Software and data storage technology change quickly, and files can become obsolete or difficult to access. In general, data files should be copied to new media every 2-5 years, especially if technology changes or if files begin to degrade. We strongly recommend using non-proprietary (open) file formats because it's important for preserving readability and long-term access for you and anyone else.
 
@@ -22,7 +22,6 @@ Software and data storage technology change quickly, and files can become obsole
 Looking for a cheat sheet? Check out our <a href="https://osf.io/ena5p" target="_blank">one-pager</a>!
 {: .note}
   
-
 <details open markdown="block">
   <summary>
     Table of contents
@@ -39,9 +38,8 @@ Looking for a cheat sheet? Check out our <a href="https://osf.io/ena5p" target="
 
 A dancing club in Saskatoon has kept its documents since the early 2000s. Recently, a club member wanted to refer back to an older agenda from July 5th, 2003, but was unsuccessful in opening and viewing its contents properly. Below is the agenda file the club member wanted to open. 
 
-Have a try at downloading the file in the WordPerfect format <a href="exercise_files/Agenda July 5th.wpd" target="_blank"> here </a>. Could you successfully open and view its contents on your machine? What do you notice? 
+Have a try at downloading the file in the WordPerfect format <a href="exercise_files/Agenda July 5th.wpd" target="_blank"> here</a>. Could you successfully open and view its contents on your machine? What do you notice? 
       
-
 ---
 <b>What are some file formats you use often?</b> 
 - .xls (Microsoft Excel) 
@@ -49,43 +47,43 @@ Have a try at downloading the file in the WordPerfect format <a href="exercise_f
 - .doc (Microsoft Word) 
 - .gdoc (Google Document)
 
-<p style="margin-bottom: 25px"></p>
-
-These are some commonly used file formats. However, these are not recommended for data curation because they are proprietary! In other words, these common formats are unsustainable. <img src="figures/say-no.png" width="20">
-
-<p style="margin-bottom: 30px"></p>
+These may be commonly used file formats, but they’re not recommended for data curation because they’re proprietary. These kinds of formats aren't sustainable and may cause access issues in the future.
 
 <img src="figures/shock.png" width="150" style="margin-left:30px"/>
 
 ---
 
-## What are proprietary formats?
+## What are proprietary file formats?
 
-A file format is considered *proprietary* when it's limited by software patents, lack of format specification details, or built-in encryption to prevent open usage by the public. 
+A file format is considered *proprietary* when it's limited by software patents, has a lack of format specification details, or has built-in encryption to prevent open usage by the public. As a result, specific software from a vendor (that may be inaccessible, like high costs) is required to use that proprietary format. 
 
-This results in requiring specific software from a vendor to use the proprietary format. In some cases, an industry may treat specific file formats as the de facto standard even if the formats are proprietary and rely on expensive software.
+However, in some cases, an industry may treat specific file formats as the de facto standard, even if they are proprietary and rely on expensive software.  
 
-You have noticed that the file in the warm-up exercise was an older proprietary file that can no longer be opened. This inaccessibility can happen to other proprietary formats like Microsoft Word or Google Docs.
+In your research, if you're using a specific proprietary format but want to ensure that your files are accessible in the future, here are some potential solutions:
+- Save your raw data in its original, possibly proprietary, format and convert its derivatives/copies into a non-proprietary format to work with. Working with derivatives/copies will help protect the raw data from accidental data deletion or modification
+- Include a section in your [README file](https://ubc-library-rc.github.io/rdm/content/03_create_readme.html) to document and inform others about your file format decisions, along with any available file derivatives in a non-proprietary format
 
-<img src="figures/encryption.jpg" width="200" style="margin-left:30px"/>
+You may have noticed that the WordPerfect file in the warm-up exercise couldn't be opened easily because it's a proprietary format. You may have been able to open it, but its contents may have been incomprehensible. This same kind of situation can also apply to other well-known file formats like Word or Google Docs. Once you no longer have proper access to use these kinds of software, how will you access your files?
+
+<img src="figures/encryption.jpg" width="150" style="margin-left:30px"/>
 
 <p style="margin-bottom: 50px"></p>
 
-## What are non-proprietary (open) formats?
+## What are non-proprietary (open) file formats?
 
-A file format is considered *non-proprietary* when its specifications are released, so open-source developers can write software to utilize the file format in case a particular vendor no longer supports the format. 
+A file format is considered *non-proprietary* when its specifications are available. This allows open-source developers to write software that can use the file format(s), in case a particular vendor no longer supports the format. 
 
-Qualities of open-format files:
+Open file formats typically have similar qualities, such as:
 - Freely available to use by everyone: unencrypted and uncompressed
 - Has a decreased risk of technical obsolescence because it's not reliant on specific software
 - Standard representation (such as ASCII or Unicode) and standard documentation
 - Commonly used by the research community
 
-<img src="figures/open-source.jpg" width="200" style="margin-left:30px"/>
+Using open formats means that you don't have to worry about relying on special software to read and use those files. Overall, you can expect that the open-formatted file can be better preserved and accessible in the future. 
 
-<p style="margin-bottom: 50px"></p>
+<img src="figures/open-source.jpg" width="150" style="margin-left:30px"/>
 
-## Other considerations 
+## Additional considerations 
 
 File quality and file size:
 - File quality refers to the representation of an item's characteristics
@@ -93,12 +91,9 @@ File quality and file size:
 
 ## We recommend these common file formats
 
-<p style="margin-bottom: 20px"></p>
-
-
-| File Type | Recommended Formats                      | Avoided Formats                |
+| File type | Recommended formats                      | Avoided formats                |
 |-----------|------------------------------------------|--------------------------------|
-| Text      | .txt, PDF, XML, HTML, .docx, RTF           | .doc, .wpd                     |
+| Digital Text      | .txt, PDF, XML, HTML, .docx, RTF           | .doc, .wpd                     |
 | Digital Images    | TIFF, JPEG2000, JPEG/JFIF, PNG, PDF      | RAW, Adobe Photoshop           |
 | Digital Videos     | MKV, MPEG-4, MOV                          | .wmv                           |
 | Digital Audios     | WAVE, MP3, FLAC, AIFF                     | CD, DVD, .m4p, xmi, .mod       |
@@ -111,8 +106,6 @@ File quality and file size:
 {: .no_toc}
 {: .label .label-green }
 
-<p style="margin-bottom: 10px"></p>
-
 Help us to preserve datasets for the long term! Download the Excel file ( .xls) from the dataset below and convert it to CSV.
   
 Access this dataset here:  
@@ -121,9 +114,6 @@ Access this dataset here:
 How did you convert the Excel file into a CSV file? What did you notice?
 
 <img src="figures/bottles.jpg" width="200"/>
-<p style="margin-bottom: 20px"></p>
-
-[//]: # (activity link: https://bit.ly/rdmactivity)
 
 <br>
 
