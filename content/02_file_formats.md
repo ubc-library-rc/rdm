@@ -4,6 +4,10 @@ title: File Formats
 nav_order: 5
 ---
 
+
+<img src="figures/work-in-progress.png" width="600"/>
+
+
 # File Formats for Data Curation
 {: .no_toc }
 
@@ -33,17 +37,10 @@ Looking for a cheat sheet? Check out our <a href="https://osf.io/ena5p" target="
 {: .no_toc}
 {: .label .label-green }
 
-<p style="margin-bottom: 10px"></p>
+A dancing club in Saskatoon has kept its documents since the early 2000s. Recently, a club member wanted to refer back to an older agenda from July 5th, 2003, but was unsuccessful in opening and viewing its contents properly. Below is the agenda file the club member wanted to open. 
 
-A dancing club in Saskatoon has kept its documents since the early 2000s. Recently, a club member wanted to refer back to an agenda from July 5, 2003, but was unable to open it. Please see the WordPerfect file below.  
-    
-Could you <a href="exercise_files/Agenda July 5th.wpd" target="_blank"> download that document </a>  and try to recover it on your machine? 
-
-What do you notice? 
-    
-[//]: # (activity link: https://bit.ly/rdmactivity)
-
-<p style="margin-bottom: 25px"></p>
+Have a try at downloading the file in the WordPerfect format <a href="exercise_files/Agenda July 5th.wpd" target="_blank"> here </a>. Could you successfully open and view its contents on your machine? What do you notice? 
+      
 
 ---
 <b>What are some file formats you use often?</b> 
