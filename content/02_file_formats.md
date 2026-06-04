@@ -79,26 +79,30 @@ Open file formats typically have similar qualities, such as:
 - Standard representation (such as ASCII or Unicode) and standard documentation
 - Commonly used by the research community
 
-Using open formats means that you don't have to worry about relying on special software to read and use those files. Overall, you can expect that the open-formatted file can be better preserved and accessible in the future. 
+Using open formats means you don't have to worry about relying on a single special software to read and use those files -- they can be opened in various software. You can expect that these files in an open format are better preserved and accessible in the future. 
 
 <img src="figures/open-source.jpg" width="150" style="margin-left:30px"/>
 
-## Additional considerations 
+## Additional considerations: File quality and file size 
 
-File quality and file size:
-- File quality refers to the representation of an item's characteristics
-- The file quality affects the file format used. The encoding that handles high resolution will have larger file sizes than lower-quality file formats. The trade-off is the cost of storage space and the convenience of sharing the file with others
+File quality refers to the representation of an item's characteristics, such as its level of compression (for image files, for example). 
 
-## We recommend these common file formats
+The file quality and size will depend on the kind of file format used. File formats encoded with a high quality will typically result in larger file sizes, compared to file formats encoded with a lower quality, which typically result in smaller file sizes. 
 
-| File type | Recommended formats                      | Avoided formats                |
+The trade-off is the cost of storage space, machine capability (if your machine can handle large files), and the convenience of sharing the file(s) with others. Therefore, you should consider your options carefully. 
+
+## Common file format examples
+
+This table contains file formats that are recommended for good future preservation and accessibility. For more specific information, please refer to the sources listed at the end of this workshop. 
+
+| File type | Recommended formats (shown as file extension)                      | Avoided formats                |
 |-----------|------------------------------------------|--------------------------------|
-| Digital Text      | .txt, PDF, XML, HTML, .docx, RTF           | .doc, .wpd                     |
-| Digital Images    | TIFF, JPEG2000, JPEG/JFIF, PNG, PDF      | RAW, Adobe Photoshop           |
-| Digital Videos     | MKV, MPEG-4, MOV                          | .wmv                           |
-| Digital Audios     | WAVE, MP3, FLAC, AIFF                     | CD, DVD, .m4p, xmi, .mod       |
-| Datasets   | CSV, TSV, .db, Shapefile, .xlsx | .xls                           |
-| Web Data  | JSON, XML, HTML                          |                                |
+| Digital text      | .txt, .pdf, .xml, .html, .docx, .rtf           | .doc, .wpd                     |
+| Digital images    | .tiff, JPEGs (such as .jpg2, .jpeg, .jfif), .png, .pdf      | Camera raw formats (such as .arw and .cr2), Adobe Photoshop           |
+| Digital videos     | .mkv, MPEG-4s (.mp4 and .m4a), .mov                          | .wmv                           |
+| Digital audio     | .wav, .mp3, .flac, aiff                     | CD, DVD, .m4p, .xmi, .mod       |
+| Datasets   | .csv, .tsv, .db, .shp, .xlsx | .xls                           |
+| Web data  | .json, .xml, .html                          |                                |
 
 <br>
 
@@ -106,14 +110,16 @@ File quality and file size:
 {: .no_toc}
 {: .label .label-green }
 
-Help us to preserve datasets for the long term! Download the Excel file ( .xls) from the dataset below and convert it to CSV.
+Let's convert a proprietary file into an open format for the future! 
+
+Below is a dataset containing an .xls file, the proprietary Excel format. Please download the Excel file from the dataset and try converting it to a .csv format. 
   
-Access this dataset here:  
+Access the dataset here:  
 >Yarmand, Shahram, 2019, "Replication data for: Stochastic and Deterministic Modeling of the Future Price of Crude oil and Bottled Water", <a href="https://doi.org/10.5683/SP2/VPF8J8" target="_blank"> https://doi.org/10.5683/SP2/VPF8J8</a>, Borealis, V1
 
-How did you convert the Excel file into a CSV file? What did you notice?
+How did you convert the Excel file into a CSV file? 
 
-<img src="figures/bottles.jpg" width="200"/>
+<img src="figures/bottles.jpg" width="150"/>
 
 <br>
 
