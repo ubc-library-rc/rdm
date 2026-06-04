@@ -5,9 +5,6 @@ nav_order: 5
 ---
 
 
-<img src="figures/work-in-progress.png" width="600"/>
-
-
 # File Formats for Data Curation
 {: .no_toc }
 
@@ -87,7 +84,7 @@ Using open formats means you don't have to worry about relying on a single speci
 
 File quality refers to the representation of an item's characteristics, such as its level of compression (for image files, for example). 
 
-The file quality and size will depend on the kind of file format used. File formats encoded with a high quality will typically result in larger file sizes, compared to file formats encoded with a lower quality, which typically result in smaller file sizes. 
+The file *quality* and *size* will depend on the kind of file format used. File formats encoded with a high quality will typically result in larger file sizes, compared to file formats encoded with a lower quality, which typically result in smaller file sizes. 
 
 The trade-off is the cost of storage space, machine capability (if your machine can handle large files), and the convenience of sharing the file(s) with others. Therefore, you should consider your options carefully. 
 
@@ -95,14 +92,14 @@ The trade-off is the cost of storage space, machine capability (if your machine 
 
 This table contains file formats that are recommended for good future preservation and accessibility. For more specific information, please refer to the sources listed at the end of this workshop. 
 
-| File type | Recommended formats (shown as file extension)                      | Avoided formats                |
+| File type | Recommended formats (shown as the file extension)                      | Avoided formats                |
 |-----------|------------------------------------------|--------------------------------|
-| Digital text      | .txt, .pdf, .xml, .html, .docx, .rtf           | .doc, .wpd                     |
-| Digital images    | .tiff, JPEGs (such as .jpg2, .jpeg, .jfif), .png, .pdf      | Camera raw formats (such as .arw and .cr2), Adobe Photoshop           |
-| Digital videos     | .mkv, MPEG-4s (.mp4 and .m4a), .mov                          | .wmv                           |
-| Digital audio     | .wav, .mp3, .flac, aiff                     | CD, DVD, .m4p, .xmi, .mod       |
-| Datasets   | .csv, .tsv, .db, .shp, .xlsx | .xls                           |
-| Web data  | .json, .xml, .html                          |                                |
+| Digital text      | .docx, .html, .pdf, .rtf, .txt, .xml           | .doc, .wpd                     |
+| Digital images    | JPEGs (such as .jpg2, .jpeg, .jfif), .pdf, .png, .tiff    | Adobe Photoshop, camera raw formats (such as .arw and .cr2)            |
+| Digital videos     | .mkv, .mov, MPEG-4s (such as .mp4 and .m4a)                          | .wmv                           |
+| Digital audio     | .aiff, .flac, .mp3, .wav                | CD, DVD, .m4p, .mod, .xmi       |
+| Datasets   | .csv, .db, .shp, .tsv, .xlsx | .xls                           |
+| Web data  | .html, .json, .xml                       |                                |
 
 <br>
 
