@@ -90,7 +90,7 @@ The trade-off is the cost of storage space, machine capability (if your machine 
 
 ## Common file format examples
 
-This table contains file formats that are recommended for good future preservation and accessibility. For more specific information, please refer to the sources listed at the end of this workshop. 
+This table has recommended file formats for good preservation and accessibility, as well as file formats to avoid. For more specific information, please refer to the sources listed at the end of this workshop. 
 
 | File type | Recommended formats (shown as the file extension)                      | Avoided formats                |
 |-----------|------------------------------------------|--------------------------------|
