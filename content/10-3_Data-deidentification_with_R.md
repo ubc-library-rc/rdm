@@ -62,6 +62,15 @@ As a reminder, please make sure you’re working with a duplicate/copy file of y
 
 ---
 
+---
+title: "Worker Satisfaction Survey — Data De-identification Workbook"
+author: "Data De-identification Advisor"
+date: "June 08, 2026"
+---
+
+
+
+
 # Introduction
 
 This workbook guides you through de-identifying the **Apple Grower Satisfaction Survey** (`WorkerSatisfaction_300rows.xlsx`: 300 rows, 16 columns).
@@ -136,6 +145,7 @@ Do not edit the raw source file (`WorkerSatisfaction_300rows.xlsx`).
 | `writexl` | Export Excel outputs                |
 
 Run **Install packages** once if a package is missing.
+
 
 ```{r install-packages}
 # install.packages("readxl")
