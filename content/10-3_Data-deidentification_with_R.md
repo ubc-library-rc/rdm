@@ -958,4 +958,3 @@ Store separately from WorkerSatisfaction_300rows_deidentified.xlsx — never on 
 
 The de-identified dataset keeps all satisfaction and treatment ratings for analysis while substantially lowering re-identification risk. **The data key is highly sensitive** — it links pseudonym codes back to real names, emails, and locations for Steps 1 and 3 only. Protect and store it separately.
 
-
