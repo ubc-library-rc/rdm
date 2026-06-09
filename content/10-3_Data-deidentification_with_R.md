@@ -138,22 +138,20 @@ Do not edit the raw source file (`WorkerSatisfaction_300rows.xlsx`).
 Run **Install packages** once if a package is missing.
 
 
-```r
+```{r install-packages}
 # install.packages("readxl")
 # install.packages("dplyr")
 # install.packages("writexl")
 # install.packages(c("readxl", "dplyr", "writexl"))
 ```
 
-
-```r
+```{r packages}
 library(readxl)
 library(dplyr)
 library(writexl)
 ```
 
-
-```r
+```{r constants}
 DATA_FILE   <- "WorkerSatisfaction_300rows.xlsx"
 OUTPUT_FILE <- "WorkerSatisfaction_300rows_deidentified.xlsx"
 KEY_DIR     <- "data_key_file"
@@ -164,27 +162,19 @@ K_THRESHOLD <- 5
 **k-anonymity threshold:** categories with fewer than 5 records will be pooled before anonymization.
 
 
-```r
+```{r show-constants}
 cat("K_THRESHOLD =", K_THRESHOLD, "\n")
-```
-
-
-**Output:**
-
-```text
-K_THRESHOLD = 5
-```
-
-```r
 cat("Data key file:", KEY_FILE, "\n")
 ```
 
+```
+K_THRESHOLD = 5
+```
 
-**Output:**
-
-```text
+```
 Data key file: data_key_file/WorkerSatisfaction_data_key_DUMMY.xlsx
 ```
+
 
 ------------------------------------------------------------------------
 
@@ -195,44 +185,36 @@ Load the unmodified survey and review what makes the data identifiable.
 ## 2.1 Load raw data
 
 
-```r
+```{r load-raw}
 raw <- read_excel(DATA_FILE, sheet = "Unmodified data")
 
 cat("Raw data:", nrow(raw), "rows ×", ncol(raw), "columns\n")
-```
-
-
-**Output:**
-
-```text
-Raw data: 300 rows × 16 columns
-```
-
-```r
 head(raw, 10)
 ```
 
+```
+Raw data: 300 rows × 16 columns
+```
 
-**Output:**
-
-```text
+```
 # A tibble: 10 × 16
-   worker_id        email_id age                 immigration_stat city  province
-   <chr>            <chr>    <dttm>              <chr>            <chr> <chr>   
- 1 James Strange    james.s… 1998-09-10 00:00:00 Non-immigrant    Kelo… B.C.    
- 2 Maya Liya        maya.li… 1994-08-04 00:00:00 Immigrant        Kelo… B.C.    
- 3 Amelio Beal      amelio.… 1995-01-02 00:00:00 Non-permanent r… West… B.C.    
- 4 Cara Sahara      cara.sa… 1991-03-22 00:00:00 Non-permanent r… West… B.C.    
- 5 Neiv Rieg        neivr@g… 1990-07-15 00:00:00 Non-permanent r… Vict… B.C.    
- 6 Troy Ahoy        tahoy@y… 1988-06-06 00:00:00 Immigrant        Vict… B.C.    
- 7 Dave Mahew       dmahew@… 2000-11-11 00:00:00 Non-immigrant    Vern… B.C.    
- 8 Jamie Thomas     jamiet@… 1992-12-18 00:00:00 Immigrant        Vern… B.C.    
- 9 Betty Stills     bettys5… 1997-09-06 00:00:00 Non-permanent r… Cobb… B.C.    
+worker_id        email_id age                 immigration_stat city  province
+<chr>            <chr>    <dttm>              <chr>            <chr> <chr>   
+1 James Strange    james.s… 1998-09-10 00:00:00 Non-immigrant    Kelo… B.C.    
+2 Maya Liya        maya.li… 1994-08-04 00:00:00 Immigrant        Kelo… B.C.    
+3 Amelio Beal      amelio.… 1995-01-02 00:00:00 Non-permanent r… West… B.C.    
+4 Cara Sahara      cara.sa… 1991-03-22 00:00:00 Non-permanent r… West… B.C.    
+5 Neiv Rieg        neivr@g… 1990-07-15 00:00:00 Non-permanent r… Vict… B.C.    
+6 Troy Ahoy        tahoy@y… 1988-06-06 00:00:00 Immigrant        Vict… B.C.    
+7 Dave Mahew       dmahew@… 2000-11-11 00:00:00 Non-immigrant    Vern… B.C.    
+8 Jamie Thomas     jamiet@… 1992-12-18 00:00:00 Immigrant        Vern… B.C.    
+9 Betty Stills     bettys5… 1997-09-06 00:00:00 Non-permanent r… Cobb… B.C.    
 10 Enrique Iglasias ei123@h… 1985-10-16 00:00:00 Non-permanent r… Cobb… B.C.    
 # ℹ 10 more variables: orchard_id <chr>, owner_id <chr>, username_id <chr>,
 #   sns_worked <dbl>, sat_hrs <dbl>, trt_workers <dbl>, trt_manager <dbl>,
 #   cmf_manager <dbl>, sat_work_overall <dbl>, comments <chr>
 ```
+
 
 ## 2.2 Step 1 — Direct identifiers (pseudonymization)
 
@@ -249,7 +231,7 @@ These variables point to a specific person. They will be **pseudonymized** in St
 The column `age` stores **date of birth**, not a numeric age. Exact DOB is a strong quasi-identifier when combined with location and employer.
 
 
-```r
+```{r dob-explore}
 data.frame(
   earliest     = as.character(min(as.Date(raw$age))),
   latest       = as.character(max(as.Date(raw$age))),
@@ -257,13 +239,11 @@ data.frame(
 )
 ```
 
-
-**Output:**
-
-```text
-    earliest     latest unique_dates
+```
+earliest     latest unique_dates
 1 1970-02-20 2000-11-11          295
 ```
+
 
 Exact DOB will be replaced with **5-year age bands** in Step 2 (aggregation).
 
@@ -272,58 +252,54 @@ Exact DOB will be replaced with **5-year age bands** in Step 2 (aggregation).
 `city` has 12 levels; `province` is always B.C. Small groups are easier to re-identify. Orchard names link respondents to a specific workplace. Both will be pseudonymized in Step 3.
 
 
-```r
+```{r geo-explore}
 raw |> count(city, sort = TRUE)
 ```
 
-
-**Output:**
-
-```text
+```
 # A tibble: 12 × 2
-   city             n
-   <chr>        <int>
- 1 Victoria        33
- 2 Summerland      32
- 3 Keremeos        31
- 4 Kelowna         29
- 5 West Kelowna    29
- 6 Peachland       27
- 7 Cobble Hill     26
- 8 Vernon          24
- 9 Naramata        18
+city             n
+<chr>        <int>
+1 Victoria        33
+2 Summerland      32
+3 Keremeos        31
+4 Kelowna         29
+5 West Kelowna    29
+6 Peachland       27
+7 Cobble Hill     26
+8 Vernon          24
+9 Naramata        18
 10 Oliver          18
 11 Osoyoos         17
 12 Penticton       16
 ```
 
+
 > **Note:** If any city had fewer than 5 records, we would pool it into `"Other BC community"` before pseudonymizing.
 
 
-```r
+```{r orchard-explore}
 raw |> count(orchard_id, sort = TRUE)
 ```
 
-
-**Output:**
-
-```text
+```
 # A tibble: 12 × 2
-   orchard_id              n
-   <chr>               <int>
- 1 Billie's Apples        33
- 2 Okanagan Fresh         32
- 3 Valley View Apples     31
- 4 Applejacks             29
- 5 West Kelowna Apples    29
- 6 Lakeside Groves        27
- 7 Country Apples         26
- 8 Bon Appletit           24
- 9 Golden Valley Farms    18
+orchard_id              n
+<chr>               <int>
+1 Billie's Apples        33
+2 Okanagan Fresh         32
+3 Valley View Apples     31
+4 Applejacks             29
+5 West Kelowna Apples    29
+6 Lakeside Groves        27
+7 Country Apples         26
+8 Bon Appletit           24
+9 Golden Valley Farms    18
 10 Ridgeline Orchard      18
 11 Peak Harvest Co        17
 12 Sunrise Orchards       16
 ```
+
 
 > **Note:** Replace orchard names with non-descriptive codes (`Orchard_01`, …).
 
@@ -336,49 +312,39 @@ These variables cannot be safely shared in their original form. **Anonymization*
 Small category counts increase re-identification risk. Pool any group below the k-anonymity threshold into a broader label.
 
 
-```r
+```{r geo-immigration-check}
 raw |> count(immigration_stat, sort = TRUE)
 ```
 
-
-**Output:**
-
-```text
+```
 # A tibble: 3 × 2
-  immigration_stat           n
-  <chr>                  <int>
+immigration_stat           n
+<chr>                  <int>
 1 Non-permanent resident   107
 2 Non-immigrant            103
 3 Immigrant                 90
 ```
 
 
-```r
+
+```{r immigration-rare}
 rare_immigration <- raw |>
   count(immigration_stat) |>
   filter(n < K_THRESHOLD) |>
   pull(immigration_stat)
 
 cat("Rare immigration groups (n <", K_THRESHOLD, "):\n")
-```
-
-
-**Output:**
-
-```text
-Rare immigration groups (n < 5 ):
-```
-
-```r
 rare_immigration
 ```
 
+```
+Rare immigration groups (n < 5 ):
+```
 
-**Output:**
-
-```text
+```
 character(0)
 ```
+
 
 > **Note:** In this dataset all immigration groups meet the threshold. The pooling logic in Step 4 still runs as a safeguard.
 
@@ -391,31 +357,29 @@ Social-media handles are quasi-identifiers (265 unique values; 36 missing). They
 The `comments` field can name people, employers, platforms, and birth years — even after other columns are cleaned.
 
 
-```r
+```{r comments-risk}
 raw |>
   filter(comments != "None") |>
   slice(1:10) |>
   select(comments)
 ```
 
-
-**Output:**
-
-```text
+```
 # A tibble: 10 × 1
-   comments                                                                     
-   <chr>                                                                        
- 1 I get that I'm a farm worker and grinding is part of the job, but it'd be ni…
- 2 I don't mind the actual work, but the people I work with and the owners like…
- 3 I only like this job because I can make good money, everything else sucks. I…
- 4 The hours and work are hard, but it's good money and I love the team we have…
- 5 Hard but great work                                                          
- 6 I'm an apple picker, it is what it is                                        
- 7 It's a good summer job to help me pay for school, definitely not something I…
- 8 The owner's wife is such a sweetheart, but I don't like the owner himself.  …
- 9 I hate this job and everybody who works here.  the guys I work with are awfu…
+comments                                                                     
+<chr>                                                                        
+1 I get that I'm a farm worker and grinding is part of the job, but it'd be ni…
+2 I don't mind the actual work, but the people I work with and the owners like…
+3 I only like this job because I can make good money, everything else sucks. I…
+4 The hours and work are hard, but it's good money and I love the team we have…
+5 Hard but great work                                                          
+6 I'm an apple picker, it is what it is                                        
+7 It's a good summer job to help me pay for school, definitely not something I…
+8 The owner's wife is such a sweetheart, but I don't like the owner himself.  …
+9 I hate this job and everybody who works here.  the guys I work with are awfu…
 10 I don't love the job but I stay for the money and the routine.
 ```
+
 
 > **Note:** Remove `comments` entirely in Step 4. Free text cannot be reliably anonymized without manual review.
 
@@ -426,7 +390,7 @@ raw |>
 Apply each step from Part 2 in order. Run chunks sequentially; each step shows **10 rows** of the updated dataframe.
 
 
-```r
+```{r step1-vars}
 step1_ids <- c("worker_id", "email_id", "owner_id")
 ```
 
@@ -435,7 +399,7 @@ step1_ids <- c("worker_id", "email_id", "owner_id")
 Replace `worker_id`, `email_id`, and `owner_id` with non-descriptive codes. Store mappings in the data key (Part 4).
 
 
-```r
+```{r step1-pseudonymize-direct}
 step1 <- raw |>
   mutate(
     worker_id = paste0("Worker_", sprintf("%03d", as.integer(factor(worker_id)))),
@@ -444,35 +408,26 @@ step1 <- raw |>
   )
 
 cat("Step 1:", nrow(step1), "rows ×", ncol(step1), "columns\n")
-```
-
-
-**Output:**
-
-```text
-Step 1: 300 rows × 16 columns
-```
-
-```r
 head(step1, 10)
 ```
 
+```
+Step 1: 300 rows × 16 columns
+```
 
-**Output:**
-
-```text
+```
 # A tibble: 10 × 16
-   worker_id  email_id  age                 immigration_stat      city  province
-   <chr>      <chr>     <dttm>              <chr>                 <chr> <chr>   
- 1 Worker_114 Email_110 1998-09-10 00:00:00 Non-immigrant         Kelo… B.C.    
- 2 Worker_170 Email_163 1994-08-04 00:00:00 Immigrant             Kelo… B.C.    
- 3 Worker_010 Email_011 1995-01-02 00:00:00 Non-permanent reside… West… B.C.    
- 4 Worker_035 Email_033 1991-03-22 00:00:00 Non-permanent reside… West… B.C.    
- 5 Worker_194 Email_193 1990-07-15 00:00:00 Non-permanent reside… Vict… B.C.    
- 6 Worker_276 Email_261 1988-06-06 00:00:00 Immigrant             Vict… B.C.    
- 7 Worker_054 Email_057 2000-11-11 00:00:00 Non-immigrant         Vern… B.C.    
- 8 Worker_117 Email_114 1992-12-18 00:00:00 Immigrant             Vern… B.C.    
- 9 Worker_022 Email_021 1997-09-06 00:00:00 Non-permanent reside… Cobb… B.C.    
+worker_id  email_id  age                 immigration_stat      city  province
+<chr>      <chr>     <dttm>              <chr>                 <chr> <chr>   
+1 Worker_114 Email_110 1998-09-10 00:00:00 Non-immigrant         Kelo… B.C.    
+2 Worker_170 Email_163 1994-08-04 00:00:00 Immigrant             Kelo… B.C.    
+3 Worker_010 Email_011 1995-01-02 00:00:00 Non-permanent reside… West… B.C.    
+4 Worker_035 Email_033 1991-03-22 00:00:00 Non-permanent reside… West… B.C.    
+5 Worker_194 Email_193 1990-07-15 00:00:00 Non-permanent reside… Vict… B.C.    
+6 Worker_276 Email_261 1988-06-06 00:00:00 Immigrant             Vict… B.C.    
+7 Worker_054 Email_057 2000-11-11 00:00:00 Non-immigrant         Vern… B.C.    
+8 Worker_117 Email_114 1992-12-18 00:00:00 Immigrant             Vern… B.C.    
+9 Worker_022 Email_021 1997-09-06 00:00:00 Non-permanent reside… Cobb… B.C.    
 10 Worker_064 Email_061 1985-10-16 00:00:00 Non-permanent reside… Cobb… B.C.    
 # ℹ 10 more variables: orchard_id <chr>, owner_id <chr>, username_id <chr>,
 #   sns_worked <dbl>, sat_hrs <dbl>, trt_workers <dbl>, trt_manager <dbl>,
@@ -480,19 +435,17 @@ head(step1, 10)
 ```
 
 
-```r
+
+```{r step1-id-counts}
 step1 |>
   select(all_of(step1_ids)) |>
   slice(1:5)
 ```
 
-
-**Output:**
-
-```text
+```
 # A tibble: 5 × 3
-  worker_id  email_id  owner_id
-  <chr>      <chr>     <chr>   
+worker_id  email_id  owner_id
+<chr>      <chr>     <chr>   
 1 Worker_114 Email_110 Owner_03
 2 Worker_170 Email_163 Owner_03
 3 Worker_010 Email_011 Owner_08
@@ -500,12 +453,13 @@ step1 |>
 5 Worker_194 Email_193 Owner_02
 ```
 
+
 ## Step 2: Aggregation for the age variable
 
 Replace exact date of birth with **5-year age bands**.
 
 
-```r
+```{r step2-aggregate-age}
 to_age_band <- function(dob) {
   yrs <- as.integer(difftime(Sys.Date(), as.Date(dob), units = "days") / 365.25)
   if (yrs < 25)      "18-24"
@@ -521,47 +475,39 @@ step2 <- step1 |>
   relocate(age_band, .before = immigration_stat)
 
 cat("Step 2:", nrow(step2), "rows ×", ncol(step2), "columns\n")
-```
-
-
-**Output:**
-
-```text
-Step 2: 300 rows × 16 columns
-```
-
-```r
 head(step2, 10)
 ```
 
+```
+Step 2: 300 rows × 16 columns
+```
 
-**Output:**
-
-```text
+```
 # A tibble: 10 × 16
-   worker_id  email_id  age_band immigration_stat      city  province orchard_id
-   <chr>      <chr>     <chr>    <chr>                 <chr> <chr>    <chr>     
- 1 Worker_114 Email_110 25-34    Non-immigrant         Kelo… B.C.     Applejacks
- 2 Worker_170 Email_163 25-34    Immigrant             Kelo… B.C.     Applejacks
- 3 Worker_010 Email_011 25-34    Non-permanent reside… West… B.C.     West Kelo…
- 4 Worker_035 Email_033 35-44    Non-permanent reside… West… B.C.     West Kelo…
- 5 Worker_194 Email_193 35-44    Non-permanent reside… Vict… B.C.     Billie's …
- 6 Worker_276 Email_261 35-44    Immigrant             Vict… B.C.     Billie's …
- 7 Worker_054 Email_057 25-34    Non-immigrant         Vern… B.C.     Bon Apple…
- 8 Worker_117 Email_114 25-34    Immigrant             Vern… B.C.     Bon Apple…
- 9 Worker_022 Email_021 25-34    Non-permanent reside… Cobb… B.C.     Country A…
+worker_id  email_id  age_band immigration_stat      city  province orchard_id
+<chr>      <chr>     <chr>    <chr>                 <chr> <chr>    <chr>     
+1 Worker_114 Email_110 25-34    Non-immigrant         Kelo… B.C.     Applejacks
+2 Worker_170 Email_163 25-34    Immigrant             Kelo… B.C.     Applejacks
+3 Worker_010 Email_011 25-34    Non-permanent reside… West… B.C.     West Kelo…
+4 Worker_035 Email_033 35-44    Non-permanent reside… West… B.C.     West Kelo…
+5 Worker_194 Email_193 35-44    Non-permanent reside… Vict… B.C.     Billie's …
+6 Worker_276 Email_261 35-44    Immigrant             Vict… B.C.     Billie's …
+7 Worker_054 Email_057 25-34    Non-immigrant         Vern… B.C.     Bon Apple…
+8 Worker_117 Email_114 25-34    Immigrant             Vern… B.C.     Bon Apple…
+9 Worker_022 Email_021 25-34    Non-permanent reside… Cobb… B.C.     Country A…
 10 Worker_064 Email_061 35-44    Non-permanent reside… Cobb… B.C.     Country A…
 # ℹ 9 more variables: owner_id <chr>, username_id <chr>, sns_worked <dbl>,
 #   sat_hrs <dbl>, trt_workers <dbl>, trt_manager <dbl>, cmf_manager <dbl>,
 #   sat_work_overall <dbl>, comments <chr>
 ```
 
+
 ## Step 3: Pseudonymization for city and orchard_id
 
 Pseudonymize `city` and `orchard_id` with non-descriptive codes.
 
 
-```r
+```{r step3-pseudonymize-city-orchard}
 step3 <- step2 |>
   mutate(
     city       = paste0("City_",    sprintf("%02d", as.integer(factor(city)))),
@@ -569,35 +515,26 @@ step3 <- step2 |>
   )
 
 cat("Step 3:", nrow(step3), "rows ×", ncol(step3), "columns\n")
-```
-
-
-**Output:**
-
-```text
-Step 3: 300 rows × 16 columns
-```
-
-```r
 head(step3, 10)
 ```
 
+```
+Step 3: 300 rows × 16 columns
+```
 
-**Output:**
-
-```text
+```
 # A tibble: 10 × 16
-   worker_id  email_id  age_band immigration_stat      city  province orchard_id
-   <chr>      <chr>     <chr>    <chr>                 <chr> <chr>    <chr>     
- 1 Worker_114 Email_110 25-34    Non-immigrant         City… B.C.     Orchard_01
- 2 Worker_170 Email_163 25-34    Immigrant             City… B.C.     Orchard_01
- 3 Worker_010 Email_011 25-34    Non-permanent reside… City… B.C.     Orchard_12
- 4 Worker_035 Email_033 35-44    Non-permanent reside… City… B.C.     Orchard_12
- 5 Worker_194 Email_193 35-44    Non-permanent reside… City… B.C.     Orchard_02
- 6 Worker_276 Email_261 35-44    Immigrant             City… B.C.     Orchard_02
- 7 Worker_054 Email_057 25-34    Non-immigrant         City… B.C.     Orchard_03
- 8 Worker_117 Email_114 25-34    Immigrant             City… B.C.     Orchard_03
- 9 Worker_022 Email_021 25-34    Non-permanent reside… City… B.C.     Orchard_04
+worker_id  email_id  age_band immigration_stat      city  province orchard_id
+<chr>      <chr>     <chr>    <chr>                 <chr> <chr>    <chr>     
+1 Worker_114 Email_110 25-34    Non-immigrant         City… B.C.     Orchard_01
+2 Worker_170 Email_163 25-34    Immigrant             City… B.C.     Orchard_01
+3 Worker_010 Email_011 25-34    Non-permanent reside… City… B.C.     Orchard_12
+4 Worker_035 Email_033 35-44    Non-permanent reside… City… B.C.     Orchard_12
+5 Worker_194 Email_193 35-44    Non-permanent reside… City… B.C.     Orchard_02
+6 Worker_276 Email_261 35-44    Immigrant             City… B.C.     Orchard_02
+7 Worker_054 Email_057 25-34    Non-immigrant         City… B.C.     Orchard_03
+8 Worker_117 Email_114 25-34    Immigrant             City… B.C.     Orchard_03
+9 Worker_022 Email_021 25-34    Non-permanent reside… City… B.C.     Orchard_04
 10 Worker_064 Email_061 35-44    Non-permanent reside… City… B.C.     Orchard_04
 # ℹ 9 more variables: owner_id <chr>, username_id <chr>, sns_worked <dbl>,
 #   sat_hrs <dbl>, trt_workers <dbl>, trt_manager <dbl>, cmf_manager <dbl>,
@@ -605,62 +542,55 @@ head(step3, 10)
 ```
 
 
-```r
+
+```{r step3-city-orchard-counts}
 step3 |> count(city, sort = TRUE)
+step3 |> count(orchard_id, sort = TRUE)
 ```
 
-
-**Output:**
-
-```text
+```
 # A tibble: 12 × 2
-   city        n
-   <chr>   <int>
- 1 City_11    33
- 2 City_09    32
- 3 City_03    31
- 4 City_02    29
- 5 City_12    29
- 6 City_07    27
- 7 City_01    26
- 8 City_10    24
- 9 City_04    18
+city        n
+<chr>   <int>
+1 City_11    33
+2 City_09    32
+3 City_03    31
+4 City_02    29
+5 City_12    29
+6 City_07    27
+7 City_01    26
+8 City_10    24
+9 City_04    18
 10 City_05    18
 11 City_06    17
 12 City_08    16
 ```
 
-```r
-step3 |> count(orchard_id, sort = TRUE)
 ```
-
-
-**Output:**
-
-```text
 # A tibble: 12 × 2
-   orchard_id     n
-   <chr>      <int>
- 1 Orchard_02    33
- 2 Orchard_07    32
- 3 Orchard_11    31
- 4 Orchard_01    29
- 5 Orchard_12    29
- 6 Orchard_06    27
- 7 Orchard_04    26
- 8 Orchard_03    24
- 9 Orchard_05    18
+orchard_id     n
+<chr>      <int>
+1 Orchard_02    33
+2 Orchard_07    32
+3 Orchard_11    31
+4 Orchard_01    29
+5 Orchard_12    29
+6 Orchard_06    27
+7 Orchard_04    26
+8 Orchard_03    24
+9 Orchard_05    18
 10 Orchard_09    18
 11 Orchard_08    17
 12 Orchard_10    16
 ```
+
 
 ## Step 4: Anonymization for immigration_stat, username_id, and comments
 
 Anonymization is **irreversible** — removed columns and pooled labels are not stored in the data key.
 
 
-```r
+```{r step4-anonymize}
 step4 <- step3 |>
   mutate(
     immigration_stat = if_else(
@@ -674,35 +604,26 @@ step4 <- step3 |>
 deid <- step4
 
 cat("Step 4 — final:", nrow(deid), "rows ×", ncol(deid), "columns\n")
-```
-
-
-**Output:**
-
-```text
-Step 4 — final: 300 rows × 14 columns
-```
-
-```r
 head(deid, 10)
 ```
 
+```
+Step 4 — final: 300 rows × 14 columns
+```
 
-**Output:**
-
-```text
+```
 # A tibble: 10 × 14
-   worker_id  email_id  age_band immigration_stat      city  province orchard_id
-   <chr>      <chr>     <chr>    <chr>                 <chr> <chr>    <chr>     
- 1 Worker_114 Email_110 25-34    Non-immigrant         City… B.C.     Orchard_01
- 2 Worker_170 Email_163 25-34    Immigrant             City… B.C.     Orchard_01
- 3 Worker_010 Email_011 25-34    Non-permanent reside… City… B.C.     Orchard_12
- 4 Worker_035 Email_033 35-44    Non-permanent reside… City… B.C.     Orchard_12
- 5 Worker_194 Email_193 35-44    Non-permanent reside… City… B.C.     Orchard_02
- 6 Worker_276 Email_261 35-44    Immigrant             City… B.C.     Orchard_02
- 7 Worker_054 Email_057 25-34    Non-immigrant         City… B.C.     Orchard_03
- 8 Worker_117 Email_114 25-34    Immigrant             City… B.C.     Orchard_03
- 9 Worker_022 Email_021 25-34    Non-permanent reside… City… B.C.     Orchard_04
+worker_id  email_id  age_band immigration_stat      city  province orchard_id
+<chr>      <chr>     <chr>    <chr>                 <chr> <chr>    <chr>     
+1 Worker_114 Email_110 25-34    Non-immigrant         City… B.C.     Orchard_01
+2 Worker_170 Email_163 25-34    Immigrant             City… B.C.     Orchard_01
+3 Worker_010 Email_011 25-34    Non-permanent reside… City… B.C.     Orchard_12
+4 Worker_035 Email_033 35-44    Non-permanent reside… City… B.C.     Orchard_12
+5 Worker_194 Email_193 35-44    Non-permanent reside… City… B.C.     Orchard_02
+6 Worker_276 Email_261 35-44    Immigrant             City… B.C.     Orchard_02
+7 Worker_054 Email_057 25-34    Non-immigrant         City… B.C.     Orchard_03
+8 Worker_117 Email_114 25-34    Immigrant             City… B.C.     Orchard_03
+9 Worker_022 Email_021 25-34    Non-permanent reside… City… B.C.     Orchard_04
 10 Worker_064 Email_061 35-44    Non-permanent reside… City… B.C.     Orchard_04
 # ℹ 7 more variables: owner_id <chr>, sns_worked <dbl>, sat_hrs <dbl>,
 #   trt_workers <dbl>, trt_manager <dbl>, cmf_manager <dbl>,
@@ -710,21 +631,20 @@ head(deid, 10)
 ```
 
 
-```r
+
+```{r step4-immigration-counts}
 deid |> count(immigration_stat, sort = TRUE)
 ```
 
-
-**Output:**
-
-```text
+```
 # A tibble: 3 × 2
-  immigration_stat           n
-  <chr>                  <int>
+immigration_stat           n
+<chr>                  <int>
 1 Non-permanent resident   107
 2 Non-immigrant            103
 3 Immigrant                 90
 ```
+
 
 ### What changed
 
@@ -744,7 +664,7 @@ deid |> count(immigration_stat, sort = TRUE)
 Confirm the de-identified data is safe to export. All checks should show `TRUE`.
 
 
-```r
+```{r qa-checks}
 data.frame(
   check = c(
     "Step 1: direct IDs pseudonymized",
@@ -767,11 +687,8 @@ data.frame(
 )
 ```
 
-
-**Output:**
-
-```text
-                             check passed
+```
+check passed
 1 Step 1: direct IDs pseudonymized   TRUE
 2      Step 2: no exact DOB column   TRUE
 3     Step 3: cities pseudonymized   TRUE
@@ -782,7 +699,8 @@ data.frame(
 ```
 
 
-```r
+
+```{r qa-checks-step1}
 data.frame(
   check = c(
     "Emails pseudonymized",
@@ -795,17 +713,15 @@ data.frame(
 )
 ```
 
-
-**Output:**
-
-```text
-                 check passed
+```
+check passed
 1 Emails pseudonymized   TRUE
 2 Owners pseudonymized   TRUE
 ```
 
 
-```r
+
+```{r qa-checks-step4}
 data.frame(
   check = c(
     "No rare immigration groups in output",
@@ -818,17 +734,15 @@ data.frame(
 )
 ```
 
-
-**Output:**
-
-```text
-                                 check passed
+```
+check passed
 1 No rare immigration groups in output   TRUE
 2                     age_band present   TRUE
 ```
 
 
-```r
+
+```{r qa-summary-stats}
 data.frame(
   rows               = nrow(deid),
   columns            = ncol(deid),
@@ -838,13 +752,11 @@ data.frame(
 )
 ```
 
-
-**Output:**
-
-```text
-  rows columns smallest_city smallest_age_band smallest_orchard
+```
+rows columns smallest_city smallest_age_band smallest_orchard
 1  300      14            16                14               16
 ```
+
 
 > **Note:** Each group should ideally have at least 5 records, or be pooled into a broader category.
 
@@ -853,66 +765,46 @@ data.frame(
 This is the file you can share for analysis. It does **not** include the data key.
 
 
-```r
+```{r export}
 write_xlsx(deid, OUTPUT_FILE)
 
 cat("Exported:", OUTPUT_FILE, "\n")
-```
-
-
-**Output:**
-
-```text
-Exported: WorkerSatisfaction_300rows_deidentified.xlsx
-```
-
-```r
 cat("Rows:", nrow(deid), "| Columns:", ncol(deid), "\n\n")
-```
-
-
-**Output:**
-
-```text
-Rows: 300 | Columns: 14
-```
-
-```r
 cat("Preview of exported data:\n")
-```
-
-
-**Output:**
-
-```text
-Preview of exported data:
-```
-
-```r
 head(deid, 10)
 ```
 
+```
+Exported: WorkerSatisfaction_300rows_deidentified.xlsx
+```
 
-**Output:**
+```
+Rows: 300 | Columns: 14
+```
 
-```text
+```
+Preview of exported data:
+```
+
+```
 # A tibble: 10 × 14
-   worker_id  email_id  age_band immigration_stat      city  province orchard_id
-   <chr>      <chr>     <chr>    <chr>                 <chr> <chr>    <chr>     
- 1 Worker_114 Email_110 25-34    Non-immigrant         City… B.C.     Orchard_01
- 2 Worker_170 Email_163 25-34    Immigrant             City… B.C.     Orchard_01
- 3 Worker_010 Email_011 25-34    Non-permanent reside… City… B.C.     Orchard_12
- 4 Worker_035 Email_033 35-44    Non-permanent reside… City… B.C.     Orchard_12
- 5 Worker_194 Email_193 35-44    Non-permanent reside… City… B.C.     Orchard_02
- 6 Worker_276 Email_261 35-44    Immigrant             City… B.C.     Orchard_02
- 7 Worker_054 Email_057 25-34    Non-immigrant         City… B.C.     Orchard_03
- 8 Worker_117 Email_114 25-34    Immigrant             City… B.C.     Orchard_03
- 9 Worker_022 Email_021 25-34    Non-permanent reside… City… B.C.     Orchard_04
+worker_id  email_id  age_band immigration_stat      city  province orchard_id
+<chr>      <chr>     <chr>    <chr>                 <chr> <chr>    <chr>     
+1 Worker_114 Email_110 25-34    Non-immigrant         City… B.C.     Orchard_01
+2 Worker_170 Email_163 25-34    Immigrant             City… B.C.     Orchard_01
+3 Worker_010 Email_011 25-34    Non-permanent reside… City… B.C.     Orchard_12
+4 Worker_035 Email_033 35-44    Non-permanent reside… City… B.C.     Orchard_12
+5 Worker_194 Email_193 35-44    Non-permanent reside… City… B.C.     Orchard_02
+6 Worker_276 Email_261 35-44    Immigrant             City… B.C.     Orchard_02
+7 Worker_054 Email_057 25-34    Non-immigrant         City… B.C.     Orchard_03
+8 Worker_117 Email_114 25-34    Immigrant             City… B.C.     Orchard_03
+9 Worker_022 Email_021 25-34    Non-permanent reside… City… B.C.     Orchard_04
 10 Worker_064 Email_061 35-44    Non-permanent reside… City… B.C.     Orchard_04
 # ℹ 7 more variables: owner_id <chr>, sns_worked <dbl>, sat_hrs <dbl>,
 #   trt_workers <dbl>, trt_manager <dbl>, cmf_manager <dbl>,
 #   sat_work_overall <dbl>
 ```
+
 
 ## 4.3 Data key file (DUMMY — illustrative only)
 
@@ -934,7 +826,7 @@ To **restore** a de-identified file: for each `variable`, join `pseudonym_code` 
 The key holds **mappings for pseudonymized identifiers only** (Steps 1 and 3). Anonymized fields (`username_id`, `comments`) are not included — they cannot be reversed.
 
 
-```r
+```{r build-data-key}
 worker_key <- raw |>
   distinct(worker_id) |>
   arrange(worker_id) |>
@@ -987,61 +879,40 @@ data_key <- bind_rows(
   arrange(variable, original_value)
 
 cat("Data key preview (first 10 rows):\n")
+head(data_key, 10)
+cat("\nRows by variable:\n")
+data_key |> count(variable)
 ```
 
-
-**Output:**
-
-```text
+```
 Data key preview (first 10 rows):
 ```
 
-```r
-head(data_key, 10)
 ```
-
-
-**Output:**
-
-```text
 # A tibble: 10 × 4
-   variable original_value pseudonym_code notes
-   <chr>    <chr>          <chr>          <chr>
- 1 city     Cobble Hill    City_01        <NA> 
- 2 city     Kelowna        City_02        <NA> 
- 3 city     Keremeos       City_03        <NA> 
- 4 city     Naramata       City_04        <NA> 
- 5 city     Oliver         City_05        <NA> 
- 6 city     Osoyoos        City_06        <NA> 
- 7 city     Peachland      City_07        <NA> 
- 8 city     Penticton      City_08        <NA> 
- 9 city     Summerland     City_09        <NA> 
+variable original_value pseudonym_code notes
+<chr>    <chr>          <chr>          <chr>
+1 city     Cobble Hill    City_01        <NA> 
+2 city     Kelowna        City_02        <NA> 
+3 city     Keremeos       City_03        <NA> 
+4 city     Naramata       City_04        <NA> 
+5 city     Oliver         City_05        <NA> 
+6 city     Osoyoos        City_06        <NA> 
+7 city     Peachland      City_07        <NA> 
+8 city     Penticton      City_08        <NA> 
+9 city     Summerland     City_09        <NA> 
 10 city     Vernon         City_10        <NA>
 ```
 
-```r
-cat("\nRows by variable:\n")
 ```
-
-
-**Output:**
-
-```text
 
 Rows by variable:
 ```
 
-```r
-data_key |> count(variable)
 ```
-
-
-**Output:**
-
-```text
 # A tibble: 5 × 2
-  variable       n
-  <chr>      <int>
+variable       n
+<chr>      <int>
 1 city          12
 2 email_id     300
 3 orchard_id    12
@@ -1050,42 +921,29 @@ data_key |> count(variable)
 ```
 
 
-```r
+
+```{r export-data-key}
 dir.create(KEY_DIR, showWarnings = FALSE)
 
 write_xlsx(list(data_key = data_key), KEY_FILE)
 
 cat("Data key exported:", KEY_FILE, "\n")
-```
-
-
-**Output:**
-
-```text
-Data key exported: data_key_file/WorkerSatisfaction_data_key_DUMMY.xlsx
-```
-
-```r
 cat("Single sheet: data_key (", nrow(data_key), " mapping rows )\n", sep = "")
-```
-
-
-**Output:**
-
-```text
-Single sheet: data_key (636 mapping rows )
-```
-
-```r
 cat("Store separately from", OUTPUT_FILE, "— never on public systems.\n")
 ```
 
+```
+Data key exported: data_key_file/WorkerSatisfaction_data_key_DUMMY.xlsx
+```
 
-**Output:**
+```
+Single sheet: data_key (636 mapping rows )
+```
 
-```text
+```
 Store separately from WorkerSatisfaction_300rows_deidentified.xlsx — never on public systems.
 ```
+
 
 ------------------------------------------------------------------------
 
@@ -1099,8 +957,5 @@ Store separately from WorkerSatisfaction_300rows_deidentified.xlsx — never on 
 | **4** | Anonymization | `immigration_stat` pooled if below threshold; `username_id` and `comments` removed |
 
 The de-identified dataset keeps all satisfaction and treatment ratings for analysis while substantially lowering re-identification risk. **The data key is highly sensitive** — it links pseudonym codes back to real names, emails, and locations for Steps 1 and 3 only. Protect and store it separately.
-
-
-
 
 
