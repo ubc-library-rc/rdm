@@ -137,7 +137,6 @@ Do not edit the raw source file (`WorkerSatisfaction_300rows.xlsx`).
 
 Run **Install packages** once if a package is missing.
 
-
 ```{r install-packages}
 # install.packages("readxl")
 # install.packages("dplyr")
