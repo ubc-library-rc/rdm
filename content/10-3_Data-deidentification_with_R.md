@@ -62,15 +62,6 @@ As a reminder, please make sure you’re working with a duplicate/copy file of y
 
 ---
 
----
-title: "Worker Satisfaction Survey — Data De-identification Workbook"
-author: "Data De-identification Advisor"
-date: "June 08, 2026"
----
-
-
-
-
 # Introduction
 
 This workbook guides you through de-identifying the **Apple Grower Satisfaction Survey** (`WorkerSatisfaction_300rows.xlsx`: 300 rows, 16 columns).
@@ -962,3 +953,4 @@ cat("Store separately from", OUTPUT_FILE, "— never on public systems.\n")
 | **4** | Anonymization | `immigration_stat` pooled if below threshold; `username_id` and `comments` removed |
 
 The de-identified dataset keeps all satisfaction and treatment ratings for analysis while substantially lowering re-identification risk. **The data key is highly sensitive** — it links pseudonym codes back to real names, emails, and locations for Steps 1 and 3 only. Protect and store it separately.
+
