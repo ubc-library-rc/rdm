@@ -37,7 +37,7 @@ Data may be “sensitive” because it can have identifying information of vario
 It’s important to de-identify data because we want to minimize the risk of harm to individuals, communities, and animal species if there were to be a confidentiality breach. It’s also important because it helps prevent possible re-identification of participants. 
 
 ## Recap: Manual data de-identification
-*The different possible methods and a demonstration performed on an example dataset*
+*Learning about different de-identification methods and demonstrating some of them on an example dataset.*
 
 Here are some common methods used, listed in no particular order:
 - Anonymization: all variable information is removed/deleted
@@ -58,7 +58,7 @@ We then showed some of these methods on an example dataset. What method you choo
 UBC does not define the term “sensitive data”. Instead, UBC electronic information is classified using a schema outlined in UBC [Information Security Standard U1 (ISS-U1)](https://cio.ubc.ca/information-security-standards/U1). For the purposes of this workshop, however, we will use the term “sensitive data” to align with the terminology in Sensitive Data: Practical and Theoretical Considerations (Rod & Thompson, 2023). In this context, the term “sensitive data” will be treated as equivalent to information classified as “high risk” and “very-high risk” in UBC ISS-U1.
 {: .note}
 
-As a reminder, please make sure you’re working with a duplicate/copy file of your data for this experiment and not with your original data file(s). 
+**As a reminder, please make sure you’re working with a duplicate/copy file of your data for this experiment and not with your original data file(s).** 
 
 ---
 
