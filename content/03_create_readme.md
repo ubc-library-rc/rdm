@@ -9,9 +9,10 @@ nav_order: 6
 # What is a README?
 {: .no_toc}
 
-A README file provides information about a project and helps ensure that data can be correctly interpreted by you and others when sharing or publishing datasets. It contains information commonly required to understand the dataset, its contents, provenance, licensing and how to interact with it. This helps maximize your dataset's usability and long-term preservation potential. A README file is generally named ```README``` and is typically a text or markdown file.
+A README file is an important document that accompanies your dataset. It provides key information about a project to make sure the dataset(s) can be correctly understood, reanalyzed, and reused by you and others. Having this document also helps maximize your data usability and long-term preservation potential. Without a README file, you could spend hours combing through related manuscripts or searching online to decipher file contents, analysis procedures, and acronyms.
 
-In short, a README file is a simple text document that accompanies your dataset, serving as a quick start guide that summarizes the essential information another researcher might need to understand, reanalyze, or repurpose your data. Without this context, readers could spend hours combing through related manuscripts or searching online to decipher file contents and acronyms.
+It is good practice to have a README file when conducting research. Many data repositories, including UBC’s, will ask you to include a README file as part of your data deposit. 
+
 <p style="margin-bottom: 20px"></p>
 
 - Looking for a cheat sheet? Check out our <a href="https://osf.io/aqxw3" target="_blank">one-pager</a>
@@ -33,24 +34,24 @@ In short, a README file is a simple text document that accompanies your dataset,
 {: .no_toc}
 {: .label .label-green }
 
-Let's access this dataset:
+Below is a dataset deposited in Borealis. Navigate to this dataset by clicking on the hyperlinked DOI and scrolling down to view the deposited content.
+
+Here is the dataset:
 >Davis, Matthew, 2024, "Soil Adsorption Curves and Environmental Soil Data", <a href="https://doi.org/10.5683/SP3/JGRIN0" target="_blank">https://doi.org/10.5683/SP3/JGRIN0</a>, Borealis, V1
 
-Take a look at the project and try to answer the following:
+Once you’ve observed the kind of files included in the dataset, try to answer these questions:
+1. If you received new soil data from Corktown, how would you create a new model and plot?
+2. If you wanted to replicate this project, what software package(s) would be required to run the exact data analyses?
+3. If you had questions about this project, who could we contact and how?
 
-1. You got new data for ammonia absorption into soil from Corktown, how would you go about generating the new model and plot? 
-2. You want to recreate the whole project, what package(s) do you need to have installed to rerun everything?
-3. You have a question about this project, who and how can we reach the corresponding author?
 
-<p style="margin-bottom: 20px"></p>
+**The main takeaway here is that having data without information about it (also called metadata, which would be included in a README file) is not useful to us.**
 
 <img src="figures/person_thinking.png" width="200" style="margin-left:30px"/>
 
-[//]: # (activity link: https://bit.ly/rdmactivity)
-
 ---
 
-## The Process of Creating a README
+## Creation considerations for a README file
 
 Consider creating a README file at the start of your project, or at least preparing a README before your project goes public, and continually updating it so you don't lose any details. One README file can be made for a dataset or a set of files that are of the same or similar formatting. If multiple READMEs are necessary, format them the same to maintain consistency. 
 
@@ -62,7 +63,7 @@ Some other common formats you might see are R Markdown (common in R projects) an
 
 <p style="margin-bottom: 20px"></p>
 
-## Stylistic Considerations of a README
+## Stylistic considerations for a README file
 
 How you write your README is as important as the information you include. You should be as clear as possible. 
 
@@ -72,8 +73,9 @@ Here are some best practices for data documentation you may consider:
 * Define terms, acronyms, and/or abbreviations
 * Address any limitations
 * Address any quantities, multiples, versions, and/or updates
+* README file is generally named ```README``` and is typically a text or markdown file.
 
-## Recommended Content
+## Minimum README file elements required
   
 Every project is different, so consider which of the following applies to your project. <b>For example</b>, a software project will have different sections than an academic research project.
 
