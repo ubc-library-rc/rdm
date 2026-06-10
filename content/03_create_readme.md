@@ -3,6 +3,9 @@ layout: default
 title: Create a README File
 nav_order: 6
 ---
+
+<img src="figures/work-in-progress.png" width="600"/>
+
 # What is a README?
 {: .no_toc}
 
