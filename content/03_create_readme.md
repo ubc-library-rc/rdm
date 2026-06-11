@@ -45,7 +45,7 @@ Once you’ve observed the kind of files included in the dataset, try to answer 
 3. If you had questions about this project, who could we contact and how?
 
 
-**The main takeaway here is that having data without information about it (also called metadata, which would be included in a README file) is not useful to us.**
+**The main takeaway here is that having data without information about it (contained in a README file) is not useful to us.**
 
 <img src="figures/person_thinking.png" width="200" style="margin-left:30px"/>
 
