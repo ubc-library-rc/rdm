@@ -6,6 +6,9 @@ nav_order: 6
 
 <img src="figures/work-in-progress.png" width="600"/>
 
+**Please note this workshop is under revision. The README sample and template may be incorrect or unavailable.** 
+{: .note}
+
 # What is a README?
 {: .no_toc}
 
@@ -86,7 +89,7 @@ These minimum requirements mirror the report by the Borealis Expert Group: [READ
 | **Software/tools used** | The names and versions of any software, programming languages, or specialized tools needed to open, read, or reproduce the dataset or its analyses (e.g., R 4.3.1, Python 3.11, MATLAB R2023b). Include the operating system where relevant. This information is essential to reproducibility and helps users determine whether they can work with the data using the tools available to them. |
 
 ## Sample README file
-Here is an example README file for the dataset included in the above warm-up exercise. This example was created to capture academic research projects, and includes typical elements that may be relevant to academic research projects. *Please note that the content of the example README file was fabricated for educational purposes and does not reflect the real project’s objectives.*
+We created a sample README file for the dataset cited in the warm-up exercise. It captures academic research projects and includes the minimum 9 elements. *Please note that the content of the example README file was fabricated for educational purposes and does not reflect the real project’s objectives.*
 
 You can view and download the [sample README file here](https://ubc-library-rc.github.io/rdm/content/exercise_files/README_template.txt). You can also download a fill-in-the-blank README template in the note box at the top. Both of these files are in plain text format and can be modified in many applications. 
 
@@ -96,9 +99,11 @@ You can view and download the [sample README file here](https://ubc-library-rc.g
 
 README files can contain a lot of information related to your project. As outlined in the table, READMEs should at least contain those 9 elements.
 
-Here are 2 questions to solidify what we've learned from this workshop:
-1. Let’s use the sample README file provided above as an example for this exercise. Please open the file, view the content, and answer the following question: Based on the sample README, what elements or pieces of information are missing?
-2. Bonus question: If you wanted to enhance the sample README file, what would you add? 
+Let's use this README file provided here (TO BE ADDED) as an example for this exercise. 
+
+Please open the file, view the content, and answer the following questions:
+1. What elements or pieces of information are underdeveloped or missing?
+2. If you wanted to enhance this sample README file, what would you add?
 
 <img src="figures/readme.png" width="200" style="margin-left:30px"/>
 
