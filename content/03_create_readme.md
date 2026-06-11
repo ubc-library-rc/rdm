@@ -13,8 +13,6 @@ A README file is an important document that accompanies your dataset. It provide
 
 It is good practice to have a README file when conducting research. Many data repositories, including UBC’s, will ask you to include a README file as part of your data deposit. 
 
-<p style="margin-bottom: 20px"></p>
-
 - Looking for a cheat sheet? Check out our <a href="https://osf.io/aqxw3" target="_blank">one-pager</a>
 - Looking for a template to reuse? Check out our <a href="https://ubc-library-rc.github.io/rdm/content/assets/templates/UBC_README.txt" target="_blank">README template</a> 
 {: .note}
@@ -47,68 +45,62 @@ Once you’ve observed the kind of files included in the dataset, try to answer 
 
 **The main takeaway here is that having data without information about it (contained in a README file) is not useful to us.**
 
-<img src="figures/person_thinking.png" width="200" style="margin-left:30px"/>
+<img src="figures/person_thinking.png" width="150" style="margin-left:30px"/>
 
 ---
 
 ## Creation considerations for a README file
+Create your README file at the start of your project, or at least before your project is shared and becomes publicly accessible. Typically, making one README file is enough for a dataset or a set of files with similar content. However, if multiple READMEs are needed, then you should format them the same way to maintain consistency. 
+- As soon as possible, update your README file to reflect any changes made to your research project so you don't lose any important information
 
-Consider creating a README file at the start of your project, or at least preparing a README before your project goes public, and continually updating it so you don't lose any details. One README file can be made for a dataset or a set of files that are of the same or similar formatting. If multiple READMEs are necessary, format them the same to maintain consistency. 
+Any text editor can be used to create a README file. Commonly used formats are Markdown and TXT because of their lightweight formatting. These plain text formats also don’t rely on proprietary software, which means that they are more durable in the long-run, help with preserving your information better, and can be opened by various applications. R Markdown (common in R projects) and reStructuredText (common in Python projects) are also other common formats of README files.
 
-Place the README at the root directory of the project (check out our workshop on [directory structures](https://ubc-library-rc.github.io/rdm/content/04_directory_structures.html)) so it can be one of the first files people will look at. 
+Once your README file is created, store it in the root directory of your project folder (here is our workshop on [directory structures](https://ubc-library-rc.github.io/rdm/content/04_directory_structures.html)), so that it will be the first file seen and easily accessible. 
 
-You can use any text editor to create a README. [Markdown](https://ubc-library-rc.github.io/Introduction-to-Markdown/) or TXT formats are commonly used because you can add lightweight formatting, and it is non-proprietary. Using a plain text format helps preserve your information because it relies on durable, open standards rather than proprietary formats.  
-
-Some other common formats you might see are R Markdown (common in R projects) and reStructuredText (common in Python projects).
-
-<p style="margin-bottom: 20px"></p>
 
 ## Stylistic considerations for a README file
-
-How you write your README is as important as the information you include. You should be as clear as possible. 
-
-Here are some best practices for data documentation you may consider:
-* Be as clear and specific as possible, including descriptive titles
-* Don't use jargon
-* Define terms, acronyms, and/or abbreviations
-* Address any limitations
-* Address any quantities, multiples, versions, and/or updates
-* README file is generally named ```README``` and is typically a text or markdown file.
-
-## Minimum README file elements required
-  
-Every project is different, so consider which of the following applies to your project. <b>For example</b>, a software project will have different sections than an academic research project.
-
-| **Element** | **Details** |
-|-------------|-------------|
-| **Information** | Include at least two contacts. This could be the principal investigator and a co-investigator or another author. Include names, associated institutions, institution emails, and ORCIDs if available. |
-| **Description** | Provide detailed context as much as possible – indicate what your project does and what your dataset contains. Give your README a descriptive title and include any dates that may be helpful, such as creation (both README and dataset), updates, data collection, etc. Using a standard date format, like [ISO 8601](http://www.w3.org/TR/NOTE-datetime) (YYYY-MM-DD or YYYYMMDD), is a good practice. |
-| **Methodology** | Provide information about your research protocols such as data collection, data processing and analysis, sampling, instruments, tools, and software (include version and any special requirements for installation and operation), other sources used, geographic information of data collection, any standards followed, etc. |
-| **Data and File Overview** | Describe the file structure of the dataset, such as the files or folders applicable for dataset organization and the relationship between the files. You should also indicate any other file relationships, such as if there are multiples, different versions, or modifications, and explain why if necessary. |
-| **Data-Specific Information** | Define and describe any labels, codes, variables, abbreviations, and/or acronyms. Also, mention if any special formats are applicable. This can be repeated and modified for each dataset when appropriate. |
-| **Sharing and Access Information** | Indicate the appropriate licences for your project. Also mention any restrictions, permissions, and/or data confidentiality conditions. You may also wish to include relevant links to other supporting datasets, locations where to access the dataset, or publications that cite or use the dataset. |
-| **Acknowledgements** | Acknowledge your research team members, assistants, staff, and students who also had a contributive role in your project. Also include information on the funding support for your project, such as the name of the organization, grant name and number, fellowship name, awards, etc. |
+How your README is written is also important. Consider some of these best practices for data documentation: 
+- Be as clear and specific as possible when describing elements of your project
+- Use descriptive titles, including your README file itself along with other subsections within your README file
+- Add in relevant dates, such as when the README file, dataset(s), and other files were created and updated. These dates should follow a standardized format, like [ISO 8601](https://www.w3.org/TR/NOTE-datetime) (YYYY-MM-DD or YYYYMMDD) to maintain consistency
+- Consider your audience: will you be using jargon? If so, perhaps you may want to clarify the specialized terminology or look for an alternative word. If you refer to acronyms or abbreviations, make sure you’re defining them
+- You could also enhance research transparency by addressing any research limitations (such as missing data), file quantities, and file versions
+- The README file can simply be named ```README```, but additional information can be added if necessary
 
 
-<p style="margin-bottom: 20px"></p>
+## Minimum README file requirements  
+Although every research project is different, a README file should at least have these 9 elements outlined in the table below. These 9 elements will help users understand the basic details of your dataset(s) and evaluate the level of relevance to them.
 
-## Sample README 
+These minimum requirements mirror the report by the Borealis Expert Group: [README Elements for Research Data Deposits in Borealis](https://doi.org/10.5683/SP3/CJ5X5O), along with additional elements to consider for possible README file enhancement. These elements also align with the Tri-Agency's language from an FAQ on [data retention, deposit, and availability (see question #17)](https://science.gc.ca/site/science/en/interagency-research-funding/policies-and-guidelines/research-data-management/faq-data-retention-deposit-and-availability). 
 
-<a href="https://ubc-library-rc.github.io/rdm/content/exercise_files/README_template.txt" target="_blank"> Download this sample README </a>. 
+| **README metadata element** | **Definition** |
+|---|---|
+| **Author/creator** | The person(s), corporate body(ies), or agency(ies) responsible for creating the dataset. List authors in the order they should appear in citations. Where possible, include [ORCIDs](https://info.orcid.org/researchers/) to uniquely identify researchers and support proper attribution. |
+| **Title** | The full, descriptive title by which the dataset is known. The title should clearly convey the subject matter and scope of the data so a reader can assess its relevance without opening any files. |
+| **Description/summary** | A narrative summary of the dataset's purpose, content, and scope. Describe why the data were collected, what is captured, how the data are structured, and what they might be used for. Write for a broad academic audience so that researchers unfamiliar with the project can determine whether the data suit their needs. |
+| **Contact information** | The name, institutional affiliation, and email address of the person(s) responsible for answering questions about the dataset. If the primary contact may change over time, consider also providing an institutional or project-level address so users can always reach someone knowledgeable about the data. |
+| **License information** | The legal terms under which the dataset may be used, shared, and redistributed. Provide the full license name and version (e.g., [Creative Commons Attribution 4.0 International, CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)). If a standard open license does not apply, describe any restrictions on use, sharing, or derivative works. | 
+| **DOI/persistent identifier** | A [Digital Object Identifier (DOI)](https://www.doi.org/the-identifier/what-is-a-doi/) or other persistent identifier assigned to the dataset, ensuring it can be reliably located and cited over time. If a DOI is not yet assigned at deposit, note it as pending and update the README once available. |
+| **Research methodology** | A summary of the research methods used to generate the dataset, covering study design (e.g., experimental, observational, survey-based, or computational), data collection instruments or procedures, and key processing steps applied to the raw data. The goal is to provide users with sufficient context to assess the data's reliability and understand what would be required to replicate the data. |
+| **Related publications** | Journal articles, reports, or other scholarly works that are directly based on or make use of this dataset. Provide full citations with DOIs where available. This helps users understand how the data have been analyzed, identifies methodological context, and ensures the researchers who generated the data receive appropriate credit and citations. |
+| **Software/tools used** | The names and versions of any software, programming languages, or specialized tools needed to open, read, or reproduce the dataset or its analyses (e.g., R 4.3.1, Python 3.11, MATLAB R2023b). Include the operating system where relevant. This information is essential to reproducibility and helps users determine whether they can work with the data using the tools available to them. |
 
-We created an example of a README for the project we looked at earlier in the warm-up exercise. This sample file was designed to capture academic research projects. There are other samples available for other types of projects (software, data science, etc.). 
+## Sample README file
+Here is an example README file for the dataset included in the above warm-up exercise. This example was created to capture academic research projects, and includes typical elements that may be relevant to academic research projects. *Please note that the content of the example README file was fabricated for educational purposes and does not reflect the real project’s objectives.*
 
-**NOTE: The contents in the example template are <u>made up</u> for educational purposes, and do not reflect what the real study had in mind.**
+You can view and download the [sample README file here](https://ubc-library-rc.github.io/rdm/content/exercise_files/README_template.txt). You can also download a fill-in-the-blank README template in the note box at the top. Both of these files are in plain text format and can be modified in many applications. 
 
 ## Exercise 2
 {: .no_toc}
 {: .label .label-green }
 
-Now, let's practice what we just learned. 
+README files can contain a lot of information related to your project. As outlined in the table, READMEs should at least contain those 9 elements.
 
-From the sample template, what are some things that you noticed that may be specific to academic research? What are some things you would include if this were a software project? 
+Here are 2 questions to solidify what we've learned from this workshop:
+1. Let’s use the sample README file provided above as an example for this exercise. Please open the file, view the content, and answer the following question: Based on the sample README, what elements or pieces of information are missing?
+2. Bonus question: If you wanted to enhance the sample README file, what would you add? 
 
-<img src="figures/readme.png" width="300" style="margin-left:30px"/>
+<img src="figures/readme.png" width="200" style="margin-left:30px"/>
 
 <br>
 
@@ -126,7 +118,9 @@ READMEs are important documents containing information about your project's data
 
 ### Sources
 {: .no_toc }
+- Barsky, E., Cevik, Z., Cooper, A., Eber, A., Hu, B., Lui, L. H., & Pratt, I. (2026). README for research data deposits in Borealis: minimum and enhanced metadata elements (Version V1) [dataset]. Borealis. [https://doi.org/10.5683/SP3/CJ5X5O](https://doi.org/10.5683/SP3/CJ5X5O) 
 - Cornell Data Services. Writing READMEs for Research Data. <https://data.research.cornell.edu/data-management/sharing/readme/>
+- Government of Canada - Research Data Management. FAQ: Data retention, deposit, and availability. [https://science.gc.ca/site/science/en/interagency-research-funding/policies-and-guidelines/research-data-management/faq-data-retention-deposit-and-availability](https://science.gc.ca/site/science/en/interagency-research-funding/policies-and-guidelines/research-data-management/faq-data-retention-deposit-and-availability)
 - Harvard Biomedical Data Management. README Files. <https://datamanagement.hms.harvard.edu/collect-analyze/documentation-metadata/readme-files>
 - Princeton Research Data Service. READMEs for Research Data. <https://bit.ly/4lv23t3>
 - The Geneva Graduate Institute. README.txt. <https://libguides.graduateinstitute.ch/rdm/readme>
