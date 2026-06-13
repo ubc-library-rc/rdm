@@ -12,9 +12,11 @@ nav_order: 6
 # What is a README?
 {: .no_toc}
 
-A README file is an important document that accompanies your dataset. It provides key information about a project to make sure the dataset(s) can be correctly understood, reanalyzed, and reused by you and others. Having this document also helps maximize your data usability and long-term preservation potential. Without a README file, you could spend hours combing through related manuscripts or searching online to decipher file contents, analysis procedures, and acronyms.
+A README file is an important document that accompanies your dataset. It provides key information about your project to make sure the dataset(s) can be correctly understood, reanalyzed, and reused by you and others. Without a README file, you could spend hours combing through related manuscripts or searching online to decipher file contents, analysis procedures, and acronyms.
 
-It is good practice to have a README file when conducting research. Many data repositories, including UBC’s, will ask you to include a README file as part of your data deposit. 
+It's good practice to have this document when conducting your research because it helps maximize the usability of your data in the long-term. You may also notice that many data repositories, including UBC’s, will ask you to include a README file as part of your data deposit. 
+
+However, keep in mind that a README file complements your dataset. It does not replace the metadata that data repositories (e.g. Borealis or FRDR) ask you to provide when you deposit your data. The repository’s metadata will support findability within and between data repositories, while the README is portable and continues to describe the dataset, even after it has been separated from its original context. 
 
 - Looking for a cheat sheet? Check out our <a href="https://osf.io/aqxw3" target="_blank">one-pager</a>
 - Looking for a template to reuse? Check out our <a href="https://ubc-library-rc.github.io/rdm/content/assets/templates/UBC_README.txt" target="_blank">README template</a> 
