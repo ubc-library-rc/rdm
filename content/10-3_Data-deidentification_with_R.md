@@ -12,7 +12,9 @@ We will be designing an R-based workshop during the summer of 2026. Please stay 
 # Introduction to Data De-identification with R
 {: .no_toc} 
 
-(Introduction to be placed here)
+In the previous workshop, we discussed manual de-identification methods for sensitive data. These efforts help to make sure a dataset can be shared safely with other researchers, and to protect participants’ identifying information. However, manually de-identifying a dataset may be laborious for large datasets, compared to smaller-scale datasets. In this case, using a tool or program can help speed up the de-identification process to save you some time and energy.
+
+We will look at using R as an appropriate program to help with the manual de-identification process by replicating workshop 2. Please note that you will need to have R and RStudio available on your machine (jump ahead to [Part 1 - Setup before starting](https://ubc-library-rc.github.io/rdm/content/10-3_Data-deidentification_with_R.html#part-1--setup)).  
 
 <details open markdown="block">
 <summary>
