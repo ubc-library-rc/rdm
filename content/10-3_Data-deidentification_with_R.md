@@ -65,12 +65,6 @@ UBC does not define the term “sensitive data”. Instead, UBC electronic infor
 
 ---
 
----
-title: "Worker Satisfaction Survey — Data De-identification Workbook"
-author: "Data De-identification Advisor"
-date: "June 08, 2026"
----
-
 # Introduction
 
 This workbook guides you through de-identifying the **Apple Grower Satisfaction Survey** (`WorkerSatisfaction_300rows.xlsx`: 300 rows, 16 columns).
