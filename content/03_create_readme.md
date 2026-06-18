@@ -37,18 +37,18 @@ However, keep in mind that a README file complements your dataset. It does not r
 {: .no_toc}
 {: .label .label-green }
 
-Below is a dataset deposited in Borealis. Navigate to this dataset by clicking on the hyperlinked DOI and scrolling down to view the deposited content.
+Let's start by looking at a dataset deposited in Borealis. Please navigate to this dataset by clicking on the hyperlinked DOI and then scroll to view the deposited content under the "Files" tab.
 
 Here is the dataset:
 >Davis, Matthew, 2024, "Soil Adsorption Curves and Environmental Soil Data", <a href="https://doi.org/10.5683/SP3/JGRIN0" target="_blank">https://doi.org/10.5683/SP3/JGRIN0</a>, Borealis, V1
 
-Once you’ve observed the kind of files included in the dataset, try to answer these questions:
+Once you’ve looked through the files included in the dataset, try to answer these questions:
 1. If you received new soil data from Corktown, how would you create a new model and plot?
 2. If you wanted to replicate this project, what software package(s) would be required to run the exact data analyses?
 3. If you had questions about this project, who could we contact and how?
 
 
-**The main takeaway here is that having data without information about it (contained in a README file) is not useful to us.**
+**The main takeaway here is that data without information about it (contained in a README file) is not useful to us!**
 
 <img src="figures/person_thinking.png" width="150" style="margin-left:30px"/>
 
@@ -70,7 +70,7 @@ How your README is written is also important. Consider some of these best practi
 - Add in relevant dates, such as when the README file, dataset(s), and other files were created and updated. These dates should follow a standardized format, like [ISO 8601](https://www.w3.org/TR/NOTE-datetime) (YYYY-MM-DD or YYYYMMDD) to maintain consistency
 - Consider your audience: will you be using jargon? If so, perhaps you may want to clarify the specialized terminology or look for an alternative word. If you refer to acronyms or abbreviations, make sure you’re defining them
 - You could also enhance research transparency by addressing any research limitations (such as missing data), file quantities, and file versions
-- The README file can simply be named ```README```, but additional information can be added if necessary
+- The README file can simply be named ```README``` or ```_README```, but additional information can be added if necessary
 
 
 ## Minimum README file requirements  
@@ -91,9 +91,11 @@ These minimum requirements mirror the report by the Borealis Expert Group: [READ
 | **Software/tools used** | The names and versions of any software, programming languages, or specialized tools needed to open, read, or reproduce the dataset or its analyses (e.g., R 4.3.1, Python 3.11, MATLAB R2023b). Include the operating system where relevant. This information is essential to reproducibility and helps users determine whether they can work with the data using the tools available to them. |
 
 ## Sample README file
-We created a sample README file for the dataset cited in the warm-up exercise. It captures academic research projects and includes the minimum 9 elements. *Please note that the content of the example README file was fabricated for educational purposes and does not reflect the real project’s objectives.*
+We created a sample README file for the dataset cited in the warm-up exercise. It captures academic research projects and includes the minimum 9 elements. 
 
-You can view and download the [sample README file here](https://ubc-library-rc.github.io/rdm/content/exercise_files/README_template.txt). You can also download a fill-in-the-blank README template in the note box at the top. Both of these files are in plain text format and can be modified in many applications. 
+*Please note that the content of the example README file was fabricated for educational purposes and does not reflect the real project’s objectives.*
+
+You can view and download the [sample README file here](https://ubc-library-rc.github.io/rdm/content/exercise_files/README_template.txt). You can also download a README template that can be filled in and modified to fit your project (found in the note box at the top). Both of these files are in plain text format and can be opened in many applications. 
 
 ## Exercise 2
 {: .no_toc}
@@ -101,11 +103,13 @@ You can view and download the [sample README file here](https://ubc-library-rc.g
 
 README files can contain a lot of information related to your project. As outlined in the table, READMEs should at least contain those 9 elements.
 
-Let's use this README file provided here (TO BE ADDED) as an example for this exercise. 
+Let's look at the README file from this deposited dataset in Borealis as an example for this exercise. Please navigate to the hyperlinked DOI in the citation below: 
+> Scheifele, Benjamin; Waterman, Stephanie; Merckelbach, Lucas; Carpenter, Jeff, 2019, "Replication data for: Measuring the Dissipation Rate of Turbulent Kinetic Energy in Strongly Stratified, Low Energy Environments: A Case Study from the Arctic Ocean", [https://doi.org/10.5683/SP2/Z65KEO](https://doi.org/10.5683/SP2/Z65KEO), Borealis, V1 
 
 Please open the file, view the content, and answer the following questions:
-1. What elements or pieces of information are underdeveloped or missing?
-2. If you wanted to enhance this sample README file, what would you add?
+1. What existing elements are useful to us?
+2. What elements are underdeveloped or missing?
+3. If you wanted to enhance this README file, what would you add?
 
 <img src="figures/readme.png" width="200" style="margin-left:30px"/>
 
