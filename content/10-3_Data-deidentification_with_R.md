@@ -68,7 +68,7 @@ As a reminder, please make sure you’re working with a **duplicate/copy file** 
 > {: .note }
 > > 1. Create a new folder on your **Desktop** (e.g., `deidentification-workshop`)
 > > 2. Download both files and save them into that folder:
-> >    - 📄 [Dataset (xlsx)](https://github.com/ubc-library-rc/rdm/blob/rdm-pages/content/exercise_files/data-deidentification-r-workshop/WorkerSatisfaction_300rows.xlsx)
+> >    - 📄 [Dataset (xlsx)](https://github.com/ubc-library-rc/rdm/blob/rdm-pages/content/exercise_files/data-deidentification-r-workshop/WorkerSatisfaction_300rows.xlsx) (this is synthetic/generated data for demonstration)
 > >    - 📓 [R Markdown Workbook (.Rmd)](https://github.com/ubc-library-rc/rdm/blob/rdm-pages/content/exercise_files/data-deidentification-r-workshop/Workbook_WorkerSatisfaction_Deidentification.Rmd)
 > > 3. Open the `.Rmd` file in RStudio
 > >
