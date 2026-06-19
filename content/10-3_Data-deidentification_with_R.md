@@ -62,19 +62,15 @@ UBC does not define the term “sensitive data”. Instead, UBC electronic infor
 As a reminder, please make sure you’re working with a **duplicate/copy file** of your data for this experiment and not with your original data file(s).
 
 ---
-{: .note}
-> 💻 **Instructions**
-> 
-> To replicate this workshop on your own computer, follow these steps:
-> 
+### Instructions
+{: .note }
 > 1. Create a new folder on your **Desktop** (e.g., `deidentification-workshop`)
-> 2. Download both files below and save them into that folder:
+> 2. Download both files and save them into that folder:
 >    - 📄 [Dataset (xlsx)](https://github.com/ubc-library-rc/rdm/blob/rdm-pages/content/exercise_files/data-deidentification-r-workshop/WorkerSatisfaction_300rows.xlsx)
 >    - 📓 [R Markdown Workbook (.Rmd)](https://github.com/ubc-library-rc/rdm/blob/rdm-pages/content/exercise_files/data-deidentification-r-workshop/Workbook_WorkerSatisfaction_Deidentification.Rmd)
 > 3. Open the `.Rmd` file in RStudio
-> 
+>
 > **To download each file:** open the link → click the **Download raw file** button (⬇) in the top-right corner of the GitHub page.
-
 
 <div style="border: 1.5px solid #ddd; border-radius: 10px; padding: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
   <iframe src="exercise_files/data-deidentification-r-workshop/Workbook_WorkerSatisfaction_Deidentification.pdf" 
