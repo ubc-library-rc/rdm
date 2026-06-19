@@ -10,7 +10,7 @@ nav_order: 3
 
 In the previous workshop, we discussed manual de-identification methods for sensitive data. These efforts help ensure that a dataset can be shared safely with other researchers and protect participants’ identifying information. However, manually de-identifying a dataset may be laborious for large datasets, compared to smaller-scale datasets. In this case, using a tool or program can help speed up the de-identification process to save you some time and energy.
 
-We will replicate workshop 2 by using R as an appropriate tool to help with the manual de-identification process. Please note that you will need to have R and RStudio available on your machine (jump ahead to [Part 1 - Setup](https://ubc-library-rc.github.io/IntroR/content/installation.html) before starting). 
+We will replicate workshop 2 by using R as an appropriate tool to help with the manual de-identification process. Please note that you will need to have R and RStudio available on your machine (jump ahead to [Setup Installation for R and R Sstudio](https://ubc-library-rc.github.io/IntroR/content/installation.html) before starting). 
 
 
 <details open markdown="block">
