@@ -10,7 +10,9 @@ nav_order: 3
 
 In the previous workshop, we discussed manual de-identification methods for sensitive data. These efforts help ensure that a dataset can be shared safely with other researchers and protect participants’ identifying information. However, manually de-identifying a dataset may be laborious for large datasets, compared to smaller-scale datasets. In this case, using a tool or program can help speed up the de-identification process to save you some time and energy.
 
-We will replicate workshop 2 by using R as an appropriate tool to help with the manual de-identification process. Please note that you will need to have R and RStudio available on your machine (jump ahead to [Part 1 - Setup before starting](https://ubc-library-rc.github.io/rdm/content/10-3_Data-deidentification_with_R.html#part-1--setup)).  
+We will replicate workshop 2 by using R as an appropriate tool to help with the manual de-identification process. Please note that you will need to have R and RStudio available on your machine (jump ahead to [Part 1 - Setup](https://ubc-library-rc.github.io/rdm/content/exercise_files/data-deidentification-r-workshop/Workbook_WorkerSatisfaction_Deidentification.pdf#section*.9) before starting). 
+
+
 <details open markdown="block">
 <summary>
   Table of contents
@@ -25,7 +27,7 @@ We will replicate workshop 2 by using R as an appropriate tool to help with the 
 ## Recap: Introduction to data de-identification
 *What is sensitive data, what makes it sensitive, and why is it important to de-identify data?*
 
-Sensitive data is “information that needs safeguarding against unwarranted access or disclosure” (Rod & Thompson, 2023), and this information can be related to both humans and animals.  
+Sensitive data is “information that needs safeguarding against unwarranted access or disclosure” [(Rod & Thompson, 2023, p. 252)](https://doi.org/10.5206/EKCH6181), and this information can be related to both humans and animals.  
 
 Data may be “sensitive” because it can have identifying information of various levels. Some pieces of information can immediately identify someone, or when combined with other information can identify someone. These different kinds of identifiers are called: 
 - Direct identifiers: Pieces of information that will immediately identify a participant 
@@ -57,7 +59,7 @@ We then showed some of these methods on an example dataset. What method you choo
 UBC does not define the term “sensitive data”. Instead, UBC electronic information is classified using a schema outlined in UBC [Information Security Standard U1 (ISS-U1)](https://cio.ubc.ca/information-security-standards/U1). For the purposes of this workshop, however, we will use the term “sensitive data” to align with the terminology in Sensitive Data: Practical and Theoretical Considerations (Rod & Thompson, 2023). In this context, the term “sensitive data” will be treated as equivalent to information classified as “high risk” and “very-high risk” in UBC ISS-U1.
 {: .note}
 
-**As a reminder, please make sure you’re working with a duplicate/copy file of your data for this experiment and not with your original data file(s).** 
+As a reminder, please make sure you’re working with a **duplicate/copy file** of your data for this experiment and not with your original data file(s).
 
 ---
 
@@ -84,3 +86,17 @@ UBC does not define the term “sensitive data”. Instead, UBC electronic infor
     </a>
   </p>
 </div>
+
+
+
+---
+### Sources
+{: .no_toc}
+* Rod, A. B. & Thompson, K. (2023). Chapter 13: Sensitive data: Practical and theoretical considerations. [https://doi.org/10.5206/EKCH6181](https://doi.org/10.5206/EKCH6181) 
+* UBC Advanced Research Computing. Research information classification. [https://arc.ubc.ca/security-privacy/research-information-classification](https://arc.ubc.ca/security-privacy/research-information-classification)
+
+--- 
+
+Need help?
+{: .label .label-blue }
+  Please reach out to `research.data@ubc.ca` for assistance with any of your research data questions.
