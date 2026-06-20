@@ -10,7 +10,7 @@ nav_order: 3
 
 In the previous workshop, we discussed manual de-identification methods for sensitive data. These efforts help ensure that a dataset can be shared safely with other researchers and protect participants’ identifying information. However, manually de-identifying a dataset may be laborious for large datasets, compared to smaller-scale datasets. In this case, using a tool or program can help speed up the de-identification process to save you some time and energy.
 
-We will replicate workshop 2 by using R as an appropriate tool to help with the manual de-identification process. Please note that you will need to have R and RStudio available on your machine (jump ahead to [setup installation for R and R Sstudio](https://ubc-library-rc.github.io/IntroR/content/installation.html) before starting). 
+We will replicate workshop 2 by using R as an appropriate tool to help with the manual de-identification process. Please note that you will need to have R and RStudio available on your machine (jump ahead to [setup installation for R and RStudio](https://ubc-library-rc.github.io/IntroR/content/installation.html) before starting). 
 
 
 <details open markdown="block">
@@ -29,13 +29,15 @@ We will replicate workshop 2 by using R as an appropriate tool to help with the 
 
 Sensitive data is “information that needs safeguarding against unwarranted access or disclosure” [(Rod & Thompson, 2023, p. 252)](https://doi.org/10.5206/EKCH6181), and this information can be related to both humans and animals.  
 
-Data may be “sensitive” because it can have identifying information of various levels. Some pieces of information can immediately identify someone, or when combined with other information can identify someone. These different kinds of identifiers are called: 
+Data may be “sensitive” because it can have identifying information of various levels. Some pieces of information can immediately identify someone, or when combined with other information, can identify someone. These different kinds of identifiers are called: 
 - Direct identifiers: Pieces of information that will immediately identify a participant 
 - Indirect identifiers: Pieces of information that could identify a participant when combined with another piece of information
 - Non-identifiers: Pieces of information that are unlikely to identify a participant alone
 - Hidden identifiers: Pieces of non-identifying information contextually combined that may identify a participant
 
-It’s important to de-identify data because we want to minimize the risk of harm to individuals, communities, and animal species if there were to be a confidentiality breach. It’s also important because it helps prevent possible re-identification of participants. 
+It’s important to de-identify data because we want to minimize the risk of harm to individuals, communities, and animal species if there were to be a confidentiality breach. It’s also important because it helps prevent possible re-identification of participants.
+
+To make sure sensitive data has been de-identified sufficiently, a common risk assessment called "k-anonymity" can be applied. K-anonymity looks at how well each participant's record "blends in" (to be unidentifiable) with a group of at least "k" records with the same set of indirect identifiers. The "k" is a numerical value determined by the researchers, which is commonly 3 or 5. 
 
 ## Recap: Manual data de-identification
 *Learning about different de-identification methods and demonstrating some of them on an example dataset.*
