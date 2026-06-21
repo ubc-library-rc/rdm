@@ -77,17 +77,6 @@ As a reminder, please make sure you’re working with a **duplicate/copy file** 
 > > **To download each file:** open the link → click the **Download raw file** button (⬇) in the top-right corner of the GitHub page.
 
 <div style="border: 1.5px solid #ddd; border-radius: 10px; padding: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <iframe src="exercise_files/data-deidentification-r-workshop/Workbook_WorkerSatisfaction_Deidentification.pdf" 
-          width="100%" 
-          height="600px" 
-          style="border: none; border-radius: 6px;">
-  </iframe>
-  <p style="text-align:center; margin-top:8px;">
-    <a href="exercise_files/data-deidentification-r-workshop/Workbook_WorkerSatisfaction_Deidentification.pdf">Open full workbook in new tab ↗</a>
-  </p>
-</div>
-
-<div style="border: 1.5px solid #ddd; border-radius: 10px; padding: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
   <iframe src="exercise_files/data-deidentification-r-workshop/Workbook_WorkerSatisfaction_Deidentification.html" 
           width="100%" 
           height="600px" 
