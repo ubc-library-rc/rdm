@@ -76,7 +76,7 @@ How your README is written is also important. Consider some of these best practi
 ## Minimum README file requirements  
 Although every research project is different, a README file should at least have these 9 elements outlined in the table below. These 9 elements will help users understand the basic details of your dataset(s) and evaluate the level of relevance to them.
 
-These minimum requirements mirror the report by the Borealis Expert Group: [README Elements for Research Data Deposits in Borealis](https://doi.org/10.5683/SP3/CJ5X5O), along with additional elements to consider for possible README file enhancement. These elements also align with the Tri-Agency's language from an FAQ on [data retention, deposit, and availability (see question #17)](https://science.gc.ca/site/science/en/interagency-research-funding/policies-and-guidelines/research-data-management/faq-data-retention-deposit-and-availability). 
+These minimum requirements mirror the report by the Digital Research Alliance of Canada's Borealis Expert Group: [README Elements for Research Data Deposits in Borealis](https://doi.org/10.5683/SP3/CJ5X5O), along with additional elements to consider for possible README file enhancement. These elements also align with the Tri-Agency's language from an FAQ on [data retention, deposit, and availability (see question #17)](https://science.gc.ca/site/science/en/interagency-research-funding/policies-and-guidelines/research-data-management/faq-data-retention-deposit-and-availability). 
 
 | **README metadata element** | **Definition** |
 |---|---|
