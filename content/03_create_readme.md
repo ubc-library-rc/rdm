@@ -90,13 +90,6 @@ These minimum requirements mirror the report by the Digital Research Alliance of
 | **Related publications** | Journal articles, reports, or other scholarly works that are directly based on or make use of this dataset. Provide full citations with DOIs where available. This helps users understand how the data have been analyzed, identifies methodological context, and ensures the researchers who generated the data receive appropriate credit and citations. |
 | **Software/tools used** | The names and versions of any software, programming languages, or specialized tools needed to open, read, or reproduce the dataset or its analyses (e.g., R 4.3.1, Python 3.11, MATLAB R2023b). Include the operating system where relevant. This information is essential to reproducibility and helps users determine whether they can work with the data using the tools available to them. |
 
-## Sample README file
-We created a sample README file for the dataset cited in the warm-up exercise. It captures academic research projects and includes the minimum 9 elements. 
-
-*Please note that the content of the example README file was fabricated for educational purposes and does not reflect the real project’s objectives.*
-
-You can view and download the [sample README file here](https://ubc-library-rc.github.io/rdm/content/exercise_files/README_sample_v02.txt). You can also download a README template that can be filled in and modified to fit your project (found in the note box at the top). Both of these files are in plain text format and can be opened in many applications. 
-
 ## Exercise 2
 {: .no_toc}
 {: .label .label-green }
@@ -110,6 +103,14 @@ Please open the file, view the content, and answer the following questions:
 1. What existing elements are useful to us?
 2. What elements are underdeveloped or missing?
 3. If you wanted to enhance this README file, what would you add?
+
+## Sample README file
+We created a sample README file for the dataset cited in the warm-up exercise. It captures academic research projects and includes the minimum 9 elements. 
+
+*Please note that the content of the example README file was fabricated for educational purposes and does not reflect the real project’s objectives.*
+
+You can view and download the [sample README file here](https://ubc-library-rc.github.io/rdm/content/exercise_files/README_sample_v02.txt). You can also download a README template that can be filled in and modified to fit your project (found in the note box at the top). Both of these files are in plain text format and can be opened in many applications. 
+
 
 <img src="figures/readme.png" width="200" style="margin-left:30px"/>
 
