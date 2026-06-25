@@ -4,21 +4,18 @@ title: Directory Structures
 nav_order: 8
 ---
 
+<img src="figures/work-in-progress.png" width="600"/>
+
 # Why Are Structured Directories Important?
 {: .no_toc }
 
-<p style="margin-top:15px"></p>
+Let’s pretend you store all of your digital files in one folder on your computer. Imagine how frustrating it would be, and how long it would take you to find data collected on a specific day 5 years ago! 
 
-Let's pretend you store everything on your computer in one folder. Imagine how long it would take to find the data you collected on a specific day a few years ago. Instead of keeping every document in a single place, files are often organized using directories or folder structures. 
-
-A good, consistent folder structure benefits you and others by making item access, retrieval, and storage more efficient. This ultimately saves time and improves productivity. Folder structures make the research process more transparent and collaborative by ensuring everyone can find the files they need. 
-
-<p style="margin-bottom: 20px"></p>
+Instead of keeping every document in a single folder, files are often organized using a directory or folder structure. A good, consistent folder structure benefits you and others by making item access, retrieval, and storage more efficient. This will save you time, improve productivity, and overall make the research process more transparent and collaborative. 
 
 Looking for a cheat sheet? Check out our <a href="https://osf.io/5br6a" target="_blank">one-pager</a>!
 {: .note}
 
-<br>
 
 <details open markdown="block">
   <summary>
@@ -29,42 +26,19 @@ Looking for a cheat sheet? Check out our <a href="https://osf.io/5br6a" target="
 {:toc}
 </details>
 
-<img src="figures/folder_organizing.png" width="400" style="margin-left:30px"/>
-
-<p style="margin-bottom: 30px"></p>
-
 ---
 
-# Organizing Your Directory Structure
+# Directory hierarchies
 
-There are several things to consider when deciding on the organization (structure) of your project directory. This includes the names, structure, and relationships of the files and folders. We recommend starting simple and making modifications along the way. 
+A typical directory structure is composed of a **root directory** (top-level folder), **subdirectories** (subfolders), and relevant **files**. A root directory contains the subdirectories, and the subdirectories contain the relevant files. However, there can be an exception for specific files that may need to exist outside of a subdirectory and be nested in a root directory (exist on their own): README files and data dictionaries.
 
-Your directory should delineate segments of your projects to improve searchability. Some possible categories are project, time, location, and file type. 
+There is no one-size-fits-all model for creating and organizing your directory. Instead, you should establish a directory that aligns with your project, so organize the folder hierarchy that works for you, your research team, and/or other users. 
 
-You should have a good balance between the depth and shallowness of your folder structure. 
-  * <b>Too deep:</b> too many clicks before you get to the file you need. A file path with too many folders to get through can max out the character limit
-    * For example:
-      * The length of a OneDrive root folder, like C:\users\meganb\OneDrive - Contoso, in addition to the relative path of the file (up to 400 characters), cannot exceed 520 characters [(Microsoft 2023)](https://support.microsoft.com/en-us/office/restrictions-and-limitations-in-onedrive-and-sharepoint-64883a5d-228e-48f5-b3d2-eb39e07630fa)
-      * In the Windows API, the maximum length for a path is 260 characters [(Microsoft 2024)](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=registry)
-    * Would you like to click through all these folders for a CSV file? `Z:\1232\New_Projects_shared\2000\2000_0889\site_a_name of the site payment\payment\year_4\payment_year4.csv` (by the way, is this good file-folder naming?)
-  * <b>Too shallow:</b> too many different subdirectories under your root directory. This can also result in many clicks (and subsequent back clicks) before finding the correct file
+However, one strong suggestion is to have your most important item(s) appear first. If you want better access to a file or folder, then have it appear first so you’re not stuck searching for it. 
 
-File and folder names should reflect what they contain and follow good naming practices:
-* Machine-readable
-* Human-readable
-* See our workshop on [file naming](https://ubc-library-rc.github.io/rdm/content/01_file_naming.html) for more information 
-
-Lastly, when working with a team, consider implementing restrictions on sensitive files. For example, make your raw data read-only and work only with its derivatives. In this way, your raw data is protected and can be referred back to if re-analysis is necessary. 
-
-<br>
-
-# Directory Hierarchies
-  
-You should establish a folder hierarchy that aligns with your project. There is no one-size-fits-all model, so make an organizational system and hierarchy that works for you and anyone else who may be accessing the project, like your research team members or other collaborators. Deciding how to hierarchically organize depends on the nature of the project, but in general, you should put the most important item(s) first. 
-
-A typical directory structure is composed of a **root directory** (i.e. top-level folder), **subdirectories** (i.e. subfolders), and relevant **files**.
-
-Usually, we separate data, analysis, and reports into stand-alone subdirectories under the project's root directory. For example, the structure typically looks like this:   
+Question:
+{: .label .label-green}
+Here’s a good example of what a common directory structure may look like. Please identify the top-level folder, the subfolders, and the files.
 
 ```
 ├── Project-Folder/
@@ -78,12 +52,28 @@ Usually, we separate data, analysis, and reports into stand-alone subdirectories
 |   |   ├── File-2
 ```
 
-Question:
-{: .label .label-green}
-<p style="margin-bottom: 10px"></p>
-Which ones in this example are root directories? What about subdirectories?
+<img src="figures/folder_organizing.png" width="250" style="margin-left:30px"/>
 
-<br>
+# Directory structure organization
+
+How files are organized in a subfolder should also represent intention. In other words, there should be meaning behind why these files are grouped, and not just for the sake of putting them together. For example, deciding to group text and spreadsheet files into a subfolder because they're all related to experiment #1, and then deciding to group all image files into another subfolder because they're all related to data visualization. 
+
+To help improve searchability, keep these considerations in mind when organizing your files and folders:
+* File and folder relationships
+  * Decide how you will approach sorting your files into folders. Does a chronological, descriptive, or sequential approach work better for your research?
+  * Chronological: organizing folders based on time
+  * Descriptive: organizing folders based on file types or content
+  * Sequential: organizing folders based on a specific order
+* File and folder names
+  * File and folder names should follow [good naming practices](https://ubc-library-rc.github.io/rdm/content/01_file_naming.html). This means the file and folder names should be machine-readable (no special characters and no empty spaces between words), human-readable (the file or folder name reflects its content), and consistently formatted. 
+* Folder structure or layout
+  * Have a balance between the depth and shallowness of your folder structure: not too deep, but not too shallow.
+  * If your directory is too deep or too shallow, then you would be scrolling or clicking around too much before finding the correct file. A directory that is too deep will result in a file path with too many folders, which can exceed the character limit.
+  * For example: The length of a OneDrive root folder, like C:\users\meganb\OneDrive - Contoso, in addition to the relative path of the file (up to 400 characters), cannot exceed 520 characters [(Microsoft 2023)](https://support.microsoft.com/en-us/office/restrictions-and-limitations-in-onedrive-and-sharepoint-64883a5d-228e-48f5-b3d2-eb39e07630fa). In the Windows API, the maximum length for a path is 260 characters [(Microsoft 2024)](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=registry). If you had more files and folders, the character count can add up!
+
+Proper or well-structured directory structures will help with data sharing. However, you should consider only sharing access to what is necessary and/or placing restrictions on sensitive files. For example, make your raw data read-only and work with its derivatives. In this way, your raw data is protected and can be referred back to if re-analysis is necessary. 
+
+
 
 # Directory Structure Examples
 
