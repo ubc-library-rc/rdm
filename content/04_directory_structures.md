@@ -76,8 +76,7 @@ To help improve searchability, keep these considerations in mind when organizing
 Proper or well-structured directory structures will help with data sharing. However, you should consider only sharing access to what is necessary and/or placing restrictions on sensitive files. For example, make your raw data read-only and work with its derivatives. In this way, your raw data is protected and can be referred back to if re-analysis is necessary. 
 
 
-
-# Directory Structure Examples
+# Directory structure examples
 
 ```
 Example 1: Files are sorted into subfolders representing different experiment attempts
@@ -111,9 +110,10 @@ another_example
 ```
 
 
-# README Files and Data Dictionaries 
+# README files and data dictionaries  
 
-README files and data dictionaries are critical for transparency and reproducibility because they contain a brief description of the major folder contents, naming conventions, and data structure. They allow for an easier understanding of the contents of your directory and data without needing to ask the author(s). This is especially helpful when working with a group or sharing directories with others. See our workshops on [README files](https://ubc-library-rc.github.io/rdm/content/03_create_readme.html) and [data dictionaries](https://ubc-library-rc.github.io/rdm/content/07_data_dictionary.html). 
+[README files](https://ubc-library-rc.github.io/rdm/content/03_create_readme.html) and [data dictionaries](https://ubc-library-rc.github.io/rdm/content/07_data_dictionary.html) are two files critical for research transparency and reproducibility, and storing all metadata about your research: file and folder content, naming conventions, data structure, and much more. They both help you and anyone else understand the contents of your directory and data without needing to ask the author(s) directly. 
+
 
 ## Two types of files needed to store all metadata
 
@@ -136,12 +136,13 @@ For example, the directory structure may look like this:
 |   |   ├── File-2
 ```
 
-```README``` files and ```DATA-DICTIONARIES``` should be the first things to appear when looking at any directory or folder, as these are your guides to its contents. We recommend naming them in all capital letters and including an underscore (_) at the start of the file name to make them stand out and appear at the top. 
 
-```README``` files and ```DATA-DICTIONARIES``` should be written in a plain text format. This will ensure that these files won't rely on special proprietary software and can be opened on any computer. You will often see readme files called ```README.txt``` or ```README.md``` because they're commonly written in TXT or Markdown plain text formats.
+Because these two files are important for your research, they should be the first to appear when accessing a directory or folder. To help prioritize the access of these files, we recommend naming them all in capital letters and placing an underscore (_) at the start of the name. This will help push the files to the top of the directory when your machine organizes by default. 
+- For example: ```_README``` and ```_DATA-DICTIONARY```
 
+Side note: create your README file and data dictionary in a plain text format, such as Markdown (.md) or TXT (.txt). These formats aren’t reliant on special proprietary software, meaning they can be opened in many kinds of applications. You may often see README files called ```README.txt``` or ```README.md``` because they're commonly written in those plain text formats.
 
-# Suggested Design Tools 
+# Helpful design tools
 
 Here are some useful tools to help you plan and design your folder structures:
 * [Project Tree Generator](https://woochanleee.github.io/project-tree-generator/): You can paste your GitHub repository URL to generate a project tree or create it from scratch
