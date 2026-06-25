@@ -30,7 +30,9 @@ Looking for a cheat sheet? Check out our <a href="https://osf.io/5br6a" target="
 
 # Directory hierarchies
 
-A typical directory structure is composed of a **root directory** (top-level folder), **subdirectories** (subfolders), and relevant **files**. A root directory contains the subdirectories, and the subdirectories contain the relevant files. However, there can be an exception for specific files that may need to exist outside of a subdirectory and be nested in a root directory (exist on their own): README files and data dictionaries.
+A typical directory structure is composed of a **root directory** (top-level folder), **subdirectories** (subfolders), and relevant **files**. 
+
+A root directory contains the subdirectories, and the subdirectories contain the relevant files. However, there can be an exception for specific files that may need to exist outside of a subdirectory and be nested in a root directory (exist on their own): README files and data dictionaries.
 
 There is no one-size-fits-all model for creating and organizing your directory. Instead, you should establish a directory that aligns with your project, so organize the folder hierarchy that works for you, your research team, and/or other users. 
 
@@ -78,7 +80,7 @@ Proper or well-structured directory structures will help with data sharing. Howe
 # Directory Structure Examples
 
 ```
-Example 1: This example folder is organized such that the different experiments are in the subfolders
+Example 1: Files are sorted into subfolders representing different experiment attempts
 
 example_project
 ├── Project-Example_Folder/
@@ -94,7 +96,7 @@ example_project
 ```
 
 ```
-Example 2: This example folder is organized such that the different components are in the subfolders 
+Example 2: Files are sorted into subfolders representing different research elements
 
 another_example
 ├── Another-Example_Folder/
@@ -108,7 +110,6 @@ another_example
 |   |   └─ . . .
 ```
 
-<br>
 
 # README Files and Data Dictionaries 
 
@@ -139,7 +140,6 @@ For example, the directory structure may look like this:
 
 ```README``` files and ```DATA-DICTIONARIES``` should be written in a plain text format. This will ensure that these files won't rely on special proprietary software and can be opened on any computer. You will often see readme files called ```README.txt``` or ```README.md``` because they're commonly written in TXT or Markdown plain text formats.
 
-<p style="margin-bottom: 30px"></p>
 
 # Suggested Design Tools 
 
@@ -154,7 +154,6 @@ Here are some useful tools to help you plan and design your folder structures:
 {: .label .label-green}
 {: .no_toc}
 
-<p style="margin-bottom: 10px"></p>
 
 You’re in the UBC course BIOL 116, and you’re working on your research project. You have files that looked like the following before submitting the final assignment:
 
