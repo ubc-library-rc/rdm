@@ -14,9 +14,9 @@ nav_order: 6
 
 A README file is an important document that accompanies your dataset. It provides key information about your project to make sure the dataset(s) can be correctly understood, reanalyzed, and reused by you and others. Without a README file, you could spend hours combing through related manuscripts or searching online to decipher file contents, analysis procedures, and acronyms.
 
-It's good practice to have this document when conducting your research because it helps maximize the usability of your data in the long-term. You may also notice that many data repositories, including UBC’s, will ask you to include a README file as part of your data deposit. 
+It's good practice to have this document when conducting your research because it helps maximize the usability of your data in the long-term. You may also notice that many data repositories, including [UBC](https://researchdata.library.ubc.ca/deposit/dataverse/)'s, will ask you to include a README file as part of your data deposit. 
 
-However, keep in mind that a README file complements your dataset. It does not replace the metadata that data repositories (e.g. Borealis or FRDR) ask you to provide when you deposit your data. The repository’s metadata will support findability within and between data repositories, while the README is portable and continues to describe the dataset, even after it has been separated from its original context. 
+However, keep in mind that a README file complements your dataset. It does not replace the metadata that data repositories (e.g. Borealis or FRDR) ask you to provide when you deposit your data. The repository’s metadata will support findability, accessibility, interoperability, and reusability within and between data repositories, while the README is portable and continues to describe the dataset, even after it has been separated from its original context. 
 
 - Looking for a cheat sheet? Check out our <a href="https://osf.io/aqxw3" target="_blank">one-pager</a>
 - Looking for a template to reuse? Check out our <a href="https://ubc-library-rc.github.io/rdm/content/exercise_files/README_template_v02.txt" target="_blank">README template</a> 
