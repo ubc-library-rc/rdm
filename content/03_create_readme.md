@@ -4,11 +4,6 @@ title: Create a README File
 nav_order: 6
 ---
 
-<img src="figures/work-in-progress.png" width="600"/>
-
-**Please note this workshop is under revision. The README sample and template may be incorrect or unavailable.** 
-{: .note}
-
 # What is a README?
 {: .no_toc}
 
@@ -94,19 +89,19 @@ These minimum requirements mirror the report by the Digital Research Alliance of
 {: .no_toc}
 {: .label .label-green }
 
-Let's revisit the dataset cited in the warm-up exercise. Recall how difficult it was to understand the dataset, so we created an unofficial README for it to help understand the dataset better. 
+Let's revisit the dataset cited in the warm-up exercise. Recall how difficult it was to understand the dataset, so we created an unofficial README for it to help understand the dataset better. Please navigate to the sample README provided below. 
 
-Let's open the [example here](https://ubc-library-rc.github.io/rdm/content/exercise_files/README_sample_exercise_v01.txt), view the content, and answer the following questions:
-1. What existing elements are useful to us?
-2. What elements are underdeveloped or missing?
+Let's open the sample README file, view the content, and answer the following questions:
+1. What existing elements or pieces of information are useful?
+2. What elements or pieces of information are underdeveloped or missing?
 3. If you wanted to enhance this README file, what would you add?
 
 ## Sample README file
-Here is a more thorough sample README file for the dataset cited in the warm-up exercise. It includes the 9 minimum elements to capture academic research projects. 
+Here is the [sample README file](https://ubc-library-rc.github.io/rdm/content/exercise_files/README_sample_v02.txt) you can view and download for exercise 2. It includes the 9 minimum elements to capture academic research projects. 
 
-You can view and download the [sample README file here](https://ubc-library-rc.github.io/rdm/content/exercise_files/README_sample_v02.txt). In the note box at the top, you can also download a README template that can be filled in and modified to fit your project. Both of these files are in plain text format and can be opened in many applications. 
+As a reminder, in the note box at the top, you can also download a README template that can be filled in and modified to fit your project! Both the sample and template README files are in plain text format and can be opened in many applications. 
 
-*Please note that the content of the example README file was fabricated for educational purposes and does not reflect the real project’s objectives.*
+*Please note that the content of the sample README file was fabricated for educational purposes and does not reflect the real project’s objectives.*
 
 <img src="figures/readme.png" width="200" style="margin-left:30px"/>
 
