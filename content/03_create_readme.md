@@ -89,9 +89,9 @@ These minimum requirements mirror the report by the Digital Research Alliance of
 {: .no_toc}
 {: .label .label-green }
 
-Let's revisit the dataset cited in the warm-up exercise. Recall how difficult it was to understand the dataset, so we created an unofficial README for it to help understand the dataset better. Please navigate to the sample README provided below. 
+Let's revisit the dataset cited in the warm-up exercise. Recall how difficult it was to understand the dataset, so we created an unofficial README for it to help understand the dataset better. 
 
-Let's open the sample README file, view the content, and answer the following questions:
+Please navigate to the sample README provided below, open the file, view the content, and answer the following questions:
 1. What existing elements or pieces of information are useful?
 2. What elements or pieces of information are underdeveloped or missing?
 3. If you wanted to enhance this README file, what would you add?
