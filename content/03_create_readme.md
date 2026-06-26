@@ -74,7 +74,7 @@ How your README is written is also important. Consider some of these best practi
 
 
 ## Minimum README file requirements  
-Although every research project is different, a README file should at least have these 9 elements outlined in the table below. These 9 elements will help users understand the basic details of your dataset(s) and evaluate the level of relevance to them.
+Although every research project is different, a README file should at least include the 9 elements outlined in the table below, which will help users understand the basic details of your dataset(s) and evaluate the level of relevance to them.
 
 These minimum requirements mirror the report by the Digital Research Alliance of Canada's Borealis Expert Group: [README Elements for Research Data Deposits in Borealis](https://doi.org/10.5683/SP3/CJ5X5O), along with additional elements to consider for possible README file enhancement. These elements also align with the Tri-Agency's language from an FAQ on [data retention, deposit, and availability (see question #17)](https://science.gc.ca/site/science/en/interagency-research-funding/policies-and-guidelines/research-data-management/faq-data-retention-deposit-and-availability). 
 
@@ -94,23 +94,19 @@ These minimum requirements mirror the report by the Digital Research Alliance of
 {: .no_toc}
 {: .label .label-green }
 
-README files can contain a lot of information related to your project. As outlined in the table, READMEs should at least contain those 9 elements.
+Let's revisit the dataset cited in the warm-up exercise. Recall how difficult it was to understand the dataset, so we created an unofficial README for it to help understand the dataset better. 
 
-Let's look at the README file from this deposited dataset in Borealis as an example for this exercise. Please navigate to the hyperlinked DOI in the citation below: 
-> Scheifele, Benjamin; Waterman, Stephanie; Merckelbach, Lucas; Carpenter, Jeff, 2019, "Replication data for: Measuring the Dissipation Rate of Turbulent Kinetic Energy in Strongly Stratified, Low Energy Environments: A Case Study from the Arctic Ocean", [https://doi.org/10.5683/SP2/Z65KEO](https://doi.org/10.5683/SP2/Z65KEO), Borealis, V1 
-
-Please open the file, view the content, and answer the following questions:
+Let's open the [example here](https://ubc-library-rc.github.io/rdm/content/exercise_files/README_sample_exercise_v01.txt), view the content, and answer the following questions:
 1. What existing elements are useful to us?
 2. What elements are underdeveloped or missing?
 3. If you wanted to enhance this README file, what would you add?
 
 ## Sample README file
-We created a sample README file for the dataset cited in the warm-up exercise. It captures academic research projects and includes the minimum 9 elements. 
+Here is a more thorough sample README file for the dataset cited in the warm-up exercise. It includes the 9 minimum elements to capture academic research projects. 
+
+You can view and download the [sample README file here](https://ubc-library-rc.github.io/rdm/content/exercise_files/README_sample_v02.txt). In the note box at the top, you can also download a README template that can be filled in and modified to fit your project. Both of these files are in plain text format and can be opened in many applications. 
 
 *Please note that the content of the example README file was fabricated for educational purposes and does not reflect the real project’s objectives.*
-
-You can view and download the [sample README file here](https://ubc-library-rc.github.io/rdm/content/exercise_files/README_sample_v02.txt). You can also download a README template that can be filled in and modified to fit your project (found in the note box at the top). Both of these files are in plain text format and can be opened in many applications. 
-
 
 <img src="figures/readme.png" width="200" style="margin-left:30px"/>
 
