@@ -58,20 +58,22 @@ Here’s a good example of what a common directory structure may look like. Plea
 
 # Directory structure organization
 
-How files are organized in a subfolder should also represent intention. In other words, there should be meaning behind why these files are grouped, and not just for the sake of putting them together. For example, deciding to group text and spreadsheet files into a subfolder because they're all related to experiment #1, and then deciding to group all image files into another subfolder because they're all related to data visualization. 
+How files are organized in a subfolder should be relevant to the project. In other words, there should be meaning behind why the files are grouped, and not just for the sake of putting them together. 
+
+For example, deciding to group text and spreadsheet files into a subfolder because they're all related to experiment #1, and then deciding to group all image files into another subfolder because they're all related to data visualization. 
 
 To help improve searchability, keep these considerations in mind when organizing your files and folders:
 * File and folder relationships
   * Decide how you will approach sorting your files into folders. Does a chronological, descriptive, or sequential approach work better for your research?
-  * Chronological: organizing folders based on time
-  * Descriptive: organizing folders based on file types or content
-  * Sequential: organizing folders based on a specific order
+    * Chronological: organizing folders based on time
+    * Descriptive: organizing folders based on file types or content
+    * Sequential: organizing folders based on a specific order
 * File and folder names
-  * File and folder names should follow [good naming practices](https://ubc-library-rc.github.io/rdm/content/01_file_naming.html). This means the file and folder names should be machine-readable (no special characters and no empty spaces between words), human-readable (the file or folder name reflects its content), and consistently formatted. 
+  * The file and folder names should follow [good naming practices](https://ubc-library-rc.github.io/rdm/content/01_file_naming.html): machine-readable (no special characters and no empty spaces between words), human-readable (the file or folder name reflects its content), and consistently formatted. 
 * Folder structure or layout
   * Have a balance between the depth and shallowness of your folder structure: not too deep, but not too shallow.
   * If your directory is too deep or too shallow, then you would be scrolling or clicking around too much before finding the correct file. A directory that is too deep will result in a file path with too many folders, which can exceed the character limit.
-  * For example: The length of a OneDrive root folder, like C:\users\meganb\OneDrive - Contoso, in addition to the relative path of the file (up to 400 characters), cannot exceed 520 characters [(Microsoft 2023)](https://support.microsoft.com/en-us/office/restrictions-and-limitations-in-onedrive-and-sharepoint-64883a5d-228e-48f5-b3d2-eb39e07630fa). In the Windows API, the maximum length for a path is 260 characters [(Microsoft 2024)](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=registry). If you had more files and folders, the character count can add up!
+    * For example: The length of a OneDrive root folder, like C:\users\meganb\OneDrive - Contoso, in addition to the relative path of the file (up to 400 characters), cannot exceed 520 characters [(Microsoft 2023)](https://support.microsoft.com/en-us/office/restrictions-and-limitations-in-onedrive-and-sharepoint-64883a5d-228e-48f5-b3d2-eb39e07630fa). In the Windows API, the maximum length for a path is 260 characters [(Microsoft 2024)](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=registry). If you had more files and folders, the character count can add up!
 
 Proper or well-structured directory structures will help with data sharing. However, you should consider only sharing access to what is necessary and/or placing restrictions on sensitive files. For example, make your raw data read-only and work with its derivatives. In this way, your raw data is protected and can be referred back to if re-analysis is necessary. 
 
@@ -114,13 +116,17 @@ another_example
 
 [README files](https://ubc-library-rc.github.io/rdm/content/03_create_readme.html) and [data dictionaries](https://ubc-library-rc.github.io/rdm/content/07_data_dictionary.html) are two files critical for research transparency and reproducibility, and storing all metadata about your research: file and folder content, naming conventions, data structure, and much more. They both help you and anyone else understand the contents of your directory and data without needing to ask the author(s) directly. 
 
+The two types of files needed to store all project metadata
+| *File type* | *Description* | *Where it should be stored* |
+| --- | --- | --- |
+| README file | Elaborates on the contents and decision-making of the folder structure, discusses how, where, and who conducted the data collection, and more. Depending on the size of your research project and discipline, a README file can also contain variable definitions. | Stored in the root directory |
+| Data dictionary | Elaborates on variable definitions and how they're used. | Stored where the data files are kept |
 
-## Two types of files needed to store all metadata
 
-1. ```README``` file: resides in the **root directory** and elaborates on the contents and decision-making of the folder structure. It also discusses how, where, and who conducted the data collection.
-2. ```DATA-DICTIONARY``` file: resides **where the data files are placed** and elaborates on how the data variables are defined and described.
+Because these two files are important for your research, they should be the first to appear when accessing a directory or folder. To help prioritize the access of these files, we recommend naming them all in capital letters and placing an underscore (_) at the start of the name. This will help push the files to the top of the directory when your machine organizes by default. 
+- For example: ```_README``` and ```_DATA-DICTIONARY```
 
-For example, the directory structure may look like this:
+As a result, the directory structure may look like this:
 
 ```
 ├── Project-Folder/
@@ -136,18 +142,15 @@ For example, the directory structure may look like this:
 |   |   ├── File-2
 ```
 
-
-Because these two files are important for your research, they should be the first to appear when accessing a directory or folder. To help prioritize the access of these files, we recommend naming them all in capital letters and placing an underscore (_) at the start of the name. This will help push the files to the top of the directory when your machine organizes by default. 
-- For example: ```_README``` and ```_DATA-DICTIONARY```
-
-Side note: create your README file and data dictionary in a plain text format, such as Markdown (.md) or TXT (.txt). These formats aren’t reliant on special proprietary software, meaning they can be opened in many kinds of applications. You may often see README files called ```README.txt``` or ```README.md``` because they're commonly written in those plain text formats.
+Lastly, create your README file and data dictionary in a plain text format, such as Markdown (.md) or TXT (.txt). These formats aren’t reliant on special proprietary software, meaning they can be opened in many kinds of applications. You may often see README files called ```README.txt``` or ```README.md``` because they're commonly written in those plain text formats.
 
 # Helpful design tools
 
-Here are some useful tools to help you plan and design your folder structures:
-* [Project Tree Generator](https://woochanleee.github.io/project-tree-generator/): You can paste your GitHub repository URL to generate a project tree or create it from scratch
-* [Tree Generator by Nathan](https://t.co/AQzht2i703): Design a diagram for potential file tree with more options
-* In your terminal, you can use `tree` to generate a tree-like structure. Windows and Linux have this function, but you will need to install it for Mac
+Here are some helpful tools to help you plan out and design your directory structure without having to use your real files and folders. 
+
+[Project Tree Generator](https://woochanleee.github.io/project-tree-generator/) and [Tree Generator](https://t.co/AQzht2i703) are easy online tools to use that allow you to create a directory structure. You can copy and paste your design into a document (plain text formatted) so you can save it and share it with researchers.
+
+You can also use the ```tree``` function in the Terminal application. This will create tree-like structures for your files and folders without having to manually make a design. Windows and Linux should already have this function, but Macs would need to install it (helpful instructions can be found [here](https://instr.iastate.libguides.com/file-mgmt/foldertree#quick). 
 
 <img src="figures/folders2.png" width="100" style="margin-left:30px"/>
 
@@ -155,8 +158,7 @@ Here are some useful tools to help you plan and design your folder structures:
 {: .label .label-green}
 {: .no_toc}
 
-
-You’re in the UBC course BIOL 116, and you’re working on your research project. You have files that looked like the following before submitting the final assignment:
+You’re a student in the UBC course BIOL 116 and working on your final research project. Here is what your files look like before submitting the final assignment:
 
 ```
 Pither_20210921_BIOL116RProject_ph-data.csv
@@ -172,6 +174,7 @@ Pither_BIOL116RProject_Lab-report_V1.docx
 Pither_BIOL116RProject_Lab-report_V2.docx
 Pither_BIOL116RProject_Lab-report_V3.docx
 ```
+Let’s practice planning out a directory structure! Please use one of the design tools mentioned above to organize these files. You can refer to this template (see below) for this exercise, or refer above to the previous examples for inspiration.
 
 Use the provided tools below to put the files into an organized folder structure. You can copy this template and use it for this exercise:
 ```
@@ -180,25 +183,6 @@ Use the provided tools below to put the files into an organized folder structure
 |   |   ├── example
 
 ```
-
-You can also refer to the example that we saw earlier:
-```
-├── Project-Folder/
-|   ├── _README.md                  
-|   ├── Experiment-Data/
-|   |   ├── _DATA-DICTIONARY.md            
-|   |   ├── File-1
-|   |   ├── File-2
-|   ├── Experiment-Analysis/
-|   |   ├── File-1
-|   ├── Experiment-Report/
-|   |   ├── File-1
-|   |   ├── File-2
-```
-
-<p style="margin-bottom: 30px"></p>
-
-[//]: # (activity link: https://bit.ly/rdmactivity)
 
 <br>
 
