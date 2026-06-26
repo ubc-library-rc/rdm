@@ -116,7 +116,8 @@ another_example
 
 [README files](https://ubc-library-rc.github.io/rdm/content/03_create_readme.html) and [data dictionaries](https://ubc-library-rc.github.io/rdm/content/07_data_dictionary.html) are two files critical for research transparency and reproducibility, and storing all metadata about your research: file and folder content, naming conventions, data structure, and much more. They both help you and anyone else understand the contents of your directory and data without needing to ask the author(s) directly. 
 
-The two types of files needed to store all project metadata
+The two types of files needed to store all project metadata are outlined in this table:
+
 | *File type* | *Description* | *Where it should be stored* |
 | --- | --- | --- |
 | README file | Elaborates on the contents and decision-making of the folder structure, discusses how, where, and who conducted the data collection, and more. Depending on the size of your research project and discipline, a README file can also contain variable definitions. | Stored in the root directory |
@@ -150,7 +151,7 @@ Here are some helpful tools to help you plan out and design your directory struc
 
 [Project Tree Generator](https://woochanleee.github.io/project-tree-generator/) and [Tree Generator](https://t.co/AQzht2i703) are easy online tools to use that allow you to create a directory structure. You can copy and paste your design into a document (plain text formatted) so you can save it and share it with researchers.
 
-You can also use the ```tree``` function in the Terminal application. This will create tree-like structures for your files and folders without having to manually make a design. Windows and Linux should already have this function, but Macs would need to install it (helpful instructions can be found [here](https://instr.iastate.libguides.com/file-mgmt/foldertree#quick). 
+You can also use the ```tree``` function in the Terminal application. This will create tree-like structures for your files and folders without having to manually make a design. Windows and Linux should already have this function, but Macs would need to install it (helpful instructions can be found [here](https://instr.iastate.libguides.com/file-mgmt/foldertree#quick)). 
 
 <img src="figures/folders2.png" width="100" style="margin-left:30px"/>
 
