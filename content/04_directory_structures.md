@@ -58,9 +58,9 @@ Here’s a good example of what a common directory structure may look like. Plea
 
 # Directory structure organization
 
-How files are organized in a subfolder should be relevant to the project. In other words, there should be meaning behind why the files are grouped, and not just for the sake of putting them together. 
+How files are organized in folders should be relevant to the project. In other words, there should be meaning behind why the files are grouped, and not just for the sake of putting them together. 
 
-For example, deciding to group text and spreadsheet files into a subfolder because they're all related to experiment #1, and then deciding to group all image files into another subfolder because they're all related to data visualization. 
+For example, putting all spreadsheet files into a subfolder because they're all related to data analysis, and then deciding to put all image files into another subfolder because they're all related to data visualization. 
 
 To help improve searchability, keep these considerations in mind when organizing your files and folders:
 * File and folder relationships
