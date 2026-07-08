@@ -6,7 +6,7 @@ nav_order: 8
 
 <img src="figures/work-in-progress.png" width="600"/>
 
-# Why Are Structured Directories for Research Important?
+# Why Are Structured Directories Important?
 {: .no_toc }
 
 Let’s pretend you store all your digital files in one folder on your computer. Imagine how frustrating it would be, and how long it would take you to find data collected on a specific day 5 years ago! 
@@ -74,7 +74,7 @@ To help improve searchability, keep these considerations in mind when organizing
   * Have a balance between the depth and shallowness of your folder structure: not too deep, but not too shallow.
   * If your directory is too deep or too shallow, then you would be scrolling or clicking around too much before finding the correct file. A directory that is too deep will result in a file path with too many folders, which can exceed the character limit.
     * For example: The length of a OneDrive root folder, like C:\users\meganb\OneDrive - Contoso, in addition to the relative path of the file (up to 400 characters), cannot exceed 520 characters [(Microsoft 2023)](https://support.microsoft.com/en-us/office/restrictions-and-limitations-in-onedrive-and-sharepoint-64883a5d-228e-48f5-b3d2-eb39e07630fa). In the Windows API, the maximum length for a path is 260 characters [(Microsoft 2024)](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=registry). If you had more files and folders, the character count can add up!
-* As a rule of thumb, file directories should be 3 to 5 levels deep.
+  * As a rule of thumb, file directories should be 3 to 5 levels deep.
 
 Proper or well-structured directory structures will help with data sharing. However, you should consider only sharing access to what is necessary and/or placing restrictions on sensitive files. For example, make your raw data read-only and work with its derivatives. In this way, your raw data is protected and can be referred back to if re-analysis is necessary. 
 
