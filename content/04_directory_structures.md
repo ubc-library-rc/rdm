@@ -6,12 +6,12 @@ nav_order: 8
 
 <img src="figures/work-in-progress.png" width="600"/>
 
-# Why Are Structured Directories Important?
+# Why Are Structured Directories for Research Important?
 {: .no_toc }
 
-Let’s pretend you store all of your digital files in one folder on your computer. Imagine how frustrating it would be, and how long it would take you to find data collected on a specific day 5 years ago! 
+Let’s pretend you store all your digital files in one folder on your computer. Imagine how frustrating it would be, and how long it would take you to find data collected on a specific day 5 years ago! 
 
-Instead of keeping every document in a single folder, files are often organized using a directory or folder structure. A good, consistent folder structure benefits you and others by making item access, retrieval, and storage more efficient. This will save you time, improve productivity, and overall make the research process more transparent and collaborative. 
+Instead of keeping every document in a single folder, files are often organized using a directory or folder structure. A good, consistent folder structure benefits you and others by making file access, retrieval, and storage more efficient. This will save you time, improve productivity, and overall make the research process more transparent and collaborative. 
 
 Looking for a cheat sheet? Check out our <a href="https://osf.io/5br6a" target="_blank">one-pager</a>!
 {: .note}
@@ -40,7 +40,7 @@ However, one strong suggestion is to have your most important item(s) appear fir
 
 Question:
 {: .label .label-green}
-Here’s a good example of what a common directory structure may look like. Please identify the top-level folder, the subfolders, and the files.
+Here’s an example of what a common directory structure can look like. Please identify the top-level folder, the subfolders, and the files.
 
 ```
 ├── Project-Folder/
@@ -69,11 +69,12 @@ To help improve searchability, keep these considerations in mind when organizing
     * Descriptive: organizing folders based on file types or content
     * Sequential: organizing folders based on a specific order
 * File and folder names
-  * The file and folder names should follow [good naming practices](https://ubc-library-rc.github.io/rdm/content/01_file_naming.html): machine-readable (no special characters and no empty spaces between words), human-readable (the file or folder name reflects its content), and consistently formatted. 
+  * The file and folder names should follow [good naming practices](https://ubc-library-rc.github.io/rdm/content/01_file_naming.html): machine-readability (no special characters and no empty spaces between words), human-readability (the file or folder name reflects its content), and consistent formatting. 
 * Folder structure or layout
   * Have a balance between the depth and shallowness of your folder structure: not too deep, but not too shallow.
   * If your directory is too deep or too shallow, then you would be scrolling or clicking around too much before finding the correct file. A directory that is too deep will result in a file path with too many folders, which can exceed the character limit.
     * For example: The length of a OneDrive root folder, like C:\users\meganb\OneDrive - Contoso, in addition to the relative path of the file (up to 400 characters), cannot exceed 520 characters [(Microsoft 2023)](https://support.microsoft.com/en-us/office/restrictions-and-limitations-in-onedrive-and-sharepoint-64883a5d-228e-48f5-b3d2-eb39e07630fa). In the Windows API, the maximum length for a path is 260 characters [(Microsoft 2024)](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=registry). If you had more files and folders, the character count can add up!
+* As a rule of thumb, file directories should be 3 to 5 levels deep.
 
 Proper or well-structured directory structures will help with data sharing. However, you should consider only sharing access to what is necessary and/or placing restrictions on sensitive files. For example, make your raw data read-only and work with its derivatives. In this way, your raw data is protected and can be referred back to if re-analysis is necessary. 
 
@@ -114,7 +115,7 @@ another_example
 
 # README files and data dictionaries  
 
-[README files](https://ubc-library-rc.github.io/rdm/content/03_create_readme.html) and [data dictionaries](https://ubc-library-rc.github.io/rdm/content/07_data_dictionary.html) are two files critical for research transparency and reproducibility, and storing all metadata about your research: file and folder content, naming conventions, data structure, and much more. They both help you and anyone else understand the contents of your directory and data without needing to ask the author(s) directly. 
+[README files](https://ubc-library-rc.github.io/rdm/content/03_create_readme.html) and [data dictionaries](https://ubc-library-rc.github.io/rdm/content/07_data_dictionary.html) are two files critical for research transparency and reproducibility. They store all metadata about your research: file and folder content, naming conventions, data structure, and much more. They both help you and anyone else understand the contents of your directory and data without needing to ask the author(s) directly. 
 
 The two types of files needed to store all project metadata are outlined in this table:
 
