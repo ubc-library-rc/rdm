@@ -3,13 +3,17 @@ layout: default
 title: Create a Data Dictionary
 nav_order: 12
 ---
- 
+
+
+<img src="figures/work-in-progress.png" width="600"/>
+
+
+
 # What is a Data Dictionary? 
 {: .no_toc }
+A data dictionary is a type of document that provides essential information about variables from a dataset. It includes their definitions, descriptions and structure. The primary goal of a data dictionary is to help people understand and use a dataset, especially if you’re working with multiple tables. A data dictionary may be included with the dataset or exist as an independent resource.
 
-A data dictionary is a type of documentation that provides essential information about variables in a dataset, including their definitions, descriptions, and structure. The primary goal of a data dictionary is to help people understand and use a dataset, especially if you are working with multiple tables or with a database. A data dictionary may be included with the dataset or exist as an independent resource. 
-
-Having a data dictionary is important for research reproducibility and revisitation. It clarifies questions like, "What does this variable mean?"
+Overall, having a data dictionary is important for research reproducibility and revisitation. It clarifies questions like, “What does this variable mean?”
 
 - Looking for a cheat sheet? Check out our <a href="https://osf.io/akzpq" target="_blank">one-pager</a>
 - Looking for a template to reuse? Check out our <a href="https://ubc-library-rc.github.io/rdm/content/assets/templates/data_dictionary_template_blank.csv" target="_blank">data dictionary template</a> 
@@ -30,72 +34,66 @@ Having a data dictionary is important for research reproducibility and revisitat
 {: .no_toc}
 {: .label .label-green }
 
-It's common for long-standing research projects to have a data dictionary. Here are some open-source examples to explore:
-
+It’s common for long-standing research projects to have a data dictionary. Here are some examples you can explore to see the variation in how data dictionaries are represented and the kind of information they contain:
 * [National Database of Deep-Sea Corals](https://www.ncei.noaa.gov/waf/dsc-data/metadata/20221213-0_NOAA_NDB_corals_sponges_data_dictionary.html)
 * [Climate and Forecast Conventions](http://cfconventions.org/Data/cf-standard-names/46/build/cf-standard-name-table.html)
 * [Organic Carbon Sorption and Decomposition in Selected Global Soils](https://tes-sfa.ornl.gov/sites/default/files/Soil_C_Decomp_Data_Dictionary_20140616.pdf)
 * [Planetary Science Dictionary (NASA)](https://pds.nasa.gov/tools/dd-search/)
 
-A data dictionary can be a simple table (spreadsheet or PDF) or a detailed web application. For some projects, a data dictionary is created and maintained by one research member, but this can also be done by the entire research team. 
+A data dictionary can be a simple table on a spreadsheet or PDF, or a detailed web application. For some projects, a data dictionary can be created and maintained by one research member, but it can also be done by the whole research team.
 
-<p style="margin-bottom: 30px"></p> 
 
 ## Exercise 1
 {: .no_toc}
 {: .label .label-green }
 
-Please help us make sense of the dataset below.
+Let’s pretend you’re a researcher and you’ve come across this dataset that may be helpful for your project. You would like to know more about it and make sense of the deposited data with it.
 
-Access this dataset:  
+Below is the dataset accessible by the hyperlinked DOI. From the deposited files, download **“Detroit Class Data.xlsx”** in the original file format. Then, to examine the data and to determine the appropriateness for your project, try to answer the following questions: 
+1) What do the columns STATEFP10 and COUNTYFP10 mean?
+2) Describe the different measures of the study
+3) Describe how the data was collected?
 
+Here is the first dataset:  
 >Florida, Richard, 2013, "Class-Divided Cities, Detroit Edition Published in Atlantic Cities", <a href="https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/SNXXHQ" target="_blank">https://doi.org/10.5683/SP3/SNXXHQ</a>, Borealis, V3
 
-Download the data file <b>"Detroit Class Data.xlsx"</b> in the <b>Original File Format</b>. While examining the data, try to answer the following questions:
-1. What do you think the columns `STATEFP10` and `COUNTYFP10` mean?
-2. Describe the different measures in this study.
-3. How was the data collected?
-
-Alternatively, here is another dataset example with a better data dictionary:
+Additionally, take a look at this dataset below. It may also be difficult to understand the data at first, but with the data dictionary included, making sense of the data is much better.
 >Barsky, Eugene; Mitchell, Marjorie; Buhler, Jeremy, 2019, "UBC Research Data Management Survey: Science and Engineering", [https://doi.org/10.5683/SP2/9VEAT9](https://doi.org/10.5683/SP2/9VEAT9), Borealis, V3
-
-You can see how a data dictionary allows users to make sense of the data very fast.
 
 <img src="figures/data_dictionary.png" width="200"/>
 
 ---
 
-# The Process of Creating a Data Dictionary 
+## Creation considerations for a data dictionary 
 
-Document your work as you go, such as making updates when new elements and variables are added or updated. This reduces the risk of forgetting valuable information or losing details. 
+Document your work as you progress through your research. This means revising your data dictionary when new elements and/or variables are added or updated, which will also help reduce the risk of forgetting valuable information or losing details. Maintenance of your data dictionary is just as important as creating it!
 
-Place the data dictionary where your data files are stored. Having the data dictionary nearby makes it easier to understand the data, as it serves as a guide to its contents. Check out our [directory structures](https://ubc-library-rc.github.io/rdm/content/03_create_readme.html#stylistic-considerations-of-a-readme) workshop for more information. 
+Any text editor can be used to create a data dictionary. However, for this kind of document we suggest using spreadsheet editing software. CSV, TSV, or XLSX are common [file formats](https://ubc-library-rc.github.io/rdm/content/02_file_formats.html) because they’re lightweight and non-proprietary. These formats are also compatible with various applications and good for preservation (future-friendly).
+* If you create a data dictionary in a CSV or TSV format, please note that any formatting will be lost (no colour, bolding, font, formulas, font size, etc.). Only the data will be saved, so if formatting is important, then save it in an XLSX format. 
 
-A data dictionary can be created with any text editor or word processor, but we suggest using spreadsheet software. The spreadsheet should be saved as a CSV or TSV file because it's a lightweight, non-proprietary file format that's accessible to everyone and future-friendly. 
+Once your data dictionary is created, store it where your data files are kept (here is our workshop on [directory structures](https://ubc-library-rc.github.io/rdm/content/04_directory_structures.html)). Having the data dictionary nearby makes access to the guidebook more convenient, and it’s stored in a place where other important files are. 
 
-<p style="margin-bottom: 30px"></p> 
+## Stylistic considerations for a data dictionary
 
-# Stylistic Considerations of a Data Dictionary
+How your data dictionary is written is also important. Consider some of these best practices for data documentation:
+* Be as clear and specific as possible when describing elements of your project
+* Follow a style that’s consistent and agreed upon by the research team
+ * You can also note these stylistic decisions in your [README file](https://ubc-library-rc.github.io/rdm/content/03_create_readme.html)
+* Consider your audience: will you be using jargon? If so, perhaps you may want to clarify the specialized terminology or look for an alternative word. If you refer to acronyms or abbreviations, make sure you’re defining them
+* The data dictionary can simply be named ```DATA-DICTIONARY``` or ```_DATA-DICTIONARY```, but additional information can be added if necessary
 
-How you write your data dictionary is as important as the information you include. To ensure consistency, follow the style that's agreed upon by the research team. Also, make sure to note any stylistic decisions in your [README file](https://ubc-library-rc.github.io/rdm/content/03_create_readme.html#stylistic-considerations-of-a-readme) if necessary. 
+A data dictionary is commonly formatted as a table with the variables placed in rows and variable information placed in columns. At the top of your data dictionary, you should include relevant descriptive metadata such as:
+* A descriptive title and the name of the dataset
+* The creation date of the data dictionary (using a standardized format like [ISO 8601](https://www.w3.org/TR/NOTE-datetime): YYYYMMDD or YYYY-MM-DD)
+* A version number or a last updated date
 
-The following are some general best practices related to data documentation:
-* Be as clear as possible
-* Don't use jargon 
-* Define terms, abbreviations, and acronyms 
-* Follow [good naming conventions](https://ubc-library-rc.github.io/rdm/content/01_file_naming.html#1--machine-readable) and a consistent formatting style
+## Recommended content 
 
-A data dictionary is usually formatted as a table with the variables in rows and variable information in columns. At the top, you should mention relevant metadata such as the dataset's name, the creation date of the data dictionary, and the version number or last updated date. 
+Every research project is different. However, there are some elements you may want to consider including in your data dictionary. These elements will help users understand the details of your dataset variables, which will help with understanding your research overall. 
 
-<p style="margin-bottom: 30px"></p> 
+Primary elements to consider:
 
-# Recommended Content 
-
-Every project is different, so consider which of the following applies to your project.
-
-Primary fields to consider:
-
-| **Field** | **Details** |
+| **Element** | **Details** |
 |-----------|-------------|
 | **Variable ID** | The name used to identify a specific variable. This can be a sequence of alphanumeric characters. |
 | **Variable Name** | The name of a specific variable in a human language, like English. Don’t include abbreviations or acronyms. |
@@ -105,9 +103,9 @@ Primary fields to consider:
 | **Requirement** | Indicate if a variable is required with a "yes" or "no". |
 | **Notes** | Add any extra notes, remarks, or instructions that help contextualize a variable. |
 
-Secondary fields to consider:
+Secondary elements to consider:
 
-| **Field** | **Details** |
+| **Element** | **Details** |
 |-----------|-------------|
 | **Example Usage/Sample Values** | Provide some examples of how a variable is implemented, or what a variable may look like. |
 | **Measurement Units** | The measurement unit of a variable. |
@@ -115,15 +113,22 @@ Secondary fields to consider:
 | **Timestamp** | The indicated time a variable’s data was collected. |
 | **Missing Data** | Describe the missing data for a specific variable. Indicate the type of missing data, such as the system missing the data, a data instrument error, or a participant skip error, etc. |
 
-<p style="margin-bottom: 30px"></p> 
+## Question
+{: .no_toc}
+{: .label .label-green }
+In Exercise 1, we looked at a dataset without a data dictionary. It was quite difficult to understand what the dataset variables meant, so we created an unofficial data dictionary to help us make sense of the research. 
 
-# Sample Data Dictionary 
+Please navigate to the sample data dictionary provided below — you can view it directly on the page, or download the file. Once you’ve viewed the content, try to answer the following questions:
+- Which elements are considered primary and secondary?
+- Would you change (add/remove) anything about this data dictionary?
 
-Below is a shortened data dictionary for the dataset we looked at in exercise 1. 
+## Sample data dictionary 
 
-You can download a sample data dictionary based on exercise 1 [here](https://ubc-library-rc.github.io/rdm/content/assets/templates/data_dictionary_sample.csv). The fields and existing values can be deleted and modified to fit your project.  
+Here is a sample data dictionary you can view and/or [download as a file](https://ubc-library-rc.github.io/rdm/content/assets/templates/data_dictionary_sample.csv). It includes some elements to provide information about the variables included in the research.
 
-**NOTE: The values here are <u>made-up examples</u> for educational purposes. They do not reflect the real study.**
+As a reminder, in the note box at the top, you can also download a data dictionary template that can be filled in and modified to fit your project. Both the sample and template data dictionary files are in a non-proprietary format that can be opened in many applications. 
+
+*Please note that the content of the sample data dictionary was fabricated for educational purposes and does not reflect the real project’s objectives.* 
 
 | Variable ID | Variable Name | Variable Definition | Variable Type | Allowable Values/Parameters | Requirement | Sample Values | Notes | 
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -132,11 +137,6 @@ You can download a sample data dictionary based on exercise 1 [here](https://ubc
 | GEOID10 | Geographical ID | Combined state, county, and tract identifier. | String | Numerical and alphabetical values allowed | Yes | “26163593300” | | 
 | FFFPCT | Fast Food Percentage | Percentage of restaurants classified as fast food. | Number | Percentages from 0-100 allowed with one decimal place | Yes| 40.3, 55.8, 22.5 | | 
 
-<p style="margin-bottom: 20px"></p> 
-
-## Data Dictionary Template
-
-You can download a blank data dictionary template [here](https://ubc-library-rc.github.io/rdm/content/assets/templates/data_dictionary_template_blank.csv). The header and fields can be modified to fit your project. 
 
 <br> 
 
@@ -151,7 +151,11 @@ You can download a blank data dictionary template [here](https://ubc-library-rc.
 
 ---
 
-<b>Sources</b>
+**Additional resources**
+{: .no_toc }
+The Alliance Programmatic Codebook Generator (a tool that may be helpful for you): [https://alliance-rdm-gdr.github.io/RDM_Codebook_App/](https://alliance-rdm-gdr.github.io/RDM_Codebook_App/) 
+
+**Sources**
 {: .no_toc }
 * Harvard Biomedical Data Management. Data Dictionary. <https://datamanagement.hms.harvard.edu/collect-analyze/documentation-metadata/data-dictionary> 
 * Penn Libraries Guides. Data Management Resources. <https://guides.library.upenn.edu/c.php?g=564157&p=9554907>
