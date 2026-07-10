@@ -61,6 +61,7 @@ Once your README file is created, store it in the root directory of your project
 ## Stylistic considerations for a README file
 How your README is written is also important. Consider some of these best practices for data documentation: 
 - Be as clear and specific as possible when describing elements of your project
+- Follow a style that’s consistent and agreed upon by the research team
 - Use descriptive titles, including your README file itself along with other subsections within your README file
 - Add in relevant dates, such as when the README file, dataset(s), and other files were created and updated. These dates should follow a standardized format, like [ISO 8601](https://www.w3.org/TR/NOTE-datetime) (YYYY-MM-DD or YYYYMMDD) to maintain consistency
 - Consider your audience: will you be using jargon? If so, perhaps you may want to clarify the specialized terminology or look for an alternative word. If you refer to acronyms or abbreviations, make sure you’re defining them
