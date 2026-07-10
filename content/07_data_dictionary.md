@@ -49,16 +49,18 @@ A data dictionary can be a simple table on a spreadsheet or PDF, or a detailed w
 
 Let’s pretend you’re a researcher and you’ve come across this dataset that may be helpful for your project. You would like to know more about it and make sense of the deposited data with it.
 
-Below is the dataset accessible by the hyperlinked DOI. From the deposited files, download **“Detroit Class Data.xlsx”** in the original file format. Then, to examine the data and to determine the appropriateness for your project, try to answer the following questions: 
-1) What do the columns STATEFP10 and COUNTYFP10 mean?
-2) Describe the different measures of the study
-3) Describe how the data was collected?
-
-Here is the first dataset:  
+Here is the dataset, accessible by the hyperlinked DOI:  
 >Florida, Richard, 2013, "Class-Divided Cities, Detroit Edition Published in Atlantic Cities", <a href="https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/SNXXHQ" target="_blank">https://doi.org/10.5683/SP3/SNXXHQ</a>, Borealis, V3
 
-Additionally, take a look at this dataset below. It may also be difficult to understand the data at first, but with the data dictionary included, making sense of the data is much better.
+From the deposited files, please download **“Detroit Class Data.xlsx”** in the original file format. Then, to examine the data and to determine the appropriateness for your project, try to answer the following questions: 
+1. What do the columns STATEFP10 and COUNTYFP10 mean?
+2. Describe the different measures of the study
+3. Describe how the data was collected?
+
+
+Additionally, take a look at this dataset below. It may also be difficult to understand the data at first, but with the data dictionary included, it is much easier to make sense of it.
 >Barsky, Eugene; Mitchell, Marjorie; Buhler, Jeremy, 2019, "UBC Research Data Management Survey: Science and Engineering", [https://doi.org/10.5683/SP2/9VEAT9](https://doi.org/10.5683/SP2/9VEAT9), Borealis, V3
+
 
 <img src="figures/data_dictionary.png" width="200"/>
 
@@ -68,7 +70,7 @@ Additionally, take a look at this dataset below. It may also be difficult to und
 
 Document your work as you progress through your research. This means revising your data dictionary when new elements and/or variables are added or updated, which will also help reduce the risk of forgetting valuable information or losing details. Maintenance of your data dictionary is just as important as creating it!
 
-Any text editor can be used to create a data dictionary. However, for this kind of document we suggest using spreadsheet editing software. CSV, TSV, or XLSX are common [file formats](https://ubc-library-rc.github.io/rdm/content/02_file_formats.html) because they’re lightweight and non-proprietary. These formats are also compatible with various applications and good for preservation (future-friendly).
+Any text editor can be used to create a data dictionary. However, for this kind of document, we suggest using spreadsheet editing software. CSV, TSV, or XLSX are common [file formats](https://ubc-library-rc.github.io/rdm/content/02_file_formats.html) because they’re lightweight and non-proprietary. These formats are also compatible with various applications and good for preservation (future-friendly).
 * If you create a data dictionary in a CSV or TSV format, please note that any formatting will be lost (no colour, bolding, font, formulas, font size, etc.). Only the data will be saved, so if formatting is important, then save it in an XLSX format. 
 
 Once your data dictionary is created, store it where your data files are kept (here is our workshop on [directory structures](https://ubc-library-rc.github.io/rdm/content/04_directory_structures.html)). Having the data dictionary nearby makes access to the guidebook more convenient, and it’s stored in a place where other important files are. 
