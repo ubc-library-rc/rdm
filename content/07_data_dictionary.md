@@ -99,17 +99,17 @@ A data dictionary is commonly formatted as a table with the variables placed in 
 
 ## Recommended content 
 
-Every research project is different. However, there are some elements you may want to consider including in your data dictionary. These elements will help users understand the details of your dataset variables, which will help with understanding your research overall. 
+Every research project is different. However, there are some elements you should consider including in your data dictionary. These elements will help users understand the details of your dataset variables, which will aid their overall understanding of your research. 
 
 Primary elements to consider:
 
 | **Element** | **Details** |
 |-----------|-------------|
 | **Variable ID** | The name used to identify a specific variable. This can be a sequence of alphanumeric characters. |
-| **Variable Name** | The name of a specific variable in a human language, like English. Don’t include abbreviations or acronyms. |
-| **Variable Definition** | The explanation of what a variable means, how it was calculated, how it should be used, or any known patterns. You can refer to existing discipline-specific vocabularies to increase interoperability (e.g. [Unified Medical Language System](https://www.nlm.nih.gov/research/umls/index.html)). |
-| **Variable Type** | The format of a variable (e.g., string, number, percentage, date). |
-| **Allowable Values / Parameters** | Describe the values that can be entered. For example: min/max values for numerical entries, a list of options for character values, or whether the field accepts nulls. |
+| **Variable name** | The name used to identify a specific variable in a human language, like English. Don’t include numbers, abbreviations, or acronyms. |
+| **Variable definition** | The explanation of what a variable means, how it was calculated, how it should be used, and/or any known patterns. You can refer to existing discipline-specific vocabularies to increase interoperability (e.g. [Unified Medical Language System](https://www.nlm.nih.gov/research/umls/index.html)). |
+| **Variable type** | The format of a variable (e.g., string, number, percentage, date). |
+| **Allowable values/parameters** | Describe the permitted values that can be entered. For example: minimum/maximum values for numerical entries, a list of options for character values, or whether the field accepts nulls. |
 | **Requirement** | Indicate if a variable is required with a "yes" or "no". |
 | **Notes** | Add any extra notes, remarks, or instructions that help contextualize a variable. |
 
@@ -117,11 +117,11 @@ Secondary elements to consider:
 
 | **Element** | **Details** |
 |-----------|-------------|
-| **Example Usage/Sample Values** | Provide some examples of how a variable is implemented, or what a variable may look like. |
-| **Measurement Units** | The measurement unit of a variable. |
-| **Question Text** | Include the exact wording from the survey, interview, task, etc. |
-| **Timestamp** | The indicated time a variable’s data was collected. |
-| **Missing Data** | Describe the missing data for a specific variable. Indicate the type of missing data, such as the system missing the data, a data instrument error, or a participant skip error, etc. |
+| **Example usage/sample values** | Provide some examples of how a variable is implemented, or what a variable may look like. |
+| **Measurement units** | The measurement unit of a variable. |
+| **Question text** | Include the exact wording from the survey, interview, task, etc. |
+| **Timestamp** | The time a variable’s data was collected. |
+| **Missing data** | Describe the missing data for a specific variable, including the type of missing data. For example: the system missing the data, a data instrument error, or a participant skip error, etc. |
 
 ## Question
 {: .no_toc}
