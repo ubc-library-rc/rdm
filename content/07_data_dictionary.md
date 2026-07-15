@@ -81,7 +81,7 @@ Once your data dictionary is created, store it where your data files are kept (h
 REDCap is an application that helps build and manage surveys and databases for data collection. This tool may also be useful for designing and managing data dictionaries. In REDCap, there is the option to download the data dictionary file (in CSV format), make edits to fit your research variables (adding, removing, or modifying existing elements), and then re-upload the file to REDCap to apply the changes. 
 
 UBC runs two instances of REDCap: [UBC Advanced Research Computing (ARC)](https://arc.ubc.ca/software/redcap) and [UBC Faculty of Medicine](https://restech.med.ubc.ca/our-services/electronic-data-collection/). 
-* Please [contact UBC ARC](arc.support@ubc.ca) for more information about which instance to use for your research. 
+* Please [contact UBC ARC](mailto:arc.support@ubc.ca) for more information about which instance to use for your research. 
 
 ## Stylistic considerations for a data dictionary
 
