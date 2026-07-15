@@ -4,8 +4,6 @@ title: Directory Structures
 nav_order: 8
 ---
 
-<img src="figures/work-in-progress.png" width="600"/>
-
 # Why Are Structured Directories Important?
 {: .no_toc }
 
