@@ -171,6 +171,8 @@ The Alliance Programmatic Codebook Generator (a tool that may be helpful for you
 * Penn Libraries Guides. Data Management Resources. <https://guides.library.upenn.edu/c.php?g=564157&p=9554907>
 * Phegley, L. (2023). University of Pennsylvania. Data Dictionary Blank Template. <https://repository.upenn.edu/entities/publication/0430ccdd-cbd8-4404-9f54-11cb81d5b3b1>
 * Stony Brook University Data Governance. Data Dictionary Standards. <https://www.stonybrook.edu/commcms/datagovernance/structureandroles/datadictionarystandards>
+* UBC Advanced Research Computing. UBC ARC REDCap. <https://arc.ubc.ca/software/redcap> 
+* UBC Faculty of Medicine Research Technology. Electronic Data Collection with REDCap. <https://restech.med.ubc.ca/our-services/electronic-data-collection/> 
 
 ---
 
