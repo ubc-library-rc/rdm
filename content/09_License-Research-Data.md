@@ -8,9 +8,9 @@ nav_order: 13
 
 # Licensing Your Research Data
 {: .no_toc}
-It's great that you want to share your research to support open research initiatives. However, not everyone is comfortable waiving their copyright over their work. Using a license is a good way of communicating permission to potential users on how your work can be used. It ensures you're getting the proper credit for your work when sharing it.
+It's great that you're supporting and contributing to open research initiatives when you share your research, but let's make sure you're receiving proper credit for it. Using a license is a helpful way to be acknowledged for your work and to communicate permission to potential users on how your work can be used. 
 
-There are many types of licenses for various kinds of products, contexts, and disciplines. Each has its own unique purpose, policies, and legal protection. Choosing the best license depends on your preferences and the nature of your work. 
+There are many types of licenses for various kinds of products, contexts, and disciplines, with each having its own unique purpose, policies, and legal protection. Choosing the best license depends on your preferences and the nature of your work. 
 
 <p style="margin-bottom: 20px"></p>
 
@@ -32,9 +32,9 @@ Looking for a cheat sheet? Check out our [one-pager](https://osf.io/jz5ur)
 {: .no_toc}
 {: .label .label-green }
 
-Before proceeding, let's try to answer these questions:
-1. Take a look at this workshop page. Can you use the information openly?
-2. What about this dataset? Can you use the data freely?
+Before proceeding, let's answer these warm-up questions:
+1. Take a look at this workshop page. If you were to create a workshop on CC Licenses, can you use this information openly?
+2. Take a look at the cited dataset below. If you wanted to use that data in your research, could you use it freely?
 
 Access the dataset here:
 >Binfield, Lucy, 2025, "Student perceptions of waste sorting interventions, and participation rates in interventions, in high-density student housing", [https://doi.org/10.5683/SP3/POXHD6](https://doi.org/10.5683/SP3/POXHD6), Borealis, V1
@@ -50,12 +50,14 @@ Copyright is a legal concept where an individual or an organization, the copyrig
 - Translations
 - Telecommunications
 
-In other words, the copyright holder gets to *control* how users can use their work. A copyrighted work can be used with the author's permission or by user rights, as outlined in [Canada's Copyright Act](https://laws-lois.justice.gc.ca/eng/acts/C-42/). Another way users can be permitted to use copyrighted work is through licenses. 
+In other words, the copyright holder gets to *control* how users can use their work. A copyrighted work can be used with the author's permission or by user rights, as outlined in [Canada's Copyright Act](https://laws-lois.justice.gc.ca/eng/acts/C-42/). Another way users can use copyrighted works is through licenses. 
 
 ## What can't be copyrighted?
-What can't be copyrighted is more complicated. Works that don't have enough "originality" may not be protected by copyright. For example, some forms of data analysis may not be "creatively" driven and can't be protected by copyright. Another example is when research is replicated using the original raw data to reproduce the results. Neither the original data nor the reproduced data is copyrightable.
+What can't be copyrighted is more complicated. Works that don't have enough "originality" may not be protected by copyright. 
+* For example, some forms of data analysis may not be "creatively" driven and can't be protected by copyright.
+* Another example is when research is replicated using the original raw data to reproduce the results. Neither the original data nor the reproduced data is copyrightable.
 
-Solid examples include:
+More concrete examples include:
 - Facts
 - Ideas
 - Procedures
@@ -65,7 +67,7 @@ Solid examples include:
 
 ## Why is raw data not copyrightable?
 {: .no_toc}
-Raw data itself doesn't meet the threshold for copyright protection. However, as a counterbalance, expressions of raw data in an original way can benefit from copyright protection and licensing. 
+To answer concisely, raw data just doesn't meet the threshold for copyright protection. However, as a counterbalance, expressions of raw data in an original way can benefit from copyright protection and licensing. 
 
 Copyrighting raw, factual data would hinder academic, scientific, intellectual, and artistic freedoms, in addition to obstructing research transparency and replicability. Having factual information freely available improves the learning and knowledge of a discipline.
 
@@ -80,9 +82,9 @@ Copyrighted things could be:
 - Datasets
 - Databases
 
-<p>
+
 <img src="figures/copyright_umbrella.png" width="250"/>
-</p>
+
 
 # Creative Commons licenses
 [Creative Commons (CC)](https://creativecommons.org/mission/) is a non-profit organization that issues standardized and free licenses to protect your work when you share it. CC licenses are recognized and applicable internationally. 
@@ -95,11 +97,9 @@ Here are the license terms that are used in CC licenses:
 - ND: no derivatives
 - NC: non-commercial use
 
-There are many kinds of [CC licenses:](https://creativecommons.org/share-your-work/cclicenses/)
+There are many kinds of [CC licenses](https://creativecommons.org/share-your-work/cclicenses/). Below is an image showing what each license looks like, followed by a table with a description for each type. 
 
-<p>
 <img src="figures/CClicenses_all.png" width="250"/>
-</p>
 
 | **CC license** | **What it indicates** |
 |----------------|-----------------------|
@@ -110,13 +110,9 @@ There are many kinds of [CC licenses:](https://creativecommons.org/share-your-wo
 | CC BY-NC-SA | Give credit to the creator, only use the work for non-commercial purposes, and can adapt (remix) the material, but using the same licenses as the original work. | 
 | CC BY-NC-ND | Give credit to the creator, can’t derive (remix) or adapt the work, and only use the work for non-commercial purposes. | 
 
-Different CC licenses have varying levels of freedom and control, with some being more restrictive (less free) and others being more open. For example, CC BY is the license that allows many things (remixing, adding upon the work, free distribution, and commercial use), while CC BY-NC-ND is the license that has many restrictions (doesn’t allow for commercial use and remixing or modification). 
-
-<p>
-</p>
-<p>  
+Different CC licenses have varying levels of freedom and control, with some being more restrictive (less free) and others being more open. For example, CC BY is the license that allows many things (remixing, adding to the work, free distribution, and commercial use), while CC BY-NC-ND is the license that has many restrictions (doesn’t allow for commercial use and remixing or modification). 
+ 
 <img src="figures/Foter_infographic_CC.jpg" width="500"/>
-</p> 
 [Image](https://foter.com/blog/how-to-attribute-creative-commons-photos/) from How to Attribute Creative Commons Photos by Foter, used under CC BY-SA. 
 
 ### A "derivative" work: Are you making a smoothie?
