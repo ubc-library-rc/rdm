@@ -4,7 +4,7 @@ title: License Research Data
 nav_order: 13
 ---
 
-
+<img src="figures/work-in-progress.png" width="600"/>
 
 # Licensing Your Research Data
 {: .no_toc}
