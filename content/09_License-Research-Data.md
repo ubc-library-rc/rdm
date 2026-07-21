@@ -113,11 +113,12 @@ There are many kinds of [CC licenses](https://creativecommons.org/share-your-wor
 Different CC licenses have varying levels of freedom and control, with some being more restrictive (less free) and others being more open. For example, CC BY is the license that allows many things (remixing, adding to the work, free distribution, and commercial use), while CC BY-NC-ND is the license that has many restrictions (doesn’t allow for commercial use and remixing or modification). 
  
 <img src="figures/Foter_infographic_CC.jpg" width="500"/>
+
 [Image](https://foter.com/blog/how-to-attribute-creative-commons-photos/) from How to Attribute Creative Commons Photos by Foter, used under CC BY-SA. 
 
-### A "derivative" work: Are you making a smoothie?
-{: .no_toc}
+**A "derivative" work: Are you making a smoothie?**
 Are you taking things from many places and making something new, like a smoothie? Then it would be considered a “derivative” work. However, it’s still good to give credit to the parts you used to make your derivative work. 
+{: .note}
 
 ### CC BY-ND: Why this license may not be the best for researchers working with data
 {: .no_toc}
