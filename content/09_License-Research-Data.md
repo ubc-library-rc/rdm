@@ -116,9 +116,9 @@ Different CC licenses have varying levels of freedom and control, with some bein
 
 [Image](https://foter.com/blog/how-to-attribute-creative-commons-photos/) from How to Attribute Creative Commons Photos by Foter, used under CC BY-SA. 
 
-**A "derivative" work: Are you making a smoothie?**
+### A "derivative" work: Are you making a smoothie?
+{: .no_toc}
 Are you taking things from many places and making something new, like a smoothie? Then it would be considered a “derivative” work. However, it’s still good to give credit to the parts you used to make your derivative work. 
-{: .note}
 
 ### CC BY-ND: Why this license may not be the best for researchers working with data
 {: .no_toc}
@@ -127,12 +127,11 @@ Under this license, research outputs cannot be remixed (i.e., new works derived 
 The [“ND” (NoDerivatives)](https://creativecommons.org/licenses/by-nd/4.0/deed.en) term means that while adaptations or transformations may be created (for private use, for example), any newly adapted or derived work cannot be distributed, limiting data reuse.
 
 ## How can I apply a CC license?
-To apply a CC license, you need to be the copyright owner of the work. If you don’t have copyright ownership over a portion of the work you’re licensing, then you need to obtain special permission from the owner of that work.
-
-Remember that you need to be specific about what part(s) of your work are being CC licensed (if the work contains third-party copyrighted material and the work isn’t 100% yours). 
+To apply a CC license, you need to be the copyright owner of the work. If you don’t have copyright ownership over a portion of the work you’re licensing, then you need to obtain permission from the owner of that work.
+* You need to be specific about what part(s) of your work are being CC licensed (if the work contains third-party copyrighted material and the work isn’t 100% yours). 
 
 ## Which CC license do I choose?
-Selecting a CC license depends on your preferences and the nature of your research:
+Selecting a CC license depends on your preferences and the nature of your research. Consider asking yourself:
 - How much freedom do you want users to have?
 - How much control do you want?
 - How much access and use by users are appropriate for the subject of your research? 
@@ -140,29 +139,30 @@ Selecting a CC license depends on your preferences and the nature of your resear
 
 The Creative Commons also [provides a tool](https://creativecommons.org/chooser/) that can help you choose the right license. 
 
-The [Borealis data repository](https://researchdata.library.ubc.ca/deposit/dataverse/) is supported by the UBC Library to allow the application of any suite of the CC licenses. You can also consult [UBC's Creative Commons Guide](https://copyright.ubc.ca/creative-commons/) for more detailed information about CC licenses.
+The [Borealis data repository](https://researchdata.library.ubc.ca/deposit/dataverse/) is supported by the UBC Library to allow the application of any suite of CC licenses. You can also consult [UBC's Creative Commons Guide](https://copyright.ubc.ca/creative-commons/) for more detailed information about CC licenses.
 
 ## CC0 Universal 
-What does CC0 indicate? CC0 is not a license, but instead a public domain dedication tool that indicates the creator giving up copyright for their work and releasing it into the public domain. A work may also enter the public domain if the copyright protection expires. Copyright protection for works will expire 70 years after the calendar year in which the creator's death occurred. Therefore, the work is no longer protected by copyright, and it can be used openly for any purpose. Users can distribute, remix, adapt, add to the work, and more, unconditionally. 
+What does CC0 mean? CC0 is not a license, but instead a public domain dedication tool that indicates the creator giving up copyright for their work and releasing it into the public domain. A work may also enter the public domain if the copyright protection expires. 
 
-What does CC0 do? It does many things than just give up copyright:
-- Waives copyright and any other rights
-- If there are rights that the right holder cannot waive under applicable law, they are licensed in a way that mirrors as closely as possible the legal effect of a waiver
-- If there are any rights that the rights holders cannot waive or license, they affirm that they will not exercise them, and they will not assert any claim with respect to the use of the work
+Copyright protection for works will expire 70 years after the calendar year in which the creator's death occurred. Therefore, the work is no longer protected by copyright, and it can be used openly for any purpose. Users can distribute, remix, adapt, add to the work, and more, unconditionally. 
 
-More information about the public domain and the duration of copyright protection for certain kinds of work can be found [here](https://copyright.ubc.ca/public-domain/).
+The CC0 dedication tool does more than just give up copyright:
+- It waives copyright and any other rights that apply.
+- If there are rights that the rights holder cannot waive under applicable law, the work is licensed in a way that mirrors as closely as possible the legal effect of a waiver.
+- If there are any rights that the rights holders cannot waive or license, they affirm that they will not exercise them, and they will not assert any claim with respect to the use of the work.
 
-<p>
+More information about the public domain and the duration of copyright protection for certain kinds of work can be found on [UBC's Public Domain page](https://copyright.ubc.ca/public-domain/).
+
 <img src="figures/publicdomain.jpg" width="100"/>
-</p> 
+
 
 ## Exercise 1
 {: .no_toc}
 {: .label .label-green }
 
-Let's now have a try at practicing the knowledge we've learned so far. Of these datasets provided, which can and can't be used based on these 2 scenarios:
-1. Using it for a systematic review analysis
-2. Using it to create a small startup business
+Let's now try practicing what we've learned so far. Of these 3 datasets provided below, please determine which can and can't be used based on these 2 scenarios:
+1. You want to use these datasets as part of your systematic review project
+2. You want to use these datasets to help set up your small startup business 
 
 Access the datasets here:
 >Azadian, Amin; Protopopova, Alexandra, 2025, "Replication Data for: Stability in Cognitive and Behavioural Performance Varies Between Dog Breed Clades", [https://doi.org/10.5683/SP3/8MC0X2](https://doi.org/10.5683/SP3/8MC0X2), Borealis, V1
@@ -172,11 +172,12 @@ Access the datasets here:
 >Ali, Naila; White, Hailie; Min, Jason; Leung, Larry, 2025, "Pharmacy Program in a BC First Nation: Perspectives of Patients, Clinicians, and Student Learners in a Rural and Remote Indigenous Context", [https://doi.org/10.5683/SP3/TAWTOV](https://doi.org/10.5683/SP3/TAWTOV), Borealis, V2
 
 # Open Government Licenses
-Open Government Licenses (OGLs) allow users to use government data openly. Applying an OGL supports and encourages policies related to government transparency and accountability, such as BC’s Open Information and Open Data [policy](https://www2.gov.bc.ca/gov/content/data/policy-standards/data-policies/open-data). 
+As an extra note, you may also be interested in knowing about a different kind of license: Open Government Licenses (OGL). OGLs are applied to government datasets in government open data portals. This kind of license allows users to reuse government data openly (but not freely, since there are outlined terms). 
+* This kind of license also supports and encourages policies related to government transparency and accountability, such as BC’s Open Information and Open Data [policy](https://www2.gov.bc.ca/gov/content/data/policy-standards/data-policies/open-data). 
 
-Different levels of government of different provinces and territories have their own version of an OGL. The Open Government Licenses can be very similar to one another, but they can vary by attribution name and information provider. 
+Different levels of government in different Canadian provinces and territories have their own OGL version. You may notice that the usage terms can be very similar to one another, but vary by attribution name and information provider. 
 
-Here are some examples of data portals by various levels of government:
+Here are some examples of open data portals by various levels of government:
 - [OGL-Canada](https://search.open.canada.ca/opendata/) version 2.0
 - [OGL-BC](https://catalogue.data.gov.bc.ca/) version 2.0
 - [OGL-Vancouver](https://opendata.vancouver.ca/pages/home/) version 1.0
@@ -202,7 +203,7 @@ Licensing and copyright can only be applied to things that are products of creat
 - Government of British Columbia. Open Data Policy. [https://www2.gov.bc.ca/gov/content/data/policy-standards/data-policies/open-data](https://www2.gov.bc.ca/gov/content/data/policy-standards/data-policies/open-data) 
 - Harvard Biomedical Data Management. Intellectual Property. [https://datamanagement.hms.harvard.edu/share-publish/intellectual-property](https://datamanagement.hms.harvard.edu/share-publish/intellectual-property)  
 - Labastida, I. & Margoni, T. (2020). Licensing FAIR Data for Reuse. [https://doi.org/10.1162/dint_a_00042](https://doi.org/10.1162/dint_a_00042) 
-- Ray, J. M. (2014). Research Data Management : Practical Strategies for Information Professionals. 6. Copyright, Open Data, and the Availability-Usability Gap: Challenges, Opportunities, and Approaches for Libraries. [https://ebookcentral.proquest.com/lib/ubc/detail.action?docID=3120304](https://ebookcentral.proquest.com/lib/ubc/detail.action?docID=3120304) 
+- Ray, J. M. (2014). Research Data Management: Practical Strategies for Information Professionals. 6. Copyright, Open Data, and the Availability-Usability Gap: Challenges, Opportunities, and Approaches for Libraries. [https://doi.org/10.2307/j.ctt6wq34t](https://doi.org/10.2307/j.ctt6wq34t) 
 - SFU Library. Data and Copyright. [https://www.lib.sfu.ca/help/academic-integrity/copyright/authors/data-copyright#how-does-copyright-apply-to-data](https://www.lib.sfu.ca/help/academic-integrity/copyright/authors/data-copyright#how-does-copyright-apply-to-data)
 - UBC Scholarly Communications and Copyright Office. Creative Commons Guide. [https://copyright.ubc.ca/creative-commons/](https://copyright.ubc.ca/creative-commons/)
 - UBC Scholarly Communications and Copyright Office. Public Domain. [https://copyright.ubc.ca/public-domain/](https://copyright.ubc.ca/public-domain/) 
