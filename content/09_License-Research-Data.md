@@ -104,11 +104,11 @@ There are many kinds of [CC licenses](https://creativecommons.org/share-your-wor
 | **CC license** | **What it indicates** |
 |----------------|-----------------------|
 | CC BY | Give credit to the creator. |
-| CC BY-ND | Give credit to the creator but can’t derive (remix) or adapt the work. |
-| CC BY-NC | Give credit to the creator and only use the work for non-commercial purposes. | 
-| CC BY-SA | Give credit to the creator and you can adapt (remix) the material, but using the same licenses as the original work. |
-| CC BY-NC-SA | Give credit to the creator, only use the work for non-commercial purposes, and can adapt (remix) the material, but using the same licenses as the original work. | 
-| CC BY-NC-ND | Give credit to the creator, can’t derive (remix) or adapt the work, and only use the work for non-commercial purposes. | 
+| CC BY-ND | Give credit to the creator, but you must not make derivatives (remixes) or adapt the work. |
+| CC BY-NC | Give credit to the creator, but only use the work for non-commercial purposes. | 
+| CC BY-SA | Give credit to the creator, but make sure to share the work (can be created from remixing or adapting the material) using the same license terms. |
+| CC BY-NC-SA | Give credit to the creator, but only use the work for non-commercial purposes. You must also share the work (can be created from remixing or adapting the material) using the same license terms. | 
+| CC BY-NC-ND | Give credit to the creator, but only use the work for non-commercial purposes. You must also not make derivatives (remixes) or adapt the work. |
 
 Different CC licenses have varying levels of freedom and control, with some being more restrictive (less free) and others being more open. For example, CC BY is the license that allows many things (remixing, adding to the work, free distribution, and commercial use), while CC BY-NC-ND is the license that has many restrictions (doesn’t allow for commercial use and remixing or modification). 
  
