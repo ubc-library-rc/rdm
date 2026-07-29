@@ -4,8 +4,6 @@ title: License Research Data
 nav_order: 13
 ---
 
-<img src="figures/work-in-progress.png" width="600"/>
-
 # Licensing Your Research Data
 {: .no_toc}
 It's great that you're supporting and contributing to open research initiatives when you share your research, but let's make sure you're receiving proper credit for it. Using a license is a helpful way to be acknowledged for your work and to communicate permission to potential users on how your work can be used. 
