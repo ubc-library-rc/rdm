@@ -4,11 +4,6 @@ title: Create a Data Dictionary
 nav_order: 12
 ---
 
-
-<img src="figures/work-in-progress.png" width="600"/>
-
-
-
 # What is a Data Dictionary? 
 {: .no_toc }
 A data dictionary is a type of document that provides essential information about variables from a dataset. It includes their definitions, descriptions and structure. The primary goal of a data dictionary is to help people understand and use a dataset, especially if you’re working with multiple tables. A data dictionary may be included with the dataset or exist as an independent resource.
