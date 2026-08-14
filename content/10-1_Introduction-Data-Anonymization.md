@@ -36,6 +36,11 @@ Examples of data that are considered “sensitive”:
 * Personal health information
 * Some kinds of geographical information, like the locations of endangered species
 * Data protected by institutional policy
+* User agreements
+* Trade secrets
+* Commercial information
+* Preliminary analysis
+* Third-party data
 
 ## Why do we de-identify data?
 Data is de-identified to *minimize the risk of harm* to individuals, communities, and animal species in the event of a confidentiality breach. 
@@ -58,6 +63,13 @@ Examples of who may be harmed:
   - Victimization status
   - Criminal/delinquent behaviour
   - Health-related questions, medical conditions, and mental health questions
+ 
+**Therefore, to ensure sensitive data is handled in an ethical manner, you should:**
+- Evaluate the anonymity of your data
+- Obtain a confidentiality review (by a data repository administrator)
+- Comply with institutional regulations (like those of your institution's research ethics board) and with other regulations (like BREB)
+- Have informed consent for data sharing
+- Restrict use of confidential data
 
 <img src="figures/incognito.png" width="250"/>
 
