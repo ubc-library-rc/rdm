@@ -74,7 +74,6 @@ Open file formats typically have similar qualities, such as:
 - Freely available to use by everyone: unencrypted and uncompressed
 - Has a decreased risk of technical obsolescence because it's not reliant on specific software
 - Standard representation (such as ASCII or Unicode) and standard documentation
-- Commonly used by the research community
 
 Using open formats means you don't have to worry about relying on a single special software to read and use those files -- they can be opened in various software. You can expect that these files in an open format are better preserved and accessible in the future. 
 
