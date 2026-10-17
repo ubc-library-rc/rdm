@@ -25,18 +25,6 @@ Overall, having a data dictionary is important for research reproducibility and 
 
 ---
 
-## Warm-Up
-{: .no_toc}
-{: .label .label-green }
-
-It’s common for long-standing research projects to have a data dictionary. Here are some examples you can explore to see the variation in how data dictionaries are represented and the kind of information they contain:
-* [National Database of Deep-Sea Corals](https://www.ncei.noaa.gov/waf/dsc-data/metadata/20221213-0_NOAA_NDB_corals_sponges_data_dictionary.html)
-* [Climate and Forecast Conventions](http://cfconventions.org/Data/cf-standard-names/46/build/cf-standard-name-table.html)
-* [Organic Carbon Sorption and Decomposition in Selected Global Soils](https://tes-sfa.ornl.gov/sites/default/files/Soil_C_Decomp_Data_Dictionary_20140616.pdf)
-* [Planetary Science Dictionary (NASA)](https://pds.nasa.gov/tools/dd-search/)
-
-A data dictionary can be a simple table on a spreadsheet or PDF, or a detailed web application. For some projects, a data dictionary can be created and maintained by one research member, but it can also be done by the whole research team.
-
 
 ## Exercise 1
 {: .no_toc}
@@ -50,11 +38,24 @@ Here is the dataset, accessible by the hyperlinked DOI:
 From the deposited files, please download **“Detroit Class Data.xlsx”** in the original file format. Then, to examine the data and to determine the appropriateness for your project, try to answer the following questions: 
 1. What do the columns STATEFP10 and COUNTYFP10 mean?
 2. Describe the different measures of the study
-3. Describe how the data was collected?
+3. Describe how the data was collected
 
 
 Additionally, take a look at this dataset below. It may also be difficult to understand the data at first, but with the data dictionary included, it is much easier to make sense of it.
 >Barsky, Eugene; Mitchell, Marjorie; Buhler, Jeremy, 2019, "UBC Research Data Management Survey: Science and Engineering", [https://doi.org/10.5683/SP2/9VEAT9](https://doi.org/10.5683/SP2/9VEAT9), Borealis, V3
+
+
+## Explore these data dictionaries!
+{: .no_toc}
+{: .label .label-green }
+
+It’s common for long-standing research projects to have a data dictionary. A data dictionary can be a simple table on a spreadsheet or PDF, or a detailed web application. For some projects, a data dictionary can be created and maintained by one research member, but it can also be done by the whole research team.
+
+Here are some examples you can explore to see the variation in how data dictionaries are represented and the kind of information they contain:
+* [National Database of Deep-Sea Corals](https://www.ncei.noaa.gov/waf/dsc-data/metadata/20221213-0_NOAA_NDB_corals_sponges_data_dictionary.html)
+* [Climate and Forecast Conventions](http://cfconventions.org/Data/cf-standard-names/46/build/cf-standard-name-table.html)
+* [Organic Carbon Sorption and Decomposition in Selected Global Soils](https://tes-sfa.ornl.gov/sites/default/files/Soil_C_Decomp_Data_Dictionary_20140616.pdf)
+* [Planetary Science Dictionary (NASA)](https://pds.nasa.gov/tools/dd-search/)
 
 
 <img src="figures/data_dictionary.png" width="200"/>
