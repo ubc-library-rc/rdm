@@ -83,8 +83,7 @@ UBC runs two instances of REDCap: [UBC Advanced Research Computing (ARC)](https:
 
 How your data dictionary is written is also important. Consider some of these best practices for data documentation:
 * Be as clear and specific as possible when describing elements of your project
-* Follow a style that’s consistent and agreed upon by the research team
- * You can also note these stylistic decisions in your [README file](https://ubc-library-rc.github.io/rdm/content/03_create_readme.html)
+* Follow a style that’s consistent and agreed upon by the research team (you can also note these stylistic decisions in your [README file](https://ubc-library-rc.github.io/rdm/content/03_create_readme.html))
 * Consider your audience: will you be using jargon? If so, perhaps you may want to clarify the specialized terminology or look for an alternative word. If you refer to acronyms or abbreviations, make sure you’re defining them
 * The data dictionary can simply be named ```DATA-DICTIONARY``` or ```_DATA-DICTIONARY```, but additional information can be added if necessary
 
