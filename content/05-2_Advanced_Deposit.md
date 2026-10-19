@@ -221,6 +221,7 @@ To access and use an APId, you'll need your API Token. This token should be secu
 
 From the drop-down menu, select `API Token` and copy it. Alternatively, you can select `Create Token` to create an API Token.
 
+<img src="figures/api_advanced_deposit.png" width="550"/>
 
 <br>
 
