@@ -34,17 +34,19 @@ Looking for a cheat sheet? Check out our <a href="https://osf.io/5u4f3" target="
 
 ---
 
-# Recommended File formats 
+# Supported file formats 
 
 <p style="margin-bottom:25px;margin-left:30px">
 <img src="figures/all-file-types.png" width="250"/> </p> 
+
+We recommend non-proprietary file formats because they are better for accessibility, preservability, and capability to open and function in various applications.
 
 **Any kind of file** can be uploaded to Borealis, but extra functionality is supported for some file types:
 
 ## Tabular data
 {: .no_toc}
 
-Tabular data (Stata, SPSS, Excel, R, & CS) is <b>normalized to .tab</b> format on upload, as it is a non-proprietary archival format that a variety of programs can read. 
+Tabular data (Stata, SPSS, Excel, R, & CSV) is <b>normalized to .tab</b> format on upload, as it is a non-proprietary archival format that a variety of programs can read. 
 
 Normalization is important for long-term preservation of digital data. 
 The deposited files can be downloaded in multiple formats, but always including the original. 
@@ -57,12 +59,12 @@ In Borealis, tabular normalization also allows you to perform statistical data e
 
 
 
-## Compressed Files (.zip, tar)
+## Compressed files (.zip, .tar)
 {: .no_toc}
 
 Compressed files are the preferred method for uploading large datasets or many files to Borealis.
 
-**Zip files are automatically extracted on upload**, and the contents will appear as a list under the Files tab. Folder structure and file hierarchy within the zip file are maintained on extraction. Please ensure that if your zip files contain many files that they are organized or categorized into folders. Borealis can read this and display it in a tree view. If you have multiple files that are not organized we recommend double zipping.
+**Zip files are automatically extracted on upload**, and the contents will appear as a list under the Files tab. Folder structure and file hierarchy within the zip file are maintained on extraction. Please ensure that if your zip files contain many files, they are organized or categorized into folders. Borealis can read this and display it in a tree view. If you have multiple files that are not organized, we recommend double zipping.
 
 Sometimes, it is a good idea to deposit the zipped folder to preserve the content as it is, especially if you need your files to remain together. In this case, please upload your zipped directory, and Borealis software will unzip it once upon upload.
 {: .note}
@@ -74,7 +76,7 @@ Sometimes, it is a good idea to deposit the zipped folder to preserve the conten
 
 <br>
 
-# File Size
+# File size
 
 Borealis is not intended to handle very large datasets. Current file size limits are:
 - For upload: **5GB** per file (up to 1,000 files). If you are depositing files larger than 5GB, *double-zip* your directory.
@@ -85,13 +87,14 @@ While there is no cap on the overall number of files that you can upload, if you
 
 <br>
 
-# Access Control
+# Access control
 
-Sensitive files can be <b>Restricted</b> or <b>Embargoed</b> so they are not freely available to download. Files can either be fully restricted, or set up so users can send access requests to the contact email for review.
+De-identified sensitive files can be <b>restricted</b> or <b>embargoed</b> so they are not freely available to download. Files can either be fully restricted or set up so users can send access requests to the contact email for review.
 
 ## To restrict, unrestrict, or embargo a file:
 {: .no_toc}
 
+In the "Files" table, click the checkbox beside the file(s) you want to restrict, then select "Edit Files", then "Restrict". 
 <p style="margin-top:25px;margin-left:30px">
 <img src="figures/borealis-restrict-files.png" width="550"/> </p> 
 
@@ -108,7 +111,7 @@ Files can also be unrestricted if the terms change--for example, once an embargo
 
 # Version control
 
-Every change made to a dataset—adding files, editing metadata, etc—is saved as a new version of the dataset. This allows you to track the change history of the project, which can be viewed under the `Versions` tab. This is useful if you need to roll back to a previous version, or find out who made what changes and when.
+Every change made to a dataset—adding files, editing metadata, etc.—is saved as a new version of the dataset. This allows you to track the change history of the project, which can be viewed under the `Versions` tab. This is useful if you need to roll back to a previous version, or find out who made what changes and when.
 
 <p style="margin-top:25px;margin-left:30px">
 <img src="figures/borealis-version-control.png" width="550"/> </p> 
@@ -117,7 +120,7 @@ Every change made to a dataset—adding files, editing metadata, etc—is saved 
 
 <br>
 
-# Sharing Data
+# Sharing data
 
 ## Where can UBC Dataverse Collection datasets be discovered?
 
@@ -177,21 +180,21 @@ Preview URL can also be anonymized, e.g. names, affiliations, ORCIDs, etc would 
 
 <br>
 
-## Licenses and Terms
+## Licenses and terms
 
 You have control over how your data can be used. Borealis allows for a variety of licenses and terms of use.
 
-### **Built-in License Templates** 
+### **Built-in Creative Commons license templates** 
 {: .no_toc}
 
-Templates can be selected at dataset creation, and changed at any time. These automatically apply the right information about the license to the dataset’s metadata.
+Templates can be selected at dataset creation and changed at any time. These automatically apply the right information about the license to the dataset’s metadata.
 
 <p style="margin-top:25px;margin-left:30px">
 <img src="figures/borealis-templates.png" width="500"/> </p>
 
 <p style="margin-top:15px"></p>
 
-You can use <a href="https://copyright.ubc.ca/creative-commons/" target="_blank">UBC Library Creative Commons page </a>  to decide what license to use with your dataset. We recommend **CC-BY** license.  
+You can use <a href="https://copyright.ubc.ca/creative-commons/" target="_blank">UBC Library Creative Commons page </a> and the [License Research Data workshop](https://ubc-library-rc.github.io/rdm/content/09_License-Research-Data.html) to decide what license to use with your dataset. We recommend **CC-BY** license.  
 {: .note }
 
 <p style="margin-top:15px"></p>
@@ -208,6 +211,15 @@ To customize terms:
 
 If you need help creating a custom license, contact `research.data@ubc.ca`.
 
+# APIs
+
+Borealis has many APIs available for you to work with, such as uploading, downloading, and migrating data. 
+
+If you're unfamiliar with using APIs, we recommend using the **Demo Borealis** to practice the API commands.
+
+To access and use an APId, you'll need your API Token. This token should be secured like a password.
+
+From the drop-down menu, select `API Token` and copy it. Alternatively, you can select `Create Token` to create an API Token.
 
 <br>
 
