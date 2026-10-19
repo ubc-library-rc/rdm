@@ -89,7 +89,7 @@ Click to Download the Files
 {: .no_toc }
 
 
-- <p style="font-size:17px; color:purple">Choose "Research Commons Workshops Dataverse" for this exercise </p> 
+- Choose "Research Commons Workshops Dataverse" for this exercise
   
   
 - You can find dataverses via: 
@@ -110,9 +110,10 @@ Click to Download the Files
 
 <p style="margin-bottom: 10px"></p>
 
-- Choose `+Add Data` > `New Dataset` (not New Dataverse) from the dropdown menu
+- Choose `+Add Data` then `New Dataset` (not New Dataverse) from the dropdown menu
 
-- Select a <b>dataset template</b> for the desired <a href="https://copyright.ubc.ca/creative-commons/" target="_blank">Creative Commons license</a> (default license is CC-BY). You can learn more about data licensing in the <a href="https://ubc-library-rc.github.io/rdm/content/05-2_Advanced_Deposit" target="_blank">Advanced Deposit workshop</a>. Selecting a template will clear all other data fields, so do this first.
+- Select a <b>dataset template</b> for the desired <a href="https://copyright.ubc.ca/creative-commons/" target="_blank">Creative Commons license</a> (default license is CC-BY). You can learn more about data licensing in the <a href="https://ubc-library-rc.github.io/rdm/content/05-2_Advanced_Deposit#licenses-and-terms" target="_blank">Advanced Deposit workshop</a>. If you change the selected template, then all other data fields will clear, so do this first.
+
 
 
 - Fill in <b>required metadata</b> fields marked with a <a style="font-size:22px; color:red">*</a>.
@@ -140,12 +141,12 @@ You can upload files now:
 <p style="margin-bottom:25px; margin-left:30px">
 <img src="figures/dataset_file_upload.png" width="500"/></p>
 
-<b>Max file size: 5Gb</b>. If your files are too large, try putting them into a Zip file(s), or contact `research.data@ubc.ca` for help.
+<b>Max file size: 5GB</b>. If your files are too large, try putting them into a Zip file(s), or contact `research.data@ubc.ca` for help.
 
 By default, the software will unzip your directory upon upload. If you want to preserve the directory structure, you can <b>double-zip</b> that directory before uploading.
 {: .note }
 
-<b>Describe the files</b>: Title, Description, Tags. Remember that people can’t use your data if they don’t know what it is!
+<b>Describe the files</b> with a title, description, and tags. Remember that people can’t use your data if they don’t know what it is!
 
 
 
@@ -156,13 +157,11 @@ By default, the software will unzip your directory upon upload. If you want to p
 ## *3*{: .circle .circle-yellow} &nbsp;Submit or Publish Dataset
 
 
-Depending on your user permissions, you will have a button for either:
-- `Submit for Review` (the draft dataset is reviewed by a research data administrator)
-- `Publish` (makes the dataset publicly available)
+Click `Submit for Review` for the data curator to review your draft and publish your edits.
 
 Once a dataset is published, Dataverse assigns a **DOI** to permanently identify the dataset.  
 
-We can also assign a **[Preview URL](https://ubc-library-rc.github.io/rdm/content/05-2_Advanced_Deposit.html#2-preview-url)** to share with a journal and/or peer reviewers without publishing the data. 
+A **[Preview URL](https://ubc-library-rc.github.io/rdm/content/05-2_Advanced_Deposit.html#2-preview-url)** can also be assigned to share with a journal and/or peer reviewers without publishing the data. 
 
 <p style="margin-top:25px; margin-left:30px">
 <img src="figures/publish.jpg" width="300"/></p>
@@ -179,10 +178,10 @@ We can also assign a **[Preview URL](https://ubc-library-rc.github.io/rdm/conten
   
 - Files can be `Restricted` or `Embargoed` so they are available only on request. You can learn more about data access restrictions in the <a href="https://ubc-library-rc.github.io/rdm/content/05-2_Advanced_Deposit" target="_blank">Advanced Deposit workshop</a>.
 
-- Changes made to Files, Metadata, or Terms <b>after publishing</b> your dataset will be saved as a Draft version. Click `Submit for Review` or `Publish` again to make the changes go live; the new version will supersede the old.
+- Changes made to Files, Metadata, or Terms <b>after publishing</b> your dataset will be saved as a Draft version. Click `Submit for Review` or `Publish` (depending on user permissions) to make the changes go live; the new version will supersede the old.
 
 
-Admin assistance is needed to deaccession a dataset, so triple-check before Publishing your data. The DOI cannot be deleted. 
+Admin assistance is needed to deaccession a dataset, so triple-check before publishing your data. The DOI cannot be deleted. 
 {: .warn }
 
 
