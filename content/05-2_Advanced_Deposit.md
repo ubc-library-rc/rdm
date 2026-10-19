@@ -39,7 +39,7 @@ Looking for a cheat sheet? Check out our <a href="https://osf.io/5u4f3" target="
 <p style="margin-bottom:25px;margin-left:30px">
 <img src="figures/all-file-types.png" width="250"/> </p> 
 
-We recommend non-proprietary file formats because they are better for accessibility, preservability, and capability to open and function in various applications.
+We recommend [non-proprietary file formats](https://ubc-library-rc.github.io/rdm/content/02_file_formats.html) because they are better for accessibility, preservability, and capability to open and function in various applications.
 
 **Any kind of file** can be uploaded to Borealis, but extra functionality is supported for some file types:
 
@@ -126,15 +126,15 @@ Every change made to a dataset—adding files, editing metadata, etc.—is saved
 
 Data deposited in UBC Dataverse Collection is indexed by, and integrated with, many services on the Web, including:
 
-- <a href="https://scholar.google.ca/" target="_blank">**Google Scholar**</a>
-- <a href="https://datasetsearch.research.google.com/" target="_blank">**Google Data**</a>
-- <a href="https://explore.openaire.eu/" target="_blank">**The EU's OpenAIRE**</a>
-- <a href="https://library.utoronto.ca/" target="_blank">**Most university libraries, like the University of Toronto**</a>
-- <a href="https://datasetcatalog.nlm.nih.gov/" target="_blank">**US National Library of Medicine**</a>
-- <a href="http://datacite.org" target="_blank">**DataCite**</a>
-- <a href="https://orcid.org/" target="_blank">**ORCID**</a>
-- <a href="https://www.lunaris.ca/en" target="_blank">**Lunaris**</a>: Canadian national research data discovery service
-- **Any APIs**
+- <a href="https://scholar.google.ca/" target="_blank">Google Scholar</a>
+- <a href="https://datasetsearch.research.google.com/" target="_blank">Google Data</a>
+- <a href="https://explore.openaire.eu/" target="_blank">The EU's OpenAIRE</a>
+- <a href="https://library.utoronto.ca/" target="_blank">Most university libraries, like the University of Toronto</a>
+- <a href="https://datasetcatalog.nlm.nih.gov/" target="_blank">US National Library of Medicine</a>
+- <a href="http://datacite.org" target="_blank">DataCite</a>
+- <a href="https://orcid.org/" target="_blank">ORCID</a>
+- <a href="https://www.lunaris.ca/en" target="_blank">Lunaris</a>: Canadian national research data discovery service
+- By APIs
 
 
 ## Social Media
@@ -220,6 +220,8 @@ If you're unfamiliar with using APIs, we recommend using the **Demo Borealis** t
 To access and use an APId, you'll need your API Token. This token should be secured like a password.
 
 From the drop-down menu, select `API Token` and copy it. Alternatively, you can select `Create Token` to create an API Token.
+
+<img src="figures/api_advanced_deposit.png" width="550"/> </p>
 
 <br>
 
