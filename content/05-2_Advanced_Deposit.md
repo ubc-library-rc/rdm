@@ -209,7 +209,7 @@ If you need help creating a custom license, contact `research.data@ubc.ca`.
 
 # APIs
 
-Borealis has many APIs available for you to work with, such as uploading, downloading, and migrating data. 
+Borealis has many [APIs available](https://learn.scholarsportal.info/all-guides/borealis-admin/dataverse-api/) for you to work with, such as uploading, downloading, and migrating data. 
 
 If you're unfamiliar with using APIs, we recommend using the **Demo Borealis** to practice the API commands.
 
