@@ -18,7 +18,7 @@ nav_order: 3
 
 # Is your data FAIR?
 
-The **FAIR Data Principles** (Findable, Accessible, Interoperable, and Reusable), published in <a href="https://doi.org/10.1038/sdata.2016.18">Scientific Data</a> in 2016, are a set of guiding principles proposed by a consortium of scientists and organizations to support the **reusability of digital assets**. These principles have since been adopted by research institutions worldwide. The guidelines are timely as we see the unprecedented volume, complexity, and speed in the creation of data.
+The [**FAIR Data Principles**](https://www.openaire.eu/how-to-make-your-data-fair) (Findable, Accessible, Interoperable, and Reusable), published in <a href="https://doi.org/10.1038/sdata.2016.18">Scientific Data</a> in 2016, are a set of guiding principles proposed by a consortium of scientists and organizations to support the **reusability of digital assets**. These principles have since been adopted by research institutions worldwide. The guidelines are timely as we see the unprecedented volume, complexity, and speed in the creation of data.
 
 <p style="margin-top:25px;margin-left:30px">
 <img src="figures/fair-data-principles.png" width="600"/>
@@ -58,9 +58,6 @@ The **FAIR Data Principles** (Findable, Accessible, Interoperable, and Reusable)
 {: .no_toc}
 
 
-<br>
-
-
 # Metadata
 Metadata is often described as "**data about data**" and helps answer the questions of who, what, when, where, why. This descriptive data is essential for creating FAIR and open data, and ensuring that the datasets you preserve will be accessible for many years to come.
 
@@ -68,12 +65,6 @@ Metadata is often described as "**data about data**" and helps answer the questi
 - share their data,
 - publicize their data,
 - locate and retrieve data sets from others.
-
-<p style="margin-top:25px;margin-left:30px;margin-bottom:25px">
-<img src="figures/metadata1.jpg" width="300"/>
-</p>
-
-
 
 ## Three of the most common categories
 1. **Descriptive**: Descriptive metadata describes the content and context of your data at both the dataset and item level. 
@@ -90,9 +81,6 @@ Reflection
         and structural metadata might you want to record?
 
 
-<br>
-
-
 # Ensure your data is understandable
 
 ## Create a README File
@@ -106,15 +94,17 @@ To ensure that fellow researchers can understand and reuse your data, it is cruc
 You can refer to our <a href="https://ubc-library-rc.github.io/rdm/content/03_create_readme.html">Create a README File workshop</a> to learn how to create a solid README file.
 {: .note }
 
-<br>
 
 ## Data Dictionary or Codebook
 In addition to the README file, you should **explain how you will define all your variables** in a data dictionary or codebook. This serves as a reference document that outlines the definitions and characteristics of each variable in your dataset. By clearly defining and documenting your variables, you enable other researchers to understand the structure and meaning of your data, promoting its effective reuse and interpretation. 
 
 Alternatively, you can *utilize your README file* to provide this information.
 
+You can refer to our [Create a Data Dictionary workshop](https://ubc-library-rc.github.io/rdm/content/07_data_dictionary.html) to learn how to create a solid data dictionary.
+{: .note }
+
 <p style="margin-top:25px;margin-left:30px">
-<img src="figures/data_dictionary.png" width="600"/>
+<img src="figures/data_dictionary.png" width="300"/>
 </p>
 
 
