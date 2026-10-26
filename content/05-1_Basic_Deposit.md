@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Basic Deposit
-parent: Deposit in UBC Dataverse Collection
+parent: Deposit in UBC Borealis
 nav_order: 1
 ---
 
