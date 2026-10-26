@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Deposit in UBC Dataverse Collection
+title: Deposit in UBC Borealis
 has_children: true
 nav_order: 9
 ---
