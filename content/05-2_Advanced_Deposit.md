@@ -1,19 +1,19 @@
 ---
 layout: default
 title: Advanced Deposit
-parent: Deposit in UBC Dataverse Collection
+parent: Deposit in UBC Borealis
 nav_order: 2
 ---
 
-# Advanced Deposit in UBC Dataverse Collection
+# Advanced Deposit in UBC Borealis
 {: .no_toc}
 
 <p style="margin-bottom: 15px"></p>
 
- Before you continue, please make sure you have a good understanding of the deposit basics in <a href="05-1_Basic_Deposit.md" target="_blank">Basic Deposit in UBC Dataverse Collection</a>.
+Before you continue, please make sure you have a good understanding of the deposit basics in <a href="05-1_Basic_Deposit.md" target="_blank">Basic Deposit in UBC Borealis</a>.
  {: .prereq}
  
- In this guide, we expand further on data discovery, file formats, DOIs, Preview URLs, access control, licenses, file size, version control and more.
+In this guide, we expand further on data discovery, file formats, DOIs, Preview URLs, access control, licenses, file size, version control and more.
 
 <p style="margin-top:25px;margin-left:30px;margin-bottom:25px"></p>
 
@@ -21,7 +21,7 @@ nav_order: 2
 
 <details open markdown="block">
   <summary>
-    Table of Content
+    Table of Contents
   </summary>
   {: .text-delta }
  - TOC
@@ -49,7 +49,7 @@ We recommend [non-proprietary file formats](https://ubc-library-rc.github.io/rdm
 Tabular data (Stata, SPSS, Excel, R, & CSV) is <b>normalized to .tab</b> format on upload, as it is a non-proprietary archival format that a variety of programs can read. 
 
 Normalization is important for long-term preservation of digital data. 
-The deposited files can be downloaded in multiple formats, but always including the original. 
+The deposited files can be downloaded in multiple formats, including the original. 
 {: .note}
 
 In Borealis, tabular normalization also allows you to perform statistical data exploration and visualization *right in your browser*. Click the `Data Explore` button to see what it can do. 
@@ -107,7 +107,6 @@ Check the `Enable access request` box to allow users to send the contact person 
 
 Files can also be unrestricted if the terms change--for example, once an embargo period has passed. 
 
-<br>
 
 # Version control
 
@@ -117,14 +116,11 @@ Every change made to a dataset—adding files, editing metadata, etc.—is saved
 <img src="figures/borealis-version-control.png" width="550"/> </p> 
 
 
-
-<br>
-
 # Sharing data
 
-## Where can UBC Dataverse Collection datasets be discovered?
+## Where can UBC Borealis datasets be discovered?
 
-Data deposited in UBC Dataverse Collection is indexed by, and integrated with, many services on the Web, including:
+Data deposited in UBC Borealis is indexed by, and integrated with, many services on the Web, including:
 
 - <a href="https://scholar.google.ca/" target="_blank">Google Scholar</a>
 - <a href="https://datasetsearch.research.google.com/" target="_blank">Google Data</a>
@@ -158,7 +154,7 @@ There are two main ways to direct people to your dataset:
 ### *1*{: .circle .circle-blue} &nbsp;DOI
 {: .no_toc}
 
-A **a DOI (Digital Object Identifier)** is assigned to the dataset by Borealis when the first draft is created. Once the dataset is **Published**, anyone can use the DOI link to find it. While the dataset is still **unpublished**, the DOI can only be used by Dataverse *account holders* with permission to view that dataset.
+A **a DOI (Digital Object Identifier)** is assigned to the dataset by Borealis when the first draft is created. Once the dataset is **Published**, anyone can use the DOI link to find it. While the dataset is still **unpublished**, the DOI can only be used by Borealis *account holders* with permission to view that dataset.
 
 Use DOIs in citations, publications, on your personal/research group websites--anywhere you want the link to your data stable over time.
 {: .note}
@@ -168,11 +164,11 @@ Click <a href="https://researchdata.library.ubc.ca/plan/get-dois/" target="_blan
 ### *2*{: .circle .circle-red} &nbsp;Preview URL 
 {: .no_toc}
 
-A **temporary link** for use with **unpublished** data. The dataset can only be seen by those who have the link, and users *do not need a Dataverse account*. Great for giving pre-publication access to journals, reviewers, and collaborators.
+A **temporary link** for use with **unpublished** data. The dataset can only be seen by those who have the link, and users *do not need a Borealis account*. Great for giving pre-publication access to journals, reviewers, and collaborators.
 
 To create a Preview URL, click `Edit Dataset > Preview URL`. The generated URL can be accessed from this location until the dataset is published, so you can copy it again and again as needed. The Preview URL will automatically disappear once the dataset is published.
 
-Preview URL can also be anonymized, e.g. names, affiliations, ORCIDs, etc would be masked.  
+Preview URL can also be anonymized, e.g. names, affiliations, ORCIDs, etc. would be masked.  
 
 <p style="margin-top:25px;margin-left:30px">
 <img src="figures/previewurl.jpg" width="500"/> </p>
@@ -232,9 +228,9 @@ From the drop-down menu, select `API Token` and copy the token provided. Alterna
 <img src="figures/angel-congrats.jpg" width="300"/>
 </p>
 
-You are an expert in data deposit in the UBC Dataverse collection now! 
+You are an expert in data deposits in UBC Borealis now! 
 
-If you need have more options to customize and control the way your Dataverse collections look and act, you need to know more! Check out our <a href="05-3_Admin_Access.md" target="_blank">Admin Access in the UBC Dataverse collection workshop</a>.
+If you want more options to customize and control the way your Borealis collections look and act, you need to know more! Check out our <a href="05-3_Admin_Access.md" target="_blank">Admin Access in UBC Borealis workshop</a>.
 
 ---
 
