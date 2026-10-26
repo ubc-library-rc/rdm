@@ -16,16 +16,16 @@ Further, the Tri-Agencies in Canada (NSERC, CIHR, SSHRC) have introduced <a href
 </p>
 
 
-# What is UBC Dataverse Collection @Borealis?
+# What is UBC Borealis?
 {: .no_toc }
 
 <p style="margin-top:20px"></p>
 
 <a href="https://borealisdata.ca" target="_blank">Borealis</a>, the Canadian Dataverse Repository, is a bilingual, multidisciplinary, secure, Canadian research data repository, supported by academic libraries and research institutions across Canada. Borealis supports open discovery, management, sharing, and preservation of Canadian research data stored entirely on Canadian servers. 
 
-<a href="https://borealisdata.ca/dataverse/ubc" target="_blank"><b>UBC Dataverse Collection</b> </a>is a cross-disciplinary research data collection on Borealis. Datasets in the Dataverse collection are discoverable by Google, Google Data, Google Scholar, US National Library of Medicine, UBC Library Summon, Lunaris, DataOne, DataCite, and much more. It is an open-source application to publish, share, reference, cite, extract and analyze research data. 
+<a href="https://borealisdata.ca/dataverse/ubc" target="_blank"><b>UBC Borealis</b> </a>is a cross-disciplinary research data collection. Datasets in UBC Borealis are discoverable by Google, Google Data, Google Scholar, US National Library of Medicine, UBC Library Summon, Lunaris, DataOne, DataCite, and much more. It is an open-source application to publish, share, reference, cite, extract and analyze research data. 
 
-UBC Library can create a Dataverse setup for your research group where you can actively manage your data, share it securely with colleagues, provide version control, establish a permanent data citation, get a DOI for your dataset, and more. All Dataverse files are digitally preserved (Level 1 preservation).
+UBC Library can create a Borealis setup for your research group where you can actively manage your data, share it securely with colleagues, provide version control, establish a permanent data citation, get a DOI for your dataset, and more. All Borealis files are digitally preserved (Level 1 preservation).
 
 <p style="margin-top:20px；margin-left:30px">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/avjAsnYVZrY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
