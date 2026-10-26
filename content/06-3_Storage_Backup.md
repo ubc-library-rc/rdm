@@ -11,10 +11,6 @@ nav_order: 4
 
 Data storage and security considerations are essential aspects of managing research data and should be mapped out in your DMP. The following good practices are recommended for you to implement in your project and noted in your DMP.
 
-<p style="margin-top:25px;margin-left:30px">
-<img src="figures/hard-disk.jpeg" width="300"/>
-</p>
-
 <details open markdown="block">
   <summary>
     Table of Contents
@@ -133,7 +129,7 @@ Please explain your data risk classification.  You can consult [UBC ARC’s Res
 
 
 <p style="margin-top:25px;margin-left:30px;margin-bottom:25px">
-<img src="figures/encryption.jpg" width="300"/>
+<img src="figures/encryption.jpg" width="100"/>
 </p>
 
 
