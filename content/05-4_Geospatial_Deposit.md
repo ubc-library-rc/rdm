@@ -1,11 +1,11 @@
 ---
 layout: default
 title: Geospatial Data Deposit
-parent: Deposit in UBC Dataverse Collection
+parent: Deposit in UBC Borealis
 has_children: false 
 nav_order: 4
 ---
-# Geospatial Deposits into the UBC Dataverse Collection
+# Geospatial Deposits into UBC Borealis
 
 <details open markdown="block">
   <summary>
