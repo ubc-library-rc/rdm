@@ -18,7 +18,7 @@ The Research Commons is now offering bite-sized workshops "<b>Data Bites</b>" th
 - [Create a README file](content/03_create_readme.md)
 - [Create a Data Dictionary](content/07_data_dictionary.md)
 - [Directory Structures](content/04_directory_structures.md)
-- [Deposit to UBC Dataverse Collection](content/05_Deposit_to_Dataverse.md)
+- [Deposit to UBC Borealis](content/05_Deposit_to_Dataverse.md)
 - [Create Data Management Plans](content/06_Data_Management_Plan.md)
 - [Create a Simplified Data Management Plan (Pre-Funding Stage)](content/08_Simplified-Data-Management-Plan.md)
 - [License Research Data](content/09_License-Research-Data.md)
