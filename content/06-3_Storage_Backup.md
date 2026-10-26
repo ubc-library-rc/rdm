@@ -128,11 +128,6 @@ Safeguarding your research data throughout its lifecycle is paramount. Provide a
 Please explain your data risk classification.  You can consult [UBC ARC’s Research Information Classification](https://arc.ubc.ca/security-privacy/research-information-classification) to help you classify your research data.
 
 
-<p style="margin-top:25px;margin-left:30px;margin-bottom:25px">
-<img src="figures/encryption.jpg" width="100"/>
-</p>
-
-
 For comprehensive guidance on security and privacy planning for research at UBC, you can refer to the wealth of resources available at <a href="https://arc.ubc.ca/planning-research-security-and-privacy" target="_blank">UBC ARC's website</a>.
 {: .note }
 
