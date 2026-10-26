@@ -215,7 +215,7 @@ If you're unfamiliar with using APIs, we recommend using the **Demo Borealis** t
 
 To access and use an API, you'll need your API Token. This token should be secured like a password.
 
-From the drop-down menu, select `API Token` and copy the token provided. Alternatively, you can select `Create Token` to create an API Token.
+From the drop-down menu, select `API Token` and copy the token provided. Alternatively, you can select `Create Token` to create an API Token to use.
 
 <img src="figures/api_advanced_deposit.png" width="550"/>
 
