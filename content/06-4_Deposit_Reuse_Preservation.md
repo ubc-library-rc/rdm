@@ -117,12 +117,6 @@ When you use data from other sources in your research, it is important to acknow
 
 **To make your data sources easy to find and access**, create a data citation for your datasets. Most data repositories, including UBC Borealis, automatically create a data citation.
 
-
-<p style="margin-top:25px;margin-left:30px">
-<img src="figures/tag.jpg" width="150"/> </p> 
-
-  
-
 Data citations generally include:
 - the author/data creators,
 - the repository where the data are stored,
