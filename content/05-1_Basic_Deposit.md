@@ -5,18 +5,18 @@ parent: Deposit in UBC Borealis
 nav_order: 1
 ---
 
-# Basic Deposit in UBC Dataverse Collection
+# Basic Deposit in UBC Borealis
 {: .no_toc }
 
 <p style="margin-bottom: 15px"></p>
 
-<a href="https://borealisdata.ca/dataverse/ubc" target="_blank"><b>UBC Dataverse Collection</b> </a>is a cross-disciplinary research data collection on Borealis. Datasets in Borealis are discoverable by Google, Google Data, Google Scholar, US National Library of Medicine, UBC Library Summon, Lunaris, DataOne, DataCite, and much more. It is an open-source application to publish, share, reference, cite, extract and analyze research data.
+<a href="https://borealisdata.ca/dataverse/ubc" target="_blank"><b>UBC Borealis</b> </a>is a cross-disciplinary research data collection. Datasets in Borealis are discoverable by Google, Google Data, Google Scholar, US National Library of Medicine, UBC Library Summon, Lunaris, DataOne, DataCite, and much more. It is an open-source application to publish, share, reference, cite, extract and analyze research data.
 
 <p style="margin-top:25px;margin-left:30px;margin-bottom:25px"></p>
 
 <details open markdown="block">
   <summary>
-    How to deposit in UBC Dataverse Collection?
+    Table of Contents
   </summary>
   {: .text-delta }
  - TOC
@@ -32,12 +32,12 @@ Looking for a cheat sheet? Check out our <a href="https://osf.io/sczv5" target="
 ---
 
 
-# How to deposit in UBC Dataverse Collection?
+# How to deposit in UBC Borealis?
 {: .no_toc}
 
 <p style="margin-bottom: 25px"></p>
 
-The following step-by-step instructions will allow you to practice depositing data in a **Demo** UBC Dataverse instance. To deposit your actual datasets, visit `https://borealisdata.ca`.
+The following step-by-step instructions will allow you to practice depositing data in a **Demo** UBC Borealis instance. To deposit your actual datasets, visit `https://borealisdata.ca`.
 {: .warn }
 
 ## Practice Dataset
@@ -77,44 +77,31 @@ Click to Download the Files
 ## *1*{: .circle .circle-blue} &nbsp;Create Account
 
 1. Go to <a href="https://demo.borealisdata.ca/dataverse/ubc" target="_blank">the Borealis **Demo** </a> > Login (at top right)
-2. Locate UBC and use your CWL to create an account. You will be redirected to the <b>UBC Dataverse Collection</b>.
-
-<br>
+2. Locate UBC and use your CWL to create an account. You will be redirected to <b>UBC Borealis</b>.
 
 ## *2*{: .circle .circle-red} &nbsp;Create Dataset
 
 <p style="margin-bottom: 10px"></p>
 
-### 1. Choose the dataverse you want to deposit data into.
+### 1. Choose the dataverse (AKA "collection") you want to deposit data into.
 {: .no_toc }
 
-
 - Choose "Research Commons Workshops Dataverse" for this exercise
-  
-  
+
 - You can find dataverses via: 
 <p style="margin-bottom:25px; margin-left:30px">
 <img src="figures/borealis-find-dataverse.png" width="500"/></p>
 
-
 <p style="margin-bottom: 30px"></p>
-
-
-
-
-
-
 
 ### 2. Create a new dataset
 {: .no_toc }
 
 <p style="margin-bottom: 10px"></p>
 
-- Choose `+Add Data` then `New Dataset` (not New Dataverse) from the dropdown menu
+- Choose `+Add Data` then `New Dataset` (not `New Dataverse`) from the dropdown menu
 
 - Select a <b>dataset template</b> for the desired <a href="https://copyright.ubc.ca/creative-commons/" target="_blank">Creative Commons license</a> (default license is CC-BY). You can learn more about data licensing in the <a href="https://ubc-library-rc.github.io/rdm/content/05-2_Advanced_Deposit#licenses-and-terms" target="_blank">Advanced Deposit workshop</a>. If you change the selected template, then all other data fields will clear, so do this first.
-
-
 
 - Fill in <b>required metadata</b> fields marked with a <a style="font-size:22px; color:red">*</a>.
 
@@ -125,10 +112,6 @@ If desired, fill in additional metadata fields. *Recommended: Keywords, Related 
 
 
 <p style="margin-bottom: 30px"></p>
-
-
-
-
 
 ### 3. Upload data files
 {: .no_toc }
@@ -159,7 +142,7 @@ By default, the software will unzip your directory upon upload. If you want to p
 
 Click `Submit for Review` for the data curator to review your draft and publish your edits.
 
-Once a dataset is published, Dataverse assigns a **DOI** to permanently identify the dataset.  
+Once a dataset is published, a **DOI** is assigned by Borealis to permanently identify the dataset.  
 
 A **[Preview URL](https://ubc-library-rc.github.io/rdm/content/05-2_Advanced_Deposit.html#2-preview-url)** can also be assigned to share with a journal and/or peer reviewers without publishing the data. 
 
@@ -207,14 +190,14 @@ Admin assistance is needed to deaccession a dataset, so triple-check before publ
 # Congrats!
 {: .no_toc }
 
-Now you know how to deposit your dataset in a **Demo** UBC Dataverse Collection! You are ready to go live at <https://borealisdata.ca>! 
+Now you know how to deposit your dataset in a **Demo** UBC Borealis! You are ready to go live at <https://borealisdata.ca>! 
 
 <p style="margin-bottom:25px;margin-left:30px">
 <img src="figures/thumb-success.jpg" width="150"/>
 </p>
   
 
-Want to learn more details about data deposits in the UBC Dataverse collection? You are qualified for the [Advanced Deposit workshop](05-2_Advanced_Deposit.md) now!
+Want to learn more details about data deposits in UBC Borealis? You are qualified for the [Advanced Deposit workshop](05-2_Advanced_Deposit.md) now!
 
 ---
 
