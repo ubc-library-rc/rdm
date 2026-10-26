@@ -8,7 +8,7 @@ nav_order: 3
 # Admin Access in UBC Borealis
 {: .no_toc}
 
-Some users, such as data managers or curators, have more options to customize and control the way their Dataverse (AKA "collection") look and acts. To get admin access to your Borealis collection, please reach out to us at `research.data@ubc.ca`.
+Some users, such as data managers or curators, have more options to customize and control the way their Dataverse (AKA "collection") look and acts. To get admin access to your collection, please reach out to us at `research.data@ubc.ca`.
 
 
 <details open markdown="block">
@@ -28,7 +28,7 @@ Looking for a cheat sheet? Check out our <a href="https://osf.io/2f5wg" target="
 
 ## Create A New (Sub-)Collection
 
-From the main page of the Borealis collection, within which you’d like to create a sub-collection (for example, the *Research Commons Workshops Dataverse*), click `+Add Data` > `New Dataverse` to create a sub-collection.
+From the main page of the collection, within which you’d like to create a sub-collection (for example, the *Research Commons Workshops Dataverse*), click `+Add Data` > `New Dataverse` to create a sub-collection.
 
 <p style="margin-top:25px;margin-left:30px">
 <img src="figures/borealis-create-dataverse.png" width="550"/> </p> 
