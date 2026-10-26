@@ -58,7 +58,6 @@ In Borealis, tabular normalization also allows you to perform statistical data e
 <img src="figures/borealis-download.png" width="600"/> </p> 
 
 
-
 ## Compressed files (.zip, .tar)
 {: .no_toc}
 
@@ -66,15 +65,9 @@ Compressed files are the preferred method for uploading large datasets or many f
 
 **Zip files are automatically extracted on upload**, and the contents will appear as a list under the Files tab. Folder structure and file hierarchy within the zip file are maintained on extraction. Please ensure that if your zip files contain many files, they are organized or categorized into folders. Borealis can read this and display it in a tree view. If you have multiple files that are not organized, we recommend double zipping.
 
-Sometimes, it is a good idea to deposit the zipped folder to preserve the content as it is, especially if you need your files to remain together. In this case, please upload your zipped directory, and Borealis software will unzip it once upon upload.
+Sometimes, it is a good idea to deposit the zipped folder to preserve the file directory structure as is, especially if you need the files to remain together. In this case, please upload your zipped directory, and Borealis software will unzip it once upon upload.
 {: .note}
 
-
-<p style="margin-top:25px;margin-left:30px">
-<img src="figures/compressed-files.png" width="150"/> </p> 
-
-
-<br>
 
 # File size
 
@@ -82,10 +75,9 @@ Borealis is not intended to handle very large datasets. Current file size limits
 - For upload: **5GB** per file (up to 1,000 files). If you are depositing files larger than 5GB, *double-zip* your directory.
 - For tabular normalization: **500MB** per file. Tabular files over this size will remain in their original format, e.g. Excel.
 
-While there is no cap on the overall number of files that you can upload, if your individual data files exceed 10GB, please contact `research.data@ubc.ca` to discuss the best repository options, as we have other solutions (e.g. [FRDR](https://www.frdr-dfdr.ca/)).
+If your individual data files exceed 10GB, please contact `research.data@ubc.ca` to discuss the best repository options, as we have other solutions (e.g. [FRDR](https://www.frdr-dfdr.ca/)).
 {: .note}
 
-<br>
 
 # Access control
 
@@ -115,37 +107,50 @@ Every change made to a dataset—adding files, editing metadata, etc.—is saved
 <p style="margin-top:25px;margin-left:30px">
 <img src="figures/borealis-version-control.png" width="550"/> </p> 
 
+# Licenses and terms
 
-# Sharing data
+You have control over how your data can be used. Borealis allows for a variety of licenses and terms of use.
 
-## Where can UBC Borealis datasets be discovered?
+## **Built-in Creative Commons license templates** 
+{: .no_toc}
 
-Data deposited in UBC Borealis is indexed by, and integrated with, many services on the Web, including:
-
-- <a href="https://scholar.google.ca/" target="_blank">Google Scholar</a>
-- <a href="https://datasetsearch.research.google.com/" target="_blank">Google Data</a>
-- <a href="https://explore.openaire.eu/" target="_blank">The EU's OpenAIRE</a>
-- <a href="https://library.utoronto.ca/" target="_blank">Most university libraries, like the University of Toronto</a>
-- <a href="https://datasetcatalog.nlm.nih.gov/" target="_blank">US National Library of Medicine</a>
-- <a href="http://datacite.org" target="_blank">DataCite</a>
-- <a href="https://orcid.org/" target="_blank">ORCID</a>
-- <a href="https://www.lunaris.ca/en" target="_blank">Lunaris</a>: Canadian national research data discovery service
-- By APIs
-
-
-## Social Media
-Spread the word about your research and improve your altmetrics by sharing your linked data on social media!
-
-Borealis provides a `Share` button for
-1. Each Borealis collection
-2. Each dataset
+Templates can be selected at dataset creation and changed at any time. These automatically apply the right information about the license to the dataset’s metadata.
 
 <p style="margin-top:25px;margin-left:30px">
-<img src="figures/borealis-social-media.png" width="500"/> </p> 
+<img src="figures/borealis-templates.png" width="500"/> </p>
 
-This button gives you the option to create a post with a link to your data on Facebook, Twitter, and LinkedIn.
+<p style="margin-top:15px"></p>
 
-<br>
+You can review our [Licenses for Research Data workshop](https://ubc-library-rc.github.io/rdm/content/09_License-Research-Data.html) or the <a href="https://copyright.ubc.ca/creative-commons/" target="_blank">UBC Library Creative Commons page </a> to decide what license to use with your dataset. We recommend **CC-BY** license.  
+{: .note }
+
+<p style="margin-top:15px"></p>
+
+## **Custom license**
+{: .no_toc}
+
+One-size-fits-all licenses don’t suit every dataset. You can create customized terms and conditions of use. 
+
+To customize terms: 
+
+<p style="margin-top:25px;margin-left:30px">
+<img src="figures/borealis-edit-terms.png" width="550"/> </p>
+
+If you need help creating a custom license, please contact `research.data@ubc.ca`.
+
+# APIs
+
+Borealis has many [APIs available](https://learn.scholarsportal.info/all-guides/borealis-admin/dataverse-api/) for you to work with, such as uploading, downloading, and migrating data. 
+
+If you're unfamiliar with using APIs, we recommend using the **Demo Borealis** to practice the API commands.
+
+To access and use an API, you'll need your API Token. This token should be secured like a password.
+
+From the drop-down menu, select `API Token` and copy the token provided. Alternatively, you can select `Create Token` to create an API Token to use.
+
+<img src="figures/api_advanced_deposit.png" width="550"/>
+
+# Sharing data
 
 ## Linking to your dataset
 
@@ -154,7 +159,7 @@ There are two main ways to direct people to your dataset:
 ### *1*{: .circle .circle-blue} &nbsp;DOI
 {: .no_toc}
 
-A **a DOI (Digital Object Identifier)** is assigned to the dataset by Borealis when the first draft is created. Once the dataset is **Published**, anyone can use the DOI link to find it. While the dataset is still **unpublished**, the DOI can only be used by Borealis *account holders* with permission to view that dataset.
+A **DOI (Digital Object Identifier)** is assigned to the dataset by Borealis when the first draft is created. Once the dataset is **Published**, anyone can use the DOI link to find it. While the dataset is still **unpublished**, the DOI can only be used by Borealis *account holders* with permission to view that dataset.
 
 Use DOIs in citations, publications, on your personal/research group websites--anywhere you want the link to your data stable over time.
 {: .note}
@@ -174,50 +179,32 @@ Preview URL can also be anonymized, e.g. names, affiliations, ORCIDs, etc. would
 <img src="figures/previewurl.jpg" width="500"/> </p>
 
 
-<br>
-
-## Licenses and terms
-
-You have control over how your data can be used. Borealis allows for a variety of licenses and terms of use.
-
-### **Built-in Creative Commons license templates** 
+## Where can UBC Borealis datasets be discovered?
 {: .no_toc}
+Data deposited in UBC Borealis is indexed by and integrated with many services on the Web, including:
 
-Templates can be selected at dataset creation and changed at any time. These automatically apply the right information about the license to the dataset’s metadata.
+- <a href="https://scholar.google.ca/" target="_blank">Google Scholar</a>
+- <a href="https://datasetsearch.research.google.com/" target="_blank">Google Data</a>
+- <a href="https://explore.openaire.eu/" target="_blank">The EU's OpenAIRE</a>
+- <a href="https://library.utoronto.ca/" target="_blank">Most university libraries, like the University of Toronto</a>
+- <a href="https://datasetcatalog.nlm.nih.gov/" target="_blank">US National Library of Medicine</a>
+- <a href="http://datacite.org" target="_blank">DataCite</a>
+- <a href="https://orcid.org/" target="_blank">ORCID</a>
+- <a href="https://www.lunaris.ca/en" target="_blank">Lunaris</a>: Canadian national research data discovery service
+- By APIs
+
+## Social Media
+{: .no_toc}
+Spread the word about your research and improve your altmetrics by sharing your linked data on social media!
+
+Borealis provides a `Share` button for
+1. Each Borealis collection
+2. Each dataset
 
 <p style="margin-top:25px;margin-left:30px">
-<img src="figures/borealis-templates.png" width="500"/> </p>
+<img src="figures/borealis-social-media.png" width="500"/> </p> 
 
-<p style="margin-top:15px"></p>
-
-You can use <a href="https://copyright.ubc.ca/creative-commons/" target="_blank">UBC Library Creative Commons page </a> and the [License Research Data workshop](https://ubc-library-rc.github.io/rdm/content/09_License-Research-Data.html) to decide what license to use with your dataset. We recommend **CC-BY** license.  
-{: .note }
-
-<p style="margin-top:15px"></p>
-
-### **Custom license**
-{: .no_toc}
-
-One-size-fits-all licenses don’t suit every dataset. You can create customized terms and conditions of use. 
-
-To customize terms: 
-
-<p style="margin-top:25px;margin-left:30px">
-<img src="figures/borealis-edit-terms.png" width="550"/> </p>
-
-If you need help creating a custom license, contact `research.data@ubc.ca`.
-
-# APIs
-
-Borealis has many [APIs available](https://learn.scholarsportal.info/all-guides/borealis-admin/dataverse-api/) for you to work with, such as uploading, downloading, and migrating data. 
-
-If you're unfamiliar with using APIs, we recommend using the **Demo Borealis** to practice the API commands.
-
-To access and use an API, you'll need your API Token. This token should be secured like a password.
-
-From the drop-down menu, select `API Token` and copy the token provided. Alternatively, you can select `Create Token` to create an API Token to use.
-
-<img src="figures/api_advanced_deposit.png" width="550"/>
+This button gives you the option to create a post with a link to your data on Facebook, Twitter, and LinkedIn.
 
 <br>
 
@@ -229,8 +216,6 @@ From the drop-down menu, select `API Token` and copy the token provided. Alterna
 </p>
 
 You are an expert in data deposits in UBC Borealis now! 
-
-If you want more options to customize and control the way your Borealis collections look and act, you need to know more! Check out our <a href="05-3_Admin_Access.md" target="_blank">Admin Access in UBC Borealis workshop</a>.
 
 ---
 
