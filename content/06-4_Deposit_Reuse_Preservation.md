@@ -90,7 +90,7 @@ UBC Library provides access to two robust, nationally-supported repositories for
 
 |Repository|Description|Digital Preservation|
 |:----:|:----:|:----:|
-|<a href="https://researchdata.library.ubc.ca/deposit/dataverse" target="_blank">UBC Dataverse Collection</a> (Borealis)|An open-source application to publish, deposit, reference, cite, extract and analyze research data. UBC Library can create a Dataverse setup for your research group where you can actively manage your data, share it securely with colleagues, provide version control, establish a permanent data citation, get a DOI for your dataset, and more.| All Borealis files are digitally preserved with <a href="https://borealisdata.ca/preservationplan/" target="_blank">Level 1 </a>digital preservation|
+|<a href="https://researchdata.library.ubc.ca/deposit/dataverse" target="_blank">UBC Borealis</a> |An open-source application to publish, deposit, reference, cite, extract and analyze research data. UBC Library can create a Borealis setup for your research group where you can actively manage your data, share it securely with colleagues, provide version control, establish a permanent data citation, get a DOI for your dataset, and more.| All Borealis files are digitally preserved with <a href="https://borealisdata.ca/preservationplan/" target="_blank">Level 1 </a>digital preservation|
 |<a href="https://researchdata.library.ubc.ca/deposit/frdr/" taget="_blank">FRDR</a>| The Federated Research Data Repository, is a Canadian national research data repository for big data. It allows researchers to discover, share, and download Canadian research data.| All FRDR files are preserved with Level 2 digital preservation (Archivematica)|
 
 
@@ -123,7 +123,7 @@ We recommend using the **CC-0** (also known as CC-Zero) or **CC-BY** licenses fo
  
  Open Data Commons offers three license options that were created specifically for data/databases. These are mostly commonly used for governmental data, such as municipal, provincial, and federal datasets.
 
-In UBC Dataverse Collection, our preferred license is CC-0, however, we invite our researchers to choose from a variety of Creative Commons licenses from a drop-down menu as they deposit their datasets.
+In UBC Borealis, our preferred license is CC-BY, however, we invite our researchers to choose from a variety of Creative Commons licenses from a drop-down menu as they deposit their datasets.
 {: .note}
 
 <br>
@@ -134,7 +134,7 @@ When you use data from other sources in your research, it is important to acknow
 
 **To acknowledge the data creators**, include a data citation for the data (and software) that you used in the references section of your publication.
 
-**To make your data sources easy to find and access**, create a data citation for your datasets. Most data repositories, including UBC Dataverse Collection, <u>automatically create a data citation</u>.
+**To make your data sources easy to find and access**, create a data citation for your datasets. Most data repositories, including UBC Borealis, automatically create a data citation.
 
 
 <p style="margin-top:25px;margin-left:30px">
