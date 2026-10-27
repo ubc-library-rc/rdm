@@ -74,11 +74,11 @@ There are different methods of de-identification, each with its own advantages a
 Please see our [workshops for De-Identifying Research Data](https://ubc-library-rc.github.io/rdm/content/10_Anonymize-Research-Data.html) for more information about sensitive data and methods of data de-identification. Our colleagues at the UBC Advanced Research Computing also have an excellent <a href="https://arc.ubc.ca/sharing-research-data" target="_blank">guide to sensitive data</a>. 
 {: .note}
 
-### Risk of Re-identification
+## Risk of Re-identification
 
-No matter what de-identification methods you choose to use, there is always a chance that someone could re-identify the data by using other sources of information or advanced technology. Therefore, researchers need to be aware of these risks and manage them accordingly.
+No matter what de-identification method(s) you choose to use, there is always a chance that someone could re-identify the data by using other sources of information or advanced technology. Therefore, researchers need to be aware of these risks and manage them accordingly.
 
-#### Example: Anonymization
+### Example: Anonymization
 
 <p style="margin-top:10px"></p>
 
@@ -96,20 +96,21 @@ An anonymized version of that dataset might look like this:
 |V5V 1P2|1970|Female|Manager|90,000|
 |V8A 1A5|1982|Male|Machinist|65,000|
 
-In some cases, this might be enough to ensure that the data is not re-identified. However, the anonymized data may be easily re-identified in this case. For example, if there are not many machinists in the V8A 1A5 postal code, there is a strong risk of re-identification for the data related to Sam Cooper.
+In some cases, this might be enough to ensure that the data is not re-identified. However, the anonymized data may be easily re-identified in this example. If there are not many machinists in the V8A 1A5 postal code, there is a high risk of re-identification for the data related to Sam Cooper.
+
 
 Reflection
 {: .label label-blue }
     What method(s) would you use to protect the sensitive information of the individuals? 
 
 
-#### Example: Pseudonymization
+### Example: Pseudonymization
 
 <p style="margin-top:10px"></p>
 
-Data pseudonymization can preserve the linkability and utility of the data. **Linkability** means that the data can be connected to the same individual or entity across different datasets or over time. This can make the data more valuable for analysis and research, but it can also increase the risk of re-identification. Therefore, researchers need to assess the risk of re-identification and balance it with the benefit of data linkage.
+Pseudonymization can preserve the linkability and utility of the data. **Linkability** means the data can be connected to the same individual or entity across different datasets or over time. This can make the data more valuable for analysis and research, but it can also *increase the risk* of re-identification. Therefore, researchers need to *assess the risk of re-identification* and balance it with the benefit of data linkage.
 
-On the other hand, data anonymization removes any information that can directly or indirectly identify an individual or an entity in a dataset. This means that the data cannot be linked to the original source or to other datasets. 
+Compared to anonymization, which removes any information that can directly or indirectly identify an individual or an entity in a dataset. This means that the data cannot be linked to the original source or to other datasets. 
 
 |Name|Anonymized|Pseudonymized|
 |-|-|-|
@@ -119,6 +120,9 @@ Sunil Gupta |	ANON |	P59M16
 Sam Cooper |	ANON |	P38Q27
 Sally Xi |	ANON |	P12L25
 
+<p style="margin-top:25px;margin-bottom:50px; margin-left:30px">
+<img src="figures/facial-recognition.png" width="150"/>
+</p>
 
 ## FIPPA
 The <a href="https://universitycounsel.ubc.ca/subject-areas/access-and-privacy-general/access-to-information/about-fippa/" target="_blank"> FIPPA</a>, British Columbia Freedom of Information and Protection of Privacy Act, is provincial legislation that
