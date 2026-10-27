@@ -40,8 +40,6 @@ They should also ensure that they comply with any applicable <u>privacy legislat
 
 Sensitive data is data that should not be shared publicly without additional consideration. This might include trade secrets, medical information, commercial information, preliminary analysis, third-party data, and some geospatially linked data. Sensitive research data requires careful handling and protection, and often is not suitable for open sharing. However, there may be ways to share sensitive research data legally and ethically, such as anonymizing, aggregating, or restricting access to the data.
 
-
-
 In order to ensure you are ethically handling data, you should:
 
 - evaluate the anonymity of your data
@@ -59,9 +57,9 @@ In order to ensure you are ethically handling data, you should:
 ## De-identification
 Sensitive data contain information that could reveal the identity or harm the interests of the people or entities involved in the research. To protect the privacy and confidentiality of the research subjects, researchers can use de-identification techniques. 
 
+**De-identification** is the process of removing or modifying any information that could be used to identify someone or something in a dataset. When done properly, researchers can share their data without disclosing sensitive information. 
 
-**De-identification** is the process of removing or modifying any information that could be used to identify someone or something in a dataset. By doing this, researchers can **share their data without disclosing sensitive information**. However, de-identification is not a simple or foolproof solution. There is always a possibility that someone could re-identify the data by using other sources of information or advanced technology. Therefore, researchers need to be aware of the <u>risks and challenges</u> of de-identification and manage them accordingly.
-
+However, *de-identification is not a simple or foolproof solution*. There is always a possibility that someone could re-identify the data by using other sources of information or advanced technology. Therefore, researchers need to be aware of the *risks and challenges* of de-identification and manage them accordingly.
 
 There are different methods of de-identification, each with its own advantages and disadvantages. 
 
@@ -98,17 +96,11 @@ An anonymized version of that dataset might look like this:
 |V5V 1P2|1970|Female|Manager|90,000|
 |V8A 1A5|1982|Male|Machinist|65,000|
 
-
 In some cases, this might be enough to ensure that the data is not re-identified. However, the anonymized data may be easily re-identified in this case. For example, if there are not many machinists in the V8A 1A5 postal code, there is a strong risk of re-identification for the data related to Sam Cooper.
 
 Reflection
 {: .label label-blue }
     What method(s) would you use to protect the sensitive information of the individuals? 
-
-
-<p style="margin-top:25px;margin-bottom:50px; margin-left:30px">
-<img src="figures/facial-recognition.png" width="250"/>
-</p>
 
 
 #### Example: Pseudonymization
@@ -127,30 +119,11 @@ Sunil Gupta |	ANON |	P59M16
 Sam Cooper |	ANON |	P38Q27
 Sally Xi |	ANON |	P12L25
 
-<br>
-
-
-### De-identification Tools
-
-<p style="margin-top:25px;margin-bottom:50px; margin-left:30px">
-<img src="figures/anonymity.png" width="230"/>
-</p>
-
-Researchers are increasingly using **algorithm-based tools** to help anonymize their data and manage the risk of re-identifying their anonymized data. An example of an anonymization tool would be:
-
-- <a href="https://arx.deidentifier.org/" target="_blank">ARX open source data anonymization software</a>
-
-
-<br>
 
 ## FIPPA
 The <a href="https://universitycounsel.ubc.ca/subject-areas/access-and-privacy-general/access-to-information/about-fippa/" target="_blank"> FIPPA</a>, British Columbia Freedom of Information and Protection of Privacy Act, is provincial legislation that
 - make public bodies more open and accountable by providing the public with a right of access to records; 
 - protect personal information from unauthorized collection, use, or disclosure by public bodies.
-
-<p style="margin-left:30px">
-<img src="figures/regulations.jpg" width="300"/>
-</p>
 
 When it comes to choosing storage resources, researchers at UBC have a range of FIPPA-compliant options:
 
@@ -160,8 +133,6 @@ When it comes to choosing storage resources, researchers at UBC have a range of 
 |Students|OneDrive|
 
 
-<br>
-
 ## TCPS 2 (2022)
 
 The <a href="https://ethics.gc.ca/eng/policy-politique_tcps2-eptc2_2022.html" target="_blank">Tri-Council Policy Statement: Ethical Conduct for Research Involving Humans – TCPS 2 (2022)</a> is a policy document that provides <u>ethical guidelines and principles for conducting research</u> involving human participants in Canada. 
@@ -170,8 +141,6 @@ It was developed by the three federal research funding agencies: the Canadian In
 
 Our colleagues at the <a href="https://ethics.research.ubc.ca/" target="_blank">UBC Office of Research Ethics</a> oversee the Behavioural and Clinical Research Ethics Boards, and are associated with the Ethics Board at UBC's Okanagan campus, as well as UBC's affiliated teaching hospitals. They provide outstanding support for UBC researchers and students and would be delighted to answer your specific questions. 
  
-<br>
-
 Reflection
 {: .label label-green}
     Does your data comply with FIPPA requirements? 
@@ -180,6 +149,7 @@ Reflection
 
     Reach out to research.data@ubc.ca or arc.support@ubc.ca to discuss sensitive data sharing.
 
+<br>
 
 ---
 
