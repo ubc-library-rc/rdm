@@ -17,19 +17,14 @@ Managing and sharing research data involves various **legal, ethical, and intell
 - the attribution of data sources, 
 - the compliance with relevant laws and regulations, and more.
 
-<p style="margin-top:25px;margin-left:30px">
-<img src="figures/follow-rule.jpg" width="300"/>
-</p>
-
 Researchers who manage and share their data should be aware of these issues and explain how they will <u>follow the appropriate guidelines and policies for their field and region</u>. 
 
 They should also ensure that they comply with any applicable <u>privacy legislation and laws, including those imposed by their funders or institutions</u>. These may require researchers to obtain ethical approval, inform data subjects, anonymize or encrypt data, secure data storage and transfer, respect data licenses and agreements, and report any breaches or incidents.
 
 
-
 <details open markdown="block">
   <summary>
-    Table of Content
+    Table of Contents
   </summary>
   {: .text-delta }
  - TOC
@@ -43,13 +38,11 @@ They should also ensure that they comply with any applicable <u>privacy legislat
 
 ## Sensitive Data 
 
-Sensitive data is data that should not be shared in the public domain without additional consideration. Our colleagues at the UBC Advanced Research Computing have an excellent <a href="https://arc.ubc.ca/sharing-research-data" target="_blank">guide</a> to sensitive data. This might include trade secrets, medical information, commercial information, preliminary analysis, third-party data, and some geospatially linked data. Sensitive research data requires careful handling and protection, and often is not suitable for open sharing. However, there may be ways to share sensitive research data legally and ethically, such as anonymizing, aggregating, or restricting access to the data.
+Sensitive data is data that should not be shared publicly without additional consideration. This might include trade secrets, medical information, commercial information, preliminary analysis, third-party data, and some geospatially linked data. Sensitive research data requires careful handling and protection, and often is not suitable for open sharing. However, there may be ways to share sensitive research data legally and ethically, such as anonymizing, aggregating, or restricting access to the data.
 
-<p style="margin-top:25px;margin-left:30px">
-<img src="figures/privacy-please.jpg" width="300"/>
-</p>
 
-In order to ensure you are handling data in an ethical manner, you should:
+
+In order to ensure you are ethically handling data, you should:
 
 - evaluate the anonymity of your data
 - obtain a confidential review (from a data repository admin)
@@ -58,14 +51,14 @@ In order to ensure you are handling data in an ethical manner, you should:
 - have informed consent for data sharing
 - restrict use of confidential data
 
-<br>
+
+<p style="margin-top:25px;margin-bottom:25px">
+<img src="figures/incognito.png" width="200"/>
+</p>
 
 ## De-identification
 Sensitive data contain information that could reveal the identity or harm the interests of the people or entities involved in the research. To protect the privacy and confidentiality of the research subjects, researchers can use de-identification techniques. 
 
-<p style="margin-top:25px;margin-bottom:25px">
-<img src="figures/incognito.png" width="300"/>
-</p>
 
 **De-identification** is the process of removing or modifying any information that could be used to identify someone or something in a dataset. By doing this, researchers can **share their data without disclosing sensitive information**. However, de-identification is not a simple or foolproof solution. There is always a possibility that someone could re-identify the data by using other sources of information or advanced technology. Therefore, researchers need to be aware of the <u>risks and challenges</u> of de-identification and manage them accordingly.
 
@@ -80,7 +73,8 @@ There are different methods of de-identification, each with its own advantages a
 |**Masking**|identifying information is <u>hidden or obscured</u> by using techniques such as encryption, hashing, blurring, or noise addition|makes the data harder to read or interpret|introduces errors or distortions in the data|
 |**Generalization**|identifying information is replaced with more <u>general or vague terms</u>. For example, dates can be replaced with years, addresses can be replaced with regions, or names can be replaced with initials|preserves some semantic meaning and context|makes the data less specific and more ambiguous|
 
-<br>
+Please see our [workshops for De-Identifying Research Data](https://ubc-library-rc.github.io/rdm/content/10_Anonymize-Research-Data.html) for more information about sensitive data and methods of data de-identification. Our colleagues at the UBC Advanced Research Computing also have an excellent <a href="https://arc.ubc.ca/sharing-research-data" target="_blank">guide to sensitive data</a>. 
+{: .note}
 
 ### Risk of Re-identification
 
