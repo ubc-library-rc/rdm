@@ -1,0 +1,48 @@
+name: Sync guide PDFs from Borealis
+
+on:
+  schedule:
+    - cron: "17 13 * * *"   # daily, ~6 am Vancouver
+  workflow_dispatch:         # "Run workflow" button in the Actions tab
+  push:                      # run when the guide list or this setup changes
+    paths:
+      - "_data/borealis_guides.yml"
+      - ".github/scripts/sync_borealis.py"
+      - ".github/workflows/sync-borealis.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: borealis-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pyyaml
+
+      - name: Download latest published PDFs
+        env:
+          BOREALIS_API_TOKEN: ${{ secrets.BOREALIS_API_TOKEN }}
+        run: python .github/scripts/sync_borealis.py
+
+      - name: Commit any changes
+        if: success() || failure()   # still save guides that synced if one failed
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Everything is up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Sync guide PDFs from Borealis"
+          git push

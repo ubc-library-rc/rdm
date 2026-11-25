@@ -1,0 +1,19 @@
+name: Check the site builds
+
+# Runs on every pull request, so a broken page is caught before it goes live.
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build the site the same way GitHub Pages does
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site

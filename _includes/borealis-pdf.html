@@ -1,0 +1,40 @@
+{%- comment -%}
+  Embed a guide PDF that is synced from Borealis, with download/open buttons
+  and the DOI for citing.
+  Usage:  {% include borealis-pdf.html id="readme" %}
+  Optional:
+    title="..."      defaults to the Borealis dataset title
+    height="800"     preview height in pixels
+    collapsed=true   buttons always visible, preview behind a "Preview" toggle
+{%- endcomment -%}
+{%- assign guide = site.data.borealis_guides.guides | where: "id", include.id | first -%}
+{%- assign info = site.data.borealis_versions[include.id] -%}
+{%- assign src = guide.path | prepend: "/" | relative_url -%}
+{%- assign doi = guide.doi | remove_first: "doi:" -%}
+{%- assign title = include.title | default: info.title | default: "this guide" -%}
+{%- if info.filesize -%}
+  {%- assign kb = info.filesize | divided_by: 1024 -%}
+  {%- if kb >= 1024 -%}{%- assign size = info.filesize | divided_by: 104857.6 | round | divided_by: 10.0 | append: " MB" -%}
+  {%- else -%}{%- assign size = kb | at_least: 1 | append: " KB" -%}{%- endif -%}
+{%- endif -%}
+<div class="pdf-embed" style="border: 1.5px solid #ddd; border-radius: 10px; padding: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); margin: 1em 0;">
+  <p style="margin: 0 0 8px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center;">
+    <a class="btn btn-primary" href="{{ src }}" download>Download PDF{% if size %} ({{ size }}){% endif %}</a>
+    <a class="btn btn-outline" href="{{ src }}" target="_blank" rel="noopener">Open in new tab ↗</a>
+  </p>
+  {%- if include.collapsed %}
+  <details>
+    <summary>Preview {{ title }}</summary>
+  {%- endif %}
+  <object data="{{ src }}#view=FitH" type="application/pdf" aria-label="{{ title }} (PDF)"
+          style="width: 100%; height: {{ include.height | default: 800 }}px; border: none; border-radius: 6px; display: block; margin-top: 8px;">
+    <p style="padding: 1em;">Your browser can't show this PDF here. Use the Download PDF button above.</p>
+  </object>
+  {%- if include.collapsed %}
+  </details>
+  {%- endif %}
+  <p style="font-size: 0.9em; margin: 8px 0 0;">
+    Cite or share: <a href="https://doi.org/{{ doi }}">https://doi.org/{{ doi }}</a>
+    {%- if info %} · Version {{ info.version }}{% if info.release_date %} ({{ info.release_date }}){% endif %}{% endif %}
+  </p>
+</div>
