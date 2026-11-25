@@ -56,9 +56,44 @@ def file_hash(data, algo):
     return hashlib.new(algo, data).hexdigest()
 
 
-def citation_title(version):
+def citation_field(version, name):
     fields = version.get("metadataBlocks", {}).get("citation", {}).get("fields", [])
-    return next((f["value"] for f in fields if f.get("typeName") == "title"), None)
+    return next((f["value"] for f in fields if f.get("typeName") == name), None)
+
+
+def citation_title(version):
+    return citation_field(version, "title")
+
+
+def apa_name(name):
+    """'Barsky, Eugene' -> 'Barsky, E.'; 'Hu, Mary-Jane' -> 'Hu, M.-J.'; organizations stay as written."""
+    if "," not in name:
+        return name.strip()
+    last, given = (part.strip() for part in name.split(",", 1))
+    initials = " ".join(
+        "-".join(piece[0] + "." for piece in word.split("-") if piece)
+        for word in given.replace(".", " ").split()
+    )
+    return f"{last}, {initials}" if initials else last
+
+
+def apa_authors(version):
+    authors = [apa_name(a.get("authorName", {}).get("value", "")) for a in citation_field(version, "author") or []]
+    authors = [a for a in authors if a]
+    if len(authors) > 20:  # APA 7: first 19, an ellipsis, then the last author
+        return ", ".join(authors[:19]) + ", . . . " + authors[-1]
+    if len(authors) > 1:
+        return ", ".join(authors[:-1]) + ", & " + authors[-1]
+    return authors[0] if authors else None
+
+
+def publication_year(server, query, version):
+    """Year the dataset was first published (as in Borealis's own citation); falls back to this version's year."""
+    try:
+        published = json.loads(fetch(f"{server}/api/datasets/:persistentId/?{query}"))["data"].get("publicationDate")
+    except Exception:
+        published = None
+    return (published or version.get("releaseTime") or "")[:4] or None
 
 
 def sync_guide(server, guide):
@@ -112,6 +147,8 @@ def sync_guide(server, guide):
     info = {
         "doi": doi,
         "title": citation_title(version),
+        "apa_authors": apa_authors(version),
+        "year": publication_year(server, query, version),
         "version": f"{version.get('versionNumber')}.{version.get('versionMinorNumber')}",
         "release_date": (version.get("releaseTime") or "")[:10] or None,
         "filename": datafile["filename"],

@@ -34,7 +34,12 @@
   </details>
   {%- endif %}
   <p style="font-size: 0.9em; margin: 8px 0 0;">
+    {%- if info.apa_authors and info.year %}
+    <strong>Cite as:</strong> {{ info.apa_authors | escape }} ({{ info.year }}). <em>{{ info.title | escape }}</em> (Version {{ info.version }}). Borealis. <a href="https://doi.org/{{ doi }}">https://doi.org/{{ doi }}</a>
+    {%- if info.release_date %} (Last updated: {{ info.release_date }}){% endif %}
+    {%- else %}
     Cite or share: <a href="https://doi.org/{{ doi }}">https://doi.org/{{ doi }}</a>
     {%- if info %} · Version {{ info.version }}{% if info.release_date %} ({{ info.release_date }}){% endif %}{% endif %}
+    {%- endif %}
   </p>
 </div>
