@@ -13,11 +13,7 @@ It's good practice to have this document when conducting your research because i
 
 However, keep in mind that a README file complements your dataset. It does not replace the metadata that data repositories (e.g. Borealis or FRDR) ask you to provide when you deposit your data. The repository’s metadata will support findability, accessibility, interoperability, and reusability within and between data repositories, while the README is portable and continues to describe the dataset, even after it has been separated from its original context. 
 
-- Looking for a cheat sheet? Check out our <a href="https://doi.org/10.5683/SP4/VCP9BO" target="_blank">one-pager</a>
-- Looking for a template to reuse? Check out our <a href="https://ubc-library-rc.github.io/rdm/content/exercise_files/README_template_v02.txt" target="_blank">README template</a> 
-{: .note}
-
-{% include borealis-pdf.html id="readme" collapsed=true %}
+{% include borealis-pdf.html id="readme" collapsed=true extra='Looking for a template to reuse? Check out our <a href="https://ubc-library-rc.github.io/rdm/content/exercise_files/README_template_v02.txt" target="_blank">README template</a>.' %}
 
 <details open markdown="block">
   <summary>

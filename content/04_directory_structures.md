@@ -11,9 +11,6 @@ Let’s pretend you store all your digital files in one folder on your computer.
 
 Instead of keeping every document in a single folder, files are often organized using a directory or folder structure. A good, consistent folder structure benefits you and others by making file access, retrieval, and storage more efficient. This will save you time, improve productivity, and overall make the research process more transparent and collaborative. 
 
-Looking for a cheat sheet? Check out our <a href="https://doi.org/10.5683/SP4/ARNQNC" target="_blank">one-pager</a>!
-{: .note}
-
 {% include borealis-pdf.html id="directory-structures" collapsed=true %}
 
 

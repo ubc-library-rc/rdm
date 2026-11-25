@@ -11,9 +11,6 @@ Creating a well-organized hierarchy of files with clear naming conventions is an
 
 There are many ways to structure your folders, and multiple naming conventions you can use. The key is <b>consistency</b>. Make your file names descriptive, and include information about dates and versioning. The best practice is to consult with your lab or with your co-workers to develop a naming schema that everyone is willing to follow consistently.
 
-Looking for a cheat sheet? Check out our <a href="https://doi.org/10.5683/SP4/SP73CF" target="_blank">one-pager</a>!
-{: .note}
-
 {% include borealis-pdf.html id="file-naming" collapsed=true %}
 
 
