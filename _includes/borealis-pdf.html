@@ -29,7 +29,7 @@
   </p>
   {%- if include.collapsed %}
   <details>
-    <summary>Preview {{ title }}</summary>
+    <summary><strong>Preview:</strong> {{ title }}</summary>
   {%- endif %}
   <object data="{{ src }}#view=FitH" type="application/pdf" aria-label="{{ title }} (PDF)"
           style="width: 100%; height: {{ include.height | default: 800 }}px; border: none; border-radius: 6px; display: block; margin-top: 8px;">
