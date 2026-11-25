@@ -18,3 +18,9 @@ guides:
   - id: file-naming
     doi: doi:10.5683/SP4/SP73CF
     path: content/guides/01_file-naming_one-pager.pdf
+  - id: file-formats
+    doi: doi:10.5683/SP4/TQN4SZ
+    path: content/guides/02_file-formats_one-pager.pdf
+  - id: readme
+    doi: doi:10.5683/SP4/VCP9BO
+    path: content/guides/03_readme_one-pager.pdf

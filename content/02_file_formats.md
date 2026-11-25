@@ -16,8 +16,10 @@ Software and data storage technology change quickly, and files can become obsole
 
 <p style="margin-bottom: 25px"></p>
 
-Looking for a cheat sheet? Check out our <a href="https://osf.io/ena5p" target="_blank">one-pager</a>!
+Looking for a cheat sheet? Check out our <a href="https://doi.org/10.5683/SP4/TQN4SZ" target="_blank">one-pager</a>!
 {: .note}
+
+{% include borealis-pdf.html id="file-formats" collapsed=true %}
   
 <details open markdown="block">
   <summary>
