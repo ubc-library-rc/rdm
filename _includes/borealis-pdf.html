@@ -1,11 +1,13 @@
 {%- comment -%}
-  Embed a guide PDF that is synced from Borealis, with download/open buttons
-  and the DOI for citing.
-  Usage:  {% include borealis-pdf.html id="readme" %}
+  A guide synced from Borealis, shown in the site's note box: an opening line,
+  Download PDF and Open in new tab buttons, a preview and the APA citation.
+  Usage:  {% include borealis-pdf.html id="readme" collapsed=true %}
   Optional:
+    intro="..."      opening line (default: "Looking for a cheat sheet? Check out our one-pager!")
+    extra="..."      an extra line under the opening line (HTML allowed), e.g. a link to a template
     title="..."      defaults to the Borealis dataset title
     height="800"     preview height in pixels
-    collapsed=true   buttons always visible, preview behind a "Preview" toggle
+    collapsed=true   preview starts closed behind a "Preview:" toggle
 {%- endcomment -%}
 {%- assign guide = site.data.borealis_guides.guides | where: "id", include.id | first -%}
 {%- assign info = site.data.borealis_versions[include.id] -%}
@@ -18,12 +20,18 @@
   {%- else -%}{%- assign size = kb | at_least: 1 | append: " KB" -%}{%- endif -%}
 {%- endif -%}
 <style>
-  /* Download button in the site's light blue (same as the note boxes) */
-  .pdf-embed .btn.guide-download { background: rgba(44, 132, 250, 0.1); background-image: none; color: #183385; border: 1px solid rgba(24, 51, 133, 0.35); box-shadow: none; }
-  .pdf-embed .btn.guide-download:hover, .pdf-embed .btn.guide-download:focus { background: rgba(44, 132, 250, 0.22); color: #183385; }
+  /* The guide sits inside the site's light-blue note box; buttons use the note's dark blue */
+  .pdf-embed .btn.guide-download { background: #183385; background-image: none; color: #fff; border: 1px solid #183385; box-shadow: none; }
+  .pdf-embed .btn.guide-download:hover, .pdf-embed .btn.guide-download:focus { background: #264caf; border-color: #264caf; color: #fff; }
+  .pdf-embed .btn.btn-outline { background: #fff; }
+  .pdf-embed p { margin: 0 0 8px; }
 </style>
-<div class="pdf-embed" style="border: 1.5px solid #ddd; border-radius: 10px; padding: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); margin: 1em 0;">
-  <p style="margin: 0 0 8px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center;">
+<div class="note pdf-embed">
+  <p>{{ include.intro | default: "Looking for a cheat sheet? Check out our one-pager!" }}</p>
+  {%- if include.extra %}
+  <p>{{ include.extra }}</p>
+  {%- endif %}
+  <p style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center;">
     <a class="btn guide-download" href="{{ src }}" download>Download PDF{% if size %} ({{ size }}){% endif %}</a>
     <a class="btn btn-outline" href="{{ src }}" target="_blank" rel="noopener">Open in new tab ↗</a>
   </p>
@@ -32,7 +40,7 @@
     <summary><strong>Preview:</strong> {{ title }}</summary>
   {%- endif %}
   <object data="{{ src }}#view=FitH" type="application/pdf" aria-label="{{ title }} (PDF)"
-          style="width: 100%; height: {{ include.height | default: 800 }}px; border: none; border-radius: 6px; display: block; margin-top: 8px;">
+          style="width: 100%; height: {{ include.height | default: 800 }}px; border: none; border-radius: 6px; display: block; margin-top: 8px; background: #fff;">
     <p style="padding: 1em;">Your browser can't show this PDF here. Use the Download PDF button above.</p>
   </object>
   {%- if include.collapsed %}
