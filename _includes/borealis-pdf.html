@@ -40,7 +40,7 @@
   {%- endif %}
   <p style="font-size: 0.9em; margin: 8px 0 0;">
     {%- if info.apa_authors and info.year %}
-    <strong>Cite as:</strong> {{ info.apa_authors | escape }} ({{ info.year }}). <em>{{ info.title | escape }}</em> (Version {{ info.version }}). Borealis. <a href="https://doi.org/{{ doi }}">https://doi.org/{{ doi }}</a>
+    <strong>Cite as:</strong> {{ info.apa_authors | escape }} ({{ info.year }}). <em>{{ info.title | escape }}</em> (Version {{ info.citation_version | default: info.version }}). Borealis. <a href="https://doi.org/{{ doi }}">https://doi.org/{{ doi }}</a>
     {%- if info.release_date %} (Last updated: {{ info.release_date }}){% endif %}
     {%- else %}
     Cite or share: <a href="https://doi.org/{{ doi }}">https://doi.org/{{ doi }}</a>

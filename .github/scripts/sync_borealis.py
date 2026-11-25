@@ -16,6 +16,7 @@ import fnmatch
 import hashlib
 import json
 import os
+import re
 import sys
 import tempfile
 import urllib.parse
@@ -87,6 +88,16 @@ def apa_authors(version):
     return authors[0] if authors else None
 
 
+def citation_version(server, query):
+    """The version exactly as Borealis's own citation shows it, e.g. 'V1' -> '1'."""
+    try:
+        text = json.loads(fetch(f"{server}/api/datasets/:persistentId/versions/:latest-published/citation?{query}"))["data"]["message"]
+    except Exception:
+        return None
+    found = re.findall(r"\bV(\d+(?:\.\d+)?)\b", re.sub(r"<[^>]+>", "", text))
+    return found[-1] if found else None
+
+
 def publication_year(server, query, version):
     """Year the dataset was first published (as in Borealis's own citation); falls back to this version's year."""
     try:
@@ -150,6 +161,7 @@ def sync_guide(server, guide):
         "apa_authors": apa_authors(version),
         "year": publication_year(server, query, version),
         "version": f"{version.get('versionNumber')}.{version.get('versionMinorNumber')}",
+        "citation_version": citation_version(server, query),
         "release_date": (version.get("releaseTime") or "")[:10] or None,
         "filename": datafile["filename"],
         "file_id": datafile["id"],
