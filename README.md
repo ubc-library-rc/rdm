@@ -9,3 +9,5 @@ Images are under the Pixabay and Pexels License.
 These workshops are authored by Vanessa Choy, Billie Hu, Andrew Li (Graduate Academic Assistants, RDM - Authors) and Eugene Barsky (Lead Author)
 
 The [workshop site](https://ubc-library-rc.github.io/rdm/) uses the [Just the Docs](https://github.com/pmarsceill/just-the-docs) Jekyll theme.
+
+The one-page guides on the workshop pages come from Borealis and update automatically. To add, update or fix a guide, or to set up the same thing on another site, see the notes in [borealis_guides_notes.md](borealis_guides_notes.md).
