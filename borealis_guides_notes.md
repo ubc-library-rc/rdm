@@ -16,7 +16,7 @@ The guides live in Borealis, each as its own dataset with its own DOI. Each work
 
 1. **Borealis holds the master copy.** A guide is only ever updated in Borealis, by publishing a new version of its dataset. The DOI never changes and always points to the latest version.
 2. **A GitHub Action copies it to the site.** Every morning at about 6 am Vancouver time, the Action asks Borealis for the latest published version of each guide, using its DOI. If the PDF has changed, it saves the new one in `content/guides/` under the same file name. If nothing has changed, it does nothing.
-3. **The page shows the copy.** One line on a workshop page shows the guide box: the Download PDF button, an Open in new tab button, a preview, and an APA citation built from the guide's details in Borealis.
+3. **The page shows the copy.** One line on a workshop page shows the guide box, in the site's light-blue note style: "Looking for a cheat sheet? Check out our one-pager!", the Download PDF button, an Open in new tab button, a preview, and an APA citation built from the guide's details in Borealis.
 
 The pages don't link straight to the PDF in Borealis because Borealis gives a file a new internal number with every new version, so a direct link would break. Only the DOI stays the same, and the Action takes care of the rest.
 
@@ -27,7 +27,7 @@ The pages don't link straight to the PDF in Borealis because Borealis gives a fi
 | `_data/borealis_guides.yml` | The list of guides: one entry per guide with its DOI | Yes, to add a guide |
 | `.github/workflows/sync-borealis.yml` | Runs the Action every morning, on **Run workflow**, and when the guide list changes | Only to change the schedule |
 | `.github/scripts/sync_borealis.py` | Asks Borealis for each guide, downloads changed PDFs and records the citation details | Rarely |
-| `_includes/borealis-pdf.html` | The guide box that appears on a page | Only to change how the box looks |
+| `_includes/borealis-pdf.html` | The guide box that appears on a page (a note box with the buttons, preview and citation) | Only to change how the box looks |
 | `.github/workflows/check-site-build.yml` | Builds the site on every pull request, so a broken page is caught before it goes live | No |
 | `_data/borealis_versions.json` | Each guide's version, date, authors and file details | No, the Action writes it |
 | `content/guides/*.pdf` | The copies of the guides | No, the Action writes them |
@@ -46,13 +46,20 @@ The pages don't link straight to the PDF in Borealis because Borealis gives a fi
    - `id` is a short name of your choice; the page uses it.
    - `doi` is the dataset's DOI, with `doi:` at the start.
    - `path` is where the PDF will live on the site. Choose it once and don't rename it later.
-3. **Put the guide box on the page.** Add this line where the guide should appear, usually right after the "Looking for a cheat sheet?" note, and point that note's link to `https://doi.org/` followed by the DOI:
+3. **Put the guide box on the page.** Replace the page's old "Looking for a cheat sheet?" note with this one line. The guide box is itself a note box, and it already opens with "Looking for a cheat sheet? Check out our one-pager!":
 
    ```liquid
    {% include borealis-pdf.html id="readme" collapsed=true %}
    ```
 
-   `collapsed=true` keeps the preview closed until someone clicks it.
+   - `collapsed=true` keeps the preview closed until someone clicks it.
+   - `extra='...'` adds a line under the opening line, for anything else the old note said. The README page uses it for its template link:
+
+     ```liquid
+     {% include borealis-pdf.html id="readme" collapsed=true extra='Looking for a template to reuse? Check out our <a href="...">README template</a>.' %}
+     ```
+
+   - `intro='...'` replaces the opening line, if a page needs different wording.
 4. **Open a pull request into `rdm-pages`.** The main branch is called `rdm-pages`, not `main`. Changing the guide list makes the Action run on the branch straight away, so the **Actions** tab shows whether it fetched the PDF before anything is merged.
 5. **Merge, then check the page.** The site takes a minute or two to rebuild, and GitHub caches pages for up to about 10 minutes, so force a fresh copy with **Ctrl + F5** (Windows) or **Cmd + Shift + R** (Mac).
 
@@ -103,7 +110,7 @@ The same setup works on any of the Research Commons Jekyll workshop sites, and w
 
 1. Copy the five files: the two workflows, the script, the guide box and the guide list.
 2. In `_data/borealis_guides.yml`, list that site's guides, and change `server:` if the guides live in a different Dataverse.
-3. Check the button style in `_includes/borealis-pdf.html`. It uses this site's light blue from the note boxes; another theme may need different colours.
+3. Check the look in `_includes/borealis-pdf.html`. The box uses the theme's `note` style, and the Download PDF button uses the note's dark blue; a site with a different theme may need different colours.
 4. Make sure Actions can save to the repository (**Settings → Actions → General → Workflow permissions → Read and write**).
 5. If Claude should be able to make changes there too, allow the Claude GitHub App on that repository.
 
