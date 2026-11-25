@@ -24,3 +24,6 @@ guides:
   - id: readme
     doi: doi:10.5683/SP4/VCP9BO
     path: content/guides/03_readme_one-pager.pdf
+  - id: directory-structures
+    doi: doi:10.5683/SP4/ARNQNC
+    path: content/guides/04_directory-structures_one-pager.pdf

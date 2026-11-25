@@ -1,4 +1,18 @@
 {
+  "directory-structures": {
+    "apa_authors": "Barsky, E., Hu, B., & Choy, V.",
+    "checksum": "0a05155f5d1b5e06236087c1e5c3b702",
+    "citation_version": "1",
+    "doi": "doi:10.5683/SP4/ARNQNC",
+    "file_id": 1276525,
+    "filename": "directory_structures_onepager_v01.pdf",
+    "filesize": 190731,
+    "path": "content/guides/04_directory-structures_one-pager.pdf",
+    "release_date": "2026-11-25",
+    "title": "University of British Columbia Library guide: Directory structures",
+    "version": "1.0",
+    "year": "2026"
+  },
   "file-formats": {
     "apa_authors": "Barsky, E., Hu, B., & Choy, V.",
     "checksum": "e98ab126f2bc91ed6e43a1ddf73179d3",
