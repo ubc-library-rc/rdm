@@ -1,4 +1,18 @@
 {
+  "file-formats": {
+    "apa_authors": "Barsky, E., Hu, B., & Choy, V.",
+    "checksum": "e98ab126f2bc91ed6e43a1ddf73179d3",
+    "citation_version": "1",
+    "doi": "doi:10.5683/SP4/TQN4SZ",
+    "file_id": 1276515,
+    "filename": "file_formats_onepager_v01.pdf",
+    "filesize": 307916,
+    "path": "content/guides/02_file-formats_one-pager.pdf",
+    "release_date": "2026-11-25",
+    "title": "University of British Columbia Library guide: File formats",
+    "version": "1.2",
+    "year": "2026"
+  },
   "file-naming": {
     "apa_authors": "Barsky, E., Hu, B., & Choy, V.",
     "checksum": "5232cc43d27e1e1175b6c534bcc691e3",
@@ -10,6 +24,20 @@
     "path": "content/guides/01_file-naming_one-pager.pdf",
     "release_date": "2026-11-23",
     "title": "University of British Columbia Library guide: File naming",
+    "version": "1.2",
+    "year": "2026"
+  },
+  "readme": {
+    "apa_authors": "Barsky, E., Hu, B., & Choy, V.",
+    "checksum": "a96ade23ff40a80129c5f3153b50653e",
+    "citation_version": "1",
+    "doi": "doi:10.5683/SP4/VCP9BO",
+    "file_id": 1276523,
+    "filename": "README_onepager_v01.pdf",
+    "filesize": 209687,
+    "path": "content/guides/03_readme_one-pager.pdf",
+    "release_date": "2026-11-25",
+    "title": "University of British Columbia Library guide: README files",
     "version": "1.2",
     "year": "2026"
   }
