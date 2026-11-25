@@ -1,0 +1,20 @@
+# Guide PDFs that live in Borealis and are copied into this site.
+#
+# Borealis is the source of truth: to update a guide, publish a new version
+# of its dataset in Borealis. The "Sync guide PDFs from Borealis" GitHub
+# Action then downloads the latest published PDF to `path` (daily, or on
+# demand from the Actions tab) and the page embed picks it up.
+#
+# Fields per guide:
+#   id    - short name used in the page: {% include borealis-pdf.html id="readme" %}
+#   doi   - the dataset's persistent ID in Borealis (stays the same across versions)
+#   path  - where the PDF is saved in this repo (keep it fixed; the embed uses it)
+#   match - optional filename pattern if the dataset ever holds more than one file
+#           (default "*.pdf"; exactly one public file must match)
+
+server: https://borealisdata.ca
+
+guides:
+  - id: file-naming
+    doi: doi:10.5683/SP4/SP73CF
+    path: content/guides/01_file-naming_one-pager.pdf
