@@ -13,13 +13,18 @@
 {%- assign doi = guide.doi | remove_first: "doi:" -%}
 {%- assign title = include.title | default: info.title | default: "this guide" -%}
 {%- if info.filesize -%}
-  {%- assign kb = info.filesize | divided_by: 1024 -%}
+  {%- assign kb = info.filesize | divided_by: 1024 | floor -%}
   {%- if kb >= 1024 -%}{%- assign size = info.filesize | divided_by: 104857.6 | round | divided_by: 10.0 | append: " MB" -%}
   {%- else -%}{%- assign size = kb | at_least: 1 | append: " KB" -%}{%- endif -%}
 {%- endif -%}
+<style>
+  /* Download button in the site's light blue (same as the note boxes) */
+  .pdf-embed .btn.guide-download { background: rgba(44, 132, 250, 0.1); background-image: none; color: #183385; border: 1px solid rgba(24, 51, 133, 0.35); box-shadow: none; }
+  .pdf-embed .btn.guide-download:hover, .pdf-embed .btn.guide-download:focus { background: rgba(44, 132, 250, 0.22); color: #183385; }
+</style>
 <div class="pdf-embed" style="border: 1.5px solid #ddd; border-radius: 10px; padding: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); margin: 1em 0;">
   <p style="margin: 0 0 8px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center;">
-    <a class="btn btn-primary" href="{{ src }}" download>Download PDF{% if size %} ({{ size }}){% endif %}</a>
+    <a class="btn guide-download" href="{{ src }}" download>Download PDF{% if size %} ({{ size }}){% endif %}</a>
     <a class="btn btn-outline" href="{{ src }}" target="_blank" rel="noopener">Open in new tab ↗</a>
   </p>
   {%- if include.collapsed %}
@@ -34,7 +39,12 @@
   </details>
   {%- endif %}
   <p style="font-size: 0.9em; margin: 8px 0 0;">
+    {%- if info.apa_authors and info.year %}
+    <strong>Cite as:</strong> {{ info.apa_authors | escape }} ({{ info.year }}). <em>{{ info.title | escape }}</em> (Version {{ info.citation_version | default: info.version }}). Borealis. <a href="https://doi.org/{{ doi }}">https://doi.org/{{ doi }}</a>
+    {%- if info.release_date %} (Last updated: {{ info.release_date }}){% endif %}
+    {%- else %}
     Cite or share: <a href="https://doi.org/{{ doi }}">https://doi.org/{{ doi }}</a>
     {%- if info %} · Version {{ info.version }}{% if info.release_date %} ({{ info.release_date }}){% endif %}{% endif %}
+    {%- endif %}
   </p>
 </div>

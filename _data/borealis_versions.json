@@ -1,6 +1,8 @@
 {
   "file-naming": {
+    "apa_authors": "Barsky, E., Hu, B., & Choy, V.",
     "checksum": "5232cc43d27e1e1175b6c534bcc691e3",
+    "citation_version": "1",
     "doi": "doi:10.5683/SP4/SP73CF",
     "file_id": 1276514,
     "filename": "file_naming_onepager_v01.pdf",
@@ -8,6 +10,7 @@
     "path": "content/guides/01_file-naming_one-pager.pdf",
     "release_date": "2026-11-23",
     "title": "University of British Columbia Library guide: File naming",
-    "version": "1.2"
+    "version": "1.2",
+    "year": "2026"
   }
 }
