@@ -27,3 +27,21 @@ guides:
   - id: directory-structures
     doi: doi:10.5683/SP4/ARNQNC
     path: content/guides/04_directory-structures_one-pager.pdf
+  - id: basic-deposit
+    doi: doi:10.5683/SP4/PTWBEX
+    path: content/guides/05-1_basic-deposit_one-pager.pdf
+  - id: advanced-deposit
+    doi: doi:10.5683/SP4/DX8VQ3
+    path: content/guides/05-2_advanced-deposit_one-pager.pdf
+  - id: admin-access
+    doi: doi:10.5683/SP4/DQSLEF
+    path: content/guides/05-3_admin-access_one-pager.pdf
+  - id: role-allocation
+    doi: doi:10.5683/SP4/PSNEHZ
+    path: content/guides/05-3_role-allocation_one-pager.pdf
+  - id: data-dictionary
+    doi: doi:10.5683/SP4/PUCDI0
+    path: content/guides/07_data-dictionary_one-pager.pdf
+  - id: license
+    doi: doi:10.5683/SP4/0MNWFS
+    path: content/guides/09_license_one-pager.pdf

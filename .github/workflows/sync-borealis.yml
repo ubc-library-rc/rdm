@@ -2,7 +2,7 @@ name: Sync guide PDFs from Borealis
 
 on:
   schedule:
-    - cron: "17 13 * * *"   # daily, ~6 am Vancouver
+    - cron: "17 13 * * *"   # daily at 13:17 UTC (~5 am Vancouver in winter, ~6 am in summer)
   workflow_dispatch:         # "Run workflow" button in the Actions tab
   push:                      # run when the guide list or this setup changes
     paths:

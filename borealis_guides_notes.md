@@ -15,7 +15,7 @@ These notes explain how the one-page guides get from Borealis onto the workshop 
 The guides live in Borealis, each as its own dataset with its own DOI. Each workshop page shows its guide with a **Download PDF** button, a preview and a citation, and nobody has to copy files by hand.
 
 1. **Borealis holds the master copy.** A guide is only ever updated in Borealis, by publishing a new version of its dataset. The DOI never changes and always points to the latest version.
-2. **A GitHub Action copies it to the site.** Every morning at about 6 am Vancouver time, the Action asks Borealis for the latest published version of each guide, using its DOI. If the PDF has changed, it saves the new one in `content/guides/` under the same file name. If nothing has changed, it does nothing.
+2. **A GitHub Action copies it to the site.** Every morning (13:17 UTC: about 5 am Vancouver time in winter, 6 am in summer), the Action asks Borealis for the latest published version of each guide, using its DOI. If the PDF has changed, it saves the new one in `content/guides/` under the same file name. If nothing has changed, it does nothing.
 3. **The page shows the copy.** One line on a workshop page shows the guide box, in the site's light-blue note style: "Looking for a cheat sheet? Check out our one-pager!", the Download PDF button, an Open in new tab button, a preview, and an APA citation built from the guide's details in Borealis.
 
 The pages don't link straight to the PDF in Borealis because Borealis gives a file a new internal number with every new version, so a direct link would break. Only the DOI stays the same, and the Action takes care of the rest.
@@ -85,7 +85,7 @@ If Borealis doesn't return these details, the box shows a short line with the DO
 ## Checking that it's working
 
 - **The Actions tab** shows every run. A green check means it worked. Opening a run shows lines like `[updated] file-naming: … v1.2` (a new PDF was saved) or `[unchanged] …` (nothing to do).
-- **The morning run** happens by itself at about 6 am. It can start up to half an hour late when GitHub is busy.
+- **The morning run** happens by itself at 13:17 UTC (about 5 am Vancouver time in winter, 6 am in summer). GitHub doesn't guarantee scheduled runs: they can start late, and occasionally GitHub skips one when it is busy. A skipped day does no harm, because the next run catches up, and **Run workflow** is always there.
 - **New PDFs** appear as commits by **github-actions[bot]** with the message "Sync guide PDFs from Borealis".
 
 ## When something goes wrong
