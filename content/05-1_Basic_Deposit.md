@@ -23,8 +23,7 @@ nav_order: 1
 {:toc}
 </details>
 
-Looking for a cheat sheet? Check out our <a href="https://osf.io/sczv5" target="_blank">one-pager</a>! Need help? Please reach out to `research.data@ubc.ca` for assistance with any of the deposit steps below.
-{: .note } 
+{% include borealis-pdf.html id="basic-deposit" collapsed=true extra='Need help? Please reach out to <code>research.data@ubc.ca</code> for assistance with any of the deposit steps below.' %}
 
 
 

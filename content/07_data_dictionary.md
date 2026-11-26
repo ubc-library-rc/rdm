@@ -10,9 +10,7 @@ A data dictionary is a type of document that provides essential information abou
 
 Overall, having a data dictionary is important for research reproducibility and revisitation. It clarifies questions like, “What does this variable mean?”
 
-- Looking for a cheat sheet? Check out our <a href="https://osf.io/akzpq" target="_blank">one-pager</a>
-- Looking for a template to reuse? Check out our <a href="https://ubc-library-rc.github.io/rdm/content/assets/templates/data_dictionary_template_blank.csv" target="_blank">data dictionary template</a> 
-{: .note}
+{% include borealis-pdf.html id="data-dictionary" collapsed=true extra='Looking for a template to reuse? Check out our <a href="https://ubc-library-rc.github.io/rdm/content/assets/templates/data_dictionary_template_blank.csv" target="_blank">data dictionary template</a>.' %}
 
 <details open markdown="block">
  <summary>

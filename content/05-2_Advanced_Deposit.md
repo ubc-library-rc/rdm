@@ -28,8 +28,7 @@ In this guide, we expand further on data discovery, file formats, DOIs, Preview 
 {:toc}
 </details>
 
-Looking for a cheat sheet? Check out our <a href="https://osf.io/5u4f3" target="_blank">one-pager</a>!
-{: .note }
+{% include borealis-pdf.html id="advanced-deposit" collapsed=true %}
 
 
 ---

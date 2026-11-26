@@ -12,8 +12,7 @@ There are many types of licenses for various kinds of products, contexts, and di
 
 <p style="margin-bottom: 20px"></p>
 
-Looking for a cheat sheet? Check out our [one-pager](https://osf.io/jz5ur) 
-{: .note}
+{% include borealis-pdf.html id="license" collapsed=true %}
 
 <details open markdown="block">
   <summary>

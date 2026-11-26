@@ -20,8 +20,9 @@ Some users, such as data managers or curators, have more options to customize an
 {:toc}
 </details>
 
-Looking for a cheat sheet? Check out our <a href="https://osf.io/2f5wg" target="_blank">one-pager</a>!
-{: .note }
+{% include borealis-pdf.html id="admin-access" collapsed=true %}
+
+{% include borealis-pdf.html id="role-allocation" collapsed=true intro='Setting up roles for your team? Check out our role allocation one-pager!' %}
 
 
 ---
