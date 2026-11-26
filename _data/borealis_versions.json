@@ -1,4 +1,60 @@
 {
+  "admin-access": {
+    "apa_authors": "Barsky, E., Hu, B., & Choy, V.",
+    "checksum": "2704f82a0cf0ba3cf24e051535fcab62",
+    "citation_version": "1",
+    "doi": "doi:10.5683/SP4/DQSLEF",
+    "file_id": 1282780,
+    "filename": "ubc_borealis_guide_admin_v01.pdf",
+    "filesize": 260452,
+    "path": "content/guides/05-3_admin-access_one-pager.pdf",
+    "release_date": "2026-11-26",
+    "title": "Depositing data in University of British Columbia Borealis: Administrators guide",
+    "version": "1.1",
+    "year": "2026"
+  },
+  "advanced-deposit": {
+    "apa_authors": "Barsky, E., Hu, B., & Choy, V.",
+    "checksum": "01dd5418e3a0303eae306185310e98d8",
+    "citation_version": "1",
+    "doi": "doi:10.5683/SP4/DX8VQ3",
+    "file_id": 1282781,
+    "filename": "ubc_borealis_guide_extended_v01.pdf",
+    "filesize": 260259,
+    "path": "content/guides/05-2_advanced-deposit_one-pager.pdf",
+    "release_date": "2026-11-25",
+    "title": "Depositing data in University of British Columbia Borealis: Extended guide",
+    "version": "1.0",
+    "year": "2026"
+  },
+  "basic-deposit": {
+    "apa_authors": "Barsky, E., Hu, B., & Choy, V.",
+    "checksum": "d0c7597b78024bf851f01e86db6b4dfd",
+    "citation_version": "1",
+    "doi": "doi:10.5683/SP4/PTWBEX",
+    "file_id": 1276645,
+    "filename": "ubc_borealis_guide_quick_v01.pdf",
+    "filesize": 222320,
+    "path": "content/guides/05-1_basic-deposit_one-pager.pdf",
+    "release_date": "2026-11-25",
+    "title": "Depositing data in University of British Columbia Borealis: Quick guide",
+    "version": "1.0",
+    "year": "2026"
+  },
+  "data-dictionary": {
+    "apa_authors": "Barsky, E., Hu, B., & Choy, V.",
+    "checksum": "aba435278ff17bd34d36cc941ff34b18",
+    "citation_version": "1",
+    "doi": "doi:10.5683/SP4/PUCDI0",
+    "file_id": 1276527,
+    "filename": "data_dictionary_onepager_v01.pdf",
+    "filesize": 119257,
+    "path": "content/guides/07_data-dictionary_one-pager.pdf",
+    "release_date": "2026-11-25",
+    "title": "University of British Columbia Library guide: Data dictionaries",
+    "version": "1.0",
+    "year": "2026"
+  },
   "directory-structures": {
     "apa_authors": "Barsky, E., Hu, B., & Choy, V.",
     "checksum": "0a05155f5d1b5e06236087c1e5c3b702",
@@ -41,6 +97,20 @@
     "version": "1.2",
     "year": "2026"
   },
+  "license": {
+    "apa_authors": "Barsky, E., & Choy, V.",
+    "checksum": "4cd0361e1cac9ef18950bb82ed0458c9",
+    "citation_version": "1",
+    "doi": "doi:10.5683/SP4/0MNWFS",
+    "file_id": 1276529,
+    "filename": "license_research_onepager_v01.pdf",
+    "filesize": 187358,
+    "path": "content/guides/09_license_one-pager.pdf",
+    "release_date": "2026-11-25",
+    "title": "University of British Columbia Library guide: Licenses for research data",
+    "version": "1.0",
+    "year": "2026"
+  },
   "readme": {
     "apa_authors": "Barsky, E., Hu, B., & Choy, V.",
     "checksum": "a96ade23ff40a80129c5f3153b50653e",
@@ -53,6 +123,20 @@
     "release_date": "2026-11-25",
     "title": "University of British Columbia Library guide: README files",
     "version": "1.2",
+    "year": "2026"
+  },
+  "role-allocation": {
+    "apa_authors": "Barsky, E., Hu, B., & Choy, V.",
+    "checksum": "1e5197e510528e4f3dd00c1df6405552",
+    "citation_version": "1",
+    "doi": "doi:10.5683/SP4/PSNEHZ",
+    "file_id": 1282779,
+    "filename": "ubc_borealis_guide_roles_v01.pdf",
+    "filesize": 235160,
+    "path": "content/guides/05-3_role-allocation_one-pager.pdf",
+    "release_date": "2026-11-25",
+    "title": "Depositing data in University of British Columbia Borealis: Role allocation",
+    "version": "1.0",
     "year": "2026"
   }
 }
