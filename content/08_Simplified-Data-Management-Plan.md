@@ -15,8 +15,7 @@ has_children: true
 {:toc}
 </details>
 
-Looking for a quick guide to creating Simplified DMPs? Check out our <a href="https://osf.io/tv9sa" target="_blank">one-pager</a>!
-{: .note }
+{% include borealis-pdf.html id="simplified-dmp" collapsed=true intro='Looking for a quick guide to creating Simplified DMPs? Check out our one-pager!' %}
 
 
 
