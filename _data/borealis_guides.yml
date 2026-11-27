@@ -45,3 +45,12 @@ guides:
   - id: license
     doi: doi:10.5683/SP4/0MNWFS
     path: content/guides/09_license_one-pager.pdf
+  - id: simplified-dmp
+    doi: doi:10.5683/SP4/KQMRBP
+    path: content/guides/08_simplified-dmp_one-pager.pdf
+  - id: deidentification-intro
+    doi: doi:10.5683/SP4/BNDP6Z
+    path: content/guides/10-1_deidentification-intro_one-pager.pdf
+  - id: deidentification-manual
+    doi: doi:10.5683/SP4/SZYQND
+    path: content/guides/10-2_deidentification-manual_one-pager.pdf
