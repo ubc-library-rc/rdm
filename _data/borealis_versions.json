@@ -55,6 +55,34 @@
     "version": "1.0",
     "year": "2026"
   },
+  "deidentification-intro": {
+    "apa_authors": "Barsky, E., & Choy, V.",
+    "checksum": "86304feb1cc85a251b6de7ec16bd149b",
+    "citation_version": "1",
+    "doi": "doi:10.5683/SP4/BNDP6Z",
+    "file_id": 1276642,
+    "filename": "intro_data_deID_twopager_v01.pdf",
+    "filesize": 247090,
+    "path": "content/guides/10-1_deidentification-intro_one-pager.pdf",
+    "release_date": "2026-11-27",
+    "title": "University of British Columbia Library guide: Data de-identification (Introduction)",
+    "version": "1.0",
+    "year": "2026"
+  },
+  "deidentification-manual": {
+    "apa_authors": "Barsky, E., & Choy, V.",
+    "checksum": "1c53513ddb2933926768f85ac8531ce8",
+    "citation_version": "1",
+    "doi": "doi:10.5683/SP4/SZYQND",
+    "file_id": 1276644,
+    "filename": "manual_data_deID_twopager_v01.pdf",
+    "filesize": 300885,
+    "path": "content/guides/10-2_deidentification-manual_one-pager.pdf",
+    "release_date": "2026-11-27",
+    "title": "University of British Columbia Library guide: Data de-identification (Methods)",
+    "version": "1.0",
+    "year": "2026"
+  },
   "directory-structures": {
     "apa_authors": "Barsky, E., Hu, B., & Choy, V.",
     "checksum": "0a05155f5d1b5e06236087c1e5c3b702",
@@ -136,6 +164,20 @@
     "path": "content/guides/05-3_role-allocation_one-pager.pdf",
     "release_date": "2026-11-25",
     "title": "Depositing data in University of British Columbia Borealis: Role allocation",
+    "version": "1.0",
+    "year": "2026"
+  },
+  "simplified-dmp": {
+    "apa_authors": "Barsky, E.",
+    "checksum": "c7a8d440736107b996dc02a6af1f9068",
+    "citation_version": "1",
+    "doi": "doi:10.5683/SP4/KQMRBP",
+    "file_id": 1276647,
+    "filename": "DMPs_guide_simplified_v01.pdf",
+    "filesize": 414361,
+    "path": "content/guides/08_simplified-dmp_one-pager.pdf",
+    "release_date": "2026-11-27",
+    "title": "University of British Columbia Library guide: Simplified data management plans (Pre-award)",
     "version": "1.0",
     "year": "2026"
   }
